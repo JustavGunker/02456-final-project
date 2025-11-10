@@ -52,7 +52,7 @@ def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_id
         axes[0].axis('off')
         
         # Plot 2: Ground Truth Segmentation
-        axes[1].imshow(target_slice, cmap='viridis', vmin=0, vmax=NUM_CLASSES-1)
+        axes[1].imshow(target_slice, cmap='gray', vmin=0, vmax=NUM_CLASSES-1)
         axes[1].set_title("Target Segmentation")
         axes[1].axis('off')
         
