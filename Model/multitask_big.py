@@ -16,9 +16,8 @@ print(cd)
 sys.path.append(str(cd))
 
 from func.utill import visualize_slices, DiceLoss
-from func.Models import MultiTaskNet_simple
+from func.Models import MultiTaskNet_big
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
-
 
 
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
@@ -74,7 +73,7 @@ except Exception as e:
 
 if __name__ == "__main__":
     # start model
-    model = MultiTaskNet_simple(
+    model = MultiTaskNet_big(
         in_channels=1, 
         num_classes=NUM_CLASSES, 
         latent_dim=LATENT_DIM  
@@ -154,7 +153,7 @@ if __name__ == "__main__":
 print("--- Training Finished ---")
 print("Saving model weights...")
 
-SAVE_PATH = "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/Multi_small.pth"
+SAVE_PATH = "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/Multi_big.pth"
 
 torch.save(model.state_dict(), SAVE_PATH)
 

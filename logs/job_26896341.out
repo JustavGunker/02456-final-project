@@ -1,0 +1,1109 @@
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project
+Using device: cuda
+Using device: cuda
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Task03_Liver_rs
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Task03_Liver_rs
+Found 123 image/label pairs.
+--- success ---
+Found 28 unlabeled images.
+--- success ---
+--- Training the MultiTaskNet on Liver Data ---
+
+--- Epoch 1/200 ---
+Batch 0/31 | Total Loss: 1.2437 | Recon Loss (Total): 0.3029 | CE Loss (Labeled): 1.0923 (Dice not active)
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.0108 | Recon Loss (Total): 0.0855 | CE Loss (Labeled): 0.9680 (Dice not active)
+Batch 28/31 | Total Loss: 0.9358 | Recon Loss (Total): 0.0613 | CE Loss (Labeled): 0.9052 (Dice not active)
+
+--- Epoch 2/200 ---
+Batch 0/31 | Total Loss: 0.9166 | Recon Loss (Total): 0.0551 | CE Loss (Labeled): 0.8891 (Dice not active)
+Batch 14/31 | Total Loss: 0.8569 | Recon Loss (Total): 0.0366 | CE Loss (Labeled): 0.8386 (Dice not active)
+Batch 28/31 | Total Loss: 0.8042 | Recon Loss (Total): 0.0183 | CE Loss (Labeled): 0.7950 (Dice not active)
+
+--- Epoch 3/200 ---
+Batch 0/31 | Total Loss: 0.7994 | Recon Loss (Total): 0.0199 | CE Loss (Labeled): 0.7895 (Dice not active)
+Batch 14/31 | Total Loss: 0.7643 | Recon Loss (Total): 0.0147 | CE Loss (Labeled): 0.7569 (Dice not active)
+Batch 28/31 | Total Loss: 0.7312 | Recon Loss (Total): 0.0099 | CE Loss (Labeled): 0.7263 (Dice not active)
+
+--- Epoch 4/200 ---
+Batch 0/31 | Total Loss: 0.7243 | Recon Loss (Total): 0.0071 | CE Loss (Labeled): 0.7208 (Dice not active)
+Batch 14/31 | Total Loss: 0.6967 | Recon Loss (Total): 0.0072 | CE Loss (Labeled): 0.6931 (Dice not active)
+Batch 28/31 | Total Loss: 0.6706 | Recon Loss (Total): 0.0061 | CE Loss (Labeled): 0.6675 (Dice not active)
+
+--- Epoch 5/200 ---
+Batch 0/31 | Total Loss: 0.6681 | Recon Loss (Total): 0.0061 | CE Loss (Labeled): 0.6651 (Dice not active)
+Batch 14/31 | Total Loss: 0.6675 | Recon Loss (Total): 0.0119 | CE Loss (Labeled): 0.6616 (Dice not active)
+Batch 28/31 | Total Loss: 0.6360 | Recon Loss (Total): 0.0037 | CE Loss (Labeled): 0.6342 (Dice not active)
+
+--- Epoch 6/200 ---
+Batch 0/31 | Total Loss: 0.6353 | Recon Loss (Total): 0.0038 | CE Loss (Labeled): 0.6334 (Dice not active)
+Batch 14/31 | Total Loss: 0.6290 | Recon Loss (Total): 0.0024 | CE Loss (Labeled): 0.6278 (Dice not active)
+Batch 28/31 | Total Loss: 0.6145 | Recon Loss (Total): 0.0027 | CE Loss (Labeled): 0.6132 (Dice not active)
+
+--- Epoch 7/200 ---
+Batch 0/31 | Total Loss: 0.6122 | Recon Loss (Total): 0.0032 | CE Loss (Labeled): 0.6106 (Dice not active)
+Batch 14/31 | Total Loss: 0.6112 | Recon Loss (Total): 0.0062 | CE Loss (Labeled): 0.6080 (Dice not active)
+Batch 28/31 | Total Loss: 0.6024 | Recon Loss (Total): 0.0031 | CE Loss (Labeled): 0.6009 (Dice not active)
+
+--- Epoch 8/200 ---
+Batch 0/31 | Total Loss: 0.6034 | Recon Loss (Total): 0.0034 | CE Loss (Labeled): 0.6017 (Dice not active)
+Batch 14/31 | Total Loss: 1.5642 | Recon Loss (Total): 0.0035 | CE Loss (Labeled): 0.5985 | DICE Loss (Labeled): 0.9639
+Batch 28/31 | Total Loss: 1.5292 | Recon Loss (Total): 0.0029 | CE Loss (Labeled): 0.5919 | DICE Loss (Labeled): 0.9359
+
+--- Epoch 9/200 ---
+Batch 0/31 | Total Loss: 1.5443 | Recon Loss (Total): 0.0016 | CE Loss (Labeled): 0.5885 | DICE Loss (Labeled): 0.9550
+Batch 14/31 | Total Loss: 1.5296 | Recon Loss (Total): 0.0019 | CE Loss (Labeled): 0.5894 | DICE Loss (Labeled): 0.9393
+Batch 28/31 | Total Loss: 1.5555 | Recon Loss (Total): 0.0021 | CE Loss (Labeled): 0.5860 | DICE Loss (Labeled): 0.9685
+
+--- Epoch 10/200 ---
+Batch 0/31 | Total Loss: 1.5373 | Recon Loss (Total): 0.0030 | CE Loss (Labeled): 0.5874 | DICE Loss (Labeled): 0.9484
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5374 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5834 | DICE Loss (Labeled): 0.9534
+Batch 28/31 | Total Loss: 0.6119 | Recon Loss (Total): 0.0025 | CE Loss (Labeled): 0.6107 (Dice not active)
+
+--- Epoch 11/200 ---
+Batch 0/31 | Total Loss: 1.5424 | Recon Loss (Total): 0.0026 | CE Loss (Labeled): 0.5809 | DICE Loss (Labeled): 0.9602
+Batch 14/31 | Total Loss: 1.5692 | Recon Loss (Total): 0.0046 | CE Loss (Labeled): 0.5922 | DICE Loss (Labeled): 0.9747
+Batch 28/31 | Total Loss: 1.5101 | Recon Loss (Total): 0.0018 | CE Loss (Labeled): 0.5808 | DICE Loss (Labeled): 0.9284
+
+--- Epoch 12/200 ---
+Batch 0/31 | Total Loss: 1.5199 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5787 | DICE Loss (Labeled): 0.9406
+Batch 14/31 | Total Loss: 1.5359 | Recon Loss (Total): 0.0016 | CE Loss (Labeled): 0.5760 | DICE Loss (Labeled): 0.9591
+Batch 28/31 | Total Loss: 1.5345 | Recon Loss (Total): 0.0033 | CE Loss (Labeled): 0.5718 | DICE Loss (Labeled): 0.9610
+
+--- Epoch 13/200 ---
+Batch 0/31 | Total Loss: 1.5337 | Recon Loss (Total): 0.0020 | CE Loss (Labeled): 0.5713 | DICE Loss (Labeled): 0.9615
+Batch 14/31 | Total Loss: 1.5112 | Recon Loss (Total): 0.0027 | CE Loss (Labeled): 0.5714 | DICE Loss (Labeled): 0.9385
+Batch 28/31 | Total Loss: 1.5016 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5746 | DICE Loss (Labeled): 0.9264
+
+--- Epoch 14/200 ---
+Batch 0/31 | Total Loss: 1.5352 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5707 | DICE Loss (Labeled): 0.9639
+Batch 14/31 | Total Loss: 1.5135 | Recon Loss (Total): 0.0016 | CE Loss (Labeled): 0.5704 | DICE Loss (Labeled): 0.9423
+Batch 28/31 | Total Loss: 1.5350 | Recon Loss (Total): 0.0148 | CE Loss (Labeled): 0.5680 | DICE Loss (Labeled): 0.9596
+
+--- Epoch 15/200 ---
+Batch 0/31 | Total Loss: 1.5162 | Recon Loss (Total): 0.0019 | CE Loss (Labeled): 0.5679 | DICE Loss (Labeled): 0.9473
+Batch 14/31 | Total Loss: 1.5073 | Recon Loss (Total): 0.0036 | CE Loss (Labeled): 0.5677 | DICE Loss (Labeled): 0.9378
+Batch 28/31 | Total Loss: 1.5094 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5667 | DICE Loss (Labeled): 0.9422
+
+--- Epoch 16/200 ---
+Batch 0/31 | Total Loss: 1.5302 | Recon Loss (Total): 0.0022 | CE Loss (Labeled): 0.5751 | DICE Loss (Labeled): 0.9540
+Batch 14/31 | Total Loss: 1.5414 | Recon Loss (Total): 0.0037 | CE Loss (Labeled): 0.5736 | DICE Loss (Labeled): 0.9660
+Batch 28/31 | Total Loss: 1.4995 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5695 | DICE Loss (Labeled): 0.9294
+
+--- Epoch 17/200 ---
+Batch 0/31 | Total Loss: 1.5147 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5672 | DICE Loss (Labeled): 0.9468
+Batch 14/31 | Total Loss: 1.5008 | Recon Loss (Total): 0.0023 | CE Loss (Labeled): 0.5677 | DICE Loss (Labeled): 0.9319
+Batch 28/31 | Total Loss: 1.5226 | Recon Loss (Total): 0.0019 | CE Loss (Labeled): 0.5659 | DICE Loss (Labeled): 0.9557
+
+--- Epoch 18/200 ---
+Batch 0/31 | Total Loss: 1.5082 | Recon Loss (Total): 0.0024 | CE Loss (Labeled): 0.5668 | DICE Loss (Labeled): 0.9402
+Batch 14/31 | Total Loss: 1.5091 | Recon Loss (Total): 0.0019 | CE Loss (Labeled): 0.5661 | DICE Loss (Labeled): 0.9421
+Batch 28/31 | Total Loss: 1.5186 | Recon Loss (Total): 0.0022 | CE Loss (Labeled): 0.5634 | DICE Loss (Labeled): 0.9541
+
+--- Epoch 19/200 ---
+Batch 0/31 | Total Loss: 1.5210 | Recon Loss (Total): 0.0017 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9578
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5279 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5638 | DICE Loss (Labeled): 0.9633
+Batch 28/31 | Total Loss: 1.5151 | Recon Loss (Total): 0.0026 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9515
+
+--- Epoch 20/200 ---
+Batch 0/31 | Total Loss: 1.5053 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5626 | DICE Loss (Labeled): 0.9422
+Batch 14/31 | Total Loss: 1.5164 | Recon Loss (Total): 0.0016 | CE Loss (Labeled): 0.5610 | DICE Loss (Labeled): 0.9546
+Batch 28/31 | Total Loss: 1.4863 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5659 | DICE Loss (Labeled): 0.9200
+
+--- Epoch 21/200 ---
+Batch 0/31 | Total Loss: 1.4956 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5709 | DICE Loss (Labeled): 0.9240
+Batch 14/31 | Total Loss: 1.5108 | Recon Loss (Total): 0.0022 | CE Loss (Labeled): 0.5636 | DICE Loss (Labeled): 0.9462
+Batch 28/31 | Total Loss: 1.5254 | Recon Loss (Total): 0.0017 | CE Loss (Labeled): 0.5634 | DICE Loss (Labeled): 0.9612
+
+--- Epoch 22/200 ---
+Batch 0/31 | Total Loss: 1.5090 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5639 | DICE Loss (Labeled): 0.9445
+Batch 14/31 | Total Loss: 1.5089 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5613 | DICE Loss (Labeled): 0.9471
+Batch 28/31 | Total Loss: 1.5066 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9440
+
+--- Epoch 23/200 ---
+Batch 0/31 | Total Loss: 1.5002 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5638 | DICE Loss (Labeled): 0.9361
+Batch 14/31 | Total Loss: 1.4887 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5621 | DICE Loss (Labeled): 0.9260
+Batch 28/31 | Total Loss: 1.5057 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5621 | DICE Loss (Labeled): 0.9435
+
+--- Epoch 24/200 ---
+Batch 0/31 | Total Loss: 1.5070 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5602 | DICE Loss (Labeled): 0.9465
+Batch 14/31 | Total Loss: 1.5166 | Recon Loss (Total): 0.0025 | CE Loss (Labeled): 0.5592 | DICE Loss (Labeled): 0.9561
+Batch 28/31 | Total Loss: 1.4771 | Recon Loss (Total): 0.0024 | CE Loss (Labeled): 0.5640 | DICE Loss (Labeled): 0.9119
+
+--- Epoch 25/200 ---
+Batch 0/31 | Total Loss: 1.4911 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5627 | DICE Loss (Labeled): 0.9279
+Batch 14/31 | Total Loss: 1.5274 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5638 | DICE Loss (Labeled): 0.9628
+Batch 28/31 | Total Loss: 1.4873 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9248
+
+--- Epoch 26/200 ---
+Batch 0/31 | Total Loss: 1.5013 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5601 | DICE Loss (Labeled): 0.9409
+Batch 14/31 | Total Loss: 1.5117 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5618 | DICE Loss (Labeled): 0.9496
+Batch 28/31 | Total Loss: 1.5176 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5641 | DICE Loss (Labeled): 0.9531
+
+--- Epoch 27/200 ---
+Batch 0/31 | Total Loss: 1.4996 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9368
+Batch 14/31 | Total Loss: 1.5093 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5596 | DICE Loss (Labeled): 0.9494
+Batch 28/31 | Total Loss: 1.4922 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9296
+
+--- Epoch 28/200 ---
+Batch 0/31 | Total Loss: 1.4887 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5617 | DICE Loss (Labeled): 0.9267
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4946 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5637 | DICE Loss (Labeled): 0.9306
+Batch 28/31 | Total Loss: 1.5113 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5595 | DICE Loss (Labeled): 0.9514
+
+--- Epoch 29/200 ---
+Batch 0/31 | Total Loss: 1.5210 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5596 | DICE Loss (Labeled): 0.9608
+Batch 14/31 | Total Loss: 1.4973 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5602 | DICE Loss (Labeled): 0.9367
+Batch 28/31 | Total Loss: 1.5075 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5607 | DICE Loss (Labeled): 0.9463
+
+--- Epoch 30/200 ---
+Batch 0/31 | Total Loss: 1.5034 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5597 | DICE Loss (Labeled): 0.9435
+Batch 14/31 | Total Loss: 1.5137 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5586 | DICE Loss (Labeled): 0.9549
+Batch 28/31 | Total Loss: 1.4742 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5625 | DICE Loss (Labeled): 0.9112
+
+--- Epoch 31/200 ---
+Batch 0/31 | Total Loss: 1.4965 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5591 | DICE Loss (Labeled): 0.9369
+Batch 14/31 | Total Loss: 1.5005 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5591 | DICE Loss (Labeled): 0.9412
+Batch 28/31 | Total Loss: 1.5156 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5602 | DICE Loss (Labeled): 0.9551
+
+--- Epoch 32/200 ---
+Batch 0/31 | Total Loss: 1.5056 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5594 | DICE Loss (Labeled): 0.9458
+Batch 14/31 | Total Loss: 1.4967 | Recon Loss (Total): 0.0049 | CE Loss (Labeled): 0.5609 | DICE Loss (Labeled): 0.9333
+Batch 28/31 | Total Loss: 1.4974 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5632 | DICE Loss (Labeled): 0.9336
+
+--- Epoch 33/200 ---
+Batch 0/31 | Total Loss: 1.5206 | Recon Loss (Total): 0.0022 | CE Loss (Labeled): 0.5580 | DICE Loss (Labeled): 0.9614
+Batch 14/31 | Total Loss: 1.5065 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5582 | DICE Loss (Labeled): 0.9476
+Batch 28/31 | Total Loss: 1.5129 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5610 | DICE Loss (Labeled): 0.9515
+
+--- Epoch 34/200 ---
+Batch 0/31 | Total Loss: 1.5031 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5577 | DICE Loss (Labeled): 0.9451
+Batch 14/31 | Total Loss: 1.5037 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5583 | DICE Loss (Labeled): 0.9452
+Batch 28/31 | Total Loss: 1.5247 | Recon Loss (Total): 0.0020 | CE Loss (Labeled): 0.5592 | DICE Loss (Labeled): 0.9645
+
+--- Epoch 35/200 ---
+Batch 0/31 | Total Loss: 1.5083 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5614 | DICE Loss (Labeled): 0.9465
+Batch 14/31 | Total Loss: 1.4882 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5596 | DICE Loss (Labeled): 0.9281
+Batch 28/31 | Total Loss: 1.5038 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5576 | DICE Loss (Labeled): 0.9459
+
+--- Epoch 36/200 ---
+Batch 0/31 | Total Loss: 1.4744 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5662 | DICE Loss (Labeled): 0.9081
+Batch 14/31 | Total Loss: 1.4859 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5590 | DICE Loss (Labeled): 0.9265
+Batch 28/31 | Total Loss: 1.5186 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9622
+
+--- Epoch 37/200 ---
+Batch 0/31 | Total Loss: 1.5040 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5586 | DICE Loss (Labeled): 0.9451
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4960 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5611 | DICE Loss (Labeled): 0.9346
+Batch 28/31 | Total Loss: 1.4988 | Recon Loss (Total): 0.0022 | CE Loss (Labeled): 0.5626 | DICE Loss (Labeled): 0.9351
+
+--- Epoch 38/200 ---
+Batch 0/31 | Total Loss: 1.4938 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5590 | DICE Loss (Labeled): 0.9343
+Batch 14/31 | Total Loss: 1.5107 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5579 | DICE Loss (Labeled): 0.9525
+Batch 28/31 | Total Loss: 1.4793 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5601 | DICE Loss (Labeled): 0.9188
+
+--- Epoch 39/200 ---
+Batch 0/31 | Total Loss: 1.5042 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5590 | DICE Loss (Labeled): 0.9445
+Batch 14/31 | Total Loss: 1.4782 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5596 | DICE Loss (Labeled): 0.9184
+Batch 28/31 | Total Loss: 1.5097 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5574 | DICE Loss (Labeled): 0.9519
+
+--- Epoch 40/200 ---
+Batch 0/31 | Total Loss: 1.4994 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5601 | DICE Loss (Labeled): 0.9390
+Batch 14/31 | Total Loss: 1.5013 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5570 | DICE Loss (Labeled): 0.9441
+Batch 28/31 | Total Loss: 1.4964 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9389
+
+--- Epoch 41/200 ---
+Batch 0/31 | Total Loss: 1.4891 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5633 | DICE Loss (Labeled): 0.9256
+Batch 14/31 | Total Loss: 1.4977 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9396
+Batch 28/31 | Total Loss: 1.5148 | Recon Loss (Total): 0.0021 | CE Loss (Labeled): 0.5566 | DICE Loss (Labeled): 0.9572
+
+--- Epoch 42/200 ---
+Batch 0/31 | Total Loss: 1.4748 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5596 | DICE Loss (Labeled): 0.9149
+Batch 14/31 | Total Loss: 1.4892 | Recon Loss (Total): 0.0017 | CE Loss (Labeled): 0.5598 | DICE Loss (Labeled): 0.9285
+Batch 28/31 | Total Loss: 1.5100 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9533
+
+--- Epoch 43/200 ---
+Batch 0/31 | Total Loss: 1.4950 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5646 | DICE Loss (Labeled): 0.9299
+Batch 14/31 | Total Loss: 1.4978 | Recon Loss (Total): 0.0023 | CE Loss (Labeled): 0.5577 | DICE Loss (Labeled): 0.9389
+Batch 28/31 | Total Loss: 1.5139 | Recon Loss (Total): 0.0046 | CE Loss (Labeled): 0.5567 | DICE Loss (Labeled): 0.9549
+
+--- Epoch 44/200 ---
+Batch 0/31 | Total Loss: 1.5026 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5604 | DICE Loss (Labeled): 0.9418
+Batch 14/31 | Total Loss: 1.5065 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5568 | DICE Loss (Labeled): 0.9493
+Batch 28/31 | Total Loss: 1.5095 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9531
+
+--- Epoch 45/200 ---
+Batch 0/31 | Total Loss: 1.5078 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5576 | DICE Loss (Labeled): 0.9499
+Batch 14/31 | Total Loss: 1.4885 | Recon Loss (Total): 0.0018 | CE Loss (Labeled): 0.5604 | DICE Loss (Labeled): 0.9272
+Batch 28/31 | Total Loss: 1.4964 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9383
+
+--- Epoch 46/200 ---
+Batch 0/31 | Total Loss: 1.4948 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5583 | DICE Loss (Labeled): 0.9359
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5110 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5582 | DICE Loss (Labeled): 0.9526
+Batch 28/31 | Total Loss: 1.5156 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9584
+
+--- Epoch 47/200 ---
+Batch 0/31 | Total Loss: 1.4806 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5587 | DICE Loss (Labeled): 0.9215
+Batch 14/31 | Total Loss: 1.5152 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5572 | DICE Loss (Labeled): 0.9576
+Batch 28/31 | Total Loss: 1.5057 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9493
+
+--- Epoch 48/200 ---
+Batch 0/31 | Total Loss: 1.4916 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5583 | DICE Loss (Labeled): 0.9331
+Batch 14/31 | Total Loss: 1.4859 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5611 | DICE Loss (Labeled): 0.9241
+Batch 28/31 | Total Loss: 1.4986 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5609 | DICE Loss (Labeled): 0.9374
+
+--- Epoch 49/200 ---
+Batch 0/31 | Total Loss: 1.5203 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5598 | DICE Loss (Labeled): 0.9597
+Batch 14/31 | Total Loss: 1.5136 | Recon Loss (Total): 0.0026 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9548
+Batch 28/31 | Total Loss: 1.5277 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5615 | DICE Loss (Labeled): 0.9655
+
+--- Epoch 50/200 ---
+Batch 0/31 | Total Loss: 1.5101 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9535
+Batch 14/31 | Total Loss: 1.5038 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5569 | DICE Loss (Labeled): 0.9467
+Batch 28/31 | Total Loss: 1.5044 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9482
+
+--- Epoch 51/200 ---
+Batch 0/31 | Total Loss: 1.4811 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5588 | DICE Loss (Labeled): 0.9215
+Batch 14/31 | Total Loss: 1.5158 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5579 | DICE Loss (Labeled): 0.9577
+Batch 28/31 | Total Loss: 1.4826 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5610 | DICE Loss (Labeled): 0.9210
+
+--- Epoch 52/200 ---
+Batch 0/31 | Total Loss: 1.4897 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5608 | DICE Loss (Labeled): 0.9286
+Batch 14/31 | Total Loss: 1.4986 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9406
+Batch 28/31 | Total Loss: 1.4926 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5565 | DICE Loss (Labeled): 0.9358
+
+--- Epoch 53/200 ---
+Batch 0/31 | Total Loss: 1.5078 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9515
+Batch 14/31 | Total Loss: 1.5073 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9514
+Batch 28/31 | Total Loss: 1.4858 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5570 | DICE Loss (Labeled): 0.9283
+
+--- Epoch 54/200 ---
+Batch 0/31 | Total Loss: 1.5077 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9515
+Batch 14/31 | Total Loss: 1.4771 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5593 | DICE Loss (Labeled): 0.9170
+Batch 28/31 | Total Loss: 1.5047 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9481
+
+--- Epoch 55/200 ---
+Batch 0/31 | Total Loss: 1.5080 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9514
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4883 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5581 | DICE Loss (Labeled): 0.9301
+Batch 28/31 | Total Loss: 1.4894 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5576 | DICE Loss (Labeled): 0.9315
+
+--- Epoch 56/200 ---
+Batch 0/31 | Total Loss: 1.4750 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5601 | DICE Loss (Labeled): 0.9144
+Batch 14/31 | Total Loss: 1.5012 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5584 | DICE Loss (Labeled): 0.9423
+Batch 28/31 | Total Loss: 1.5076 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9510
+
+--- Epoch 57/200 ---
+Batch 0/31 | Total Loss: 1.4850 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5619 | DICE Loss (Labeled): 0.9228
+Batch 14/31 | Total Loss: 1.4988 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5580 | DICE Loss (Labeled): 0.9407
+Batch 28/31 | Total Loss: 1.5031 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9477
+
+--- Epoch 58/200 ---
+Batch 0/31 | Total Loss: 1.5002 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9436
+Batch 14/31 | Total Loss: 1.5048 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9485
+Batch 28/31 | Total Loss: 1.4830 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5565 | DICE Loss (Labeled): 0.9264
+
+--- Epoch 59/200 ---
+Batch 0/31 | Total Loss: 1.5086 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9524
+Batch 14/31 | Total Loss: 1.4817 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5589 | DICE Loss (Labeled): 0.9227
+Batch 28/31 | Total Loss: 1.5052 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9492
+
+--- Epoch 60/200 ---
+Batch 0/31 | Total Loss: 1.4737 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5580 | DICE Loss (Labeled): 0.9155
+Batch 14/31 | Total Loss: 1.4873 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9308
+Batch 28/31 | Total Loss: 1.5142 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9575
+
+--- Epoch 61/200 ---
+Batch 0/31 | Total Loss: 1.5127 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9578
+Batch 14/31 | Total Loss: 1.5111 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9557
+Batch 28/31 | Total Loss: 1.5034 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5571 | DICE Loss (Labeled): 0.9460
+
+--- Epoch 62/200 ---
+Batch 0/31 | Total Loss: 1.5000 | Recon Loss (Total): 0.0017 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9433
+Batch 14/31 | Total Loss: 1.4949 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9390
+Batch 28/31 | Total Loss: 1.4918 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9343
+
+--- Epoch 63/200 ---
+Batch 0/31 | Total Loss: 1.5054 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5566 | DICE Loss (Labeled): 0.9486
+Batch 14/31 | Total Loss: 1.4974 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9413
+Batch 28/31 | Total Loss: 1.4774 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5569 | DICE Loss (Labeled): 0.9203
+
+--- Epoch 64/200 ---
+Batch 0/31 | Total Loss: 1.5119 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9558
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5127 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9574
+Batch 28/31 | Total Loss: 1.5040 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5554 | DICE Loss (Labeled): 0.9484
+
+--- Epoch 65/200 ---
+Batch 0/31 | Total Loss: 1.4979 | Recon Loss (Total): 0.0019 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9394
+Batch 14/31 | Total Loss: 1.5012 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9451
+Batch 28/31 | Total Loss: 1.4891 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5590 | DICE Loss (Labeled): 0.9297
+
+--- Epoch 66/200 ---
+Batch 0/31 | Total Loss: 1.4863 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9299
+Batch 14/31 | Total Loss: 1.5129 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9570
+Batch 28/31 | Total Loss: 1.5032 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9475
+
+--- Epoch 67/200 ---
+Batch 0/31 | Total Loss: 1.4965 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9404
+Batch 14/31 | Total Loss: 1.4942 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9388
+Batch 28/31 | Total Loss: 1.5022 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5570 | DICE Loss (Labeled): 0.9448
+
+--- Epoch 68/200 ---
+Batch 0/31 | Total Loss: 1.5100 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9538
+Batch 14/31 | Total Loss: 1.4861 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5569 | DICE Loss (Labeled): 0.9290
+Batch 28/31 | Total Loss: 1.5116 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9563
+
+--- Epoch 69/200 ---
+Batch 0/31 | Total Loss: 1.4985 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9423
+Batch 14/31 | Total Loss: 1.5019 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9458
+Batch 28/31 | Total Loss: 1.5199 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9659
+
+--- Epoch 70/200 ---
+Batch 0/31 | Total Loss: 1.5130 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9574
+Batch 14/31 | Total Loss: 1.5111 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5557 | DICE Loss (Labeled): 0.9552
+Batch 28/31 | Total Loss: 1.4869 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9306
+
+--- Epoch 71/200 ---
+Batch 0/31 | Total Loss: 1.4946 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9396
+Batch 14/31 | Total Loss: 1.4906 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5572 | DICE Loss (Labeled): 0.9332
+Batch 28/31 | Total Loss: 1.5093 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9540
+
+--- Epoch 72/200 ---
+Batch 0/31 | Total Loss: 1.5086 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5571 | DICE Loss (Labeled): 0.9510
+Batch 14/31 | Total Loss: 1.5070 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9505
+Batch 28/31 | Total Loss: 1.5061 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9508
+
+--- Epoch 73/200 ---
+Batch 0/31 | Total Loss: 1.5033 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5568 | DICE Loss (Labeled): 0.9463
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5000 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5569 | DICE Loss (Labeled): 0.9427
+Batch 28/31 | Total Loss: 1.5061 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9494
+
+--- Epoch 74/200 ---
+Batch 0/31 | Total Loss: 1.5134 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9587
+Batch 14/31 | Total Loss: 1.4922 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9363
+Batch 28/31 | Total Loss: 1.5101 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5567 | DICE Loss (Labeled): 0.9533
+
+--- Epoch 75/200 ---
+Batch 0/31 | Total Loss: 1.4966 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5577 | DICE Loss (Labeled): 0.9386
+Batch 14/31 | Total Loss: 1.5162 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9613
+Batch 28/31 | Total Loss: 1.5116 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9557
+
+--- Epoch 76/200 ---
+Batch 0/31 | Total Loss: 1.5033 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9487
+Batch 14/31 | Total Loss: 1.4714 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5600 | DICE Loss (Labeled): 0.9110
+Batch 28/31 | Total Loss: 1.5010 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9465
+
+--- Epoch 77/200 ---
+Batch 0/31 | Total Loss: 1.4973 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5583 | DICE Loss (Labeled): 0.9386
+Batch 14/31 | Total Loss: 1.5057 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9501
+Batch 28/31 | Total Loss: 1.4653 | Recon Loss (Total): 0.0016 | CE Loss (Labeled): 0.5584 | DICE Loss (Labeled): 0.9061
+
+--- Epoch 78/200 ---
+Batch 0/31 | Total Loss: 1.4858 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5606 | DICE Loss (Labeled): 0.9249
+Batch 14/31 | Total Loss: 1.4926 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9368
+Batch 28/31 | Total Loss: 1.4903 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9354
+
+--- Epoch 79/200 ---
+Batch 0/31 | Total Loss: 1.4884 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9332
+Batch 14/31 | Total Loss: 1.5047 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9486
+Batch 28/31 | Total Loss: 1.5140 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9578
+
+--- Epoch 80/200 ---
+Batch 0/31 | Total Loss: 1.5113 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9551
+Batch 14/31 | Total Loss: 1.5099 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9548
+Batch 28/31 | Total Loss: 1.4801 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5591 | DICE Loss (Labeled): 0.9208
+
+--- Epoch 81/200 ---
+Batch 0/31 | Total Loss: 1.5067 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9526
+Batch 14/31 | Total Loss: 1.4948 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5566 | DICE Loss (Labeled): 0.9374
+Batch 28/31 | Total Loss: 1.5013 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9450
+
+--- Epoch 82/200 ---
+Batch 0/31 | Total Loss: 1.5095 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9541
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5101 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9539
+Batch 28/31 | Total Loss: 1.5078 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9523
+
+--- Epoch 83/200 ---
+Batch 0/31 | Total Loss: 1.5117 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9581
+Batch 14/31 | Total Loss: 1.4754 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5602 | DICE Loss (Labeled): 0.9151
+Batch 28/31 | Total Loss: 1.4928 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9363
+
+--- Epoch 84/200 ---
+Batch 0/31 | Total Loss: 1.4996 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9449
+Batch 14/31 | Total Loss: 1.5028 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9476
+Batch 28/31 | Total Loss: 1.4967 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9416
+
+--- Epoch 85/200 ---
+Batch 0/31 | Total Loss: 1.4770 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5559 | DICE Loss (Labeled): 0.9209
+Batch 14/31 | Total Loss: 1.4831 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9256
+Batch 28/31 | Total Loss: 1.4922 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9375
+
+--- Epoch 86/200 ---
+Batch 0/31 | Total Loss: 1.5029 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9478
+Batch 14/31 | Total Loss: 1.5043 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5576 | DICE Loss (Labeled): 0.9464
+Batch 28/31 | Total Loss: 1.5148 | Recon Loss (Total): 0.0018 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9591
+
+--- Epoch 87/200 ---
+Batch 0/31 | Total Loss: 1.5179 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9637
+Batch 14/31 | Total Loss: 1.4999 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5565 | DICE Loss (Labeled): 0.9433
+Batch 28/31 | Total Loss: 1.5043 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9493
+
+--- Epoch 88/200 ---
+Batch 0/31 | Total Loss: 1.4878 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5589 | DICE Loss (Labeled): 0.9285
+Batch 14/31 | Total Loss: 1.5155 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9610
+Batch 28/31 | Total Loss: 1.5217 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9668
+
+--- Epoch 89/200 ---
+Batch 0/31 | Total Loss: 1.4799 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9223
+Batch 14/31 | Total Loss: 1.5058 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9515
+Batch 28/31 | Total Loss: 1.5075 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9532
+
+--- Epoch 90/200 ---
+Batch 0/31 | Total Loss: 1.4922 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5562 | DICE Loss (Labeled): 0.9357
+Batch 14/31 | Total Loss: 1.4793 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9215
+Batch 28/31 | Total Loss: 1.5098 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9561
+
+--- Epoch 91/200 ---
+Batch 0/31 | Total Loss: 1.4786 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5565 | DICE Loss (Labeled): 0.9220
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5024 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5565 | DICE Loss (Labeled): 0.9454
+Batch 28/31 | Total Loss: 1.5066 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5620 | DICE Loss (Labeled): 0.9441
+
+--- Epoch 92/200 ---
+Batch 0/31 | Total Loss: 1.5082 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5574 | DICE Loss (Labeled): 0.9503
+Batch 14/31 | Total Loss: 1.5205 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5591 | DICE Loss (Labeled): 0.9611
+Batch 28/31 | Total Loss: 1.5130 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9563
+
+--- Epoch 93/200 ---
+Batch 0/31 | Total Loss: 1.5137 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5576 | DICE Loss (Labeled): 0.9559
+Batch 14/31 | Total Loss: 1.5102 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9520
+Batch 28/31 | Total Loss: 1.5046 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5568 | DICE Loss (Labeled): 0.9477
+
+--- Epoch 94/200 ---
+Batch 0/31 | Total Loss: 1.4851 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5583 | DICE Loss (Labeled): 0.9266
+Batch 14/31 | Total Loss: 1.5066 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9516
+Batch 28/31 | Total Loss: 1.4835 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5582 | DICE Loss (Labeled): 0.9252
+
+--- Epoch 95/200 ---
+Batch 0/31 | Total Loss: 1.4946 | Recon Loss (Total): 0.0015 | CE Loss (Labeled): 0.5554 | DICE Loss (Labeled): 0.9385
+Batch 14/31 | Total Loss: 1.5067 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9529
+Batch 28/31 | Total Loss: 1.5105 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9564
+
+--- Epoch 96/200 ---
+Batch 0/31 | Total Loss: 1.4958 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9408
+Batch 14/31 | Total Loss: 1.4917 | Recon Loss (Total): 0.0013 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9362
+Batch 28/31 | Total Loss: 1.5248 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9707
+
+--- Epoch 97/200 ---
+Batch 0/31 | Total Loss: 1.4890 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9339
+Batch 14/31 | Total Loss: 1.5089 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9547
+Batch 28/31 | Total Loss: 1.5011 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9445
+
+--- Epoch 98/200 ---
+Batch 0/31 | Total Loss: 1.4862 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9301
+Batch 14/31 | Total Loss: 1.5053 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9508
+Batch 28/31 | Total Loss: 1.4872 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5570 | DICE Loss (Labeled): 0.9301
+
+--- Epoch 99/200 ---
+Batch 0/31 | Total Loss: 1.5110 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5564 | DICE Loss (Labeled): 0.9543
+Batch 14/31 | Total Loss: 1.4999 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9450
+Batch 28/31 | Total Loss: 1.4722 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5581 | DICE Loss (Labeled): 0.9140
+
+--- Epoch 100/200 ---
+Batch 0/31 | Total Loss: 1.4642 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5578 | DICE Loss (Labeled): 0.9060
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5110 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9561
+Batch 28/31 | Total Loss: 1.5049 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9497
+
+--- Epoch 101/200 ---
+Batch 0/31 | Total Loss: 1.4745 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5570 | DICE Loss (Labeled): 0.9173
+Batch 14/31 | Total Loss: 1.5022 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9461
+Batch 28/31 | Total Loss: 1.4908 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5581 | DICE Loss (Labeled): 0.9325
+
+--- Epoch 102/200 ---
+Batch 0/31 | Total Loss: 1.5095 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9552
+Batch 14/31 | Total Loss: 1.5169 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9623
+Batch 28/31 | Total Loss: 1.4945 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5557 | DICE Loss (Labeled): 0.9386
+
+--- Epoch 103/200 ---
+Batch 0/31 | Total Loss: 1.5042 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9490
+Batch 14/31 | Total Loss: 1.4954 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9397
+Batch 28/31 | Total Loss: 1.4728 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5566 | DICE Loss (Labeled): 0.9159
+
+--- Epoch 104/200 ---
+Batch 0/31 | Total Loss: 1.5015 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9471
+Batch 14/31 | Total Loss: 1.4837 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5569 | DICE Loss (Labeled): 0.9267
+Batch 28/31 | Total Loss: 1.5069 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9520
+
+--- Epoch 105/200 ---
+Batch 0/31 | Total Loss: 1.4862 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9310
+Batch 14/31 | Total Loss: 1.5035 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9483
+Batch 28/31 | Total Loss: 1.5114 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9568
+
+--- Epoch 106/200 ---
+Batch 0/31 | Total Loss: 1.4897 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9344
+Batch 14/31 | Total Loss: 1.4933 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9387
+Batch 28/31 | Total Loss: 1.5024 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9485
+
+--- Epoch 107/200 ---
+Batch 0/31 | Total Loss: 1.5023 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9467
+Batch 14/31 | Total Loss: 1.5151 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9608
+Batch 28/31 | Total Loss: 1.5026 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9469
+
+--- Epoch 108/200 ---
+Batch 0/31 | Total Loss: 1.4879 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9335
+Batch 14/31 | Total Loss: 1.4717 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9163
+Batch 28/31 | Total Loss: 1.4951 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5554 | DICE Loss (Labeled): 0.9394
+
+--- Epoch 109/200 ---
+Batch 0/31 | Total Loss: 1.4987 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9438
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5057 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9502
+Batch 28/31 | Total Loss: 1.4774 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5597 | DICE Loss (Labeled): 0.9176
+
+--- Epoch 110/200 ---
+Batch 0/31 | Total Loss: 1.5023 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9469
+Batch 14/31 | Total Loss: 1.5044 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9506
+Batch 28/31 | Total Loss: 1.5119 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9577
+
+--- Epoch 111/200 ---
+Batch 0/31 | Total Loss: 1.5044 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9499
+Batch 14/31 | Total Loss: 1.5076 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9519
+Batch 28/31 | Total Loss: 1.5129 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9592
+
+--- Epoch 112/200 ---
+Batch 0/31 | Total Loss: 1.4886 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9344
+Batch 14/31 | Total Loss: 1.4730 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9181
+Batch 28/31 | Total Loss: 1.4942 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9379
+
+--- Epoch 113/200 ---
+Batch 0/31 | Total Loss: 1.4837 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5623 | DICE Loss (Labeled): 0.9212
+Batch 14/31 | Total Loss: 1.4953 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5581 | DICE Loss (Labeled): 0.9370
+Batch 28/31 | Total Loss: 1.5139 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9600
+
+--- Epoch 114/200 ---
+Batch 0/31 | Total Loss: 1.4949 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9395
+Batch 14/31 | Total Loss: 1.4993 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9428
+Batch 28/31 | Total Loss: 1.4634 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9077
+
+--- Epoch 115/200 ---
+Batch 0/31 | Total Loss: 1.4840 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5562 | DICE Loss (Labeled): 0.9277
+Batch 14/31 | Total Loss: 1.5111 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9552
+Batch 28/31 | Total Loss: 1.4884 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9329
+
+--- Epoch 116/200 ---
+Batch 0/31 | Total Loss: 1.4841 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9299
+Batch 14/31 | Total Loss: 1.5077 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9539
+Batch 28/31 | Total Loss: 1.4579 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5566 | DICE Loss (Labeled): 0.9011
+
+--- Epoch 117/200 ---
+Batch 0/31 | Total Loss: 1.4887 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9333
+Batch 14/31 | Total Loss: 1.4902 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9349
+Batch 28/31 | Total Loss: 1.5119 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9576
+
+--- Epoch 118/200 ---
+Batch 0/31 | Total Loss: 1.4808 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9251
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4723 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9164
+Batch 28/31 | Total Loss: 1.4970 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9424
+
+--- Epoch 119/200 ---
+Batch 0/31 | Total Loss: 1.4682 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5591 | DICE Loss (Labeled): 0.9085
+Batch 14/31 | Total Loss: 1.4976 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5567 | DICE Loss (Labeled): 0.9408
+Batch 28/31 | Total Loss: 1.4810 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5560 | DICE Loss (Labeled): 0.9248
+
+--- Epoch 120/200 ---
+Batch 0/31 | Total Loss: 1.5083 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9536
+Batch 14/31 | Total Loss: 1.4951 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9398
+Batch 28/31 | Total Loss: 1.4977 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9435
+
+--- Epoch 121/200 ---
+Batch 0/31 | Total Loss: 1.4916 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5555 | DICE Loss (Labeled): 0.9361
+Batch 14/31 | Total Loss: 1.4939 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9387
+Batch 28/31 | Total Loss: 1.5005 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9459
+
+--- Epoch 122/200 ---
+Batch 0/31 | Total Loss: 1.5088 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9553
+Batch 14/31 | Total Loss: 1.5138 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9592
+Batch 28/31 | Total Loss: 1.4917 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9370
+
+--- Epoch 123/200 ---
+Batch 0/31 | Total Loss: 1.4881 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9330
+Batch 14/31 | Total Loss: 1.4800 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9253
+Batch 28/31 | Total Loss: 1.5015 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9461
+
+--- Epoch 124/200 ---
+Batch 0/31 | Total Loss: 1.5016 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9470
+Batch 14/31 | Total Loss: 1.4768 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5573 | DICE Loss (Labeled): 0.9194
+Batch 28/31 | Total Loss: 1.5104 | Recon Loss (Total): 0.0019 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9551
+
+--- Epoch 125/200 ---
+Batch 0/31 | Total Loss: 1.4918 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9378
+Batch 14/31 | Total Loss: 1.5073 | Recon Loss (Total): 0.0017 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9519
+Batch 28/31 | Total Loss: 1.4916 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9374
+
+--- Epoch 126/200 ---
+Batch 0/31 | Total Loss: 1.5105 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9570
+Batch 14/31 | Total Loss: 1.4677 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5554 | DICE Loss (Labeled): 0.9122
+Batch 28/31 | Total Loss: 1.4841 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5587 | DICE Loss (Labeled): 0.9251
+
+--- Epoch 127/200 ---
+Batch 0/31 | Total Loss: 1.4907 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9369
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5029 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9482
+Batch 28/31 | Total Loss: 1.5083 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9536
+
+--- Epoch 128/200 ---
+Batch 0/31 | Total Loss: 1.4891 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9345
+Batch 14/31 | Total Loss: 1.5118 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9574
+Batch 28/31 | Total Loss: 1.5046 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9504
+
+--- Epoch 129/200 ---
+Batch 0/31 | Total Loss: 1.5208 | Recon Loss (Total): 0.0078 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9630
+Batch 14/31 | Total Loss: 1.4752 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9199
+Batch 28/31 | Total Loss: 1.4990 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9443
+
+--- Epoch 130/200 ---
+Batch 0/31 | Total Loss: 1.4794 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5605 | DICE Loss (Labeled): 0.9188
+Batch 14/31 | Total Loss: 1.5079 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9537
+Batch 28/31 | Total Loss: 1.4983 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9432
+
+--- Epoch 131/200 ---
+Batch 0/31 | Total Loss: 1.4762 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9215
+Batch 14/31 | Total Loss: 1.5025 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9477
+Batch 28/31 | Total Loss: 1.4919 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9371
+
+--- Epoch 132/200 ---
+Batch 0/31 | Total Loss: 1.5104 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9559
+Batch 14/31 | Total Loss: 1.4954 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5572 | DICE Loss (Labeled): 0.9380
+Batch 28/31 | Total Loss: 1.5036 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9491
+
+--- Epoch 133/200 ---
+Batch 0/31 | Total Loss: 1.5081 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9540
+Batch 14/31 | Total Loss: 1.5088 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9552
+Batch 28/31 | Total Loss: 1.4951 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5568 | DICE Loss (Labeled): 0.9382
+
+--- Epoch 134/200 ---
+Batch 0/31 | Total Loss: 1.4730 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9153
+Batch 14/31 | Total Loss: 1.4950 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9407
+Batch 28/31 | Total Loss: 1.5079 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9543
+
+--- Epoch 135/200 ---
+Batch 0/31 | Total Loss: 1.4935 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9370
+Batch 14/31 | Total Loss: 1.5151 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9609
+Batch 28/31 | Total Loss: 1.5019 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9467
+
+--- Epoch 136/200 ---
+Batch 0/31 | Total Loss: 1.4859 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9317
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5025 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9468
+Batch 28/31 | Total Loss: 1.4781 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9227
+
+--- Epoch 137/200 ---
+Batch 0/31 | Total Loss: 1.4993 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9436
+Batch 14/31 | Total Loss: 1.4784 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9225
+Batch 28/31 | Total Loss: 1.5043 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9501
+
+--- Epoch 138/200 ---
+Batch 0/31 | Total Loss: 1.4982 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9441
+Batch 14/31 | Total Loss: 1.4678 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9127
+Batch 28/31 | Total Loss: 1.5073 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9529
+
+--- Epoch 139/200 ---
+Batch 0/31 | Total Loss: 1.5176 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9618
+Batch 14/31 | Total Loss: 1.4978 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9436
+Batch 28/31 | Total Loss: 1.4938 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9384
+
+--- Epoch 140/200 ---
+Batch 0/31 | Total Loss: 1.4937 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9394
+Batch 14/31 | Total Loss: 1.5001 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9450
+Batch 28/31 | Total Loss: 1.5046 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9502
+
+--- Epoch 141/200 ---
+Batch 0/31 | Total Loss: 1.5123 | Recon Loss (Total): 0.0023 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9566
+Batch 14/31 | Total Loss: 1.4901 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9359
+Batch 28/31 | Total Loss: 1.4777 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5593 | DICE Loss (Labeled): 0.9183
+
+--- Epoch 142/200 ---
+Batch 0/31 | Total Loss: 1.4923 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9390
+Batch 14/31 | Total Loss: 1.5015 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9469
+Batch 28/31 | Total Loss: 1.5077 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9533
+
+--- Epoch 143/200 ---
+Batch 0/31 | Total Loss: 1.4974 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9440
+Batch 14/31 | Total Loss: 1.5099 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9565
+Batch 28/31 | Total Loss: 1.5037 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9496
+
+--- Epoch 144/200 ---
+Batch 0/31 | Total Loss: 1.5081 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9546
+Batch 14/31 | Total Loss: 1.5063 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5532 | DICE Loss (Labeled): 0.9529
+Batch 28/31 | Total Loss: 1.4920 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9376
+
+--- Epoch 145/200 ---
+Batch 0/31 | Total Loss: 1.4955 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9411
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4790 | Recon Loss (Total): 0.0017 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9243
+Batch 28/31 | Total Loss: 1.4946 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9398
+
+--- Epoch 146/200 ---
+Batch 0/31 | Total Loss: 1.4946 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9399
+Batch 14/31 | Total Loss: 1.5026 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9481
+Batch 28/31 | Total Loss: 1.5125 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9585
+
+--- Epoch 147/200 ---
+Batch 0/31 | Total Loss: 1.5021 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9479
+Batch 14/31 | Total Loss: 1.4915 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9360
+Batch 28/31 | Total Loss: 1.5122 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9576
+
+--- Epoch 148/200 ---
+Batch 0/31 | Total Loss: 1.5155 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5529 | DICE Loss (Labeled): 0.9625
+Batch 14/31 | Total Loss: 1.4934 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9394
+Batch 28/31 | Total Loss: 1.4605 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9055
+
+--- Epoch 149/200 ---
+Batch 0/31 | Total Loss: 1.4890 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9347
+Batch 14/31 | Total Loss: 1.5140 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9590
+Batch 28/31 | Total Loss: 1.5139 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9594
+
+--- Epoch 150/200 ---
+Batch 0/31 | Total Loss: 1.5108 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9566
+Batch 14/31 | Total Loss: 1.5001 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9447
+Batch 28/31 | Total Loss: 1.4964 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9423
+
+--- Epoch 151/200 ---
+Batch 0/31 | Total Loss: 1.4998 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9450
+Batch 14/31 | Total Loss: 1.5026 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9476
+Batch 28/31 | Total Loss: 1.4855 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9302
+
+--- Epoch 152/200 ---
+Batch 0/31 | Total Loss: 1.5092 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9549
+Batch 14/31 | Total Loss: 1.4973 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9434
+Batch 28/31 | Total Loss: 1.4994 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9450
+
+--- Epoch 153/200 ---
+Batch 0/31 | Total Loss: 1.4940 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9393
+Batch 14/31 | Total Loss: 1.4819 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5562 | DICE Loss (Labeled): 0.9256
+Batch 28/31 | Total Loss: 1.4722 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5562 | DICE Loss (Labeled): 0.9157
+
+--- Epoch 154/200 ---
+Batch 0/31 | Total Loss: 1.4870 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9321
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5057 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9521
+Batch 28/31 | Total Loss: 1.5065 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9533
+
+--- Epoch 155/200 ---
+Batch 0/31 | Total Loss: 1.5094 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9541
+Batch 14/31 | Total Loss: 1.5082 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9538
+Batch 28/31 | Total Loss: 1.4759 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9215
+
+--- Epoch 156/200 ---
+Batch 0/31 | Total Loss: 1.4897 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5558 | DICE Loss (Labeled): 0.9337
+Batch 14/31 | Total Loss: 1.4971 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9426
+Batch 28/31 | Total Loss: 1.4925 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9387
+
+--- Epoch 157/200 ---
+Batch 0/31 | Total Loss: 1.5060 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9520
+Batch 14/31 | Total Loss: 1.5056 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9520
+Batch 28/31 | Total Loss: 1.4742 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9199
+
+--- Epoch 158/200 ---
+Batch 0/31 | Total Loss: 1.5133 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9585
+Batch 14/31 | Total Loss: 1.4898 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9359
+Batch 28/31 | Total Loss: 1.5040 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9498
+
+--- Epoch 159/200 ---
+Batch 0/31 | Total Loss: 1.4960 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9428
+Batch 14/31 | Total Loss: 1.4920 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9374
+Batch 28/31 | Total Loss: 1.5143 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5528 | DICE Loss (Labeled): 0.9615
+
+--- Epoch 160/200 ---
+Batch 0/31 | Total Loss: 1.4683 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9134
+Batch 14/31 | Total Loss: 1.5075 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9537
+Batch 28/31 | Total Loss: 1.5094 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9559
+
+--- Epoch 161/200 ---
+Batch 0/31 | Total Loss: 1.4934 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9397
+Batch 14/31 | Total Loss: 1.5112 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9564
+Batch 28/31 | Total Loss: 1.4704 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9162
+
+--- Epoch 162/200 ---
+Batch 0/31 | Total Loss: 1.5029 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9491
+Batch 14/31 | Total Loss: 1.4925 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9390
+Batch 28/31 | Total Loss: 1.4815 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9264
+
+--- Epoch 163/200 ---
+Batch 0/31 | Total Loss: 1.4877 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9334
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5164 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5530 | DICE Loss (Labeled): 0.9632
+Batch 28/31 | Total Loss: 1.4783 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9238
+
+--- Epoch 164/200 ---
+Batch 0/31 | Total Loss: 1.4667 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9119
+Batch 14/31 | Total Loss: 1.5185 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9640
+Batch 28/31 | Total Loss: 1.4967 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9434
+
+--- Epoch 165/200 ---
+Batch 0/31 | Total Loss: 1.5061 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9520
+Batch 14/31 | Total Loss: 1.4968 | Recon Loss (Total): 0.0014 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9415
+Batch 28/31 | Total Loss: 1.4977 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9442
+
+--- Epoch 166/200 ---
+Batch 0/31 | Total Loss: 1.5045 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9511
+Batch 14/31 | Total Loss: 1.5079 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9547
+Batch 28/31 | Total Loss: 1.4952 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9414
+
+--- Epoch 167/200 ---
+Batch 0/31 | Total Loss: 1.4962 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9428
+Batch 14/31 | Total Loss: 1.4843 | Recon Loss (Total): 0.0012 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9297
+Batch 28/31 | Total Loss: 1.4622 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5570 | DICE Loss (Labeled): 0.9050
+
+--- Epoch 168/200 ---
+Batch 0/31 | Total Loss: 1.4961 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9422
+Batch 14/31 | Total Loss: 1.4971 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5561 | DICE Loss (Labeled): 0.9408
+Batch 28/31 | Total Loss: 1.5013 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9436
+
+--- Epoch 169/200 ---
+Batch 0/31 | Total Loss: 1.5134 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9595
+Batch 14/31 | Total Loss: 1.5179 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5575 | DICE Loss (Labeled): 0.9602
+Batch 28/31 | Total Loss: 1.4774 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5610 | DICE Loss (Labeled): 0.9162
+
+--- Epoch 170/200 ---
+Batch 0/31 | Total Loss: 1.4846 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5563 | DICE Loss (Labeled): 0.9281
+Batch 14/31 | Total Loss: 1.5026 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5553 | DICE Loss (Labeled): 0.9472
+Batch 28/31 | Total Loss: 1.4984 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5551 | DICE Loss (Labeled): 0.9432
+
+--- Epoch 171/200 ---
+Batch 0/31 | Total Loss: 1.4989 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9448
+Batch 14/31 | Total Loss: 1.5146 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9608
+Batch 28/31 | Total Loss: 1.5154 | Recon Loss (Total): 0.0071 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9580
+
+--- Epoch 172/200 ---
+Batch 0/31 | Total Loss: 1.5151 | Recon Loss (Total): 0.0008 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9605
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4845 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9310
+Batch 28/31 | Total Loss: 1.4877 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9340
+
+--- Epoch 173/200 ---
+Batch 0/31 | Total Loss: 1.5015 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9476
+Batch 14/31 | Total Loss: 1.4892 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9356
+Batch 28/31 | Total Loss: 1.5050 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5529 | DICE Loss (Labeled): 0.9520
+
+--- Epoch 174/200 ---
+Batch 0/31 | Total Loss: 1.4829 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5541 | DICE Loss (Labeled): 0.9287
+Batch 14/31 | Total Loss: 1.4926 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9386
+Batch 28/31 | Total Loss: 1.4894 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9355
+
+--- Epoch 175/200 ---
+Batch 0/31 | Total Loss: 1.5081 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9545
+Batch 14/31 | Total Loss: 1.5055 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9524
+Batch 28/31 | Total Loss: 1.5107 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9560
+
+--- Epoch 176/200 ---
+Batch 0/31 | Total Loss: 1.4998 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9466
+Batch 14/31 | Total Loss: 1.4752 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9216
+Batch 28/31 | Total Loss: 1.5009 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9476
+
+--- Epoch 177/200 ---
+Batch 0/31 | Total Loss: 1.4915 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9369
+Batch 14/31 | Total Loss: 1.4969 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9418
+Batch 28/31 | Total Loss: 1.5072 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9527
+
+--- Epoch 178/200 ---
+Batch 0/31 | Total Loss: 1.5083 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5532 | DICE Loss (Labeled): 0.9548
+Batch 14/31 | Total Loss: 1.4918 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9382
+Batch 28/31 | Total Loss: 1.4970 | Recon Loss (Total): 0.0011 | CE Loss (Labeled): 0.5550 | DICE Loss (Labeled): 0.9415
+
+--- Epoch 179/200 ---
+Batch 0/31 | Total Loss: 1.4873 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9336
+Batch 14/31 | Total Loss: 1.4991 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9443
+Batch 28/31 | Total Loss: 1.5111 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9576
+
+--- Epoch 180/200 ---
+Batch 0/31 | Total Loss: 1.4657 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9108
+Batch 14/31 | Total Loss: 1.4595 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9054
+Batch 28/31 | Total Loss: 1.4968 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5530 | DICE Loss (Labeled): 0.9437
+
+--- Epoch 181/200 ---
+Batch 0/31 | Total Loss: 1.4841 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9308
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.4984 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9449
+Batch 28/31 | Total Loss: 1.4731 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9179
+
+--- Epoch 182/200 ---
+Batch 0/31 | Total Loss: 1.5148 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5538 | DICE Loss (Labeled): 0.9609
+Batch 14/31 | Total Loss: 1.4945 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9412
+Batch 28/31 | Total Loss: 1.5185 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5528 | DICE Loss (Labeled): 0.9655
+
+--- Epoch 183/200 ---
+Batch 0/31 | Total Loss: 1.5048 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5532 | DICE Loss (Labeled): 0.9515
+Batch 14/31 | Total Loss: 1.4856 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9322
+Batch 28/31 | Total Loss: 1.4838 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5532 | DICE Loss (Labeled): 0.9305
+
+--- Epoch 184/200 ---
+Batch 0/31 | Total Loss: 1.4700 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5556 | DICE Loss (Labeled): 0.9143
+Batch 14/31 | Total Loss: 1.4851 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9314
+Batch 28/31 | Total Loss: 1.4963 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9428
+
+--- Epoch 185/200 ---
+Batch 0/31 | Total Loss: 1.5088 | Recon Loss (Total): 0.0010 | CE Loss (Labeled): 0.5547 | DICE Loss (Labeled): 0.9536
+Batch 14/31 | Total Loss: 1.4988 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9448
+Batch 28/31 | Total Loss: 1.4966 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5554 | DICE Loss (Labeled): 0.9411
+
+--- Epoch 186/200 ---
+Batch 0/31 | Total Loss: 1.4940 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9400
+Batch 14/31 | Total Loss: 1.4938 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9402
+Batch 28/31 | Total Loss: 1.4924 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9386
+
+--- Epoch 187/200 ---
+Batch 0/31 | Total Loss: 1.4956 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5532 | DICE Loss (Labeled): 0.9423
+Batch 14/31 | Total Loss: 1.4745 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9199
+Batch 28/31 | Total Loss: 1.4963 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9429
+
+--- Epoch 188/200 ---
+Batch 0/31 | Total Loss: 1.4668 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9121
+Batch 14/31 | Total Loss: 1.4782 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9248
+Batch 28/31 | Total Loss: 1.4717 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9172
+
+--- Epoch 189/200 ---
+Batch 0/31 | Total Loss: 1.4966 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9427
+Batch 14/31 | Total Loss: 1.5079 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5532 | DICE Loss (Labeled): 0.9546
+Batch 28/31 | Total Loss: 1.5067 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5542 | DICE Loss (Labeled): 0.9524
+
+--- Epoch 190/200 ---
+Batch 0/31 | Total Loss: 1.5082 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5546 | DICE Loss (Labeled): 0.9536
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5064 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5529 | DICE Loss (Labeled): 0.9534
+Batch 28/31 | Total Loss: 1.4969 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9432
+
+--- Epoch 191/200 ---
+Batch 0/31 | Total Loss: 1.4858 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9318
+Batch 14/31 | Total Loss: 1.4914 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9377
+Batch 28/31 | Total Loss: 1.4883 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5528 | DICE Loss (Labeled): 0.9353
+
+--- Epoch 192/200 ---
+Batch 0/31 | Total Loss: 1.5021 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5544 | DICE Loss (Labeled): 0.9474
+Batch 14/31 | Total Loss: 1.4879 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5539 | DICE Loss (Labeled): 0.9338
+Batch 28/31 | Total Loss: 1.5084 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5549 | DICE Loss (Labeled): 0.9533
+
+--- Epoch 193/200 ---
+Batch 0/31 | Total Loss: 1.4890 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5537 | DICE Loss (Labeled): 0.9351
+Batch 14/31 | Total Loss: 1.4869 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5540 | DICE Loss (Labeled): 0.9328
+Batch 28/31 | Total Loss: 1.4785 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9240
+
+--- Epoch 194/200 ---
+Batch 0/31 | Total Loss: 1.5159 | Recon Loss (Total): 0.0006 | CE Loss (Labeled): 0.5536 | DICE Loss (Labeled): 0.9619
+Batch 14/31 | Total Loss: 1.5032 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5552 | DICE Loss (Labeled): 0.9479
+Batch 28/31 | Total Loss: 1.4847 | Recon Loss (Total): 0.0007 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9299
+
+--- Epoch 195/200 ---
+Batch 0/31 | Total Loss: 1.4969 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5529 | DICE Loss (Labeled): 0.9439
+Batch 14/31 | Total Loss: 1.5103 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9566
+Batch 28/31 | Total Loss: 1.4899 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5543 | DICE Loss (Labeled): 0.9355
+
+--- Epoch 196/200 ---
+Batch 0/31 | Total Loss: 1.5128 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5529 | DICE Loss (Labeled): 0.9598
+Batch 14/31 | Total Loss: 1.4997 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9463
+Batch 28/31 | Total Loss: 1.4666 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5545 | DICE Loss (Labeled): 0.9120
+
+--- Epoch 197/200 ---
+Batch 0/31 | Total Loss: 1.4999 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5530 | DICE Loss (Labeled): 0.9467
+Batch 14/31 | Total Loss: 1.4640 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5548 | DICE Loss (Labeled): 0.9091
+Batch 28/31 | Total Loss: 1.5020 | Recon Loss (Total): 0.0005 | CE Loss (Labeled): 0.5530 | DICE Loss (Labeled): 0.9488
+
+--- Epoch 198/200 ---
+Batch 0/31 | Total Loss: 1.4915 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5535 | DICE Loss (Labeled): 0.9378
+Batch 14/31 | Total Loss: 1.5091 | Recon Loss (Total): 0.0003 | CE Loss (Labeled): 0.5529 | DICE Loss (Labeled): 0.9561
+Batch 28/31 | Total Loss: 1.4958 | Recon Loss (Total): 0.0004 | CE Loss (Labeled): 0.5533 | DICE Loss (Labeled): 0.9422
+
+--- Epoch 199/200 ---
+Batch 0/31 | Total Loss: 1.4706 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9171
+--- Visualizing first training batch (Labeled Data) ---
+Batch 14/31 | Total Loss: 1.5067 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5526 | DICE Loss (Labeled): 0.9540
+Batch 28/31 | Total Loss: 1.4897 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5530 | DICE Loss (Labeled): 0.9366
+
+--- Epoch 200/200 ---
+Batch 0/31 | Total Loss: 1.4909 | Recon Loss (Total): 0.0002 | CE Loss (Labeled): 0.5530 | DICE Loss (Labeled): 0.9379
+Batch 14/31 | Total Loss: 1.4985 | Recon Loss (Total): 0.0001 | CE Loss (Labeled): 0.5534 | DICE Loss (Labeled): 0.9450
+Batch 28/31 | Total Loss: 1.4888 | Recon Loss (Total): 0.0009 | CE Loss (Labeled): 0.5531 | DICE Loss (Labeled): 0.9353
+--- Training Finished ---
+Saving model weights...
+Model saved to /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Multi_task_small.pth
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 26896341: <My_MultiTask_Training> in cluster <dcc> Done
+
+Job <My_MultiTask_Training> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Tue Nov 11 22:21:27 2025
+Job was executed on host(s) <4*n-62-18-10>, in queue <gpua100>, as user <s214776> in cluster <dcc> at Tue Nov 11 23:36:04 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Tue Nov 11 23:36:04 2025
+Terminated at Wed Nov 12 00:02:58 2025
+Results reported at Wed Nov 12 00:02:58 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J My_MultiTask_Training
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_%J.err
+
+### --- Resource Requests ---
+#BSUB -q gpua100              # Request the A100 queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 4                    # Request 4 CPU cores for data loading
+#BSUB -R "rusage[mem=32GB]"   # Request 32GB of main RAM (not GPU RAM)
+#BSUB -W 04:00                # Set walltime limit to 4 hours (hh:mm)
+
+### --- Setup Environment ---
+echo "Loading Conda..."
+# This is the full, correct path to your environment
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+### --- Run Script ---
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/multitask_simple.py
+
+echo "Job Finished."
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1527.61 sec.
+    Max Memory :                                 1442 MB
+    Average Memory :                             1213.67 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               129630.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                8
+    Run time :                                   1615 sec.
+    Turnaround time :                            6091 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_26896341.err> for stderr output of this job.
+
