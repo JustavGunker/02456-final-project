@@ -62,7 +62,7 @@ def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_id
         axes[2].axis('off')
         
         # Plot 4: Predicted Segmentation
-        axes[3].imshow(seg_slice, cmap='viridis', vmin=0, vmax=NUM_CLASSES-1)
+        axes[3].imshow(seg_slice, cmap='grey', vmin=0, vmax=NUM_CLASSES-1)
         axes[3].set_title("Predicted Segmentation")
         axes[3].axis('off')
         

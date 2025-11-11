@@ -43,7 +43,6 @@ try:
     labeled_loader = DataLoader(
         dataset=labeled_dataset,
         batch_size=BATCH_SIZE,
-
         shuffle=True
     )
     print("--- success ---")
@@ -102,8 +101,7 @@ if __name__ == "__main__":
             
             # Move all data to device
             x_labeled = x_labeled.to(device)
-            y_seg_target = y_seg_target
-            x_unlabeled = x_unlabeled
+            y_seg_target = y_seg_target.to(device)
             x_unlabeled = x_unlabeled[0]
 
             optimizer_model.zero_grad()
@@ -142,13 +140,13 @@ if __name__ == "__main__":
             optimizer_model.step()
             
             # Udate Logging
-            if batch_idx % 30 == 0:
+            if batch_idx % 14 == 0:
                 if loss_seg_cross.item() > 0.6:
                     print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} (Dice not active)")
                 else:
                     print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} | DICE Loss (Labeled): {loss_seg_dice:.4f}")
             
             # visualization update
-            if epoch % 10 == 0 and batch_idx % 30 == 0:
+            if epoch % 9 == 0 and batch_idx % 39 == 0:
                 print("--- Visualizing first training batch (Labeled Data) ---")
                 visualize_slices(x_labeled, y_seg_target, recon_out_labeled, seg_out)
