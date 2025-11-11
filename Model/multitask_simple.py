@@ -72,7 +72,6 @@ except Exception as e:
     exit()
 
 
-
 if __name__ == "__main__":
     # start model
     model = MultiTaskNet_simple(
@@ -102,7 +101,7 @@ if __name__ == "__main__":
             # Move all data to device
             x_labeled = x_labeled.to(device)
             y_seg_target = y_seg_target.to(device)
-            x_unlabeled = x_unlabeled[0]
+            x_unlabeled = x_unlabeled[0].to(device)
 
             optimizer_model.zero_grad()
             
