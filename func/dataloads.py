@@ -12,6 +12,12 @@ import glob
 import itertools
 from pathlib import Path
 
+
+INPUT_SHAPE = (64, 64, 64) # ( D, H, W)
+NUM_CLASSES = 3  # Background, Segment 1, Segment 2
+LATENT_DIM = 256 # RNN batch
+BATCH_SIZE = 4
+
 class LiverDataset(Dataset):
     """
     Made by AI

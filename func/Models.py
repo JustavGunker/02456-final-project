@@ -83,7 +83,7 @@ class Recon_decoder(nn.Module):
     
 
 ## Multitask simple net
-class MultiTaskNet(nn.Module):
+class MultiTaskNet_simple(nn.Module):
     def __init__(self, in_channels=1, num_classes=3, latent_dim=256):
         super().__init__()
         
@@ -164,7 +164,7 @@ class TemporalTracker(nn.Module):
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-class ConvBlock(nn.Module):
+class ConvBlock_big(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size=3, padding=1):
         super().__init__()
         self.conv = nn.Sequential(
@@ -176,7 +176,7 @@ class ConvBlock(nn.Module):
     def forward(self, x):
         return self.conv(x)
     
-class Encoder(nn.Module):
+class Encoder_big(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         # Input: 1x32x32x32
@@ -198,7 +198,7 @@ class Encoder(nn.Module):
         p3 = self.pool3(s3) # p3 is 128x4x4
         return p3, s1, s2, s3
 
-class Seg_decoder(nn.Module):
+class Seg_decoder_big(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
         # b (bottleneck) is 256x4x4
@@ -225,7 +225,7 @@ class Seg_decoder(nn.Module):
         us4 = self.out_seg(ds3) 
         return us4
     
-class Recon_decoder(nn.Module):
+class Recon_decoder_big(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         # b (bottleneck) is 256x4x4
@@ -254,25 +254,25 @@ class Recon_decoder(nn.Module):
         return ur4
     
 
-class MultiTaskNet(nn.Module):
+class MultiTaskNet_big(nn.Module):
     def __init__(self, in_channels=1, num_classes=3, latent_dim=512):
         super().__init__()
         
         # Commen encoder
-        self.encoder = Encoder(in_channels)
+        self.encoder = Encoder_big(in_channels)
 
         # Bottleneck 
-        self.bottleneck = ConvBlock(128, 256) # -> 256x8x8x8
+        self.bottleneck = ConvBlock_big(128, 256) # -> 256x8x8x8
         
         # Feature vector for rnn input
         self.global_pool = nn.AdaptiveAvgPool3d((1, 1, 1))
         self.to_latent_vec = nn.Linear(256, latent_dim) # -> Bx512
 
         # First decoder head for segmentation with skipped connect
-        self.seg_decoder = Seg_decoder(num_classes=num_classes)
+        self.seg_decoder = Seg_decoder_big(num_classes=num_classes)
 
         # Second decoder head reconstruction without skipped
-        self.recon_decoder = Recon_decoder(in_channels=in_channels)
+        self.recon_decoder = Recon_decoder_big(in_channels=in_channels)
         
 
     def forward(self, x):
