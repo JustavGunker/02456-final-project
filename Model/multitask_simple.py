@@ -18,7 +18,7 @@ sys.path.append(str(cd))
 from func.utill import visualize_slices, DiceLoss
 from func.Models import MultiTaskNet_simple
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
-
+from func.loss import ExpLogComboLoss
 
 
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
@@ -86,12 +86,46 @@ if __name__ == "__main__":
     loss_fn_recon = nn.MSELoss()
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3)
 
+    # loss stage 1 
+    loss_fn_seg_stage1 = ExpLogComboLoss(
+        dice_loss_fn=loss_fn_seg_dice,
+        wce_loss_fn=loss_fn_seg_cross,
+        alpha=1.0, 
+        beta=1.0, 
+        gamma_dice=1.0,  # Standard Dice
+        gamma_wce=1.0    # Standard CE
+    ).to(device)
+
+    # loss stage 2
+    loss_fn_seg_stage2 = ExpLogComboLoss(
+        dice_loss_fn=loss_fn_seg_dice,
+        wce_loss_fn=loss_fn_seg_cross,
+        alpha=1.0, 
+        beta=1.0, 
+        gamma_dice=1.5,  # Focus on hard Dice
+        gamma_wce=1.5    # Focus on hard CE
+    ).to(device)
+
+    BOUNDARY_FOCUS_EPOCH = 75
     print("--- Training the MultiTaskNet on Liver Data ---")
+    print(f"--- Staged Loss ---")
+    print(f"Stage 1 (Region)    : Epochs 1-{BOUNDARY_FOCUS_EPOCH-1}")
+    print(f"Stage 2 (Boundary)  : Epochs {BOUNDARY_FOCUS_EPOCH}-onward")
     NUM_EPOCHS = 200
 
     for epoch in range(NUM_EPOCHS):
         print(f"\n--- Epoch {epoch+1}/{NUM_EPOCHS} ---")
-        
+
+        # select loss stage
+        if epoch + 1 < BOUNDARY_FOCUS_EPOCH:
+            current_loss_fn_seg = loss_fn_seg_stage1
+            if epoch == 0:
+                print(f"Using Stage 1 Loss (Region Focus)")
+        else:
+            current_loss_fn_seg = loss_fn_seg_stage2
+            if epoch + 1 == BOUNDARY_FOCUS_EPOCH:
+                print(f"Switching to Stage 2 Loss (Boundary Focus)")
+
         model.train() 
         
         # iterate over both loaders
@@ -107,43 +141,32 @@ if __name__ == "__main__":
             
             # forward pass on labeled data for both seg and recon
             seg_out, recon_out_labeled, _ = model(x_labeled)
-            
+            # Forward pass only on unlabeled data for recon
+            _ , recon_out_unlabeled, _ = model(x_unlabeled)
+
             # segmentation losses
-            loss_seg_cross = loss_fn_seg_cross(seg_out, y_seg_target)
+            loss_seg_combo = current_loss_fn_seg(seg_out, y_seg_target)
             
-            total_loss_seg = loss_seg_cross * 1
-            loss_seg_dice = 0.0
-            
-            # add dice loss if cross entropy is low enough
-            if loss_seg_cross.item() < 0.6:
-                dice_loss_component = loss_fn_seg_dice(seg_out, y_seg_target)
-                total_loss_seg = total_loss_seg + (dice_loss_component * 1)
-                loss_seg_dice = dice_loss_component.item()
                 
             # labeled recon loss
             loss_recon_labeled = loss_fn_recon(recon_out_labeled, x_labeled)
-                
-            # Forward pass only on unlabeled data for recon
-            _ , recon_out_unlabeled, _ = model(x_unlabeled)
-            
             # unlabeled recon loss
             loss_recon_unlabeled = loss_fn_recon(recon_out_unlabeled, x_unlabeled)
-            
             # Total recon loss
             total_loss_recon = loss_recon_labeled + loss_recon_unlabeled
             
             # Total combined loss
-            total_loss = total_loss_seg + (total_loss_recon * 0.5) 
+            total_loss = loss_seg_combo + (total_loss_recon * 0.5) 
                 
             total_loss.backward()
             optimizer_model.step()
             
             # Udate Logging
             if batch_idx % 14 == 0:
-                if loss_seg_cross.item() > 0.6:
-                    print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} (Dice not active)")
+                if current_loss_fn_seg == loss_fn_seg_stage1:
+                    print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | Combo loss stage 1: {loss_seg_combo.item():.4f}")
                 else:
-                    print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} | DICE Loss (Labeled): {loss_seg_dice:.4f}")
+                    print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | Combo loss stage 2: {loss_seg_combo.item():.4f}")
             
             # visualization update
             if epoch % 9 == 0 and batch_idx % 39 == 0:

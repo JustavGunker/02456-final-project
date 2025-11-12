@@ -1,23 +1,11 @@
 import torch
 import torch.nn as nn
-import torch.optim as optim
-import matplotlib.pyplot as plt
-import numpy as np
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
-import nibabel as nib
-import os
-import sys
-import glob
-import itertools
-from pathlib import Path
 
 
-INPUT_SHAPE = (64, 64, 64) # ( D, H, W)
-NUM_CLASSES = 3  # Background, Segment 1, Segment 2
-LATENT_DIM = 256 # RNN batch
+INPUT_SHAPE = (128, 128, 128)
+NUM_CLASSES = 3 
+LATENT_DIM = 256 
 BATCH_SIZE = 4
-TIME_STEPS = 10 # Time series size 
 
 ## Convolutional blocks for multitask_simple
 class ConvBlock(nn.Module):
@@ -29,7 +17,8 @@ class ConvBlock(nn.Module):
         self.conv = nn.Sequential(
             nn.Conv3d(in_channels, out_channels, kernel_size, padding=padding, bias=False),
             nn.BatchNorm3d(out_channels),
-            nn.ReLU(inplace=True)
+            nn.ReLU(inplace=True),
+            nn.Dropout3d(p=0.3)
         )
 
     def forward(self, x):
@@ -164,18 +153,6 @@ class TemporalTracker(nn.Module):
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-class ConvBlock_big(nn.Module):
-    def __init__(self, in_channels, out_channels, kernel_size=3, padding=1):
-        super().__init__()
-        self.conv = nn.Sequential(
-            nn.Conv3d(in_channels, out_channels, kernel_size, padding=padding, bias=False),
-            nn.BatchNorm3d(out_channels),
-            nn.ReLU(inplace=True),
-            nn.Dropout3d(p=0.3)
-        )
-    def forward(self, x):
-        return self.conv(x)
-    
 class Encoder_big(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
@@ -262,7 +239,7 @@ class MultiTaskNet_big(nn.Module):
         self.encoder = Encoder_big(in_channels)
 
         # Bottleneck 
-        self.bottleneck = ConvBlock_big(128, 256) # -> 256x8x8x8
+        self.bottleneck = ConvBlock(128, 256) # -> 256x8x8x8
         
         # Feature vector for rnn input
         self.global_pool = nn.AdaptiveAvgPool3d((1, 1, 1))
@@ -271,7 +248,7 @@ class MultiTaskNet_big(nn.Module):
         # First decoder head for segmentation with skipped connect
         self.seg_decoder = Seg_decoder_big(num_classes=num_classes)
 
-        # Second decoder head reconstruction without skipped
+        # Second decoder head reconstruction with skipped connect
         self.recon_decoder = Recon_decoder_big(in_channels=in_channels)
         
 
@@ -289,7 +266,7 @@ class MultiTaskNet_big(nn.Module):
         # Segmentation decoder head with skips
         seg_output = self.seg_decoder(b, s1, s2, s3)
 
-        # Reconstruction decoder head without skips
+        # Reconstruction decoder head with skipped connect
         recon_output = self.recon_decoder(b, s1, s2, s3)
         
         return seg_output, recon_output, latent_z
