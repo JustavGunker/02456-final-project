@@ -1,0 +1,85 @@
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project
+Using device: cuda
+Using device: cuda
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Task03_Liver_rs
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Task03_Liver_rs
+Found 123 image/label pairs.
+--- success ---
+Found 28 unlabeled images.
+--- success ---
+--- Training the MultiTaskNet on Liver Data ---
+
+--- Epoch 1/31 ---
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 26885990: <My_MultiTask_Training> in cluster <dcc> Done
+
+Job <My_MultiTask_Training> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Tue Nov 11 17:00:11 2025
+Job was executed on host(s) <4*n-62-12-20>, in queue <gpua100>, as user <s214776> in cluster <dcc> at Tue Nov 11 17:59:25 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Tue Nov 11 17:59:25 2025
+Terminated at Tue Nov 11 18:00:14 2025
+Results reported at Tue Nov 11 18:00:14 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J My_MultiTask_Training
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_%J.err
+
+### --- Resource Requests ---
+#BSUB -q gpua100              # Request the A100 queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 4                    # Request 4 CPU cores for data loading
+#BSUB -R "rusage[mem=32GB]"   # Request 32GB of main RAM (not GPU RAM)
+#BSUB -W 04:00                # Set walltime limit to 4 hours (hh:mm)
+
+### --- Setup Environment ---
+echo "Loading Conda..."
+# This is the full, correct path to your environment
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+### --- Run Script ---
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/multitask_simple.py
+
+echo "Job Finished."
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   7.43 sec.
+    Max Memory :                                 243 MB
+    Average Memory :                             243.00 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               130829.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   50 sec.
+    Turnaround time :                            3603 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_26885990.err> for stderr output of this job.
+

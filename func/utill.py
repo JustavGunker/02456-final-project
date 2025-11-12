@@ -17,7 +17,6 @@ LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 4
 TIME_STEPS = 10 # Time series size 
 
-
 def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_idx=24):
     """
     Plots a 2D slice from the middle of a 4-tensor batch.
