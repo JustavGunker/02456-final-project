@@ -112,3 +112,35 @@ class DiceLoss(nn.Module):
         dice_loss = 1 - dice_per_class[:, self.start_channel:].mean()
         
         return dice_loss
+    
+class BoundaryLoss(nn.Module):
+    """
+    Implements the Boundary Loss (L_B) from Eq. 23.
+    L_B = integral( phi_G(q) * s(q) )
+    
+    phi_G(q) is the pre-computed distance map.
+    s(q) is the model's softmax probability for the foreground class.
+    """
+    def __init__(self, num_classes=2):
+        super().__init__()
+        self.num_classes = num_classes
+
+    def forward(self, inputs, dist_map):
+        """
+        Args:
+            inputs (torch.Tensor): Model logits (B, C, D, H, W)
+            dist_map (torch.Tensor): Pre-computed dist map (B, 1, D, H, W)
+        """
+        # Convert logits to probabilities
+        s = F.softmax(inputs, dim=1)
+        
+        # We only care about the foreground class (class 1)
+        # You may need to change '1' if your liver is a different class index
+        s_foreground = s[:, 1, ...].unsqueeze(1) # -> (B, 1, D, H, W)
+        
+        # L_B = element-wise multiplication and then sum
+        # This is the integral( phi_G(q) * s(q) )
+        loss = torch.sum(s_foreground * dist_map)
+        
+        # Normalize by batch size
+        return loss / inputs.size(0)
