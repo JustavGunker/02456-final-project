@@ -96,14 +96,14 @@ if __name__ == "__main__":
         model.train() 
         
         # iterate over both loaders
-        for batch_idx, ((x_labeled, y_seg_target, dist_map_target), (x_unlabeled)) in \
+        for batch_idx, ((x_labeled, y_seg_target), (x_unlabeled)) in \
                 enumerate(zip(labeled_loader, itertools.cycle(unlabeled_loader))):
             
             # Move all data to device
             x_labeled = x_labeled.to(device)
             y_seg_target = y_seg_target.to(device)
             x_unlabeled = x_unlabeled
-            x_unlabeled = x_unlabeled[0]
+            x_unlabeled = x_unlabeled[0].to(device)
 
             optimizer_model.zero_grad()
             

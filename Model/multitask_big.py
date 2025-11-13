@@ -147,7 +147,7 @@ if __name__ == "__main__":
             # visualization update
             if epoch % 9 == 0 and batch_idx % 39 == 0:
                 print("--- Visualizing first training batch (Labeled Data) ---")
-                visualize_slices(x_labeled, y_seg_target, recon_out_labeled, seg_out)
+                visualize_slices(x_labeled, y_seg_target, recon_out_labeled, seg_out, 60)
 
 
 print("--- Training Finished ---")
