@@ -31,7 +31,6 @@ print(f"Using device: {device}")
 
 
 DATA_DIR = "./Task03_Liver_rs" 
-# This one path points to the root directory (e.g., ./Task03_Liver_rs)
 data_root_folder = Path.cwd() / DATA_DIR
 
 
@@ -124,7 +123,11 @@ if __name__ == "__main__":
                 
             # labeled recon loss
             loss_recon_labeled = loss_fn_recon(recon_out_labeled, x_labeled)
-                
+
+            # add noise to unlabeled data
+            #noise_factor = 0.1
+            #noise = torch.randn_like(x_unlabeled) * noise_factor
+            #x_unlabeled_noisy = x_unlabeled + noise
             # Forward pass only on unlabeled data for recon
             _ , recon_out_unlabeled, _ = model(x_unlabeled)
             

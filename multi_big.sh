@@ -7,7 +7,7 @@
 #BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/job_%J.err
 
 ### --- Resource Requests ---
-#BSUB -q gpua100              # Request the A100 queue
+#BSUB -q gpua40               # Request the A100 queue
 #BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
 #BSUB -n 4                    # Request 4 CPU cores for data loading
 #BSUB -R "rusage[mem=32GB]"   # Request 32GB of main RAM (not GPU RAM)
@@ -21,6 +21,6 @@ echo "Environment 'MBML' activated."
 
 ### --- Run Script ---
 echo "Starting Python script..."
-python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/DEA.py
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE.py
 
 echo "Job Finished."

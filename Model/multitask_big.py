@@ -16,7 +16,7 @@ print(cd)
 sys.path.append(str(cd))
 
 from func.utill import visualize_slices, DiceLoss
-from func.Models import MultiTaskNet_big
+from func.Models import MultiTaskNet_small
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
 
 
@@ -73,7 +73,7 @@ except Exception as e:
 
 if __name__ == "__main__":
     # start model
-    model = MultiTaskNet_big(
+    model = MultiTaskNet_small(
         in_channels=1, 
         num_classes=NUM_CLASSES, 
         latent_dim=LATENT_DIM  

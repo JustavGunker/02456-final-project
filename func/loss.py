@@ -158,3 +158,17 @@ class BoundaryLoss(nn.Module):
         
         # Normalize by batch size
         return loss / inputs.size(0)
+
+## KL Divergence Loss
+def kld_loss(mu, log_var):
+    """
+    Computes the KL Divergence loss between the learned latent distribution
+    and the standard normal distribution.
+    Args:
+        mu (torch.Tensor): Mean of the latent distribution.
+        log_var (torch.Tensor): Log variance of the latent distribution.
+    Returns:
+        torch.Tensor: KL Divergence loss.
+    """
+    # -0.5 * sum(1 + log(sigma^2) - mu^2 - sigma^2)
+    return -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())
