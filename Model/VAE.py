@@ -122,3 +122,10 @@ if __name__ == "__main__":
             train_loss += total_loss.item()
         avg_train_loss = train_loss / len(labeled_loader)
         print(f"Epoch {epoch+1}/{num_epochs} | Avg Train Loss: {avg_train_loss:.4f}")   
+
+    print("Training complete.")
+
+cd = Path.cwd().parent
+save_path = cd / "Trained_models" / "vae_liver_model.pth"
+torch.save(model.state_dict(), save_path)
+print(f"Model saved to {save_path}")
