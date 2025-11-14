@@ -106,12 +106,12 @@ if __name__ == "__main__":
             optimizer.step()
             
             if batch_idx % 50 == 0:
-                print(f"Batch {batch_idx}/{len(combined_loader)} | Recon Loss: {loss.item():.4f}")
+                print(f"Batch {batch_idx} | Recon Loss: {loss.item():.4f}")
 
     print("--- Pre-training Finished ---")
 
     # Save the encoder weights
-    SAVE_PATH = "Trained_models/encoder_weights_pretrained.pth"
+    SAVE_PATH = Path.cwd().parent / "Trained_models" / "pretrained_ae_encoder.pth"
+    print(f"Saving encoder weights to {SAVE_PATH}")
     torch.save(model.encoder.state_dict(), SAVE_PATH)
    
-    print(f"Expert Encoder weights saved to {SAVE_PATH}")

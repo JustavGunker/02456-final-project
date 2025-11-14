@@ -148,16 +148,11 @@ if __name__ == "__main__":
                 else:
                     print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} | DICE Loss (Labeled): {loss_seg_dice:.4f}")
             
-            # visualization update
-            if epoch % 10 == 0 and batch_idx % 30 == 0:
-                print("--- Visualizing first training batch (Labeled Data) ---")
-                visualize_slices(x_labeled, y_seg_target, recon_out_labeled, seg_out)
-
 print("--- Training Finished ---")
 print("Saving model weights...")
 
-SAVE_PATH = "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/Multi_small.pth"
 
+SAVE_PATH = Path.cwd().parent / "Trained_models" / "multi_simple.pth"
 torch.save(model.state_dict(), SAVE_PATH)
 
 print(f"Model saved to {SAVE_PATH}")

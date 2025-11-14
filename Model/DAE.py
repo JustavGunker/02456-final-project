@@ -22,7 +22,7 @@ from func.loss import DiceLoss
 
 
 
-INPUT_SHAPE = (16, 16, 16) # ( D, H, W)
+INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 4
@@ -179,17 +179,11 @@ if __name__ == "__main__":
                     print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): combo loss stage 1: {loss_seg.item():.4f}")
                 else:
                     print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | Hausdorff distance stage 2: {loss_seg.item():.4f}")
-            
-            # visualization update
-            if epoch % 9 == 0 and batch_idx % 29 == 0:
-                print("--- Visualizing first training batch (Labeled Data) ---")
-                visualize_slices(x_labeled, y_seg_target, recon_out_labeled, seg_out, slice_idx=60)
 
 print("--- Training Finished ---")
 print("Saving model weights...")
 
-SAVE_PATH = "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/DEA.pth"
-
+SAVE_PATH = Path.cwd().parent / "Trained_models" / "DAE.pth"
 torch.save(model.state_dict(), SAVE_PATH)
 
 print(f"Model saved to {SAVE_PATH}")

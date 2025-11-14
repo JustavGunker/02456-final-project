@@ -154,13 +154,8 @@ if __name__ == "__main__":
             if batch_idx % 30 == 0:
                 print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss: {total_loss_recon.item():.4f} | Seg Loss: {loss_seg.item():.4f}")
             
-            # This calls your corrected visualize_slices function
-            if epoch % 10 == 0 and batch_idx % 30 == 0:
-                print("--- Visualizing first training batch ---")
-                visualize_slices(x_labeled, y_seg_target, recon_out_labeled, seg_out, slice_idx=14)
-
     print("--- Training Finished ---")
-    print("Saving model weights...")
-    SAVE_PATH = "Trained_models/my_attention_model.pth" 
+    
+    SAVE_PATH = Path.cwd().parent / "Trained_models" / "seg_model_staged.pth"
     torch.save(model.state_dict(), SAVE_PATH)
     print(f"Model saved to {SAVE_PATH}")

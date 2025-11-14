@@ -130,8 +130,6 @@ if __name__ == "__main__":
 
     print("--- Fine-tuning Finished ---")
     
-    # save model
-    SAVE_PATH = "Trained_models/final_segmentation_model.pth"
-    # save both encoder and decoder weights
+    SAVE_PATH = Path.cwd().parent / "Trained_models" / "seg_model_finetuned.pth"
     torch.save(model.state_dict(), SAVE_PATH)
     print(f"Final segmentation model saved to {SAVE_PATH}")
