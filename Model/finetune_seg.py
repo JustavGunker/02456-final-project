@@ -11,9 +11,8 @@ import sys
 import glob
 import itertools
 from pathlib import Path
-cd= Path.cwd()
-print(cd)
-sys.path.append(str(cd))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")

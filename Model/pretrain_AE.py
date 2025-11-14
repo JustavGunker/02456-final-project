@@ -11,16 +11,15 @@ import sys
 import glob
 import itertools
 from pathlib import Path
-cd= Path.cwd()
-print(cd)
-sys.path.append(str(cd))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
 
 from func.Models import AutoencoderNet
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-INPUT_SHAPE = (28, 28, 28) # ( D, H, W)
+INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 4
@@ -78,7 +77,7 @@ if __name__ == "__main__":
     # We ignore the labels from labeled_loader
     combined_loader = itertools.chain(labeled_loader, unlabeled_loader)
     
-    NUM_PRETRAIN_EPOCHS = 50 
+    NUM_PRETRAIN_EPOCHS = 200
     
     print("--- PHASE 1: Pre-training Autoencoder ---")
 

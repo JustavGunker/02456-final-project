@@ -12,9 +12,8 @@ import sys
 import glob
 import itertools
 from pathlib import Path
-cd= Path.cwd()
-print(cd)
-sys.path.append(str(cd))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
 from func.loss import DiceLoss
 from func.Models import VAE
 from func.dataloads import LiverDataset, LiverUnlabeledDataset

@@ -11,9 +11,8 @@ import sys
 import glob
 import itertools
 from pathlib import Path
-cd= Path.cwd()
-print(cd)
-sys.path.append(str(cd))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
 
 from func.utill import visualize_slices, visualize_slices_inmodel
 from func.Models import MultiTaskNet_simple
