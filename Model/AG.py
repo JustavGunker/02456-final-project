@@ -156,6 +156,6 @@ if __name__ == "__main__":
             
     print("--- Training Finished ---")
     
-    SAVE_PATH = Path.cwd().parent / "Trained_models" / "seg_model_staged.pth"
+    SAVE_PATH = Path.cwd() / "Trained_models" / "seg_model_staged.pth"
     torch.save(model.state_dict(), SAVE_PATH)
     print(f"Model saved to {SAVE_PATH}")

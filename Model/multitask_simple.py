@@ -152,7 +152,7 @@ print("--- Training Finished ---")
 print("Saving model weights...")
 
 
-SAVE_PATH = Path.cwd().parent / "Trained_models" / "multi_simple.pth"
+SAVE_PATH = Path.cwd() / "Trained_models" / "multi_simple.pth"
 torch.save(model.state_dict(), SAVE_PATH)
 
 print(f"Model saved to {SAVE_PATH}")

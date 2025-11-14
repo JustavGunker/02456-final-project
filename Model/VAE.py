@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
     print("Training complete.")
 
-cd = Path.cwd().parent
+cd = Path.cwd()
 save_path = cd / "Trained_models" / "vae_liver_model.pth"
 torch.save(model.state_dict(), save_path)
 print(f"Saved trained model to {save_path}")

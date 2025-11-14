@@ -111,7 +111,7 @@ if __name__ == "__main__":
     print("--- Pre-training Finished ---")
 
     # Save the encoder weights
-    SAVE_PATH = Path.cwd().parent / "Trained_models" / "pretrained_ae_encoder.pth"
+    SAVE_PATH = Path.cwd()/ "Trained_models" / "pretrained_ae_encoder.pth"
     print(f"Saving encoder weights to {SAVE_PATH}")
     torch.save(model.encoder.state_dict(), SAVE_PATH)
    
