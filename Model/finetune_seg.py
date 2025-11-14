@@ -49,7 +49,7 @@ if __name__ == "__main__":
     
     model = SegmentationNet(in_channels=1, num_classes=NUM_CLASSES).to(device)
     
-    ENCODER_WEIGHTS_PATH = "Trained_models/encoder_weights_pretrained.pth"
+    ENCODER_WEIGHTS_PATH = "Trained_models/pretrained_ae_encoder.pth"
     
     # Load the pre-trained encoder weights
     model.encoder.load_state_dict(torch.load(ENCODER_WEIGHTS_PATH, map_location=device))

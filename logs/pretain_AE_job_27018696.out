@@ -14,7 +14,7 @@ Found 119 unlabeled images.
 --- PHASE 1: Pre-training Autoencoder ---
 
 --- Pre-train Epoch 1/200 ---
-Batch 0 | Recon Loss: 0.0726
+Batch 0 | Recon Loss: 0.1353
 
 --- Pre-train Epoch 2/200 ---
 
@@ -419,15 +419,15 @@ Job Finished.
 
 ------------------------------------------------------------
 Sender: LSF System <lsfadmin@hpc.dtu.dk>
-Subject: Job 27018459: <pretain_AE_job> in cluster <dcc> Done
+Subject: Job 27018696: <pretain_AE_job> in cluster <dcc> Done
 
-Job <pretain_AE_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Fri Nov 14 20:01:09 2025
-Job was executed on host(s) <4*n-62-18-4>, in queue <gpua40>, as user <s214776> in cluster <dcc> at Fri Nov 14 20:01:09 2025
+Job <pretain_AE_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Fri Nov 14 20:02:29 2025
+Job was executed on host(s) <4*n-62-18-4>, in queue <gpua40>, as user <s214776> in cluster <dcc> at Fri Nov 14 20:34:37 2025
 </zhome/d2/4/167803> was used as the home directory.
 </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
-Started at Fri Nov 14 20:01:09 2025
-Terminated at Fri Nov 14 20:01:37 2025
-Results reported at Fri Nov 14 20:01:37 2025
+Started at Fri Nov 14 20:34:37 2025
+Terminated at Fri Nov 14 20:35:06 2025
+Results reported at Fri Nov 14 20:35:06 2025
 
 Your job looked like:
 
@@ -467,16 +467,16 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   23.52 sec.
-    Max Memory :                                 975 MB
-    Average Memory :                             975.00 MB
+    CPU time :                                   23.51 sec.
+    Max Memory :                                 912 MB
+    Average Memory :                             802.33 MB
     Total Requested Memory :                     65536.00 MB
-    Delta Memory :                               64561.00 MB
+    Delta Memory :                               64624.00 MB
     Max Swap :                                   -
     Max Processes :                              4
     Max Threads :                                8
-    Run time :                                   78 sec.
-    Turnaround time :                            28 sec.
+    Run time :                                   30 sec.
+    Turnaround time :                            1957 sec.
 
 The output (if any) is above this job summary.
 
@@ -484,5 +484,5 @@ The output (if any) is above this job summary.
 
 PS:
 
-Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/pretain_AE_job_27018459.err> for stderr output of this job.
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/pretain_AE_job_27018696.err> for stderr output of this job.
 
