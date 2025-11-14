@@ -16,7 +16,7 @@ sys.path.append(str(PROJECT_ROOT))
 from func.utill import visualize_slices, DiceLoss
 from func.Models import MultiTaskNet_simple as MultiTaskNet
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
-from func.loss import BoundaryLoss, ExpLogComboLoss
+from func.loss import DiceLoss
 
 
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
