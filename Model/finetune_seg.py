@@ -21,7 +21,7 @@ from func.Models import SegmentationNet
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
 from func.loss import BoundaryLoss, ExpLogComboLoss, DiceLoss
 
-INPUT_SHAPE = (28, 28, 28) # ( D, H, W)
+INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 4

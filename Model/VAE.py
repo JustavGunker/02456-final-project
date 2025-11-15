@@ -28,7 +28,7 @@ LATENT_DIM = 256
 num_epochs = 200
 KLD_WEIGHT = 0.0001
 BATCH_SIZE = 1
-INPUT_SHAPE = (16, 16, 16) # ( D, H, W)
+INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 
 DATA_DIR = "./Task03_Liver_rs"

@@ -111,7 +111,7 @@ class MultiTaskNet_simple(nn.Module):
 
         # First decoder head for segmentation with skipped connect
         self.seg_decoder = Seg_decoder(num_classes=num_classes)
-        self.sigmoid = nn.Sigmoid()
+        #self.sigmoid = nn.Sigmoid()
 
         # Second decoder head reconstruction without skipped
         self.recon_decoder = Recon_decoder(in_channels=in_channels)
@@ -127,7 +127,7 @@ class MultiTaskNet_simple(nn.Module):
 
         # Segmentation decoder head with skips
         seg_output = self.seg_decoder(b, s1, s2)
-        seg_output = self.sigmoid(seg_output)
+        #seg_output = self.sigmoid(seg_output)
 
         # Reconstruction decoder head without skips
         recon_output = self.recon_decoder(b, s1, s2)
@@ -334,7 +334,7 @@ class Seg_decoder_ag(nn.Module):
         self.dec_seg2 = ConvBlock(64, 32) # add skip connection 32+32= 64
         
         self.out_seg = nn.Conv3d(32, num_classes, kernel_size=1) # Output segmentation
-        self.sigmoid = nn.Sigmoid()
+        #self.sigmoid = nn.Sigmoid()
 
     def forward(self, b , s1, s2):
          # segmentation decoder forward step
@@ -346,7 +346,7 @@ class Seg_decoder_ag(nn.Module):
         s1 = self.attn2(g=us2, x=s1)  # ag
         ds2 = self.dec_seg2(torch.cat([us2, s1], dim=1)) # Concat skip 1
         us3 = self.out_seg(ds2) 
-        us3 = self.sigmoid(us3)
+        #us3 = self.sigmoid(us3)
         return us3
     
 class Recon_decoder_ag(nn.Module):

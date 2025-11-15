@@ -1,0 +1,33 @@
+Loaded module: cuda/11.6
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG.py", line 137, in <module>
+    _ , recon_out_unlabeled = model(x_unlabeled)
+                              ^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 422, in forward
+    recon_output = self.recon_decoder(b, s1, s2)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 374, in forward
+    s1 = self.attn2_recon(g=ur2, x=s1)  # ag
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 472, in forward
+    psi = self.relu(g1 + x1)
+                    ~~~^~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 439.31 MiB is free. Including non-PyTorch memory, this process has 43.96 GiB memory in use. Of the allocated memory 42.63 GiB is allocated by PyTorch, and 860.06 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
