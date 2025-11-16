@@ -73,6 +73,41 @@ class ExpLogComboLoss(nn.Module):
         
         return total_loss
     
+class ComboLoss(nn.Module):
+    """
+    Implements a simple, non-exponential Combo Loss.
+    
+    L_Combo = α * L_Dice + β * L_WCE
+    """
+    
+    def __init__(self, dice_loss_fn, wce_loss_fn, alpha=0.5, beta=0.5):
+        """
+        Args:
+            dice_loss_fn: An instance of your DiceLoss.
+            wce_loss_fn: An instance of your CrossEntropyLoss.
+            alpha (float): Weight for the Dice component.
+            beta (float): Weight for the WCE component.
+        """
+        super().__init__()
+        self.dice_loss_fn = dice_loss_fn
+        self.wce_loss_fn = wce_loss_fn
+        self.alpha = alpha
+        self.beta = beta
+
+    def forward(self, inputs, targets):
+        # inputs are logits (B, C, D, H, W)
+        # targets are indices (B, D, H, W)
+        
+        # Calculate DiceLoss (0=good, 1=bad)
+        loss_dice = self.dice_loss_fn(inputs, targets) 
+        
+        # Calculate CrossEntropyLoss (0=good, inf=bad)
+        loss_wce = self.wce_loss_fn(inputs, targets)  
+
+        # Combine them with their weights
+        total_loss = self.alpha * loss_dice + self.beta * loss_wce
+        
+        return total_loss
 
 class DiceLoss(nn.Module):
     """
@@ -172,3 +207,20 @@ def kld_loss(mu, log_var):
     """
     # -0.5 * sum(1 + log(sigma^2) - mu^2 - sigma^2)
     return -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())
+
+class KLAnnealing:
+    def __init__(self, start_epoch, end_epoch, start_beta=0.0, end_beta=1.0):
+        self.start_epoch = start_epoch
+        self.end_epoch = end_epoch
+        self.start_beta = start_beta
+        self.end_beta = end_beta
+    
+    def get_beta(self, epoch):
+        if epoch < self.start_epoch:
+            return self.start_beta
+        elif epoch >= self.end_epoch:
+            return self.end_beta
+        else:
+            # Linear ramp-up
+            progress = (epoch - self.start_epoch) / (self.end_epoch - self.start_epoch)
+            return self.start_beta + (self.end_beta - self.start_beta) * progress

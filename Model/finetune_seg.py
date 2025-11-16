@@ -24,7 +24,7 @@ from func.loss import BoundaryLoss, ExpLogComboLoss, DiceLoss
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
-BATCH_SIZE = 4
+BATCH_SIZE = 2
 
 DATA_DIR = "./Task03_Liver_rs" 
 data_root_folder = Path.cwd() / DATA_DIR
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     ENCODER_WEIGHTS_PATH = "Trained_models/pretrained_ae_encoder.pth"
     
     # Load the pre-trained encoder weights
-    model.encoder.load_state_dict(torch.load(ENCODER_WEIGHTS_PATH, map_location=device))
+    model.encoder.load_state_dict(torch.load(ENCODER_WEIGHTS_PATH, map_location=device, weights_only=True))
     print(f"Loaded pre-trained encoder weights from {ENCODER_WEIGHTS_PATH}")
 
     # freeze encoder weights
@@ -66,14 +66,14 @@ if __name__ == "__main__":
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3)
 
     # loss stage 1 
-    loss_fn_seg_stage1 = ExpLogComboLoss(
-        dice_loss_fn=loss_fn_seg_dice,
-        wce_loss_fn=loss_fn_seg_cross,
-        alpha=1.0, 
-        beta=1.0, 
-        gamma_dice=1.0,  # Standard Dice
-        gamma_wce=1.0    # Standard CE
-    ).to(device)
+    #loss_fn_seg_stage1 = ExpLogComboLoss(
+    #    dice_loss_fn=loss_fn_seg_dice,
+    #    wce_loss_fn=loss_fn_seg_cross,
+    #    alpha=1.0, 
+    #    beta=1.0, 
+    #    gamma_dice=1.0,  # Standard Dice
+    #    gamma_wce=1.0    # Standard CE
+    #).to(device)
 
     # loss stage 2
     #loss_fn_seg_stage2 = ExpLogComboLoss(
@@ -84,13 +84,16 @@ if __name__ == "__main__":
     #    gamma_dice=1.5,  # Focus on hard Dice
     #    gamma_wce=1.5    # Focus on hard CE
     #).to(device)
+    # loss stage 1
+    loss_fn_seg_cross = nn.CrossEntropyLoss()
+    loss_fn_seg_stage1 = DiceLoss(num_classes=NUM_CLASSES)
     # loss stage 2 - Boundary loss hausdorff
     loss_fn_seg_stage2 = BoundaryLoss().to(device)
     
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
     
-    NUM_FINETUNE_EPOCHS = 100
-    BOUNDARY_FOCUS_EPOCH = 80
+    NUM_FINETUNE_EPOCHS = 200
+    BOUNDARY_FOCUS_EPOCH = 175
     
     print("--- PHASE 2: Fine-tuning Segmentation Decoder ---")
     
@@ -108,7 +111,7 @@ if __name__ == "__main__":
         
         model.train()
         
-        # --- We ONLY use the labeled_loader ---
+        # labelled
         for batch_idx, (x_labeled, y_seg_target) in enumerate(labeled_loader):
             
             x_labeled = x_labeled.to(device)       
@@ -120,7 +123,10 @@ if __name__ == "__main__":
             seg_out = model(x_labeled)
             
             # --- Loss Calculation ---
-            loss = current_seg_loss_fn(seg_out, y_seg_target)
+            loss_cross = loss_fn_seg_cross(seg_out, y_seg_target)
+            loss_stages = current_seg_loss_fn(seg_out, y_seg_target)
+
+            loss = loss_cross + loss_stages
             
             loss.backward()
             optimizer.step()

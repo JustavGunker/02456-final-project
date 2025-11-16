@@ -22,7 +22,7 @@ print(f"Using device: {device}")
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
-BATCH_SIZE = 4
+BATCH_SIZE = 2
 
 DATA_DIR = "./Task03_Liver_rs" 
 data_root_folder = Path.cwd() / DATA_DIR
@@ -77,9 +77,9 @@ if __name__ == "__main__":
     # We ignore the labels from labeled_loader
     combined_loader = itertools.chain(labeled_loader, unlabeled_loader)
     
-    NUM_PRETRAIN_EPOCHS = 200
+    NUM_PRETRAIN_EPOCHS = 50
     
-    print("--- PHASE 1: Pre-training Autoencoder ---")
+    print("Pre-training Autoencoder")
 
     for epoch in range(NUM_PRETRAIN_EPOCHS):
         print(f"\n--- Pre-train Epoch {epoch+1}/{NUM_PRETRAIN_EPOCHS} ---")
@@ -99,7 +99,6 @@ if __name__ == "__main__":
             # --- Forward Pass ---
             recon_out = model(x)
             
-            # --- Loss Calculation ---
             loss = loss_fn_recon(recon_out, x)
             
             loss.backward()

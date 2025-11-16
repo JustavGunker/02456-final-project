@@ -322,6 +322,55 @@ class TemporalTracker(nn.Module):
 #### ---------------------------------------------------------- Attention decoders ----------------------------------------------------------
 ###
 ## for attention mechanism small model
+## attention gate module
+
+class AttentionGate3D(nn.Module):
+    def __init__(self, F_g, F_l, F_int):
+        """
+        Args:
+            F_g (int): Channel count of the Gating signal (from deeper layer).
+            F_l (int): Channel count of the Skip connection (from encoder).
+            F_int (int): Channel count of the intermediate (bottleneck) layer.
+        """
+        super(AttentionGate3D, self).__init__()
+
+        # 1x1x1 conv for the gating signal (g)
+        self.W_g = nn.Sequential(
+            nn.Conv3d(F_g, F_int, kernel_size=1, stride=1, padding=0, bias=True),
+            nn.BatchNorm3d(F_int)
+        )
+
+        # 1x1x1 conv for the skip connection (x)
+        self.W_x = nn.Sequential(
+            nn.Conv3d(F_l, F_int, kernel_size=1, stride=1, padding=0, bias=True),
+            nn.BatchNorm3d(F_int)
+        )
+
+        # 1x1x1 conv for the combined signal to get the attention map
+        self.psi = nn.Sequential(
+            nn.Conv3d(F_int, 1, kernel_size=1, stride=1, padding=0, bias=True),
+            nn.BatchNorm3d(1),
+            nn.Sigmoid()
+        )
+
+        self.relu = nn.ReLU()
+
+    def forward(self, g, x):
+        """
+        Args:
+            g (torch.Tensor): Gating signal from the deeper layer (was upsampled).
+            x (torch.Tensor): Skip connection from the encoder.
+        """
+        g1 = self.W_g(g)
+        x1 = self.W_x(x)
+        
+        psi = self.relu(g1 + x1)
+        psi = self.psi(psi)
+        psi = self.relu(psi)
+
+        # Multiply the original skip connection (x) by the attention map
+        return x * psi
+
 class Seg_decoder_ag(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
@@ -425,57 +474,6 @@ class MultiTaskNet_ag(nn.Module):
 
     
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Using device: {device}")
-## attention gate module
-
-class AttentionGate3D(nn.Module):
-    def __init__(self, F_g, F_l, F_int):
-        """
-        Args:
-            F_g (int): Channel count of the Gating signal (from deeper layer).
-            F_l (int): Channel count of the Skip connection (from encoder).
-            F_int (int): Channel count of the intermediate (bottleneck) layer.
-        """
-        super(AttentionGate3D, self).__init__()
-
-        # 1x1x1 conv for the gating signal (g)
-        self.W_g = nn.Sequential(
-            nn.Conv3d(F_g, F_int, kernel_size=1, stride=1, padding=0, bias=True),
-            nn.BatchNorm3d(F_int)
-        )
-
-        # 1x1x1 conv for the skip connection (x)
-        self.W_x = nn.Sequential(
-            nn.Conv3d(F_l, F_int, kernel_size=1, stride=1, padding=0, bias=True),
-            nn.BatchNorm3d(F_int)
-        )
-
-        # 1x1x1 conv for the combined signal to get the attention map
-        self.psi = nn.Sequential(
-            nn.Conv3d(F_int, 1, kernel_size=1, stride=1, padding=0, bias=True),
-            nn.BatchNorm3d(1),
-            nn.Sigmoid()
-        )
-
-        self.relu = nn.ReLU(inplace=True)
-
-    def forward(self, g, x):
-        """
-        Args:
-            g (torch.Tensor): Gating signal from the deeper layer (was upsampled).
-            x (torch.Tensor): Skip connection from the encoder.
-        """
-        g1 = self.W_g(g)
-        x1 = self.W_x(x)
-        
-        psi = self.relu(g1 + x1)
-        psi = self.psi(psi)
-
-        # Multiply the original skip connection (x) by the attention map
-        return x * psi
-    
-
 ##
 ###
 #### ---------------------------------------------------------- Fine tune model ----------------------------------------------------------
@@ -489,7 +487,7 @@ class AutoencoderNet(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         self.encoder = Encoder_small(in_channels)
-        # Assumes Recon_decoder is defined and uses attention
+
         self.recon_decoder = Recon_decoder(in_channels)
 
     def forward(self, x):
@@ -505,7 +503,7 @@ class SegmentationNet(nn.Module):
         super().__init__()
         # We use the same Encoder definition as before
         self.encoder = Encoder_small(in_channels) 
-        # Assumes Seg_decoder is defined and uses attention
+
         self.seg_decoder = Seg_decoder(num_classes)
 
     def forward(self, x):

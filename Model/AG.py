@@ -17,22 +17,19 @@ sys.path.append(str(PROJECT_ROOT))
 from func.utill import visualize_slices, DiceLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
-from func.loss import BoundaryLoss, ExpLogComboLoss
-
+from func.loss import BoundaryLoss, ComboLoss
 
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
-BATCH_SIZE = 4
+BATCH_SIZE = 2
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-
 DATA_DIR = "./Task03_Liver_rs" 
 # This one path points to the root directory (e.g., ./Task03_Liver_rs)
 data_root_folder = Path.cwd() / DATA_DIR
-
 
 try:
     # labeled set
@@ -82,42 +79,25 @@ if __name__ == "__main__":
     loss_fn_recon = nn.MSELoss()
 
     # STAGE 1: "Region" Loss (Focuses on the whole blob)
-    loss_fn_seg_stage1 = ExpLogComboLoss(
-        dice_loss_fn=loss_fn_seg_dice,
-        wce_loss_fn=loss_fn_seg_cross,
-        alpha=0.5, beta=0.5, gamma_dice=1.0, gamma_wce=1.0
-    ).to(device)
+    #loss_fn_seg_stage1 = ExpLogComboLoss(
+    #    dice_loss_fn=loss_fn_seg_dice,
+    #    wce_loss_fn=loss_fn_seg_cross,
+    #    alpha=0.5, beta=0.5, gamma_dice=1.0, gamma_wce=1.0
+    #).to(device)
 
     # STAGE 2: "Boundary" Loss (Focuses on hard pixels)
-    loss_fn_seg_stage2 = ExpLogComboLoss(
+    loss_fn_seg = ComboLoss(
         dice_loss_fn=loss_fn_seg_dice,
         wce_loss_fn=loss_fn_seg_cross,
-        alpha=0.5, beta=0.5, gamma_dice=1.5, gamma_wce=1.5
+        alpha=0.6, beta=0.4
     ).to(device)
     
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3)
 
-    NUM_EPOCHS = 200
-    BOUNDARY_FOCUS_EPOCH = 175 # Switch from Stage 1 to Stage 2 here
-    
-
-    print("--- Starting Training with Staged Loss ---")
-    print(f"Stage 1 (Region)    : Epochs 1-{BOUNDARY_FOCUS_EPOCH-1}")
-    print(f"Stage 2 (Boundary)  : Epochs {BOUNDARY_FOCUS_EPOCH}-onward")
+    NUM_EPOCHS = 300
     
     for epoch in range(NUM_EPOCHS):
         print(f"\n--- Epoch {epoch+1}/{NUM_EPOCHS} ---")
-        
-        # --- This is the logic to switch the loss function ---
-        if epoch + 1 < BOUNDARY_FOCUS_EPOCH:
-            current_seg_loss_fn = loss_fn_seg_stage1
-            if epoch == 0: 
-                print("Using Stage 1 (Region) Loss: Standard Dice+CE")
-        else:
-            current_seg_loss_fn = loss_fn_seg_stage2
-            if epoch + 1 == BOUNDARY_FOCUS_EPOCH: 
-                print("--- SWITCHING TO STAGE 2 (BOUNDARY) LOSS ---")
-        # ---
         
         model.train() 
         
@@ -134,18 +114,19 @@ if __name__ == "__main__":
             seg_out, recon_out_labeled = model(x_labeled)
             
             # We only care about the recon_out and latent_z here
-            _ , recon_out_unlabeled = model(x_unlabeled)
+            noise_factor = 0.1
+            noise = torch.randn_like(x_unlabeled) * noise_factor
+            x_unlabeled_noisy = x_unlabeled + noise
+            _ , recon_out_unlabeled = model(x_unlabeled_noisy)
                         
             # Segmentation Loss (from labeled data, using the current stage's loss)
-            loss_seg = current_seg_loss_fn(seg_out, y_seg_target)
-            
+            loss_seg = loss_fn_seg(seg_out, y_seg_target)
+
             # Reconstruction Loss (from both)
-            loss_recon_labeled = loss_fn_recon(recon_out_labeled, x_labeled)
-            loss_recon_unlabeled = loss_fn_recon(recon_out_unlabeled, x_unlabeled)
-            total_loss_recon = loss_recon_labeled + loss_recon_unlabeled
+            total_loss_recon = loss_fn_recon(recon_out_labeled, x_labeled) + loss_fn_recon(recon_out_unlabeled, x_unlabeled)
             
             # Final total loss 
-            total_loss = (loss_seg * 1.0) + (total_loss_recon * 0.5) 
+            total_loss = (loss_seg * 1.0) + (total_loss_recon * 0.7) 
             
             total_loss.backward()
             optimizer_model.step()
@@ -156,6 +137,6 @@ if __name__ == "__main__":
             
     print("--- Training Finished ---")
     
-    SAVE_PATH = Path.cwd() / "Trained_models" / "seg_model_staged.pth"
+    SAVE_PATH = Path.cwd() / "Trained_models" / "AG.pth"
     torch.save(model.state_dict(), SAVE_PATH)
     print(f"Model saved to {SAVE_PATH}")

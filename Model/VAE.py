@@ -14,7 +14,7 @@ import itertools
 from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
-from func.loss import DiceLoss
+from func.loss import DiceLoss, KLAnnealing, ComboLoss
 from func.Models import VAE
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
 
@@ -25,7 +25,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 LATENT_DIM = 256
-num_epochs = 200
+num_epochs = 350
 KLD_WEIGHT = 0.0001
 BATCH_SIZE = 1
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
@@ -33,8 +33,10 @@ NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 
 DATA_DIR = "./Task03_Liver_rs"
 data_root_folder = Path.cwd() / DATA_DIR
+
 if __name__ != "__main__":
     print(f"Data root folder: {data_root_folder}")
+
 try:
     # labeled set
     labeled_dataset = LiverDataset(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
@@ -76,16 +78,30 @@ if __name__ == "__main__":
         latent_dim=LATENT_DIM, 
         NUM_CLASSES=NUM_CLASSES).to(device)
     
-    loss_fn_seg_dice = DiceLoss(num_classes=NUM_CLASSES)
-    loss_fn_seg_cross = nn.CrossEntropyLoss()
+    dice = DiceLoss(num_classes=NUM_CLASSES)
+    CE   = nn.CrossEntropyLoss()
     loss_fn_recon = nn.MSELoss()
-    optimizer_model = optim.Adam(model.parameters(), lr=1e-4)
+    optimizer_model = optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01 )
+    loss_fn_seg = ComboLoss(
+        dice_loss_fn=dice,
+        wce_loss_fn=CE,
+        alpha=0.5, 
+        beta=0.5   
+    ).to(device)
 
+    KLD_Annealing_start = 0
+    KLD_Annealing_end   = 50
+    kl_scheduler = KLAnnealing(
+        start_epoch=KLD_Annealing_start,
+        end_epoch=KLD_Annealing_end)
+    
     print("--- Training the VAE on Liver Data ---")
 
     for epoch in range(num_epochs):
-        model.train()
+        
+        KLD_WEIGHT = kl_scheduler.get_beta(epoch)
 
+        model.train()
         train_loss = 0
         for batch_idx, ((x, y_target), (x_unlabeled)) in \
                 enumerate(zip(labeled_loader, itertools.cycle(unlabeled_loader))):
@@ -97,17 +113,14 @@ if __name__ == "__main__":
             optimizer_model.zero_grad()
 
             seg_out, recon_out_labeled, z_mu, z_logvar = model(x)
-            _ , recon_out_unlabeled, z_mu_unlabeled, z_logvar_unlabeled = model(x_unlabeled)
+            noise = torch.randn_like(x_unlabeled)*0.2 #0.1
+            _ , recon_out_unlabeled, z_mu_unlabeled, z_logvar_unlabeled = model(x_unlabeled+noise)
 
             # seg loss
-            loss_seg_cross = loss_fn_seg_cross(seg_out, y_target)
-            loss_seg_dice = loss_fn_seg_dice(seg_out, y_target)
-            loss_seg = (loss_seg_cross + loss_seg_dice) / 2.0
+            loss_seg = loss_fn_seg(seg_out, y_target)
 
             # recon loss
-            loss_recon_labeled = loss_fn_recon(recon_out_labeled, x)
-            loss_recon_unlabeled = loss_fn_recon(recon_out_unlabeled, x_unlabeled)
-            loss_recon = (loss_recon_labeled*1.0) + (loss_recon_unlabeled*0.5)
+            loss_recon = loss_fn_recon(recon_out_labeled, x) + loss_fn_recon(recon_out_unlabeled, x_unlabeled)
 
             # KL loss
             loss_kld_labeled = kld_loss(z_mu, z_logvar)
@@ -115,17 +128,16 @@ if __name__ == "__main__":
             total_kld_loss = (loss_kld_labeled + loss_kld_unlabeled) / (x.size(0) + x_unlabeled.size(0))
             
             # total loss
-            total_loss = (loss_seg * 1.0) + \
-                        (loss_recon * 0.5) + \
-                        (total_kld_loss * KLD_WEIGHT) 
+            total_loss = (loss_seg * 10.0) + \
+                        (loss_recon * 0.1) + \
+                        (total_kld_loss * KLD_WEIGHT) # loss_recon *0.9 and loss_seg *1.0
             
             total_loss.backward()
             optimizer_model.step()
 
             train_loss += total_loss.item()
         avg_train_loss = train_loss / len(labeled_loader)
-        print(f"Epoch {epoch+1}/{num_epochs} | Avg Train Loss: {avg_train_loss:.4f}")   
-
+        print(f"Epoch {epoch+1}/{num_epochs} | Avg Train Loss: {avg_train_loss:.4f} | KLD Beta: {KLD_WEIGHT:.4f}")
     print("Training complete.")
 
 cd = Path.cwd()

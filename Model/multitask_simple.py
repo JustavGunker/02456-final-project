@@ -13,10 +13,10 @@ import itertools
 from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
-from func.utill import visualize_slices, DiceLoss
+from func.utill import visualize_slices
 from func.Models import MultiTaskNet_simple as MultiTaskNet
 from func.dataloads import LiverDataset, LiverUnlabeledDataset
-from func.loss import DiceLoss
+from func.loss import DiceLoss, ComboLoss
 
 
 INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
@@ -79,13 +79,16 @@ if __name__ == "__main__":
     ).to(device)
 
     # define loss and optimizer
-    loss_fn_seg_dice = DiceLoss(num_classes= NUM_CLASSES)
-    loss_fn_seg_cross = nn.CrossEntropyLoss()
+    dice = DiceLoss(num_classes= NUM_CLASSES)
+    cross = nn.CrossEntropyLoss()
+    loss_seg = ComboLoss(dice_loss_fn=dice,
+                         wce_loss_fn=cross)
+
     loss_fn_recon = nn.MSELoss()
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3)
 
     print("--- Training the MultiTaskNet on Liver Data ---")
-    NUM_EPOCHS = 200
+    NUM_EPOCHS = 300
 
     for epoch in range(NUM_EPOCHS):
         print(f"\n--- Epoch {epoch+1}/{NUM_EPOCHS} ---")
@@ -108,26 +111,17 @@ if __name__ == "__main__":
             seg_out, recon_out_labeled, _ = model(x_labeled)
             
             # segmentation losses
-            loss_seg_cross = loss_fn_seg_cross(seg_out, y_seg_target)
-            
-            total_loss_seg = loss_seg_cross * 1.0
-            loss_seg_dice = 0.0
-            
-            # add dice loss if cross entropy is low enough
-            if loss_seg_cross.item() < 0.5:
-                dice_loss_component = loss_fn_seg_dice(seg_out, y_seg_target)
-                total_loss_seg = total_loss_seg + (dice_loss_component * 1)
-                loss_seg_dice = dice_loss_component.item()
+            total_loss_seg = loss_seg(seg_out, y_seg_target)
                 
             # labeled recon loss
             loss_recon_labeled = loss_fn_recon(recon_out_labeled, x_labeled)
 
             # add noise to unlabeled data
-            #noise_factor = 0.1
-            #noise = torch.randn_like(x_unlabeled) * noise_factor
-            #x_unlabeled_noisy = x_unlabeled + noise
+            noise_factor = 0.1
+            noise = torch.randn_like(x_unlabeled) * noise_factor
+            x_unlabeled_noisy = x_unlabeled + noise
             # Forward pass only on unlabeled data for recon
-            _ , recon_out_unlabeled, _ = model(x_unlabeled)
+            _ , recon_out_unlabeled, _ = model(x_unlabeled_noisy)
             
             # unlabeled recon loss
             loss_recon_unlabeled = loss_fn_recon(recon_out_unlabeled, x_unlabeled)
@@ -143,10 +137,7 @@ if __name__ == "__main__":
             
             # Udate Logging
             if batch_idx % 30 == 0:
-                if loss_seg_cross.item() > 0.6:
-                    print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} (Dice not active)")
-                else:
-                    print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | CE Loss (Labeled): {loss_seg_cross.item():.4f} | DICE Loss (Labeled): {loss_seg_dice:.4f}")
+                print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | Combo (CE+dice): {loss_seg.item():.4f}")
             
 print("--- Training Finished ---")
 print("Saving model weights...")

@@ -1,0 +1,386 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Task03_Liver_rs
+/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Task03_Liver_rs
+Found 28 image/label pairs.
+--- success ---
+Found 119 unlabeled images.
+--- success ---
+--- Training the VAE on Liver Data ---
+Epoch 1/300 | Avg Train Loss: 1.1975 | KLD Beta: 0.0000
+Epoch 2/300 | Avg Train Loss: 3000.2084 | KLD Beta: 0.0167
+Epoch 3/300 | Avg Train Loss: 4509.3963 | KLD Beta: 0.0333
+Epoch 4/300 | Avg Train Loss: 4544.2451 | KLD Beta: 0.0500
+Epoch 5/300 | Avg Train Loss: 3980.1332 | KLD Beta: 0.0667
+Epoch 6/300 | Avg Train Loss: 3716.3921 | KLD Beta: 0.0833
+Epoch 7/300 | Avg Train Loss: 3510.5019 | KLD Beta: 0.1000
+Epoch 8/300 | Avg Train Loss: 3722.5459 | KLD Beta: 0.1167
+Epoch 9/300 | Avg Train Loss: 3813.5848 | KLD Beta: 0.1333
+Epoch 10/300 | Avg Train Loss: 3748.1450 | KLD Beta: 0.1500
+Epoch 11/300 | Avg Train Loss: 3835.3399 | KLD Beta: 0.1667
+Epoch 12/300 | Avg Train Loss: 3978.6971 | KLD Beta: 0.1833
+Epoch 13/300 | Avg Train Loss: 4046.9614 | KLD Beta: 0.2000
+Epoch 14/300 | Avg Train Loss: 4219.9540 | KLD Beta: 0.2167
+Epoch 15/300 | Avg Train Loss: 4145.8006 | KLD Beta: 0.2333
+Epoch 16/300 | Avg Train Loss: 4383.2131 | KLD Beta: 0.2500
+Epoch 17/300 | Avg Train Loss: 4477.5930 | KLD Beta: 0.2667
+Epoch 18/300 | Avg Train Loss: 4613.3104 | KLD Beta: 0.2833
+Epoch 19/300 | Avg Train Loss: 4730.8306 | KLD Beta: 0.3000
+Epoch 20/300 | Avg Train Loss: 4466.1974 | KLD Beta: 0.3167
+Epoch 21/300 | Avg Train Loss: 5182.1584 | KLD Beta: 0.3333
+Epoch 22/300 | Avg Train Loss: 4469.1937 | KLD Beta: 0.3500
+Epoch 23/300 | Avg Train Loss: 4959.9195 | KLD Beta: 0.3667
+Epoch 24/300 | Avg Train Loss: 4780.8059 | KLD Beta: 0.3833
+Epoch 25/300 | Avg Train Loss: 5276.1179 | KLD Beta: 0.4000
+Epoch 26/300 | Avg Train Loss: 4904.2926 | KLD Beta: 0.4167
+Epoch 27/300 | Avg Train Loss: 5086.9990 | KLD Beta: 0.4333
+Epoch 28/300 | Avg Train Loss: 5104.7747 | KLD Beta: 0.4500
+Epoch 29/300 | Avg Train Loss: 5171.9603 | KLD Beta: 0.4667
+Epoch 30/300 | Avg Train Loss: 5177.9356 | KLD Beta: 0.4833
+Epoch 31/300 | Avg Train Loss: 5258.2754 | KLD Beta: 0.5000
+Epoch 32/300 | Avg Train Loss: 5917.7726 | KLD Beta: 0.5167
+Epoch 33/300 | Avg Train Loss: 5235.9488 | KLD Beta: 0.5333
+Epoch 34/300 | Avg Train Loss: 5416.9724 | KLD Beta: 0.5500
+Epoch 35/300 | Avg Train Loss: 5560.0515 | KLD Beta: 0.5667
+Epoch 36/300 | Avg Train Loss: 5192.1050 | KLD Beta: 0.5833
+Epoch 37/300 | Avg Train Loss: 5417.3321 | KLD Beta: 0.6000
+Epoch 38/300 | Avg Train Loss: 5607.1460 | KLD Beta: 0.6167
+Epoch 39/300 | Avg Train Loss: 5073.3761 | KLD Beta: 0.6333
+Epoch 40/300 | Avg Train Loss: 4881.1866 | KLD Beta: 0.6500
+Epoch 41/300 | Avg Train Loss: 5033.0465 | KLD Beta: 0.6667
+Epoch 42/300 | Avg Train Loss: 5234.7591 | KLD Beta: 0.6833
+Epoch 43/300 | Avg Train Loss: 5609.4066 | KLD Beta: 0.7000
+Epoch 44/300 | Avg Train Loss: 5118.8967 | KLD Beta: 0.7167
+Epoch 45/300 | Avg Train Loss: 5071.6757 | KLD Beta: 0.7333
+Epoch 46/300 | Avg Train Loss: 5622.0142 | KLD Beta: 0.7500
+Epoch 47/300 | Avg Train Loss: 5054.8608 | KLD Beta: 0.7667
+Epoch 48/300 | Avg Train Loss: 4980.6169 | KLD Beta: 0.7833
+Epoch 49/300 | Avg Train Loss: 5395.5277 | KLD Beta: 0.8000
+Epoch 50/300 | Avg Train Loss: 4657.8087 | KLD Beta: 0.8167
+Epoch 51/300 | Avg Train Loss: 5439.0681 | KLD Beta: 0.8333
+Epoch 52/300 | Avg Train Loss: 4919.1856 | KLD Beta: 0.8500
+Epoch 53/300 | Avg Train Loss: 5274.6173 | KLD Beta: 0.8667
+Epoch 54/300 | Avg Train Loss: 4819.2581 | KLD Beta: 0.8833
+Epoch 55/300 | Avg Train Loss: 4747.6760 | KLD Beta: 0.9000
+Epoch 56/300 | Avg Train Loss: 4677.1329 | KLD Beta: 0.9167
+Epoch 57/300 | Avg Train Loss: 4818.6803 | KLD Beta: 0.9333
+Epoch 58/300 | Avg Train Loss: 4653.7663 | KLD Beta: 0.9500
+Epoch 59/300 | Avg Train Loss: 5328.6840 | KLD Beta: 0.9667
+Epoch 60/300 | Avg Train Loss: 4538.8625 | KLD Beta: 0.9833
+Epoch 61/300 | Avg Train Loss: 4715.8322 | KLD Beta: 1.0000
+Epoch 62/300 | Avg Train Loss: 4589.1280 | KLD Beta: 1.0000
+Epoch 63/300 | Avg Train Loss: 4745.6070 | KLD Beta: 1.0000
+Epoch 64/300 | Avg Train Loss: 3885.6359 | KLD Beta: 1.0000
+Epoch 65/300 | Avg Train Loss: 4678.7873 | KLD Beta: 1.0000
+Epoch 66/300 | Avg Train Loss: 3818.7398 | KLD Beta: 1.0000
+Epoch 67/300 | Avg Train Loss: 4392.2537 | KLD Beta: 1.0000
+Epoch 68/300 | Avg Train Loss: 3648.1759 | KLD Beta: 1.0000
+Epoch 69/300 | Avg Train Loss: 3941.9113 | KLD Beta: 1.0000
+Epoch 70/300 | Avg Train Loss: 3863.1683 | KLD Beta: 1.0000
+Epoch 71/300 | Avg Train Loss: 3654.6579 | KLD Beta: 1.0000
+Epoch 72/300 | Avg Train Loss: 3660.0915 | KLD Beta: 1.0000
+Epoch 73/300 | Avg Train Loss: 3576.6053 | KLD Beta: 1.0000
+Epoch 74/300 | Avg Train Loss: 3494.8454 | KLD Beta: 1.0000
+Epoch 75/300 | Avg Train Loss: 3632.8777 | KLD Beta: 1.0000
+Epoch 76/300 | Avg Train Loss: 3215.0646 | KLD Beta: 1.0000
+Epoch 77/300 | Avg Train Loss: 3880.6427 | KLD Beta: 1.0000
+Epoch 78/300 | Avg Train Loss: 3506.8569 | KLD Beta: 1.0000
+Epoch 79/300 | Avg Train Loss: 2975.0944 | KLD Beta: 1.0000
+Epoch 80/300 | Avg Train Loss: 3149.7728 | KLD Beta: 1.0000
+Epoch 81/300 | Avg Train Loss: 2842.7455 | KLD Beta: 1.0000
+Epoch 82/300 | Avg Train Loss: 3347.1960 | KLD Beta: 1.0000
+Epoch 83/300 | Avg Train Loss: 2791.6051 | KLD Beta: 1.0000
+Epoch 84/300 | Avg Train Loss: 2859.8407 | KLD Beta: 1.0000
+Epoch 85/300 | Avg Train Loss: 2796.7710 | KLD Beta: 1.0000
+Epoch 86/300 | Avg Train Loss: 2745.6050 | KLD Beta: 1.0000
+Epoch 87/300 | Avg Train Loss: 2430.4411 | KLD Beta: 1.0000
+Epoch 88/300 | Avg Train Loss: 2396.0522 | KLD Beta: 1.0000
+Epoch 89/300 | Avg Train Loss: 2660.2270 | KLD Beta: 1.0000
+Epoch 90/300 | Avg Train Loss: 2475.2023 | KLD Beta: 1.0000
+Epoch 91/300 | Avg Train Loss: 2414.7626 | KLD Beta: 1.0000
+Epoch 92/300 | Avg Train Loss: 2413.1034 | KLD Beta: 1.0000
+Epoch 93/300 | Avg Train Loss: 2489.2019 | KLD Beta: 1.0000
+Epoch 94/300 | Avg Train Loss: 2474.5266 | KLD Beta: 1.0000
+Epoch 95/300 | Avg Train Loss: 2256.1747 | KLD Beta: 1.0000
+Epoch 96/300 | Avg Train Loss: 2269.1325 | KLD Beta: 1.0000
+Epoch 97/300 | Avg Train Loss: 2070.8341 | KLD Beta: 1.0000
+Epoch 98/300 | Avg Train Loss: 2021.0512 | KLD Beta: 1.0000
+Epoch 99/300 | Avg Train Loss: 2320.8570 | KLD Beta: 1.0000
+Epoch 100/300 | Avg Train Loss: 1791.0536 | KLD Beta: 1.0000
+Epoch 101/300 | Avg Train Loss: 2150.3405 | KLD Beta: 1.0000
+Epoch 102/300 | Avg Train Loss: 2318.0707 | KLD Beta: 1.0000
+Epoch 103/300 | Avg Train Loss: 1756.3340 | KLD Beta: 1.0000
+Epoch 104/300 | Avg Train Loss: 2069.3490 | KLD Beta: 1.0000
+Epoch 105/300 | Avg Train Loss: 1776.6081 | KLD Beta: 1.0000
+Epoch 106/300 | Avg Train Loss: 1940.2730 | KLD Beta: 1.0000
+Epoch 107/300 | Avg Train Loss: 1809.9524 | KLD Beta: 1.0000
+Epoch 108/300 | Avg Train Loss: 1653.6006 | KLD Beta: 1.0000
+Epoch 109/300 | Avg Train Loss: 1734.9102 | KLD Beta: 1.0000
+Epoch 110/300 | Avg Train Loss: 1747.4495 | KLD Beta: 1.0000
+Epoch 111/300 | Avg Train Loss: 1668.6397 | KLD Beta: 1.0000
+Epoch 112/300 | Avg Train Loss: 1691.0455 | KLD Beta: 1.0000
+Epoch 113/300 | Avg Train Loss: 1876.8630 | KLD Beta: 1.0000
+Epoch 114/300 | Avg Train Loss: 1752.7126 | KLD Beta: 1.0000
+Epoch 115/300 | Avg Train Loss: 1834.3509 | KLD Beta: 1.0000
+Epoch 116/300 | Avg Train Loss: 1604.4843 | KLD Beta: 1.0000
+Epoch 117/300 | Avg Train Loss: 1599.3292 | KLD Beta: 1.0000
+Epoch 118/300 | Avg Train Loss: 1406.5503 | KLD Beta: 1.0000
+Epoch 119/300 | Avg Train Loss: 1479.6558 | KLD Beta: 1.0000
+Epoch 120/300 | Avg Train Loss: 1512.0324 | KLD Beta: 1.0000
+Epoch 121/300 | Avg Train Loss: 1368.3882 | KLD Beta: 1.0000
+Epoch 122/300 | Avg Train Loss: 1415.9476 | KLD Beta: 1.0000
+Epoch 123/300 | Avg Train Loss: 1539.0884 | KLD Beta: 1.0000
+Epoch 124/300 | Avg Train Loss: 1262.0799 | KLD Beta: 1.0000
+Epoch 125/300 | Avg Train Loss: 1344.5880 | KLD Beta: 1.0000
+Epoch 126/300 | Avg Train Loss: 1186.0731 | KLD Beta: 1.0000
+Epoch 127/300 | Avg Train Loss: 1173.1816 | KLD Beta: 1.0000
+Epoch 128/300 | Avg Train Loss: 1427.5151 | KLD Beta: 1.0000
+Epoch 129/300 | Avg Train Loss: 1337.8409 | KLD Beta: 1.0000
+Epoch 130/300 | Avg Train Loss: 1368.5249 | KLD Beta: 1.0000
+Epoch 131/300 | Avg Train Loss: 1182.6458 | KLD Beta: 1.0000
+Epoch 132/300 | Avg Train Loss: 1128.4140 | KLD Beta: 1.0000
+Epoch 133/300 | Avg Train Loss: 1074.4370 | KLD Beta: 1.0000
+Epoch 134/300 | Avg Train Loss: 1060.9359 | KLD Beta: 1.0000
+Epoch 135/300 | Avg Train Loss: 1042.2091 | KLD Beta: 1.0000
+Epoch 136/300 | Avg Train Loss: 1072.4780 | KLD Beta: 1.0000
+Epoch 137/300 | Avg Train Loss: 1010.4282 | KLD Beta: 1.0000
+Epoch 138/300 | Avg Train Loss: 1037.1381 | KLD Beta: 1.0000
+Epoch 139/300 | Avg Train Loss: 1057.4083 | KLD Beta: 1.0000
+Epoch 140/300 | Avg Train Loss: 1021.6123 | KLD Beta: 1.0000
+Epoch 141/300 | Avg Train Loss: 1098.0155 | KLD Beta: 1.0000
+Epoch 142/300 | Avg Train Loss: 915.3689 | KLD Beta: 1.0000
+Epoch 143/300 | Avg Train Loss: 871.4289 | KLD Beta: 1.0000
+Epoch 144/300 | Avg Train Loss: 1184.8376 | KLD Beta: 1.0000
+Epoch 145/300 | Avg Train Loss: 866.3844 | KLD Beta: 1.0000
+Epoch 146/300 | Avg Train Loss: 896.5186 | KLD Beta: 1.0000
+Epoch 147/300 | Avg Train Loss: 944.2462 | KLD Beta: 1.0000
+Epoch 148/300 | Avg Train Loss: 995.3559 | KLD Beta: 1.0000
+Epoch 149/300 | Avg Train Loss: 767.9537 | KLD Beta: 1.0000
+Epoch 150/300 | Avg Train Loss: 857.2068 | KLD Beta: 1.0000
+Epoch 151/300 | Avg Train Loss: 883.5358 | KLD Beta: 1.0000
+Epoch 152/300 | Avg Train Loss: 843.6416 | KLD Beta: 1.0000
+Epoch 153/300 | Avg Train Loss: 892.1745 | KLD Beta: 1.0000
+Epoch 154/300 | Avg Train Loss: 871.7532 | KLD Beta: 1.0000
+Epoch 155/300 | Avg Train Loss: 922.6977 | KLD Beta: 1.0000
+Epoch 156/300 | Avg Train Loss: 729.6281 | KLD Beta: 1.0000
+Epoch 157/300 | Avg Train Loss: 849.2608 | KLD Beta: 1.0000
+Epoch 158/300 | Avg Train Loss: 702.9832 | KLD Beta: 1.0000
+Epoch 159/300 | Avg Train Loss: 781.5248 | KLD Beta: 1.0000
+Epoch 160/300 | Avg Train Loss: 784.6189 | KLD Beta: 1.0000
+Epoch 161/300 | Avg Train Loss: 733.7207 | KLD Beta: 1.0000
+Epoch 162/300 | Avg Train Loss: 763.9141 | KLD Beta: 1.0000
+Epoch 163/300 | Avg Train Loss: 635.4332 | KLD Beta: 1.0000
+Epoch 164/300 | Avg Train Loss: 731.5634 | KLD Beta: 1.0000
+Epoch 165/300 | Avg Train Loss: 785.3133 | KLD Beta: 1.0000
+Epoch 166/300 | Avg Train Loss: 743.7353 | KLD Beta: 1.0000
+Epoch 167/300 | Avg Train Loss: 710.8252 | KLD Beta: 1.0000
+Epoch 168/300 | Avg Train Loss: 645.3311 | KLD Beta: 1.0000
+Epoch 169/300 | Avg Train Loss: 699.8408 | KLD Beta: 1.0000
+Epoch 170/300 | Avg Train Loss: 787.3591 | KLD Beta: 1.0000
+Epoch 171/300 | Avg Train Loss: 617.3420 | KLD Beta: 1.0000
+Epoch 172/300 | Avg Train Loss: 640.7315 | KLD Beta: 1.0000
+Epoch 173/300 | Avg Train Loss: 665.7551 | KLD Beta: 1.0000
+Epoch 174/300 | Avg Train Loss: 676.1576 | KLD Beta: 1.0000
+Epoch 175/300 | Avg Train Loss: 606.8858 | KLD Beta: 1.0000
+Epoch 176/300 | Avg Train Loss: 636.5323 | KLD Beta: 1.0000
+Epoch 177/300 | Avg Train Loss: 746.0508 | KLD Beta: 1.0000
+Epoch 178/300 | Avg Train Loss: 606.5019 | KLD Beta: 1.0000
+Epoch 179/300 | Avg Train Loss: 511.6842 | KLD Beta: 1.0000
+Epoch 180/300 | Avg Train Loss: 445.9412 | KLD Beta: 1.0000
+Epoch 181/300 | Avg Train Loss: 570.1385 | KLD Beta: 1.0000
+Epoch 182/300 | Avg Train Loss: 664.3274 | KLD Beta: 1.0000
+Epoch 183/300 | Avg Train Loss: 484.5221 | KLD Beta: 1.0000
+Epoch 184/300 | Avg Train Loss: 478.3147 | KLD Beta: 1.0000
+Epoch 185/300 | Avg Train Loss: 579.8864 | KLD Beta: 1.0000
+Epoch 186/300 | Avg Train Loss: 521.5493 | KLD Beta: 1.0000
+Epoch 187/300 | Avg Train Loss: 478.1160 | KLD Beta: 1.0000
+Epoch 188/300 | Avg Train Loss: 526.0732 | KLD Beta: 1.0000
+Epoch 189/300 | Avg Train Loss: 465.7737 | KLD Beta: 1.0000
+Epoch 190/300 | Avg Train Loss: 451.6945 | KLD Beta: 1.0000
+Epoch 191/300 | Avg Train Loss: 444.1374 | KLD Beta: 1.0000
+Epoch 192/300 | Avg Train Loss: 415.3353 | KLD Beta: 1.0000
+Epoch 193/300 | Avg Train Loss: 525.2027 | KLD Beta: 1.0000
+Epoch 194/300 | Avg Train Loss: 457.9071 | KLD Beta: 1.0000
+Epoch 195/300 | Avg Train Loss: 444.2167 | KLD Beta: 1.0000
+Epoch 196/300 | Avg Train Loss: 430.5976 | KLD Beta: 1.0000
+Epoch 197/300 | Avg Train Loss: 350.4024 | KLD Beta: 1.0000
+Epoch 198/300 | Avg Train Loss: 391.0315 | KLD Beta: 1.0000
+Epoch 199/300 | Avg Train Loss: 452.6534 | KLD Beta: 1.0000
+Epoch 200/300 | Avg Train Loss: 386.5320 | KLD Beta: 1.0000
+Epoch 201/300 | Avg Train Loss: 386.5692 | KLD Beta: 1.0000
+Epoch 202/300 | Avg Train Loss: 437.5775 | KLD Beta: 1.0000
+Epoch 203/300 | Avg Train Loss: 390.1753 | KLD Beta: 1.0000
+Epoch 204/300 | Avg Train Loss: 354.1214 | KLD Beta: 1.0000
+Epoch 205/300 | Avg Train Loss: 331.6159 | KLD Beta: 1.0000
+Epoch 206/300 | Avg Train Loss: 378.7735 | KLD Beta: 1.0000
+Epoch 207/300 | Avg Train Loss: 261.5301 | KLD Beta: 1.0000
+Epoch 208/300 | Avg Train Loss: 348.9830 | KLD Beta: 1.0000
+Epoch 209/300 | Avg Train Loss: 320.2127 | KLD Beta: 1.0000
+Epoch 210/300 | Avg Train Loss: 344.5341 | KLD Beta: 1.0000
+Epoch 211/300 | Avg Train Loss: 455.3884 | KLD Beta: 1.0000
+Epoch 212/300 | Avg Train Loss: 353.1431 | KLD Beta: 1.0000
+Epoch 213/300 | Avg Train Loss: 351.1991 | KLD Beta: 1.0000
+Epoch 214/300 | Avg Train Loss: 382.7158 | KLD Beta: 1.0000
+Epoch 215/300 | Avg Train Loss: 395.9104 | KLD Beta: 1.0000
+Epoch 216/300 | Avg Train Loss: 365.9376 | KLD Beta: 1.0000
+Epoch 217/300 | Avg Train Loss: 309.5996 | KLD Beta: 1.0000
+Epoch 218/300 | Avg Train Loss: 343.1672 | KLD Beta: 1.0000
+Epoch 219/300 | Avg Train Loss: 315.4855 | KLD Beta: 1.0000
+Epoch 220/300 | Avg Train Loss: 260.4915 | KLD Beta: 1.0000
+Epoch 221/300 | Avg Train Loss: 316.0994 | KLD Beta: 1.0000
+Epoch 222/300 | Avg Train Loss: 363.8989 | KLD Beta: 1.0000
+Epoch 223/300 | Avg Train Loss: 374.1859 | KLD Beta: 1.0000
+Epoch 224/300 | Avg Train Loss: 338.5306 | KLD Beta: 1.0000
+Epoch 225/300 | Avg Train Loss: 226.2746 | KLD Beta: 1.0000
+Epoch 226/300 | Avg Train Loss: 311.0234 | KLD Beta: 1.0000
+Epoch 227/300 | Avg Train Loss: 190.9989 | KLD Beta: 1.0000
+Epoch 228/300 | Avg Train Loss: 257.2152 | KLD Beta: 1.0000
+Epoch 229/300 | Avg Train Loss: 221.8960 | KLD Beta: 1.0000
+Epoch 230/300 | Avg Train Loss: 215.7889 | KLD Beta: 1.0000
+Epoch 231/300 | Avg Train Loss: 241.4507 | KLD Beta: 1.0000
+Epoch 232/300 | Avg Train Loss: 267.0250 | KLD Beta: 1.0000
+Epoch 233/300 | Avg Train Loss: 259.8453 | KLD Beta: 1.0000
+Epoch 234/300 | Avg Train Loss: 331.4078 | KLD Beta: 1.0000
+Epoch 235/300 | Avg Train Loss: 240.9218 | KLD Beta: 1.0000
+Epoch 236/300 | Avg Train Loss: 220.7244 | KLD Beta: 1.0000
+Epoch 237/300 | Avg Train Loss: 270.1377 | KLD Beta: 1.0000
+Epoch 238/300 | Avg Train Loss: 231.9471 | KLD Beta: 1.0000
+Epoch 239/300 | Avg Train Loss: 299.8413 | KLD Beta: 1.0000
+Epoch 240/300 | Avg Train Loss: 210.3462 | KLD Beta: 1.0000
+Epoch 241/300 | Avg Train Loss: 289.9563 | KLD Beta: 1.0000
+Epoch 242/300 | Avg Train Loss: 207.8639 | KLD Beta: 1.0000
+Epoch 243/300 | Avg Train Loss: 180.2628 | KLD Beta: 1.0000
+Epoch 244/300 | Avg Train Loss: 221.8770 | KLD Beta: 1.0000
+Epoch 245/300 | Avg Train Loss: 189.0741 | KLD Beta: 1.0000
+Epoch 246/300 | Avg Train Loss: 176.5428 | KLD Beta: 1.0000
+Epoch 247/300 | Avg Train Loss: 180.6281 | KLD Beta: 1.0000
+Epoch 248/300 | Avg Train Loss: 195.3537 | KLD Beta: 1.0000
+Epoch 249/300 | Avg Train Loss: 232.8405 | KLD Beta: 1.0000
+Epoch 250/300 | Avg Train Loss: 174.7232 | KLD Beta: 1.0000
+Epoch 251/300 | Avg Train Loss: 216.5367 | KLD Beta: 1.0000
+Epoch 252/300 | Avg Train Loss: 183.1232 | KLD Beta: 1.0000
+Epoch 253/300 | Avg Train Loss: 281.9336 | KLD Beta: 1.0000
+Epoch 254/300 | Avg Train Loss: 176.7167 | KLD Beta: 1.0000
+Epoch 255/300 | Avg Train Loss: 181.3312 | KLD Beta: 1.0000
+Epoch 256/300 | Avg Train Loss: 199.1219 | KLD Beta: 1.0000
+Epoch 257/300 | Avg Train Loss: 253.8671 | KLD Beta: 1.0000
+Epoch 258/300 | Avg Train Loss: 165.3714 | KLD Beta: 1.0000
+Epoch 259/300 | Avg Train Loss: 137.8630 | KLD Beta: 1.0000
+Epoch 260/300 | Avg Train Loss: 139.5173 | KLD Beta: 1.0000
+Epoch 261/300 | Avg Train Loss: 175.7977 | KLD Beta: 1.0000
+Epoch 262/300 | Avg Train Loss: 181.3236 | KLD Beta: 1.0000
+Epoch 263/300 | Avg Train Loss: 156.7505 | KLD Beta: 1.0000
+Epoch 264/300 | Avg Train Loss: 162.6747 | KLD Beta: 1.0000
+Epoch 265/300 | Avg Train Loss: 173.2061 | KLD Beta: 1.0000
+Epoch 266/300 | Avg Train Loss: 162.1740 | KLD Beta: 1.0000
+Epoch 267/300 | Avg Train Loss: 184.7894 | KLD Beta: 1.0000
+Epoch 268/300 | Avg Train Loss: 135.7367 | KLD Beta: 1.0000
+Epoch 269/300 | Avg Train Loss: 180.8588 | KLD Beta: 1.0000
+Epoch 270/300 | Avg Train Loss: 139.4370 | KLD Beta: 1.0000
+Epoch 271/300 | Avg Train Loss: 119.8609 | KLD Beta: 1.0000
+Epoch 272/300 | Avg Train Loss: 103.0805 | KLD Beta: 1.0000
+Epoch 273/300 | Avg Train Loss: 155.7984 | KLD Beta: 1.0000
+Epoch 274/300 | Avg Train Loss: 107.3410 | KLD Beta: 1.0000
+Epoch 275/300 | Avg Train Loss: 170.5588 | KLD Beta: 1.0000
+Epoch 276/300 | Avg Train Loss: 148.5032 | KLD Beta: 1.0000
+Epoch 277/300 | Avg Train Loss: 106.5891 | KLD Beta: 1.0000
+Epoch 278/300 | Avg Train Loss: 142.4905 | KLD Beta: 1.0000
+Epoch 279/300 | Avg Train Loss: 114.5227 | KLD Beta: 1.0000
+Epoch 280/300 | Avg Train Loss: 170.1416 | KLD Beta: 1.0000
+Epoch 281/300 | Avg Train Loss: 134.8669 | KLD Beta: 1.0000
+Epoch 282/300 | Avg Train Loss: 177.2169 | KLD Beta: 1.0000
+Epoch 283/300 | Avg Train Loss: 130.2869 | KLD Beta: 1.0000
+Epoch 284/300 | Avg Train Loss: 131.1871 | KLD Beta: 1.0000
+Epoch 285/300 | Avg Train Loss: 102.6342 | KLD Beta: 1.0000
+Epoch 286/300 | Avg Train Loss: 122.2054 | KLD Beta: 1.0000
+Epoch 287/300 | Avg Train Loss: 131.7597 | KLD Beta: 1.0000
+Epoch 288/300 | Avg Train Loss: 112.7183 | KLD Beta: 1.0000
+Epoch 289/300 | Avg Train Loss: 141.0755 | KLD Beta: 1.0000
+Epoch 290/300 | Avg Train Loss: 97.9581 | KLD Beta: 1.0000
+Epoch 291/300 | Avg Train Loss: 100.7938 | KLD Beta: 1.0000
+Epoch 292/300 | Avg Train Loss: 86.8220 | KLD Beta: 1.0000
+Epoch 293/300 | Avg Train Loss: 132.4323 | KLD Beta: 1.0000
+Epoch 294/300 | Avg Train Loss: 125.5777 | KLD Beta: 1.0000
+Epoch 295/300 | Avg Train Loss: 97.8969 | KLD Beta: 1.0000
+Epoch 296/300 | Avg Train Loss: 140.0581 | KLD Beta: 1.0000
+Epoch 297/300 | Avg Train Loss: 85.7196 | KLD Beta: 1.0000
+Epoch 298/300 | Avg Train Loss: 100.5553 | KLD Beta: 1.0000
+Epoch 299/300 | Avg Train Loss: 110.6722 | KLD Beta: 1.0000
+Epoch 300/300 | Avg Train Loss: 73.0716 | KLD Beta: 1.0000
+Training complete.
+Saved trained model to /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/vae_liver_model.pth
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27044885: <VAE_job> in cluster <dcc> Done
+
+Job <VAE_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Sun Nov 16 16:18:33 2025
+Job was executed on host(s) <4*n-62-13-14>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Sun Nov 16 17:40:06 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Sun Nov 16 17:40:06 2025
+Terminated at Sun Nov 16 18:24:20 2025
+Results reported at Sun Nov 16 18:24:20 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J VAE_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.err
+### --- Resource Requests ---
+#BSUB -q gpul40s           # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 4                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=16GB]"   # Request 16GB memory
+#BSUB -W 04:00                # 4 hour runtime limit
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+# This is the full, correct path to your environment
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+### --- Run Script ---
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2957.00 sec.
+    Max Memory :                                 1432 MB
+    Average Memory :                             1311.67 MB
+    Total Requested Memory :                     65536.00 MB
+    Delta Memory :                               64104.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                10
+    Run time :                                   2653 sec.
+    Turnaround time :                            7547 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_27044885.err> for stderr output of this job.
+

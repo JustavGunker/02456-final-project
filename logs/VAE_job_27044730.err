@@ -1,0 +1,124 @@
+Loaded module: cuda/11.6
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6386,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6386,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6258,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6258,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6226,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6226,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6226,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6226,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6227,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6227,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6227,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6227,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6227,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6227,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6322,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [3478,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [3478,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6292,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6292,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6292,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6292,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6292,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6260,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6260,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6260,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6260,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6260,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6322,0,0], thread: [63,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6257,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [72,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [72,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [61,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [62,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6354,0,0], thread: [63,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [62,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6355,0,0], thread: [63,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6291,0,0], thread: [63,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6356,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6356,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6356,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [3413,0,0], thread: [84,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6259,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [65,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [66,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [72,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6195,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6228,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6228,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6323,0,0], thread: [63,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6290,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6290,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6290,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6387,0,0], thread: [64,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6387,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6387,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6387,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6290,0,0], thread: [63,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [3381,0,0], thread: [84,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6324,0,0], thread: [67,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6324,0,0], thread: [68,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6324,0,0], thread: [69,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6324,0,0], thread: [70,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1720538439675/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [6324,0,0], thread: [71,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE.py", line 120, in <module>
+    loss_seg = loss_fn_seg(seg_out, y_target)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/loss.py", line 102, in forward
+    loss_dice = self.dice_loss_fn(inputs, targets) 
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/loss.py", line 152, in forward
+    intersection = (y_pred_flat * y_true_flat).sum(dim=2)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
