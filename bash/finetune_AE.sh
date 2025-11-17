@@ -6,7 +6,7 @@
 #BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/finetune_AE_job_%J.out
 #BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/finetune_AE_job_%J.err
 ### --- Resource Requests ---
-#BSUB -q gpua40             # Request GPU queue
+#BSUB -q gpua100             # Request GPU queue
 #BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
 #BSUB -n 4                    # Request 4 CPU cores
 #BSUB -R "rusage[mem=16GB]"   # Request 16GB memory
@@ -23,6 +23,6 @@ echo "Environment 'MBML' activated."
 
 ### --- Run Script ---
 echo "Starting Python script..."
-python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/finetune_seg.py
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/finetune_AE.py
 
 echo "Job Finished."

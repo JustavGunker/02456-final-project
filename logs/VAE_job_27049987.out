@@ -1,0 +1,88 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Found 28 image/label pairs.
+--- Data Split ---
+Total labeled samples: 28
+Training samples: 23 (Augmentation: False)
+Validation samples: 5 (Augmentation: False)
+--- Labeled data success ---
+Found 119 unlabeled images.
+--- Unlabeled data success ---
+--- Training the VAE on Liver Data ---
+
+--- Epoch 1/300 | KLD Beta: 0.000000 ---
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27049987: <VAE_job> in cluster <dcc> Exited
+
+Job <VAE_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Mon Nov 17 10:12:33 2025
+Job was executed on host(s) <4*n-62-13-17>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Mon Nov 17 10:12:33 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Mon Nov 17 10:12:33 2025
+Terminated at Mon Nov 17 10:13:03 2025
+Results reported at Mon Nov 17 10:13:03 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J VAE_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.err
+### --- Resource Requests ---
+#BSUB -q gpul40s           # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 4                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=16GB]"   # Request 16GB memory
+#BSUB -W 04:00                # 4 hour runtime limit
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+# This is the full, correct path to your environment
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+### --- Run Script ---
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE_test.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   34.00 sec.
+    Max Memory :                                 1529 MB
+    Average Memory :                             1020.00 MB
+    Total Requested Memory :                     65536.00 MB
+    Delta Memory :                               64007.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                14
+    Run time :                                   59 sec.
+    Turnaround time :                            30 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_27049987.err> for stderr output of this job.
+

@@ -15,11 +15,11 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
 from func.Models import AutoencoderNet
-from func.dataloads import LiverDataset, LiverUnlabeledDataset
+from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
+INPUT_SHAPE = (232, 232, 128) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 2
@@ -29,7 +29,7 @@ data_root_folder = Path.cwd() / DATA_DIR
 
 try:
     # labeled set
-    labeled_dataset = LiverDataset(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
+    labeled_dataset = LiverDataset_aug(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
     
     #DataLoader for labeled data
     labeled_loader = DataLoader(
@@ -45,10 +45,11 @@ except Exception as e:
 
 try:
 
-    unlabeled_dataset = LiverUnlabeledDataset(
+    unlabeled_dataset = LiverUnlabeledDataset_aug(
         image_dir=data_root_folder, 
         subfolder="imagesUnlabelledTr",
-        target_size= INPUT_SHAPE
+        target_size= INPUT_SHAPE,
+        augment=True
     )
     
     # 
@@ -73,26 +74,20 @@ if __name__ == "__main__":
     loss_fn_recon = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
     
-    # We want to train on both labeled and unlabeled images
-    # We ignore the labels from labeled_loader
-    combined_loader = itertools.chain(labeled_loader, unlabeled_loader)
+    num_batches = len(labeled_loader) + len(unlabeled_loader)
     
-    NUM_PRETRAIN_EPOCHS = 50
+    NUM_PRETRAIN_EPOCHS = 150
     
     print("Pre-training Autoencoder")
 
     for epoch in range(NUM_PRETRAIN_EPOCHS):
         print(f"\n--- Pre-train Epoch {epoch+1}/{NUM_PRETRAIN_EPOCHS} ---")
         model.train()
-        
+        epoch_loss = 0
+        combined_loader = itertools.chain(labeled_loader, unlabeled_loader)
+
         for batch_idx, data_batch in enumerate(combined_loader):
-            
-            # Check if batch is from labeled_loader (has 2+ items)
-            # or unlabeled_loader (has 1 item)
-            if isinstance(data_batch, list) or isinstance(data_batch, tuple):
-                x = data_batch[0].to(device)
-            else:
-                x = data_batch.to(device) # Should be just the image
+            x = data_batch[0].to(device)
             
             optimizer.zero_grad()
             
@@ -104,8 +99,12 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
             
-            if batch_idx % 50 == 0:
+            if batch_idx % 35 == 0:
                 print(f"Batch {batch_idx} | Recon Loss: {loss.item():.4f}")
+
+            epoch_loss += loss.item()
+        avg_loss = epoch_loss/num_batches
+        print(f"Avg Epoch loss: {avg_loss:.4f}")
 
     print("--- Pre-training Finished ---")
 

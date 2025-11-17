@@ -16,13 +16,13 @@ sys.path.append(str(PROJECT_ROOT))
 from func.utill import visualize_slices, DiceLoss
 from func.loss import DiceLoss, ComboLoss
 from func.Models import MultiTaskNet_big
-from func.dataloads import LiverDataset, LiverUnlabeledDataset
+from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 
 
-INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
+INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
-BATCH_SIZE = 4
+BATCH_SIZE = 2
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
@@ -35,7 +35,7 @@ data_root_folder = Path.cwd() / DATA_DIR
 
 try:
     # labeled set
-    labeled_dataset = LiverDataset(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
+    labeled_dataset = LiverDataset_aug(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
     
     #DataLoader for labeled data
     labeled_loader = DataLoader(
@@ -51,7 +51,7 @@ except Exception as e:
 
 try:
 
-    unlabeled_dataset = LiverUnlabeledDataset(
+    unlabeled_dataset = LiverUnlabeledDataset_aug(
         image_dir=data_root_folder, 
         subfolder="imagesUnlabelledTr",
         target_size= INPUT_SHAPE
@@ -137,7 +137,7 @@ if __name__ == "__main__":
             
             # Udate Logging
             if batch_idx % 14 == 0:
-                print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | Combo (CE+dice): {loss_seg.item():.4f} ")
+                print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss (Total): {total_loss_recon.item():.4f} | Combo (CE+dice): {total_loss_seg.item():.4f} ")
 
 print("--- Training Finished ---")
 print("Saving model weights...")
