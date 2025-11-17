@@ -16,13 +16,13 @@ sys.path.append(str(PROJECT_ROOT))
 
 from func.utill import visualize_slices, DiceLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet
-from func.dataloads import LiverDataset, LiverUnlabeledDataset
+from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 from func.loss import BoundaryLoss, ComboLoss
 
-INPUT_SHAPE = (128, 128, 128) # ( D, H, W)
+INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
-BATCH_SIZE = 2
+BATCH_SIZE = 1
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
@@ -33,7 +33,7 @@ data_root_folder = Path.cwd() / DATA_DIR
 
 try:
     # labeled set
-    labeled_dataset = LiverDataset(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
+    labeled_dataset = LiverDataset_aug(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
     
     #DataLoader for labeled data
     labeled_loader = DataLoader(
@@ -49,7 +49,7 @@ except Exception as e:
 
 try:
 
-    unlabeled_dataset = LiverUnlabeledDataset(
+    unlabeled_dataset = LiverUnlabeledDataset_aug(
         image_dir=data_root_folder, 
         subfolder="imagesUnlabelledTr",
         target_size= INPUT_SHAPE
@@ -78,14 +78,6 @@ if __name__ == "__main__":
     loss_fn_seg_cross = nn.CrossEntropyLoss()
     loss_fn_recon = nn.MSELoss()
 
-    # STAGE 1: "Region" Loss (Focuses on the whole blob)
-    #loss_fn_seg_stage1 = ExpLogComboLoss(
-    #    dice_loss_fn=loss_fn_seg_dice,
-    #    wce_loss_fn=loss_fn_seg_cross,
-    #    alpha=0.5, beta=0.5, gamma_dice=1.0, gamma_wce=1.0
-    #).to(device)
-
-    # STAGE 2: "Boundary" Loss (Focuses on hard pixels)
     loss_fn_seg = ComboLoss(
         dice_loss_fn=loss_fn_seg_dice,
         wce_loss_fn=loss_fn_seg_cross,
@@ -126,7 +118,7 @@ if __name__ == "__main__":
             total_loss_recon = loss_fn_recon(recon_out_labeled, x_labeled) + loss_fn_recon(recon_out_unlabeled, x_unlabeled)
             
             # Final total loss 
-            total_loss = (loss_seg * 1.0) + (total_loss_recon * 0.7) 
+            total_loss = (loss_seg * 4) + (total_loss_recon * 1) 
             
             total_loss.backward()
             optimizer_model.step()

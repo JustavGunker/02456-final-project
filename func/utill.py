@@ -237,3 +237,5 @@ class LiverDataset(Dataset):
         lbl_resized = lbl_resized.squeeze(0) 
 
         return img_resized, lbl_resized
+    
+    

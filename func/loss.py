@@ -102,7 +102,7 @@ class ComboLoss(nn.Module):
         loss_dice = self.dice_loss_fn(inputs, targets) 
         
         # Calculate CrossEntropyLoss (0=good, inf=bad)
-        loss_wce = self.wce_loss_fn(inputs, targets)  
+        loss_wce = self.wce_loss_fn(inputs, targets.squeeze(1).long())
 
         # Combine them with their weights
         total_loss = self.alpha * loss_dice + self.beta * loss_wce
@@ -161,6 +161,56 @@ class DiceLoss(nn.Module):
         dice_loss = 1 - dice_per_class[:, self.start_channel:].mean()
         
         return dice_loss
+    
+
+class FocalLoss(nn.Module):
+    """
+    L_Focal = (1 - pt)^gamma * L_CE
+    
+    Where pt is the probability of the correct class.
+    """
+    def __init__(self, gamma=2.0, reduction='mean'):
+        """
+        Args:
+            gamma (float): The "focusing" parameter. Higher values
+                           focus more on hard examples.
+            reduction (str): 'mean', 'sum', or 'none'
+        """
+        super(FocalLoss, self).__init__()
+        self.gamma = gamma
+        self.reduction = reduction
+
+    def forward(self, inputs, targets):
+        """
+        Args:
+            inputs (torch.Tensor): Model logits (B, C, D, H, W)
+            targets (torch.Tensor): Ground truth labels (B, 1, D, H, W)
+        """
+        # Ensure targets are the correct shape and type
+        # (B, 1, D, H, W) -> (B, D, H, W)
+        if targets.dim() == 5:
+            targets = targets.squeeze(1)
+        targets = targets.long()
+        
+        # Calculate the standard cross entropy loss, but *without* reduction
+        # This is L_CE = -log(pt)
+        ce_loss = F.cross_entropy(inputs, targets, reduction='none')
+        
+        # Get the probability of the correct class (pt)
+        # pt = exp(-ce_loss)
+        pt = torch.exp(-ce_loss)
+        
+        # Calculate the final focal loss
+        # L_Focal = (1 - pt)^gamma * L_CE
+        focal_loss = ((1 - pt) ** self.gamma) * ce_loss
+
+        # Apply the specified reduction
+        if self.reduction == 'mean':
+            return focal_loss.mean()
+        elif self.reduction == 'sum':
+            return focal_loss.sum()
+        else:
+            return focal_loss
     
 class BoundaryLoss(nn.Module):
     """
