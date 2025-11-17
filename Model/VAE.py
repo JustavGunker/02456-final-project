@@ -14,7 +14,7 @@ import itertools
 from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
-from func.loss import DiceLoss, KLAnnealing, ComboLoss, FocalLoss
+from func.loss import DiceLoss, KLAnnealing, ComboLoss, FocalLoss, TverskyLoss
 from func.Models import VAE
 from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 
@@ -78,13 +78,15 @@ if __name__ == "__main__":
         latent_dim=LATENT_DIM, 
         NUM_CLASSES=NUM_CLASSES).to(device)
     
-    dice = DiceLoss(num_classes=NUM_CLASSES)
+    #dice = DiceLoss(num_classes=NUM_CLASSES)
+    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.7, beta=0.3).to(device)
     #CE   = nn.CrossEntropyLoss()
     focal = FocalLoss(gamma=2.0).to(device)
+
     loss_fn_recon = nn.MSELoss()
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3, weight_decay=0.001)
     loss_fn_seg = ComboLoss(
-        dice_loss_fn=dice,
+        dice_loss_fn=Tversky,
         wce_loss_fn=focal,
         alpha=0.5, 
         beta=0.5   

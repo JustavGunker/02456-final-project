@@ -274,3 +274,62 @@ class KLAnnealing:
             # Linear ramp-up
             progress = (epoch - self.start_epoch) / (self.end_epoch - self.start_epoch)
             return self.start_beta + (self.end_beta - self.start_beta) * progress
+        
+class TverskyLoss(nn.Module):
+    """
+    Implements a multi-class Tversky loss, which is a generalization
+    of Dice loss. It's excellent for handling class imbalance and
+    penalizing False Positives (FPs) or False Negatives (FNs)
+    more heavily.
+
+    Tversky(P, G) = (TP) / (TP + alpha*FP + beta*FN)
+    Loss = 1 - Tversky(P, G)
+    
+    Setting alpha=0.7, beta=0.3 penalizes FPs (the "blob") more.
+    Setting alpha=0.3, beta=0.7 penalizes FNs (missing) more.
+    Setting alpha=0.5, beta=0.5 makes it identical to Dice.
+    
+    Expects:
+    - y_pred: Raw, unnormalized logits from the model
+              Shape: [B, C, H, W] (or [B, C, D, H, W] for 3D)
+    - y_true: Ground truth labels (integers)
+              Shape: [B, H, W] (or [B, D, H, W] for 3D) 
+              (This loss expects the channel dim to be squeezed)
+    """
+    def __init__(self, num_classes, alpha=0.7, beta=0.3, smooth=1e-6, include_background=False):
+        super(TverskyLoss, self).__init__()
+        self.num_classes = num_classes
+        self.alpha = alpha
+        self.beta = beta
+        self.smooth = smooth
+        self.start_channel = 0 if include_background else 1
+
+    def forward(self, y_pred, y_true):
+        # 1. Apply Softmax to model output to get probabilities
+        y_pred_probs = F.softmax(y_pred, dim=1)
+
+        # 2. Convert ground truth labels to one-hot format
+        # y_true shape: [B, D, H, W]
+        y_true_one_hot = F.one_hot(y_true.long(), num_classes=self.num_classes)
+        # Permute to match [B, C, D, H, W]
+        dims = list(range(len(y_true_one_hot.shape)))
+        dims.insert(1, dims.pop()) 
+        y_true_one_hot = y_true_one_hot.permute(*dims).float()
+        
+        # 3. Flatten tensors but keep batch and class dims
+        y_pred_flat = y_pred_probs.view(y_pred_probs.shape[0], self.num_classes, -1)
+        y_true_flat = y_true_one_hot.view(y_true_one_hot.shape[0], self.num_classes, -1)
+
+        # 4. Calculate components
+        true_pos = (y_pred_flat * y_true_flat).sum(dim=2)
+        false_pos = (y_pred_flat * (1 - y_true_flat)).sum(dim=2)
+        false_neg = ((1 - y_pred_flat) * y_true_flat).sum(dim=2)
+        
+        # 5. Calculate Tversky score per class
+        tversky_index = (true_pos + self.smooth) / \
+            (true_pos + self.alpha * false_pos + self.beta * false_neg + self.smooth)
+        
+        # 6. Average score across the specified classes (e.g., ignoring background)
+        tversky_loss = 1 - tversky_index[:, self.start_channel:].mean()
+        
+        return tversky_loss

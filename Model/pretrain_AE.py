@@ -19,7 +19,7 @@ from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-INPUT_SHAPE = (232, 232, 128) # ( D, H, W)
+INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 2
