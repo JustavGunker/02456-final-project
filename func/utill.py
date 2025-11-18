@@ -10,6 +10,11 @@ from torchvision import transforms
 from sklearn.model_selection import train_test_split
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
+import torch.nn.functional as F
+import nibabel as nib
+import sys
+import glob
+import itertools
 
 INPUT_SHAPE = (1, 28, 28, 28) # (C, D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
@@ -119,67 +124,69 @@ def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_id
         plt.show()
 
 
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-
-class DiceLoss(nn.Module):
+def visualize_slices_tr(input_batch, target_batch, recon_batch, seg_batch, threshold, slice_idx=None):
     """
-    Implements a multi-class Dice loss.
-    
-    Expects:
-    - y_pred: Raw, unnormalized logits from the model
-              Shape: [B, C, H, W] (or [B, C, D, H, W] for 3D)
-    - y_true: Ground truth labels (integers)
-              Shape: [B, 1, H, W] (or [B, 1, D, H, W] for 3D)
+    Plots a 2D slice from the middle of a 4-tensor batch.
     """
-    def __init__(self, num_classes, smooth=1e-6, include_background=False):
-        super(DiceLoss, self).__init__()
-        self.num_classes = num_classes
-        self.smooth = smooth
-        # By default, we calculate loss for all classes, including background.
-        # If you want to ignore background, set include_background=False
-        self.start_channel = 0 if include_background else 1
-
-    def forward(self, y_pred, y_true):
-        # 1. Apply Softmax to model output to get probabilities
-        # y_pred_probs shape: [B, C, H, W]
-        y_pred_probs = F.softmax(y_pred, dim=1)
-
-        # 2. Convert ground truth labels to one-hot format
-        # y_true_one_hot shape: [B, C, H, W]
-        y_true_one_hot = F.one_hot(y_true.squeeze(1).long(), num_classes=self.num_classes)
-        # Permute to match [B, C, H, W] or [B, C, D, H, W]
-        # For 2D (B, H, W, C) -> (B, C, H, W)
-        # For 3D (B, D, H, W, C) -> (B, C, D, H, W)
-        dims = list(range(len(y_true_one_hot.shape)))
-        dims.insert(1, dims.pop()) # Move last dim (C) to second dim
-        y_true_one_hot = y_true_one_hot.permute(*dims).float()
+    with torch.no_grad():
+        # --- 1. Process Tensors ---
         
-        # 3. Flatten tensors but keep batch and class dims
-        # Shape: [B, C, -1]
-        y_pred_flat = y_pred_probs.view(y_pred_probs.shape[0], self.num_classes, -1)
-        y_true_flat = y_true_one_hot.view(y_true_one_hot.shape[0], self.num_classes, -1)
+        # Move to CPU
+        input_slice = input_batch.to('cpu').numpy()[0, 0, slice_idx, :, :]
+        target_slice = target_batch.to('cpu').numpy()[0, slice_idx, :, :]
+        recon_slice = recon_batch.to('cpu').detach().numpy()[0, 0, slice_idx, :, :]
+        
+        seg_logits = seg_batch.to('cpu').detach()
+        
+        # Option A: Standard Argmax (What you have now)
+        seg_pred_argmax = torch.argmax(seg_logits, dim=1)
+        seg_slice_argmax = seg_pred_argmax.numpy()[0, slice_idx, :, :]
 
-        # 4. Calculate intersection and union per class (over the batch)
-        # Sum over the last dim (pixels)
-        intersection = (y_pred_flat * y_true_flat).sum(dim=2)
-        union = y_pred_flat.sum(dim=2) + y_true_flat.sum(dim=2)
+        # Option B: Thresholding for Class 1 (e.g., Liver)
+        # 1. Apply Softmax to get probabilities (0 to 1)
+        seg_probs = F.softmax(seg_logits, dim=1)
+        # 2. Get the probability map for Class 1 (Foreground)
+        # Shape: [B, H, W]
+        prob_map_class1 = seg_probs[0, 1, slice_idx, :, :].numpy()
         
-        # 5. Calculate Dice score per class
-        # Add smooth to avoid 0/0
-        dice_per_class = (2. * intersection + self.smooth) / (union + self.smooth)
-        
-        # 6. Average Dice score across the specified classes (e.g., ignoring background)
-        # We take the mean over the classes (dim=1) and then over the batch (dim=0)
-        dice_loss = 1 - dice_per_class[:, self.start_channel:].mean()
-        
-        return dice_loss
+        # 3. Apply Threshold (e.g., > 0.5)
+        threshold = threshold
+        seg_slice_threshold = (prob_map_class1 > threshold).astype(int)
 
+        
+        # --- 2. Plotting ---
+        
+        fig, axes = plt.subplots(1, 5, figsize=(25, 5)) # Increased to 5 plots
+        
+        # Plot 1: Input
+        axes[0].imshow(input_slice, cmap='gray')
+        axes[0].set_title(f"Input (Slice {slice_idx})")
+        axes[0].axis('off')
+        
+        # Plot 2: Ground Truth
+        axes[1].imshow(target_slice, cmap='gray', vmin=0, vmax=NUM_CLASSES-1)
+        axes[1].set_title("Target")
+        axes[1].axis('off')
+        
+        # Plot 3: Reconstruction
+        axes[2].imshow(recon_slice, cmap='gray')
+        axes[2].set_title("Reconstruction")
+        axes[2].axis('off')
+        
+        # Plot 4: Prob Map (Confidence) - THIS IS VERY USEFUL
+        # Shows exactly how confident the model is
+        im4 = axes[3].imshow(prob_map_class1, cmap='jet', vmin=0, vmax=1)
+        axes[3].set_title("Liver Probability Map")
+        axes[3].axis('off')
+        plt.colorbar(im4, ax=axes[3], fraction=0.046, pad=0.04)
+        
+        # Plot 5: Thresholded Prediction
+        axes[4].imshow(seg_slice_threshold, cmap='gray')
+        axes[4].set_title(f"Prediction > {threshold}")
+        axes[4].axis('off')
+        
+        plt.tight_layout()
+        plt.show()
 class LiverDataset(Dataset):
     """
     Made by AI
@@ -237,5 +244,53 @@ class LiverDataset(Dataset):
         lbl_resized = lbl_resized.squeeze(0) 
 
         return img_resized, lbl_resized
+    
+def save_predictions(epoch, original, target, recon, seg_pred, save_dir):
+    """
+    Saves middle-slice visualizations for 3D medical data.
+    """
+    # 1. Detach and move to CPU
+    # Shape: (B, C, D, H, W) -> We assume Batch=1
+    img_data = original.detach().cpu().numpy()[0, 0]
+    recon_data = recon.detach().cpu().numpy()[0, 0]
+    target_data = target.detach().cpu().numpy()[0] # Assuming target is (B, D, H, W)
+    
+    # Process Segmentation: Apply Argmax to get class indices
+    # seg_pred shape: (B, Classes, D, H, W) -> (D, H, W)
+    seg_map = torch.argmax(seg_pred, dim=1).detach().cpu().numpy()[0]
+
+    # 2. Select the Middle Slice (Depth dimension)
+    slice_idx = img_data.shape[0] // 2
+
+    # --- Save Reconstruction ---
+    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+    axes[0].imshow(img_data[slice_idx], cmap='gray')
+    axes[0].set_title("Original Input (Mid-Slice)")
+    axes[0].axis('off')
+    
+    axes[1].imshow(recon_data[slice_idx], cmap='gray')
+    axes[1].set_title("Reconstruction")
+    axes[1].axis('off')
+    
+    plt.tight_layout()
+    plt.savefig(save_dir / f"recon_iter{epoch+1}.png")
+    plt.close(fig) # Close to free memory
+
+    # --- Save Segmentation ---
+    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+    
+    # Ground Truth
+    axes[0].imshow(target_data[slice_idx], cmap='tab10', interpolation='nearest')
+    axes[0].set_title("Ground Truth")
+    axes[0].axis('off')
+    
+    # Prediction
+    axes[1].imshow(seg_map[slice_idx], cmap='tab10', interpolation='nearest')
+    axes[1].set_title("Predicted Seg")
+    axes[1].axis('off')
+
+    plt.tight_layout()
+    plt.savefig(save_dir / f"seg_iter{epoch+1}.png")
+    plt.close(fig)
     
     

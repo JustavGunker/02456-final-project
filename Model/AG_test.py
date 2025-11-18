@@ -16,7 +16,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from func.utill import visualize_slices, DiceLoss
+from func.utill import visualize_slices, save_predictions
 from func.Models import MultiTaskNet_ag as MultiTaskNet
 from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 from func.loss import BoundaryLoss, ComboLoss, TverskyLoss
@@ -28,9 +28,9 @@ BATCH_SIZE = 1
 VAL_SPLIT = 0.2  # 
 LEARNING_RATE = 1e-4 
 WEIGHT_DECAY = 0.001
-NUM_EPOCHS = 300
+NUM_EPOCHS = 1000
 
-
+SAVE_INTERVAL = 20 
 SEG_WEIGHT = 4.0
 RECON_WEIGHT = 1.0
 
@@ -38,7 +38,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 DATA_DIR = "./Task03_Liver_rs" 
-data_root_folder = Path.cwd() / DATA_DIR
+data_root_folder = PROJECT_ROOT / DATA_DIR
+OUTPUT_DIR = PROJECT_ROOT / "Output_ag_test"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- 1. Load and Split Data ---
 try:
@@ -103,12 +105,12 @@ if __name__ == "__main__":
 
     # Segmentation Loss (Dice + CE)
     #loss_fn_seg_dice = DiceLoss(num_classes=NUM_CLASSES)
-    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.7, beta=0.3)
+    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.8, beta=0.2)
     loss_fn_seg_cross = nn.CrossEntropyLoss()
     loss_fn_seg = ComboLoss(
         dice_loss_fn=Tversky,
         wce_loss_fn=loss_fn_seg_cross,
-        alpha=0.6, beta=0.4  # You can tune these alpha/beta from func/loss.py
+        alpha=0.4, beta=0.6  # You can tune these alpha/beta from func/loss.py
     ).to(device)
     
     # Reconstruction Loss
@@ -127,7 +129,7 @@ if __name__ == "__main__":
     )
 
     best_val_iou = 0.0
-    SAVE_PATH = Path.cwd() / "Trained_models" / "AG_test.pth"
+    SAVE_PATH = PROJECT_ROOT / "Trained_models" / "AG_test.pth"
     SAVE_PATH.parent.mkdir(parents=True, exist_ok=True) # Ensure directory exists
     
     print("--- Starting Training ---")
@@ -178,9 +180,16 @@ if __name__ == "__main__":
             epoch_train_loss += total_loss.item()
             epoch_seg_loss += loss_seg.item()
             epoch_recon_loss += loss_recon.item()
+            last_x = x_labeled
+            last_y = y_seg_target
+            last_recon = recon_out_labeled
+            last_seg = seg_out
     
             if batch_idx % 30 == 0:
                 print(f"  Batch {batch_idx}/{len(train_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss: {loss_recon.item():.4f} | Seg Loss: {loss_seg.item():.4f}")
+        if (epoch == 0) or ((epoch + 1) % SAVE_INTERVAL == 0) or (epoch == NUM_EPOCHS - 1):
+            print(f"  Saving visuals for Epoch {epoch+1}...")
+            save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR)
 
         # --- NEW: Print average epoch training losses ---
         avg_train_loss = epoch_train_loss / len(train_loader)

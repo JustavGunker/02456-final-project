@@ -14,10 +14,10 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from func.utill import visualize_slices, DiceLoss
+from func.utill import visualize_slices, save_predictions
 from func.Models import MultiTaskNet_ag as MultiTaskNet
 from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
-from func.loss import BoundaryLoss, ComboLoss, TverskyLoss
+from func.loss import BoundaryLoss, ComboLoss, TverskyLoss, DiceLoss
 
 INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
@@ -28,8 +28,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 DATA_DIR = "./Task03_Liver_rs" 
-# This one path points to the root directory (e.g., ./Task03_Liver_rs)
-data_root_folder = Path.cwd() / DATA_DIR
+data_root_folder = PROJECT_ROOT / DATA_DIR
+OUTPUT_DIR = PROJECT_ROOT / "output_AG "
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 try:
     # labeled set
@@ -75,19 +76,20 @@ if __name__ == "__main__":
     ).to(device)
 
     #loss_fn_seg_dice = DiceLoss(num_classes=NUM_CLASSES)
-    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.7, beta=0.3)
+    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.8, beta=0.2)
     loss_fn_seg_cross = nn.CrossEntropyLoss()
     loss_fn_recon = nn.MSELoss()
 
     loss_fn_seg = ComboLoss(
         dice_loss_fn=Tversky,
         wce_loss_fn=loss_fn_seg_cross,
-        alpha=0.6, beta=0.4
+        alpha=0.4, beta=0.6
     ).to(device)
     
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3)
 
-    NUM_EPOCHS = 300
+    NUM_EPOCHS = 700
+    SAVE_INTERVAL = 20 
     
     for epoch in range(NUM_EPOCHS):
         print(f"\n--- Epoch {epoch+1}/{NUM_EPOCHS} ---")
@@ -119,15 +121,23 @@ if __name__ == "__main__":
             total_loss_recon = loss_fn_recon(recon_out_labeled, x_labeled) + loss_fn_recon(recon_out_unlabeled, x_unlabeled)
             
             # Final total loss 
-            total_loss = (loss_seg * 4) + (total_loss_recon * 1) 
+            total_loss = (loss_seg * 5) + (total_loss_recon * 1) 
             
             total_loss.backward()
             optimizer_model.step()
+
+            last_x = x_labeled
+            last_y = y_seg_target
+            last_recon = recon_out_labeled
+            last_seg = seg_out
     
             # This was your TypeError (printing the function, not the value)
             if batch_idx % 30 == 0:
                 print(f"Batch {batch_idx}/{len(labeled_loader)} | Total Loss: {total_loss.item():.4f} | Recon Loss: {total_loss_recon.item():.4f} | Seg Loss: {loss_seg.item():.4f}")
-            
+        if (epoch == 0) or ((epoch + 1) % SAVE_INTERVAL == 0) or (epoch == NUM_EPOCHS - 1):
+            print(f"  Saving visuals for Epoch {epoch+1}...")
+            save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR)
+
     print("--- Training Finished ---")
     
     SAVE_PATH = Path.cwd() / "Trained_models" / "AG.pth"

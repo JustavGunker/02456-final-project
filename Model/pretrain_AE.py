@@ -13,19 +13,21 @@ import itertools
 from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
-
+from func.utill import save_predictions
 from func.Models import AutoencoderNet
 from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
-NUM_CLASSES = 3  # Background, Segment 1, Segment 2
+NUM_CLASSES = 1  # Background, Segment 1, Segment 2
 LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 2
 
 DATA_DIR = "./Task03_Liver_rs" 
-data_root_folder = Path.cwd() / DATA_DIR
+data_root_folder = PROJECT_ROOT/ DATA_DIR
+OUTPUT_DIR = PROJECT_ROOT / "Output_pAE"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 try:
     # labeled set
@@ -76,12 +78,13 @@ if __name__ == "__main__":
     
     num_batches = len(labeled_loader) + len(unlabeled_loader)
     
-    NUM_PRETRAIN_EPOCHS = 150
+    NUM_EPOCHS = 100
+    SAVE_INTERVAL = 10
     
     print("Pre-training Autoencoder")
 
-    for epoch in range(NUM_PRETRAIN_EPOCHS):
-        print(f"\n--- Pre-train Epoch {epoch+1}/{NUM_PRETRAIN_EPOCHS} ---")
+    for epoch in range(NUM_EPOCHS):
+        print(f"\n--- Pre-train Epoch {epoch+1}/{NUM_EPOCHS} ---")
         model.train()
         epoch_loss = 0
         combined_loader = itertools.chain(labeled_loader, unlabeled_loader)
@@ -103,8 +106,15 @@ if __name__ == "__main__":
                 print(f"Batch {batch_idx} | Recon Loss: {loss.item():.4f}")
 
             epoch_loss += loss.item()
+            last_x = x
+            last_y = x
+            last_recon = recon_out
+            last_seg = recon_out
         avg_loss = epoch_loss/num_batches
         print(f"Avg Epoch loss: {avg_loss:.4f}")
+    if (epoch == 0) or ((epoch + 1) % SAVE_INTERVAL == 0) or (epoch == NUM_EPOCHS - 1):
+        print(f"  Saving visuals for Epoch {epoch+1}...")
+        save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR)
 
     print("--- Pre-training Finished ---")
 

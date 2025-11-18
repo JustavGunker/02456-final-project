@@ -14,26 +14,26 @@ import itertools
 from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
-from func.loss import DiceLoss, KLAnnealing, ComboLoss, FocalLoss
+from func.loss import DiceLoss, KLAnnealing, ComboLoss, FocalLoss, TverskyLoss, kld_loss
 from func.Models import VAE
 from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug 
 
-from func.loss import kld_loss
+from func.utill import save_predictions
 from xml.parsers.expat import model
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 LATENT_DIM = 256
-NUM_EPOCHS = 300
+NUM_EPOCHS = 1000
 BATCH_SIZE = 1
 INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
 VAL_SPLIT = 0.2 # < 20% Vali
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 1e-3
 
-SEG_WEIGHT = 4
-RECON_WEIGHT = 1
+SEG_WEIGHT = 2.0
+RECON_WEIGHT = 1.0
 
 DATA_DIR = "./Task03_Liver_rs"
 data_root_folder = Path.cwd() / DATA_DIR
@@ -99,18 +99,19 @@ if __name__ == "__main__":
         latent_dim=LATENT_DIM, 
         NUM_CLASSES=NUM_CLASSES).to(device)
     
-    dice = DiceLoss(num_classes=NUM_CLASSES)
+    #dice = DiceLoss(num_classes=NUM_CLASSES)
+    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.6, beta=0.4)
     focal = FocalLoss(gamma=2.0).to(device) # Use Focal Loss
     loss_fn_recon = nn.MSELoss()
     
     loss_fn_seg = ComboLoss(
-        dice_loss_fn=dice,
+        dice_loss_fn=Tversky,
         wce_loss_fn=focal, # Pass Focal Loss
-        alpha=0.5, 
-        beta=0.5   
+        alpha=0.6, 
+        beta=0.4   
     ).to(device)
 
-    optimizer_model = optim.AdamW(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5) # Added weight_decay
+    optimizer_model = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=0.001)
 
     scheduler = lr_scheduler.ReduceLROnPlateau(
         optimizer_model,
@@ -131,12 +132,16 @@ if __name__ == "__main__":
     
     
     best_val_iou = 0.0
-    patience = 70 
+    patience = 300 
     epochs_no_improve = 0
-    SAVE_PATH = Path.cwd() / "Trained_models" / "VAE_test.pth"
-    SAVE_PATH_IoU = Path.cwd() / "Trained_models" / "VAE_IoU.pth"
+    SAVE_PATH = PROJECT_ROOT / "Trained_models" / "VAE_test.pth"
+    SAVE_PATH_IoU = PROJECT_ROOT / "Trained_models" / "VAE_IoU.pth"
+    OUTPUT_DIR = PROJECT_ROOT / "outputs_VAE_test"
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    print(f"Saving visualizations to: {OUTPUT_DIR}")
     SAVE_PATH.parent.mkdir(parents=True, exist_ok=True) # Ensure directory exists
     
+    SAVE_INTERVAL = 20
     print("--- Training the VAE on Liver Data ---")
 
     for epoch in range(NUM_EPOCHS):        
@@ -191,9 +196,19 @@ if __name__ == "__main__":
         avg_seg_loss = epoch_seg_loss / len(train_loader)
         avg_recon_loss = epoch_recon_loss / len(train_loader)
         avg_kld_loss = epoch_kld_loss / len(train_loader)
+
+        last_x = x
+        last_y = y_target
+        last_recon = recon_out_labeled
+        last_seg = seg_out
         
         print(f"  TRAIN | Total Loss: {avg_train_loss:.4f}")
-        print(f"          Seg: {avg_seg_loss:.4f} | Recon: {avg_recon_loss:.4f} | KLD: {avg_kld_loss:.4f}")
+        print(f"  Seg: {avg_seg_loss:.4f} | Recon: {avg_recon_loss:.4f} | KLD: {avg_kld_loss:.4f}")
+
+        if (epoch == 0) or ((epoch + 1) % SAVE_INTERVAL == 0) or (epoch == NUM_EPOCHS - 1):
+            print(f"  Saving visuals for Epoch {epoch+1}...")
+            save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR)
+
         
         # Validation
         model.eval()

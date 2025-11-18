@@ -1,0 +1,75 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27073663: <AG_job> in cluster <dcc> Done
+
+Job <AG_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Tue Nov 18 14:05:11 2025
+Job was executed on host(s) <8*n-62-13-19>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Tue Nov 18 14:05:13 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Tue Nov 18 14:05:13 2025
+Terminated at Tue Nov 18 14:05:24 2025
+Results reported at Tue Nov 18 14:05:24 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J AG_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_%J.err
+
+### --- Resource Requests ---
+#BSUB -q gpul40s           # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 8                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=60GB]"   # Request 16GB memory
+#BSUB -W 04:00                # 4 hour runtime limit
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   7.30 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     491520.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   18 sec.
+    Turnaround time :                            13 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_27073663.err> for stderr output of this job.
+
