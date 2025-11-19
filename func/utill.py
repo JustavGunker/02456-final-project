@@ -17,14 +17,13 @@ LATENT_DIM = 256 # RNN batch
 BATCH_SIZE = 4
 TIME_STEPS = 10 # Time series size 
 
-
-def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_idx=24):
+def visualize_slices_inmodel(input_batch, target_batch, recon_batch, seg_batch):
     """
     Plots a 2D slice from the middle of a 4-tensor batch.
     """
     # Use torch.no_grad() to stop tracking gradients
     with torch.no_grad():
-        
+        slice_idx = input_batch.shape[2] // 2  # Middle slice index
         # --- 1. Process Tensors ---
         
         # Move to CPU and convert to NumPy
@@ -62,7 +61,57 @@ def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_id
         axes[2].axis('off')
         
         # Plot 4: Predicted Segmentation
-        axes[3].imshow(seg_slice, cmap='viridis', vmin=0, vmax=NUM_CLASSES-1)
+        axes[3].imshow(seg_slice, cmap='grey', vmin=0, vmax=NUM_CLASSES-1)
+        axes[3].set_title("Predicted Segmentation")
+        axes[3].axis('off')
+        
+        plt.tight_layout()
+        plt.show()
+
+def visualize_slices(input_batch, target_batch, recon_batch, seg_batch, slice_idx=None):
+    """
+    Plots a 2D slice from the middle of a 4-tensor batch.
+    """
+    # Use torch.no_grad() to stop tracking gradients
+    with torch.no_grad():
+        # --- 1. Process Tensors ---
+        
+        # Move to CPU and convert to NumPy
+        # Squeeze out the channel dim (C=1)
+        input_slice = input_batch.to('cpu').numpy()[0, 0, slice_idx, :, :]
+        
+        # Target is [B, D, H, W], no channel
+        target_slice = target_batch.to('cpu').numpy()[0, slice_idx, :, :]
+        
+        # Recon needs detach() because it has grads
+        recon_slice = recon_batch.to('cpu').detach().numpy()[0, 0, slice_idx, :, :]
+        
+        seg_logits = seg_batch.to('cpu').detach()
+        seg_pred = torch.argmax(seg_logits, dim=1) # Shape: [B, D, H, W]
+        seg_slice = seg_pred.numpy()[0, slice_idx, :, :]
+
+        
+        # --- 2. Plotting ---
+        
+        fig, axes = plt.subplots(1, 4, figsize=(20, 5))
+        
+        # Plot 1: Original Input
+        axes[0].imshow(input_slice, cmap='gray')
+        axes[0].set_title(f"Input Image (Slice {slice_idx})")
+        axes[0].axis('off')
+        
+        # Plot 2: Ground Truth Segmentation
+        axes[1].imshow(target_slice, cmap='gray', vmin=0, vmax=NUM_CLASSES-1)
+        axes[1].set_title("Target Segmentation")
+        axes[1].axis('off')
+        
+        # Plot 3: Reconstructed Output
+        axes[2].imshow(recon_slice, cmap='gray')
+        axes[2].set_title("Reconstructed Image")
+        axes[2].axis('off')
+        
+        # Plot 4: Predicted Segmentation
+        axes[3].imshow(seg_slice, cmap='grey', vmin=0, vmax=NUM_CLASSES-1)
         axes[3].set_title("Predicted Segmentation")
         axes[3].axis('off')
         
