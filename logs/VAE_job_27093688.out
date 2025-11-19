@@ -1,0 +1,12 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Saving visualizations to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE
+Dataset initialized with 512 total patches.
+--- Labeled DataLoader success (using patched data) ---
+Dataset initialized with 512 total patches.
+--- Unlabeled DataLoader success (using patched data) ---
+--- Training the VAE on Patched Volumetric Data ---

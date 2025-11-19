@@ -1,0 +1,33 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Dataset initialized with 512 total patches.
+--- Labeled DataLoader created successfully ---
+Dataset initialized with 512 total patches.
+--- Unlabeled DataLoader created successfully ---
+--- Training the MultiTaskNet on Patched Volumetric Data ---
+
+--- Epoch 1/300 ---
+Epoch 1/300 | Avg Train Loss: 0.6185
+  Seg Loss: 0.6122 | Recon Loss: 0.0106
+
+--- Epoch 2/300 ---
+Epoch 2/300 | Avg Train Loss: 0.5086
+  Seg Loss: 0.5050 | Recon Loss: 0.0060
+
+--- Epoch 3/300 ---
+Epoch 3/300 | Avg Train Loss: 0.5007
+  Seg Loss: 0.4972 | Recon Loss: 0.0058
+
+--- Epoch 4/300 ---
+Epoch 4/300 | Avg Train Loss: 0.4864
+  Seg Loss: 0.4831 | Recon Loss: 0.0054
+
+--- Epoch 5/300 ---
+Epoch 5/300 | Avg Train Loss: 0.4734
+  Seg Loss: 0.4702 | Recon Loss: 0.0053
+
+--- Epoch 6/300 ---

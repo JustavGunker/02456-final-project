@@ -245,52 +245,46 @@ class LiverDataset(Dataset):
 
         return img_resized, lbl_resized
     
-def save_predictions(epoch, original, target, recon, seg_pred, save_dir):
+def save_predictions(epoch, input_x, gt_y, recon_out, seg_out, output_dir, slice_idx=64):
     """
-    Saves middle-slice visualizations for 3D medical data.
+    Saves a central 2D slice of the input, ground truth, reconstruction, and prediction.
+    Inputs are expected to be Tensors.
     """
-    # 1. Detach and move to CPU
-    # Shape: (B, C, D, H, W) -> We assume Batch=1
-    img_data = original.detach().cpu().numpy()[0, 0]
-    recon_data = recon.detach().cpu().numpy()[0, 0]
-    target_data = target.detach().cpu().numpy()[0] # Assuming target is (B, D, H, W)
     
-    # Process Segmentation: Apply Argmax to get class indices
-    # seg_pred shape: (B, Classes, D, H, W) -> (D, H, W)
-    seg_map = torch.argmax(seg_pred, dim=1).detach().cpu().numpy()[0]
+    # 1. Move tensors to CPU and convert to NumPy
+    # Input X: (B, C=1, D, H, W)
+    x_np = input_x[0, 0, slice_idx, :, :].cpu().numpy() 
+    
+    # Ground Truth Y: (B, D, H, W) [Squeezed target, no channel dimension]
+    y_np = gt_y[0, slice_idx, :, :].cpu().numpy()       
+    
+    # Recon Output: (B, C=1, D, H, W)
+    recon_np = recon_out[0, 0, slice_idx, :, :].cpu().detach().numpy()
+    
+    # Seg Output: (B, C_classes, D, H, W). Find argmax along class dimension (dim=0 after squeeze).
+    pred_seg_np = torch.argmax(seg_out, dim=1)[0, slice_idx, :, :].cpu().numpy()
+    
+    
+    fig, axes = plt.subplots(1, 4, figsize=(18, 5))
+    
+    titles = [f'Input (E{epoch+1})', 'Ground Truth', 'Reconstruction', 'Segmentation Pred']
+    data = [x_np, y_np, recon_np, pred_seg_np]
+    cmaps = ['gray', 'viridis', 'gray', 'viridis']
+    
+    for i, ax in enumerate(axes):
+        # Set max for segmentation/labels to ensure consistent color scale (0 to 3)
+        vmax = NUM_CLASSES - 1 if i == 1 or i == 3 else None
+        
+        cax = ax.imshow(data[i], cmap=cmaps[i], vmax=vmax)
+        ax.set_title(titles[i])
+        ax.axis('off')
+        
+        # Add color bar for labels and predictions
+        if i == 1 or i == 3:
+            fig.colorbar(cax, ax=ax, ticks=range(NUM_CLASSES))
 
-    # 2. Select the Middle Slice (Depth dimension)
-    slice_idx = img_data.shape[0] // 2
-
-    # --- Save Reconstruction ---
-    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
-    axes[0].imshow(img_data[slice_idx], cmap='gray')
-    axes[0].set_title("Original Input (Mid-Slice)")
-    axes[0].axis('off')
-    
-    axes[1].imshow(recon_data[slice_idx], cmap='gray')
-    axes[1].set_title("Reconstruction")
-    axes[1].axis('off')
-    
-    plt.tight_layout()
-    plt.savefig(save_dir / f"recon_iter{epoch+1}.png")
-    plt.close(fig) # Close to free memory
-
-    # --- Save Segmentation ---
-    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
-    
-    # Ground Truth
-    axes[0].imshow(target_data[slice_idx], cmap='tab10', interpolation='nearest')
-    axes[0].set_title("Ground Truth")
-    axes[0].axis('off')
-    
-    # Prediction
-    axes[1].imshow(seg_map[slice_idx], cmap='tab10', interpolation='nearest')
-    axes[1].set_title("Predicted Seg")
-    axes[1].axis('off')
-
-    plt.tight_layout()
-    plt.savefig(save_dir / f"seg_iter{epoch+1}.png")
+    save_path = output_dir / f"AG_epoch_{epoch+1:04d}_predictions.png"
+    plt.suptitle(f"Epoch {epoch+1} Visualization (Patch Center Slice {slice_idx})")
+    plt.savefig(save_path)
     plt.close(fig)
-    
-    
+    print(f"  Visuals saved to: {save_path}")

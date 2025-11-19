@@ -1,4 +1,3 @@
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -6,70 +5,74 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
-import nibabel as nib
 import os
 import sys
 import glob
 import itertools
 from pathlib import Path
+
+# --- PROJECT SETUP ---
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from func.loss import DiceLoss, KLAnnealing, ComboLoss, FocalLoss, TverskyLoss
-from func.Models import VAE
-from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
+
+from func.dataloaders import VolumetricPatchDataset 
 from func.utill import save_predictions
-from func.loss import kld_loss
-from xml.parsers.expat import model
+from func.loss import DiceLoss, KLAnnealing, ComboLoss, FocalLoss, TverskyLoss, kld_loss
+from func.Models import VAE
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
+# --- GLOBAL CONFIGURATION (ADAPTED FOR PATCHES) ---
 LATENT_DIM = 256
-num_epochs = 700
+num_epochs = 400
 KLD_WEIGHT = 0.0001
-BATCH_SIZE = 1
-INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
-NUM_CLASSES = 3  # Background, Segment 1, Segment 2
+BATCH_SIZE = 2
+INPUT_SHAPE = (128, 128, 128) 
+NUM_CLASSES = 4 # 0, 1, 2, 3
+# ----------------------------------------------------
 
-data_root_folder = PROJECT_ROOT / "Task03_Liver_rs"
+# Data path is now managed internally by VolumetricPatchDataset to use $BLACKHOLE
+data_root_folder = PROJECT_ROOT # Placeholder, actual path is in the Dataset class
 OUTPUT_DIR = PROJECT_ROOT / "outputs_VAE"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 print(f"Saving visualizations to: {OUTPUT_DIR}")
 
 if __name__ != "__main__":
-    print(f"Data root folder: {data_root_folder}")
+    print(f"Project root folder: {PROJECT_ROOT}")
 
 try:
-    # labeled set
-    labeled_dataset = LiverDataset_aug(image_dir=data_root_folder, label_dir=data_root_folder, target_size= INPUT_SHAPE)
+    # 1. Labeled Dataset: Instantiate the new patch-based class
+    labeled_dataset = VolumetricPatchDataset(augment=True, is_labeled=True)
     
-    #DataLoader for labeled data
+    # DataLoader for labeled data
     labeled_loader = DataLoader(
         dataset=labeled_dataset,
         batch_size=BATCH_SIZE,
-        shuffle=True
+        shuffle=True,
+        # NOTE: Reduced num_workers since batch size is 1.
+        num_workers=2 
     )
-    print("--- success ---")
+    print("--- Labeled DataLoader success (using patched data) ---")
+
 except Exception as e:
     print(f"Error creating Labeled dataset: {e}")
     exit()
 
 try:
-    # unlabeled set
-    unlabeled_dataset = LiverUnlabeledDataset_aug(
-        image_dir=data_root_folder, 
-        subfolder="imagesUnlabelledTr",
-        target_size= INPUT_SHAPE
-    )
+    # 2. Unlabeled Dataset: Instantiate the new patch-based class
+    unlabeled_dataset = VolumetricPatchDataset(augment=False, is_labeled=False)
     
-    #DataLoader for unlabeled data
+    # DataLoader for unlabeled data
     unlabeled_loader = DataLoader(
         dataset=unlabeled_dataset,
         batch_size=BATCH_SIZE,
-        shuffle=True
+        shuffle=True,
+        num_workers=2
     )
-    print("--- success ---")
+    print("--- Unlabeled DataLoader success (using patched data) ---")
+
 except Exception as e:
     print(f"Error creating Unlabeled dataset: {e}")
     exit()
@@ -79,11 +82,10 @@ if __name__ == "__main__":
     model = VAE(
         in_channels=1, 
         latent_dim=LATENT_DIM, 
-        NUM_CLASSES=NUM_CLASSES).to(device)
+        NUM_CLASSES=NUM_CLASSES
+    ).to(device)
     
-    #dice = DiceLoss(num_classes=NUM_CLASSES)
-    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.8, beta=0.2).to(device)
-    #CE   = nn.CrossEntropyLoss()
+    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.6, beta=0.4).to(device)
     focal = FocalLoss(gamma=2.0).to(device)
 
     loss_fn_recon = nn.MSELoss()
@@ -92,8 +94,7 @@ if __name__ == "__main__":
         dice_loss_fn=Tversky,
         wce_loss_fn=focal,
         alpha=0.4, 
-        beta=0.6   
-    ).to(device)
+        beta=0.6).to(device)
 
     KLD_Annealing_start = 0
     KLD_Annealing_end   = 20
@@ -103,9 +104,9 @@ if __name__ == "__main__":
         start_beta=0.0,
         end_beta=0.05)
     
-    SAVE_INTERVAL = 10 # saving images
+    SAVE_INTERVAL = 20 
 
-    print("--- Training the VAE on Liver Data ---")
+    print("--- Training the VAE on Patched Volumetric Data ---")
 
     for epoch in range(num_epochs):        
         KLD_WEIGHT = kl_scheduler.get_beta(epoch)
@@ -115,17 +116,27 @@ if __name__ == "__main__":
         epoch_seg_loss = 0.0
         epoch_recon_loss = 0.0
         epoch_kld_loss = 0.0
-        for batch_idx, ((x, y_target), (x_unlabeled)) in \
+        
+        # NOTE: The loop now iterates over patched data (C, D=64, H=64, W=64)
+        for batch_idx, ((x, y_target), x_unlabeled) in \
                 enumerate(zip(labeled_loader, itertools.cycle(unlabeled_loader))):
+            
+            # x_unlabeled comes from DataLoader as a batch tensor (not a tuple wrapper)
             
             x = x.to(device)
             y_target = y_target.to(device)
-            x_unlabeled = x_unlabeled[0].to(device)
+            x_unlabeled = x_unlabeled.to(device)
+            
+            # CRITICAL CHECK: Remove the redundant squeeze that was breaking the batch dimension
+            # y_target shape is (B, C=1, D, H, W). CrossEntropy needs (B, D, H, W) for target
+            if y_target.ndim == 5:
+                y_target = y_target.squeeze(1)
+
 
             optimizer_model.zero_grad()
 
             seg_out, recon_out_labeled, z_mu, z_logvar = model(x)
-            noise = torch.randn_like(x_unlabeled)*0.2 #0.1
+            noise = torch.randn_like(x_unlabeled)*0.2
             _ , recon_out_unlabeled, z_mu_unlabeled, z_logvar_unlabeled = model(x_unlabeled+noise)
             
             # seg loss
@@ -140,9 +151,9 @@ if __name__ == "__main__":
             total_kld_loss = (loss_kld_labeled + loss_kld_unlabeled) / (x.size(0) + x_unlabeled.size(0))
             
             # total loss
-            total_loss = (loss_seg * 2.0) + \
+            total_loss = (loss_seg * 5.0) + \
                         (loss_recon * 1.0) + \
-                        (total_kld_loss * KLD_WEIGHT) # loss_recon *0.9 and loss_seg *1.0
+                        (total_kld_loss * KLD_WEIGHT)
             
             total_loss.backward()
             optimizer_model.step()
@@ -150,27 +161,31 @@ if __name__ == "__main__":
             epoch_seg_loss += loss_seg.item()
             epoch_recon_loss += loss_recon.item()
             epoch_kld_loss += total_kld_loss.item()
+            
+            if batch_idx == len(labeled_loader) - 1:
+                last_x = x
+                last_y = y_target
+                last_recon = recon_out_labeled
+                last_seg = seg_out
+
+        
+        # Removed: last_x, last_y, last_recon, last_seg assignments
+        if (epoch + 1) % SAVE_INTERVAL == 0:
+            save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR, slice_idx=64)
 
         avg_train_loss = train_loss / len(labeled_loader)
         avg_seg_loss = epoch_seg_loss / len(labeled_loader)
         avg_recon_loss = epoch_recon_loss / len(labeled_loader)
         avg_kld_loss = epoch_kld_loss / len(labeled_loader)
 
-        last_x = x
-        last_y = y_target
-        last_recon = recon_out_labeled
-        last_seg = seg_out
-        
         print(f"Epoch {epoch+1}/{num_epochs} | Avg Train Loss: {avg_train_loss:.4f} | KLD Beta: {KLD_WEIGHT:.4f}")
         print(f"  Seg Loss: {avg_seg_loss:.4f} | Recon Loss: {avg_recon_loss:.4f} | KLD Loss: {avg_kld_loss:.4f}")
-        print(f"  Total Loss: {train_loss:.4f}")
-        if (epoch == 0) or ((epoch + 1) % SAVE_INTERVAL == 0) or (epoch == num_epochs - 1):
-            print(f"  Saving visuals for Epoch {epoch+1}...")
-            save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR)
+        
+        # Removed: Conditional save block
 
     print("Training complete.")
 
-cd = Path.cwd()
-save_path = cd / "Trained_models" / "VAE.pth"
-torch.save(model.state_dict(), save_path)
-print(f"Saved trained model to {save_path}")
+    cd = Path.cwd()
+    save_path = cd / "Trained_models" / "VAE.pth"
+    torch.save(model.state_dict(), save_path)
+    print(f"Saved trained model to {save_path}")

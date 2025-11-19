@@ -1,0 +1,276 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Dataset initialized with 512 total patches.
+--- Labeled DataLoader success (using patched data) ---
+Dataset initialized with 512 total patches.
+--- Unlabeled DataLoader success (using patched data) ---
+--- Training the MultiTaskNet on Patched Volumetric Data ---
+
+--- Epoch 1/400 ---
+Epoch 1/400 | Avg Train Loss: 3.2254
+  Seg Loss: 0.6429 | Recon Loss: 0.0108
+
+--- Epoch 2/400 ---
+Epoch 2/400 | Avg Train Loss: 5.8961
+  Seg Loss: 1.1758 | Recon Loss: 0.0171
+
+--- Epoch 3/400 ---
+Epoch 3/400 | Avg Train Loss: 8.4247
+  Seg Loss: 1.6804 | Recon Loss: 0.0229
+
+--- Epoch 4/400 ---
+Epoch 4/400 | Avg Train Loss: 10.9419
+  Seg Loss: 2.1827 | Recon Loss: 0.0284
+
+--- Epoch 5/400 ---
+Epoch 5/400 | Avg Train Loss: 13.3630
+  Seg Loss: 2.6658 | Recon Loss: 0.0339
+
+--- Epoch 6/400 ---
+Epoch 6/400 | Avg Train Loss: 15.7987
+  Seg Loss: 3.1519 | Recon Loss: 0.0392
+
+--- Epoch 7/400 ---
+Epoch 7/400 | Avg Train Loss: 18.2361
+  Seg Loss: 3.6383 | Recon Loss: 0.0444
+
+--- Epoch 8/400 ---
+Epoch 8/400 | Avg Train Loss: 20.6502
+  Seg Loss: 4.1201 | Recon Loss: 0.0496
+
+--- Epoch 9/400 ---
+Epoch 9/400 | Avg Train Loss: 23.0384
+  Seg Loss: 4.5967 | Recon Loss: 0.0547
+
+--- Epoch 10/400 ---
+Epoch 10/400 | Avg Train Loss: 25.3729
+  Seg Loss: 5.0626 | Recon Loss: 0.0599
+
+--- Epoch 11/400 ---
+Epoch 11/400 | Avg Train Loss: 27.7205
+  Seg Loss: 5.5311 | Recon Loss: 0.0649
+
+--- Epoch 12/400 ---
+Epoch 12/400 | Avg Train Loss: 30.0555
+  Seg Loss: 5.9971 | Recon Loss: 0.0698
+
+--- Epoch 13/400 ---
+Epoch 13/400 | Avg Train Loss: 32.3666
+  Seg Loss: 6.4584 | Recon Loss: 0.0748
+
+--- Epoch 14/400 ---
+Epoch 14/400 | Avg Train Loss: 34.6614
+  Seg Loss: 6.9164 | Recon Loss: 0.0796
+
+--- Epoch 15/400 ---
+Epoch 15/400 | Avg Train Loss: 36.9697
+  Seg Loss: 7.3770 | Recon Loss: 0.0846
+
+--- Epoch 16/400 ---
+Epoch 16/400 | Avg Train Loss: 39.2174
+  Seg Loss: 7.8256 | Recon Loss: 0.0895
+
+--- Epoch 17/400 ---
+Epoch 17/400 | Avg Train Loss: 41.4926
+  Seg Loss: 8.2797 | Recon Loss: 0.0944
+
+--- Epoch 18/400 ---
+Epoch 18/400 | Avg Train Loss: 43.7814
+  Seg Loss: 8.7364 | Recon Loss: 0.0993
+
+--- Epoch 19/400 ---
+Epoch 19/400 | Avg Train Loss: 45.9954
+  Seg Loss: 9.1783 | Recon Loss: 0.1041
+
+--- Epoch 20/400 ---
+Epoch 20/400 | Avg Train Loss: 48.2495
+  Seg Loss: 9.6281 | Recon Loss: 0.1089
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_AG /AG_epoch_0020_predictions.png
+
+--- Epoch 21/400 ---
+Epoch 21/400 | Avg Train Loss: 50.4940
+  Seg Loss: 10.0761 | Recon Loss: 0.1137
+
+--- Epoch 22/400 ---
+Epoch 22/400 | Avg Train Loss: 52.7263
+  Seg Loss: 10.5215 | Recon Loss: 0.1185
+
+--- Epoch 23/400 ---
+Epoch 23/400 | Avg Train Loss: 54.9414
+  Seg Loss: 10.9636 | Recon Loss: 0.1234
+
+--- Epoch 24/400 ---
+Epoch 24/400 | Avg Train Loss: 57.1767
+  Seg Loss: 11.4097 | Recon Loss: 0.1283
+
+--- Epoch 25/400 ---
+Epoch 25/400 | Avg Train Loss: 59.3593
+  Seg Loss: 11.8453 | Recon Loss: 0.1331
+
+--- Epoch 26/400 ---
+Epoch 26/400 | Avg Train Loss: 61.5623
+  Seg Loss: 12.2849 | Recon Loss: 0.1379
+
+--- Epoch 27/400 ---
+Epoch 27/400 | Avg Train Loss: 63.7097
+  Seg Loss: 12.7134 | Recon Loss: 0.1426
+
+--- Epoch 28/400 ---
+Epoch 28/400 | Avg Train Loss: 65.8302
+  Seg Loss: 13.1366 | Recon Loss: 0.1473
+
+--- Epoch 29/400 ---
+Epoch 29/400 | Avg Train Loss: 67.9744
+  Seg Loss: 13.5645 | Recon Loss: 0.1521
+
+--- Epoch 30/400 ---
+Epoch 30/400 | Avg Train Loss: 70.1649
+  Seg Loss: 14.0016 | Recon Loss: 0.1568
+
+--- Epoch 31/400 ---
+Epoch 31/400 | Avg Train Loss: 72.3011
+  Seg Loss: 14.4279 | Recon Loss: 0.1616
+
+--- Epoch 32/400 ---
+Epoch 32/400 | Avg Train Loss: 74.4654
+  Seg Loss: 14.8598 | Recon Loss: 0.1663
+
+--- Epoch 33/400 ---
+Epoch 33/400 | Avg Train Loss: 76.6081
+  Seg Loss: 15.2874 | Recon Loss: 0.1711
+
+--- Epoch 34/400 ---
+Epoch 34/400 | Avg Train Loss: 78.7631
+  Seg Loss: 15.7175 | Recon Loss: 0.1758
+
+--- Epoch 35/400 ---
+Epoch 35/400 | Avg Train Loss: 80.8897
+  Seg Loss: 16.1418 | Recon Loss: 0.1806
+
+--- Epoch 36/400 ---
+Epoch 36/400 | Avg Train Loss: 82.9977
+  Seg Loss: 16.5625 | Recon Loss: 0.1853
+
+--- Epoch 37/400 ---
+Epoch 37/400 | Avg Train Loss: 85.1361
+  Seg Loss: 16.9892 | Recon Loss: 0.1900
+
+--- Epoch 38/400 ---
+Epoch 38/400 | Avg Train Loss: 87.2428
+  Seg Loss: 17.4096 | Recon Loss: 0.1947
+
+--- Epoch 39/400 ---
+Epoch 39/400 | Avg Train Loss: 89.3448
+  Seg Loss: 17.8291 | Recon Loss: 0.1995
+
+--- Epoch 40/400 ---
+Epoch 40/400 | Avg Train Loss: 91.4160
+  Seg Loss: 18.2424 | Recon Loss: 0.2042
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_AG /AG_epoch_0040_predictions.png
+
+--- Epoch 41/400 ---
+Epoch 41/400 | Avg Train Loss: 93.4893
+  Seg Loss: 18.6561 | Recon Loss: 0.2089
+
+--- Epoch 42/400 ---
+Epoch 42/400 | Avg Train Loss: 95.5620
+  Seg Loss: 19.0697 | Recon Loss: 0.2136
+
+--- Epoch 43/400 ---
+Epoch 43/400 | Avg Train Loss: 97.6564
+  Seg Loss: 19.4876 | Recon Loss: 0.2183
+
+--- Epoch 44/400 ---
+Epoch 44/400 | Avg Train Loss: 99.7813
+  Seg Loss: 19.9117 | Recon Loss: 0.2230
+
+--- Epoch 45/400 ---
+Epoch 45/400 | Avg Train Loss: 101.8331
+  Seg Loss: 20.3211 | Recon Loss: 0.2277
+
+--- Epoch 46/400 ---
+Epoch 46/400 | Avg Train Loss: 103.9364
+  Seg Loss: 20.7408 | Recon Loss: 0.2324
+
+--- Epoch 47/400 ---
+Epoch 47/400 | Avg Train Loss: 105.9942
+  Seg Loss: 21.1514 | Recon Loss: 0.2371
+
+--- Epoch 48/400 ---
+Epoch 48/400 | Avg Train Loss: 108.0479
+  Seg Loss: 21.5612 | Recon Loss: 0.2418
+
+--- Epoch 49/400 ---
+Epoch 49/400 | Avg Train Loss: 110.0878
+  Seg Loss: 21.9683 | Recon Loss: 0.2465
+
+--- Epoch 50/400 ---
+Epoch 50/400 | Avg Train Loss: 112.1159
+  Seg Loss: 22.3729 | Recon Loss: 0.2512
+
+--- Epoch 51/400 ---
+Epoch 51/400 | Avg Train Loss: 114.1417
+  Seg Loss: 22.7772 | Recon Loss: 0.2558
+
+--- Epoch 52/400 ---
+Epoch 52/400 | Avg Train Loss: 116.1728
+  Seg Loss: 23.1825 | Recon Loss: 0.2604
+
+--- Epoch 53/400 ---
+Epoch 53/400 | Avg Train Loss: 118.2287
+  Seg Loss: 23.5927 | Recon Loss: 0.2651
+
+--- Epoch 54/400 ---
+Epoch 54/400 | Avg Train Loss: 120.2704
+  Seg Loss: 24.0002 | Recon Loss: 0.2697
+
+--- Epoch 55/400 ---
+Epoch 55/400 | Avg Train Loss: 122.2852
+  Seg Loss: 24.4022 | Recon Loss: 0.2743
+
+--- Epoch 56/400 ---
+Epoch 56/400 | Avg Train Loss: 124.3346
+  Seg Loss: 24.8111 | Recon Loss: 0.2790
+
+--- Epoch 57/400 ---
+Epoch 57/400 | Avg Train Loss: 126.3585
+  Seg Loss: 25.2150 | Recon Loss: 0.2836
+
+--- Epoch 58/400 ---
+Epoch 58/400 | Avg Train Loss: 128.3553
+  Seg Loss: 25.6134 | Recon Loss: 0.2882
+
+--- Epoch 59/400 ---
+Epoch 59/400 | Avg Train Loss: 130.4331
+  Seg Loss: 26.0281 | Recon Loss: 0.2928
+
+--- Epoch 60/400 ---
+Epoch 60/400 | Avg Train Loss: 132.4473
+  Seg Loss: 26.4300 | Recon Loss: 0.2974
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_AG /AG_epoch_0060_predictions.png
+
+--- Epoch 61/400 ---
+Epoch 61/400 | Avg Train Loss: 134.4555
+  Seg Loss: 26.8307 | Recon Loss: 0.3021
+
+--- Epoch 62/400 ---
+Epoch 62/400 | Avg Train Loss: 136.4594
+  Seg Loss: 27.2305 | Recon Loss: 0.3067
+
+--- Epoch 63/400 ---
+Epoch 63/400 | Avg Train Loss: 138.4590
+  Seg Loss: 27.6296 | Recon Loss: 0.3112
+
+--- Epoch 64/400 ---
+Epoch 64/400 | Avg Train Loss: 140.4718
+  Seg Loss: 28.0312 | Recon Loss: 0.3159
+
+--- Epoch 65/400 ---
+Epoch 65/400 | Avg Train Loss: 142.4764
+  Seg Loss: 28.4312 | Recon Loss: 0.3204
+
+--- Epoch 66/400 ---
