@@ -124,14 +124,8 @@ if __name__ == "__main__":
             # x_unlabeled comes from DataLoader as a batch tensor (not a tuple wrapper)
             
             x = x.to(device)
-            y_target = y_target.to(device)
+            y_target = y_target.squeeze(1).to(device)
             x_unlabeled = x_unlabeled.to(device)
-            
-            # CRITICAL CHECK: Remove the redundant squeeze that was breaking the batch dimension
-            # y_target shape is (B, C=1, D, H, W). CrossEntropy needs (B, D, H, W) for target
-            if y_target.ndim == 5:
-                y_target = y_target.squeeze(1)
-
 
             optimizer_model.zero_grad()
 

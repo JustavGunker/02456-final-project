@@ -75,7 +75,7 @@ if __name__ == "__main__":
             
             # --- Data Transfer to Device ---
             x_labeled = x_labeled.to(device)
-            y_seg_target = y_seg_target.to(device)
+            y_seg_target = y_seg_target.squeeze(1).to(device)
             x_unlabeled = x_unlabeled.to(device) 
 
             optimizer_model.zero_grad()
@@ -83,7 +83,7 @@ if __name__ == "__main__":
             # 1. Forward Pass on Labeled Data
             seg_out, recon_out_labeled, _ = model(x_labeled)
             
-            total_loss_seg = loss_seg(seg_out, y_seg_target.squeeze(1))
+            total_loss_seg = loss_seg(seg_out, y_seg_target)
             loss_recon_labeled = loss_fn_recon(recon_out_labeled, x_labeled)
 
             # 2. Forward Pass on Unlabeled Data
@@ -109,6 +109,7 @@ if __name__ == "__main__":
                 last_y = y_seg_target
                 last_recon = recon_out_labeled
                 last_seg = seg_out
+
         avg_train_loss = train_loss / len(labeled_loader)
         avg_seg_loss = epoch_seg_loss / len(labeled_loader)
         avg_recon_loss = epoch_recon_loss / len(labeled_loader)

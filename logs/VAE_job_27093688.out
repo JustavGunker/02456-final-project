@@ -10,3 +10,896 @@ Dataset initialized with 512 total patches.
 Dataset initialized with 512 total patches.
 --- Unlabeled DataLoader success (using patched data) ---
 --- Training the VAE on Patched Volumetric Data ---
+Epoch 1/400 | Avg Train Loss: 2.1270 | KLD Beta: 0.0000
+  Seg Loss: 0.4233 | Recon Loss: 0.0104 | KLD Loss: 49541.8973
+Epoch 2/400 | Avg Train Loss: 2.1831 | KLD Beta: 0.0025
+  Seg Loss: 0.3723 | Recon Loss: 0.0072 | KLD Loss: 125.8444
+Epoch 3/400 | Avg Train Loss: 1.8149 | KLD Beta: 0.0050
+  Seg Loss: 0.3560 | Recon Loss: 0.0065 | KLD Loss: 5.7164
+Epoch 4/400 | Avg Train Loss: 1.8536 | KLD Beta: 0.0075
+  Seg Loss: 0.3570 | Recon Loss: 0.0064 | KLD Loss: 8.3127
+Epoch 5/400 | Avg Train Loss: 1.8041 | KLD Beta: 0.0100
+  Seg Loss: 0.3560 | Recon Loss: 0.0066 | KLD Loss: 1.7233
+Epoch 6/400 | Avg Train Loss: 1.7857 | KLD Beta: 0.0125
+  Seg Loss: 0.3532 | Recon Loss: 0.0066 | KLD Loss: 1.0562
+Epoch 7/400 | Avg Train Loss: 1.7820 | KLD Beta: 0.0150
+  Seg Loss: 0.3538 | Recon Loss: 0.0065 | KLD Loss: 0.4271
+Epoch 8/400 | Avg Train Loss: 1.7832 | KLD Beta: 0.0175
+  Seg Loss: 0.3515 | Recon Loss: 0.0067 | KLD Loss: 1.0704
+Epoch 9/400 | Avg Train Loss: 1.7852 | KLD Beta: 0.0200
+  Seg Loss: 0.3545 | Recon Loss: 0.0067 | KLD Loss: 0.3059
+Epoch 10/400 | Avg Train Loss: 1.7597 | KLD Beta: 0.0225
+  Seg Loss: 0.3505 | Recon Loss: 0.0068 | KLD Loss: 0.0188
+Epoch 11/400 | Avg Train Loss: 1.7579 | KLD Beta: 0.0250
+  Seg Loss: 0.3502 | Recon Loss: 0.0069 | KLD Loss: 0.0092
+Epoch 12/400 | Avg Train Loss: 1.7619 | KLD Beta: 0.0275
+  Seg Loss: 0.3510 | Recon Loss: 0.0069 | KLD Loss: 0.0068
+Epoch 13/400 | Avg Train Loss: 1.7252 | KLD Beta: 0.0300
+  Seg Loss: 0.3435 | Recon Loss: 0.0069 | KLD Loss: 0.0241
+Epoch 14/400 | Avg Train Loss: 1.7497 | KLD Beta: 0.0325
+  Seg Loss: 0.3480 | Recon Loss: 0.0070 | KLD Loss: 0.0795
+Epoch 15/400 | Avg Train Loss: 1.7300 | KLD Beta: 0.0350
+  Seg Loss: 0.3445 | Recon Loss: 0.0071 | KLD Loss: 0.0064
+Epoch 16/400 | Avg Train Loss: 1.7177 | KLD Beta: 0.0375
+  Seg Loss: 0.3421 | Recon Loss: 0.0070 | KLD Loss: 0.0066
+Epoch 17/400 | Avg Train Loss: 1.7286 | KLD Beta: 0.0400
+  Seg Loss: 0.3442 | Recon Loss: 0.0072 | KLD Loss: 0.0063
+Epoch 18/400 | Avg Train Loss: 1.7350 | KLD Beta: 0.0425
+  Seg Loss: 0.3455 | Recon Loss: 0.0072 | KLD Loss: 0.0027
+Epoch 19/400 | Avg Train Loss: 1.7073 | KLD Beta: 0.0450
+  Seg Loss: 0.3400 | Recon Loss: 0.0072 | KLD Loss: 0.0022
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0020_predictions.png
+Epoch 20/400 | Avg Train Loss: 1.7056 | KLD Beta: 0.0475
+  Seg Loss: 0.3397 | Recon Loss: 0.0073 | KLD Loss: 0.0020
+Epoch 21/400 | Avg Train Loss: 1.6893 | KLD Beta: 0.0500
+  Seg Loss: 0.3364 | Recon Loss: 0.0072 | KLD Loss: 0.0020
+Epoch 22/400 | Avg Train Loss: 1.7049 | KLD Beta: 0.0500
+  Seg Loss: 0.3395 | Recon Loss: 0.0073 | KLD Loss: 0.0021
+Epoch 23/400 | Avg Train Loss: 1.7016 | KLD Beta: 0.0500
+  Seg Loss: 0.3388 | Recon Loss: 0.0072 | KLD Loss: 0.0023
+Epoch 24/400 | Avg Train Loss: 1.7070 | KLD Beta: 0.0500
+  Seg Loss: 0.3399 | Recon Loss: 0.0074 | KLD Loss: 0.0023
+Epoch 25/400 | Avg Train Loss: 1.6939 | KLD Beta: 0.0500
+  Seg Loss: 0.3373 | Recon Loss: 0.0073 | KLD Loss: 0.0026
+Epoch 26/400 | Avg Train Loss: 1.7111 | KLD Beta: 0.0500
+  Seg Loss: 0.3407 | Recon Loss: 0.0074 | KLD Loss: 0.0031
+Epoch 27/400 | Avg Train Loss: 1.7173 | KLD Beta: 0.0500
+  Seg Loss: 0.3419 | Recon Loss: 0.0075 | KLD Loss: 0.0030
+Epoch 28/400 | Avg Train Loss: 1.6995 | KLD Beta: 0.0500
+  Seg Loss: 0.3384 | Recon Loss: 0.0074 | KLD Loss: 0.0031
+Epoch 29/400 | Avg Train Loss: 1.6649 | KLD Beta: 0.0500
+  Seg Loss: 0.3314 | Recon Loss: 0.0075 | KLD Loss: 0.0031
+Epoch 30/400 | Avg Train Loss: 1.6821 | KLD Beta: 0.0500
+  Seg Loss: 0.3349 | Recon Loss: 0.0074 | KLD Loss: 0.0030
+Epoch 31/400 | Avg Train Loss: 1.6895 | KLD Beta: 0.0500
+  Seg Loss: 0.3364 | Recon Loss: 0.0074 | KLD Loss: 0.0029
+Epoch 32/400 | Avg Train Loss: 1.7122 | KLD Beta: 0.0500
+  Seg Loss: 0.3409 | Recon Loss: 0.0075 | KLD Loss: 0.0029
+Epoch 33/400 | Avg Train Loss: 1.6528 | KLD Beta: 0.0500
+  Seg Loss: 0.3291 | Recon Loss: 0.0074 | KLD Loss: 0.0029
+Epoch 34/400 | Avg Train Loss: 1.6761 | KLD Beta: 0.0500
+  Seg Loss: 0.3337 | Recon Loss: 0.0075 | KLD Loss: 0.0031
+Epoch 35/400 | Avg Train Loss: 1.6868 | KLD Beta: 0.0500
+  Seg Loss: 0.3358 | Recon Loss: 0.0075 | KLD Loss: 0.0031
+Epoch 36/400 | Avg Train Loss: 1.6760 | KLD Beta: 0.0500
+  Seg Loss: 0.3337 | Recon Loss: 0.0075 | KLD Loss: 0.0030
+Epoch 37/400 | Avg Train Loss: 1.6437 | KLD Beta: 0.0500
+  Seg Loss: 0.3272 | Recon Loss: 0.0075 | KLD Loss: 0.0030
+Epoch 38/400 | Avg Train Loss: 1.6594 | KLD Beta: 0.0500
+  Seg Loss: 0.3303 | Recon Loss: 0.0076 | KLD Loss: 0.0030
+Epoch 39/400 | Avg Train Loss: 1.6706 | KLD Beta: 0.0500
+  Seg Loss: 0.3326 | Recon Loss: 0.0075 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0040_predictions.png
+Epoch 40/400 | Avg Train Loss: 1.6494 | KLD Beta: 0.0500
+  Seg Loss: 0.3284 | Recon Loss: 0.0075 | KLD Loss: 0.0029
+Epoch 41/400 | Avg Train Loss: 1.6549 | KLD Beta: 0.0500
+  Seg Loss: 0.3294 | Recon Loss: 0.0076 | KLD Loss: 0.0031
+Epoch 42/400 | Avg Train Loss: 1.6411 | KLD Beta: 0.0500
+  Seg Loss: 0.3266 | Recon Loss: 0.0077 | KLD Loss: 0.0029
+Epoch 43/400 | Avg Train Loss: 1.6627 | KLD Beta: 0.0500
+  Seg Loss: 0.3310 | Recon Loss: 0.0077 | KLD Loss: 0.0031
+Epoch 44/400 | Avg Train Loss: 1.6227 | KLD Beta: 0.0500
+  Seg Loss: 0.3230 | Recon Loss: 0.0076 | KLD Loss: 0.0030
+Epoch 45/400 | Avg Train Loss: 1.6569 | KLD Beta: 0.0500
+  Seg Loss: 0.3298 | Recon Loss: 0.0078 | KLD Loss: 0.0031
+Epoch 46/400 | Avg Train Loss: 1.6178 | KLD Beta: 0.0500
+  Seg Loss: 0.3220 | Recon Loss: 0.0077 | KLD Loss: 0.0029
+Epoch 47/400 | Avg Train Loss: 1.6445 | KLD Beta: 0.0500
+  Seg Loss: 0.3273 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 48/400 | Avg Train Loss: 1.6044 | KLD Beta: 0.0500
+  Seg Loss: 0.3193 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 49/400 | Avg Train Loss: 1.6580 | KLD Beta: 0.0500
+  Seg Loss: 0.3300 | Recon Loss: 0.0077 | KLD Loss: 0.0031
+Epoch 50/400 | Avg Train Loss: 1.6086 | KLD Beta: 0.0500
+  Seg Loss: 0.3201 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 51/400 | Avg Train Loss: 1.6355 | KLD Beta: 0.0500
+  Seg Loss: 0.3255 | Recon Loss: 0.0077 | KLD Loss: 0.0031
+Epoch 52/400 | Avg Train Loss: 1.6452 | KLD Beta: 0.0500
+  Seg Loss: 0.3274 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 53/400 | Avg Train Loss: 1.6136 | KLD Beta: 0.0500
+  Seg Loss: 0.3211 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 54/400 | Avg Train Loss: 1.6313 | KLD Beta: 0.0500
+  Seg Loss: 0.3247 | Recon Loss: 0.0079 | KLD Loss: 0.0031
+Epoch 55/400 | Avg Train Loss: 1.6105 | KLD Beta: 0.0500
+  Seg Loss: 0.3205 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 56/400 | Avg Train Loss: 1.6221 | KLD Beta: 0.0500
+  Seg Loss: 0.3228 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 57/400 | Avg Train Loss: 1.6423 | KLD Beta: 0.0500
+  Seg Loss: 0.3269 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 58/400 | Avg Train Loss: 1.6136 | KLD Beta: 0.0500
+  Seg Loss: 0.3211 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 59/400 | Avg Train Loss: 1.6246 | KLD Beta: 0.0500
+  Seg Loss: 0.3233 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0060_predictions.png
+Epoch 60/400 | Avg Train Loss: 1.6173 | KLD Beta: 0.0500
+  Seg Loss: 0.3219 | Recon Loss: 0.0077 | KLD Loss: 0.0029
+Epoch 61/400 | Avg Train Loss: 1.6069 | KLD Beta: 0.0500
+  Seg Loss: 0.3198 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 62/400 | Avg Train Loss: 1.5962 | KLD Beta: 0.0500
+  Seg Loss: 0.3177 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 63/400 | Avg Train Loss: 1.6580 | KLD Beta: 0.0500
+  Seg Loss: 0.3300 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 64/400 | Avg Train Loss: 1.6307 | KLD Beta: 0.0500
+  Seg Loss: 0.3245 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 65/400 | Avg Train Loss: 1.6001 | KLD Beta: 0.0500
+  Seg Loss: 0.3184 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 66/400 | Avg Train Loss: 1.6120 | KLD Beta: 0.0500
+  Seg Loss: 0.3208 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 67/400 | Avg Train Loss: 1.6148 | KLD Beta: 0.0500
+  Seg Loss: 0.3213 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 68/400 | Avg Train Loss: 1.6428 | KLD Beta: 0.0500
+  Seg Loss: 0.3270 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 69/400 | Avg Train Loss: 1.6326 | KLD Beta: 0.0500
+  Seg Loss: 0.3249 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 70/400 | Avg Train Loss: 1.6261 | KLD Beta: 0.0500
+  Seg Loss: 0.3236 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 71/400 | Avg Train Loss: 1.5929 | KLD Beta: 0.0500
+  Seg Loss: 0.3170 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 72/400 | Avg Train Loss: 1.6041 | KLD Beta: 0.0500
+  Seg Loss: 0.3192 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 73/400 | Avg Train Loss: 1.5729 | KLD Beta: 0.0500
+  Seg Loss: 0.3130 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 74/400 | Avg Train Loss: 1.6305 | KLD Beta: 0.0500
+  Seg Loss: 0.3245 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 75/400 | Avg Train Loss: 1.6064 | KLD Beta: 0.0500
+  Seg Loss: 0.3197 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 76/400 | Avg Train Loss: 1.5761 | KLD Beta: 0.0500
+  Seg Loss: 0.3136 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 77/400 | Avg Train Loss: 1.5979 | KLD Beta: 0.0500
+  Seg Loss: 0.3180 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 78/400 | Avg Train Loss: 1.5974 | KLD Beta: 0.0500
+  Seg Loss: 0.3179 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 79/400 | Avg Train Loss: 1.5949 | KLD Beta: 0.0500
+  Seg Loss: 0.3174 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0080_predictions.png
+Epoch 80/400 | Avg Train Loss: 1.5792 | KLD Beta: 0.0500
+  Seg Loss: 0.3142 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 81/400 | Avg Train Loss: 1.6243 | KLD Beta: 0.0500
+  Seg Loss: 0.3233 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 82/400 | Avg Train Loss: 1.5704 | KLD Beta: 0.0500
+  Seg Loss: 0.3125 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 83/400 | Avg Train Loss: 1.6028 | KLD Beta: 0.0500
+  Seg Loss: 0.3190 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 84/400 | Avg Train Loss: 1.5831 | KLD Beta: 0.0500
+  Seg Loss: 0.3150 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 85/400 | Avg Train Loss: 1.5963 | KLD Beta: 0.0500
+  Seg Loss: 0.3177 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 86/400 | Avg Train Loss: 1.5887 | KLD Beta: 0.0500
+  Seg Loss: 0.3161 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 87/400 | Avg Train Loss: 1.6059 | KLD Beta: 0.0500
+  Seg Loss: 0.3196 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 88/400 | Avg Train Loss: 1.5649 | KLD Beta: 0.0500
+  Seg Loss: 0.3114 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 89/400 | Avg Train Loss: 1.6128 | KLD Beta: 0.0500
+  Seg Loss: 0.3210 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 90/400 | Avg Train Loss: 1.6055 | KLD Beta: 0.0500
+  Seg Loss: 0.3195 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 91/400 | Avg Train Loss: 1.5851 | KLD Beta: 0.0500
+  Seg Loss: 0.3154 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 92/400 | Avg Train Loss: 1.6053 | KLD Beta: 0.0500
+  Seg Loss: 0.3195 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 93/400 | Avg Train Loss: 1.5845 | KLD Beta: 0.0500
+  Seg Loss: 0.3153 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 94/400 | Avg Train Loss: 1.5883 | KLD Beta: 0.0500
+  Seg Loss: 0.3160 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 95/400 | Avg Train Loss: 1.6094 | KLD Beta: 0.0500
+  Seg Loss: 0.3203 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 96/400 | Avg Train Loss: 1.5800 | KLD Beta: 0.0500
+  Seg Loss: 0.3144 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 97/400 | Avg Train Loss: 1.6172 | KLD Beta: 0.0500
+  Seg Loss: 0.3219 | Recon Loss: 0.0078 | KLD Loss: 0.0027
+Epoch 98/400 | Avg Train Loss: 1.5705 | KLD Beta: 0.0500
+  Seg Loss: 0.3125 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 99/400 | Avg Train Loss: 1.6191 | KLD Beta: 0.0500
+  Seg Loss: 0.3222 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0100_predictions.png
+Epoch 100/400 | Avg Train Loss: 1.5752 | KLD Beta: 0.0500
+  Seg Loss: 0.3134 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 101/400 | Avg Train Loss: 1.5836 | KLD Beta: 0.0500
+  Seg Loss: 0.3151 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 102/400 | Avg Train Loss: 1.6287 | KLD Beta: 0.0500
+  Seg Loss: 0.3241 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 103/400 | Avg Train Loss: 1.5708 | KLD Beta: 0.0500
+  Seg Loss: 0.3125 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 104/400 | Avg Train Loss: 1.5986 | KLD Beta: 0.0500
+  Seg Loss: 0.3181 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 105/400 | Avg Train Loss: 1.6041 | KLD Beta: 0.0500
+  Seg Loss: 0.3192 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 106/400 | Avg Train Loss: 1.5683 | KLD Beta: 0.0500
+  Seg Loss: 0.3121 | Recon Loss: 0.0077 | KLD Loss: 0.0029
+Epoch 107/400 | Avg Train Loss: 1.6107 | KLD Beta: 0.0500
+  Seg Loss: 0.3205 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 108/400 | Avg Train Loss: 1.5881 | KLD Beta: 0.0500
+  Seg Loss: 0.3160 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 109/400 | Avg Train Loss: 1.6001 | KLD Beta: 0.0500
+  Seg Loss: 0.3184 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 110/400 | Avg Train Loss: 1.5819 | KLD Beta: 0.0500
+  Seg Loss: 0.3148 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 111/400 | Avg Train Loss: 1.5787 | KLD Beta: 0.0500
+  Seg Loss: 0.3141 | Recon Loss: 0.0079 | KLD Loss: 0.0031
+Epoch 112/400 | Avg Train Loss: 1.5439 | KLD Beta: 0.0500
+  Seg Loss: 0.3072 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 113/400 | Avg Train Loss: 1.5972 | KLD Beta: 0.0500
+  Seg Loss: 0.3178 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 114/400 | Avg Train Loss: 1.6002 | KLD Beta: 0.0500
+  Seg Loss: 0.3184 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 115/400 | Avg Train Loss: 1.5951 | KLD Beta: 0.0500
+  Seg Loss: 0.3174 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 116/400 | Avg Train Loss: 1.5870 | KLD Beta: 0.0500
+  Seg Loss: 0.3158 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 117/400 | Avg Train Loss: 1.5875 | KLD Beta: 0.0500
+  Seg Loss: 0.3159 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 118/400 | Avg Train Loss: 1.5772 | KLD Beta: 0.0500
+  Seg Loss: 0.3138 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 119/400 | Avg Train Loss: 1.5664 | KLD Beta: 0.0500
+  Seg Loss: 0.3117 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0120_predictions.png
+Epoch 120/400 | Avg Train Loss: 1.5830 | KLD Beta: 0.0500
+  Seg Loss: 0.3150 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 121/400 | Avg Train Loss: 1.5650 | KLD Beta: 0.0500
+  Seg Loss: 0.3114 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 122/400 | Avg Train Loss: 1.6032 | KLD Beta: 0.0500
+  Seg Loss: 0.3190 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 123/400 | Avg Train Loss: 1.5827 | KLD Beta: 0.0500
+  Seg Loss: 0.3149 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 124/400 | Avg Train Loss: 1.5870 | KLD Beta: 0.0500
+  Seg Loss: 0.3158 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 125/400 | Avg Train Loss: 1.5539 | KLD Beta: 0.0500
+  Seg Loss: 0.3092 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 126/400 | Avg Train Loss: 1.5777 | KLD Beta: 0.0500
+  Seg Loss: 0.3139 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 127/400 | Avg Train Loss: 1.5700 | KLD Beta: 0.0500
+  Seg Loss: 0.3124 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 128/400 | Avg Train Loss: 1.5645 | KLD Beta: 0.0500
+  Seg Loss: 0.3113 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 129/400 | Avg Train Loss: 1.5807 | KLD Beta: 0.0500
+  Seg Loss: 0.3145 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 130/400 | Avg Train Loss: 1.5888 | KLD Beta: 0.0500
+  Seg Loss: 0.3161 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 131/400 | Avg Train Loss: 1.6085 | KLD Beta: 0.0500
+  Seg Loss: 0.3201 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 132/400 | Avg Train Loss: 1.6089 | KLD Beta: 0.0500
+  Seg Loss: 0.3202 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 133/400 | Avg Train Loss: 1.5800 | KLD Beta: 0.0500
+  Seg Loss: 0.3144 | Recon Loss: 0.0079 | KLD Loss: 0.0031
+Epoch 134/400 | Avg Train Loss: 1.5789 | KLD Beta: 0.0500
+  Seg Loss: 0.3141 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 135/400 | Avg Train Loss: 1.5640 | KLD Beta: 0.0500
+  Seg Loss: 0.3112 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 136/400 | Avg Train Loss: 1.6083 | KLD Beta: 0.0500
+  Seg Loss: 0.3201 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 137/400 | Avg Train Loss: 1.6251 | KLD Beta: 0.0500
+  Seg Loss: 0.3234 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 138/400 | Avg Train Loss: 1.6082 | KLD Beta: 0.0500
+  Seg Loss: 0.3200 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 139/400 | Avg Train Loss: 1.5916 | KLD Beta: 0.0500
+  Seg Loss: 0.3167 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0140_predictions.png
+Epoch 140/400 | Avg Train Loss: 1.5969 | KLD Beta: 0.0500
+  Seg Loss: 0.3178 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 141/400 | Avg Train Loss: 1.5608 | KLD Beta: 0.0500
+  Seg Loss: 0.3105 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 142/400 | Avg Train Loss: 1.6061 | KLD Beta: 0.0500
+  Seg Loss: 0.3196 | Recon Loss: 0.0079 | KLD Loss: 0.0031
+Epoch 143/400 | Avg Train Loss: 1.5375 | KLD Beta: 0.0500
+  Seg Loss: 0.3059 | Recon Loss: 0.0077 | KLD Loss: 0.0029
+Epoch 144/400 | Avg Train Loss: 1.5585 | KLD Beta: 0.0500
+  Seg Loss: 0.3101 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 145/400 | Avg Train Loss: 1.5782 | KLD Beta: 0.0500
+  Seg Loss: 0.3140 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 146/400 | Avg Train Loss: 1.5640 | KLD Beta: 0.0500
+  Seg Loss: 0.3112 | Recon Loss: 0.0078 | KLD Loss: 0.0027
+Epoch 147/400 | Avg Train Loss: 1.6055 | KLD Beta: 0.0500
+  Seg Loss: 0.3195 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 148/400 | Avg Train Loss: 1.5783 | KLD Beta: 0.0500
+  Seg Loss: 0.3141 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 149/400 | Avg Train Loss: 1.5858 | KLD Beta: 0.0500
+  Seg Loss: 0.3155 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 150/400 | Avg Train Loss: 1.5741 | KLD Beta: 0.0500
+  Seg Loss: 0.3132 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 151/400 | Avg Train Loss: 1.5801 | KLD Beta: 0.0500
+  Seg Loss: 0.3144 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 152/400 | Avg Train Loss: 1.5661 | KLD Beta: 0.0500
+  Seg Loss: 0.3116 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 153/400 | Avg Train Loss: 1.5480 | KLD Beta: 0.0500
+  Seg Loss: 0.3080 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 154/400 | Avg Train Loss: 1.5700 | KLD Beta: 0.0500
+  Seg Loss: 0.3124 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 155/400 | Avg Train Loss: 1.5662 | KLD Beta: 0.0500
+  Seg Loss: 0.3116 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 156/400 | Avg Train Loss: 1.5608 | KLD Beta: 0.0500
+  Seg Loss: 0.3106 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 157/400 | Avg Train Loss: 1.5814 | KLD Beta: 0.0500
+  Seg Loss: 0.3147 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 158/400 | Avg Train Loss: 1.5525 | KLD Beta: 0.0500
+  Seg Loss: 0.3089 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 159/400 | Avg Train Loss: 1.6016 | KLD Beta: 0.0500
+  Seg Loss: 0.3187 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0160_predictions.png
+Epoch 160/400 | Avg Train Loss: 1.5977 | KLD Beta: 0.0500
+  Seg Loss: 0.3179 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 161/400 | Avg Train Loss: 1.5831 | KLD Beta: 0.0500
+  Seg Loss: 0.3150 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 162/400 | Avg Train Loss: 1.5804 | KLD Beta: 0.0500
+  Seg Loss: 0.3145 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 163/400 | Avg Train Loss: 1.5759 | KLD Beta: 0.0500
+  Seg Loss: 0.3136 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 164/400 | Avg Train Loss: 1.5806 | KLD Beta: 0.0500
+  Seg Loss: 0.3145 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 165/400 | Avg Train Loss: 1.5746 | KLD Beta: 0.0500
+  Seg Loss: 0.3133 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 166/400 | Avg Train Loss: 1.5739 | KLD Beta: 0.0500
+  Seg Loss: 0.3132 | Recon Loss: 0.0078 | KLD Loss: 0.0030
+Epoch 167/400 | Avg Train Loss: 1.5748 | KLD Beta: 0.0500
+  Seg Loss: 0.3134 | Recon Loss: 0.0079 | KLD Loss: 0.0031
+Epoch 168/400 | Avg Train Loss: 1.5357 | KLD Beta: 0.0500
+  Seg Loss: 0.3055 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 169/400 | Avg Train Loss: 1.5533 | KLD Beta: 0.0500
+  Seg Loss: 0.3090 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 170/400 | Avg Train Loss: 1.5570 | KLD Beta: 0.0500
+  Seg Loss: 0.3098 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 171/400 | Avg Train Loss: 1.5701 | KLD Beta: 0.0500
+  Seg Loss: 0.3124 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 172/400 | Avg Train Loss: 1.6035 | KLD Beta: 0.0500
+  Seg Loss: 0.3191 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 173/400 | Avg Train Loss: 1.5777 | KLD Beta: 0.0500
+  Seg Loss: 0.3139 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 174/400 | Avg Train Loss: 1.5543 | KLD Beta: 0.0500
+  Seg Loss: 0.3092 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 175/400 | Avg Train Loss: 1.5623 | KLD Beta: 0.0500
+  Seg Loss: 0.3109 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 176/400 | Avg Train Loss: 1.5715 | KLD Beta: 0.0500
+  Seg Loss: 0.3127 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 177/400 | Avg Train Loss: 1.5490 | KLD Beta: 0.0500
+  Seg Loss: 0.3082 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 178/400 | Avg Train Loss: 1.5326 | KLD Beta: 0.0500
+  Seg Loss: 0.3049 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 179/400 | Avg Train Loss: 1.5423 | KLD Beta: 0.0500
+  Seg Loss: 0.3068 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0180_predictions.png
+Epoch 180/400 | Avg Train Loss: 1.5749 | KLD Beta: 0.0500
+  Seg Loss: 0.3134 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 181/400 | Avg Train Loss: 1.5798 | KLD Beta: 0.0500
+  Seg Loss: 0.3144 | Recon Loss: 0.0079 | KLD Loss: 0.0027
+Epoch 182/400 | Avg Train Loss: 1.5633 | KLD Beta: 0.0500
+  Seg Loss: 0.3110 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 183/400 | Avg Train Loss: 1.5765 | KLD Beta: 0.0500
+  Seg Loss: 0.3137 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 184/400 | Avg Train Loss: 1.5596 | KLD Beta: 0.0500
+  Seg Loss: 0.3103 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 185/400 | Avg Train Loss: 1.5947 | KLD Beta: 0.0500
+  Seg Loss: 0.3173 | Recon Loss: 0.0079 | KLD Loss: 0.0031
+Epoch 186/400 | Avg Train Loss: 1.5764 | KLD Beta: 0.0500
+  Seg Loss: 0.3136 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 187/400 | Avg Train Loss: 1.5901 | KLD Beta: 0.0500
+  Seg Loss: 0.3164 | Recon Loss: 0.0080 | KLD Loss: 0.0031
+Epoch 188/400 | Avg Train Loss: 1.5671 | KLD Beta: 0.0500
+  Seg Loss: 0.3118 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 189/400 | Avg Train Loss: 1.5710 | KLD Beta: 0.0500
+  Seg Loss: 0.3126 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 190/400 | Avg Train Loss: 1.5879 | KLD Beta: 0.0500
+  Seg Loss: 0.3159 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 191/400 | Avg Train Loss: 1.5641 | KLD Beta: 0.0500
+  Seg Loss: 0.3112 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 192/400 | Avg Train Loss: 1.5743 | KLD Beta: 0.0500
+  Seg Loss: 0.3132 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 193/400 | Avg Train Loss: 1.5905 | KLD Beta: 0.0500
+  Seg Loss: 0.3165 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 194/400 | Avg Train Loss: 1.5696 | KLD Beta: 0.0500
+  Seg Loss: 0.3123 | Recon Loss: 0.0079 | KLD Loss: 0.0027
+Epoch 195/400 | Avg Train Loss: 1.5916 | KLD Beta: 0.0500
+  Seg Loss: 0.3167 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 196/400 | Avg Train Loss: 1.5685 | KLD Beta: 0.0500
+  Seg Loss: 0.3121 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 197/400 | Avg Train Loss: 1.5788 | KLD Beta: 0.0500
+  Seg Loss: 0.3141 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 198/400 | Avg Train Loss: 1.5789 | KLD Beta: 0.0500
+  Seg Loss: 0.3142 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 199/400 | Avg Train Loss: 1.5692 | KLD Beta: 0.0500
+  Seg Loss: 0.3122 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0200_predictions.png
+Epoch 200/400 | Avg Train Loss: 1.5941 | KLD Beta: 0.0500
+  Seg Loss: 0.3172 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 201/400 | Avg Train Loss: 1.5603 | KLD Beta: 0.0500
+  Seg Loss: 0.3104 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 202/400 | Avg Train Loss: 1.5626 | KLD Beta: 0.0500
+  Seg Loss: 0.3109 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 203/400 | Avg Train Loss: 1.5514 | KLD Beta: 0.0500
+  Seg Loss: 0.3087 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 204/400 | Avg Train Loss: 1.5719 | KLD Beta: 0.0500
+  Seg Loss: 0.3128 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 205/400 | Avg Train Loss: 1.5726 | KLD Beta: 0.0500
+  Seg Loss: 0.3129 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 206/400 | Avg Train Loss: 1.5664 | KLD Beta: 0.0500
+  Seg Loss: 0.3116 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 207/400 | Avg Train Loss: 1.5611 | KLD Beta: 0.0500
+  Seg Loss: 0.3106 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 208/400 | Avg Train Loss: 1.6113 | KLD Beta: 0.0500
+  Seg Loss: 0.3206 | Recon Loss: 0.0081 | KLD Loss: 0.0030
+Epoch 209/400 | Avg Train Loss: 1.5661 | KLD Beta: 0.0500
+  Seg Loss: 0.3116 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 210/400 | Avg Train Loss: 1.5866 | KLD Beta: 0.0500
+  Seg Loss: 0.3157 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 211/400 | Avg Train Loss: 1.5488 | KLD Beta: 0.0500
+  Seg Loss: 0.3081 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 212/400 | Avg Train Loss: 1.5586 | KLD Beta: 0.0500
+  Seg Loss: 0.3101 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 213/400 | Avg Train Loss: 1.5666 | KLD Beta: 0.0500
+  Seg Loss: 0.3117 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 214/400 | Avg Train Loss: 1.5869 | KLD Beta: 0.0500
+  Seg Loss: 0.3157 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 215/400 | Avg Train Loss: 1.5583 | KLD Beta: 0.0500
+  Seg Loss: 0.3100 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 216/400 | Avg Train Loss: 1.5748 | KLD Beta: 0.0500
+  Seg Loss: 0.3133 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 217/400 | Avg Train Loss: 1.5619 | KLD Beta: 0.0500
+  Seg Loss: 0.3108 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 218/400 | Avg Train Loss: 1.5394 | KLD Beta: 0.0500
+  Seg Loss: 0.3063 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 219/400 | Avg Train Loss: 1.5826 | KLD Beta: 0.0500
+  Seg Loss: 0.3149 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0220_predictions.png
+Epoch 220/400 | Avg Train Loss: 1.5513 | KLD Beta: 0.0500
+  Seg Loss: 0.3086 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 221/400 | Avg Train Loss: 1.5534 | KLD Beta: 0.0500
+  Seg Loss: 0.3091 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 222/400 | Avg Train Loss: 1.5458 | KLD Beta: 0.0500
+  Seg Loss: 0.3075 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 223/400 | Avg Train Loss: 1.5892 | KLD Beta: 0.0500
+  Seg Loss: 0.3162 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 224/400 | Avg Train Loss: 1.5532 | KLD Beta: 0.0500
+  Seg Loss: 0.3090 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 225/400 | Avg Train Loss: 1.5756 | KLD Beta: 0.0500
+  Seg Loss: 0.3135 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 226/400 | Avg Train Loss: 1.5922 | KLD Beta: 0.0500
+  Seg Loss: 0.3168 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 227/400 | Avg Train Loss: 1.5904 | KLD Beta: 0.0500
+  Seg Loss: 0.3165 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 228/400 | Avg Train Loss: 1.5366 | KLD Beta: 0.0500
+  Seg Loss: 0.3057 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 229/400 | Avg Train Loss: 1.5827 | KLD Beta: 0.0500
+  Seg Loss: 0.3149 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 230/400 | Avg Train Loss: 1.5710 | KLD Beta: 0.0500
+  Seg Loss: 0.3126 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 231/400 | Avg Train Loss: 1.5843 | KLD Beta: 0.0500
+  Seg Loss: 0.3152 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 232/400 | Avg Train Loss: 1.5739 | KLD Beta: 0.0500
+  Seg Loss: 0.3132 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 233/400 | Avg Train Loss: 1.5865 | KLD Beta: 0.0500
+  Seg Loss: 0.3157 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 234/400 | Avg Train Loss: 1.5680 | KLD Beta: 0.0500
+  Seg Loss: 0.3120 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 235/400 | Avg Train Loss: 1.5592 | KLD Beta: 0.0500
+  Seg Loss: 0.3102 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 236/400 | Avg Train Loss: 1.5652 | KLD Beta: 0.0500
+  Seg Loss: 0.3114 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 237/400 | Avg Train Loss: 1.5893 | KLD Beta: 0.0500
+  Seg Loss: 0.3162 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 238/400 | Avg Train Loss: 1.5769 | KLD Beta: 0.0500
+  Seg Loss: 0.3138 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 239/400 | Avg Train Loss: 1.6194 | KLD Beta: 0.0500
+  Seg Loss: 0.3222 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0240_predictions.png
+Epoch 240/400 | Avg Train Loss: 1.5398 | KLD Beta: 0.0500
+  Seg Loss: 0.3063 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 241/400 | Avg Train Loss: 1.5493 | KLD Beta: 0.0500
+  Seg Loss: 0.3082 | Recon Loss: 0.0079 | KLD Loss: 0.0027
+Epoch 242/400 | Avg Train Loss: 1.5592 | KLD Beta: 0.0500
+  Seg Loss: 0.3102 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 243/400 | Avg Train Loss: 1.5993 | KLD Beta: 0.0500
+  Seg Loss: 0.3182 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 244/400 | Avg Train Loss: 1.5791 | KLD Beta: 0.0500
+  Seg Loss: 0.3142 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 245/400 | Avg Train Loss: 1.5600 | KLD Beta: 0.0500
+  Seg Loss: 0.3104 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 246/400 | Avg Train Loss: 1.5680 | KLD Beta: 0.0500
+  Seg Loss: 0.3120 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 247/400 | Avg Train Loss: 1.5288 | KLD Beta: 0.0500
+  Seg Loss: 0.3041 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 248/400 | Avg Train Loss: 1.5648 | KLD Beta: 0.0500
+  Seg Loss: 0.3113 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 249/400 | Avg Train Loss: 1.5426 | KLD Beta: 0.0500
+  Seg Loss: 0.3069 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 250/400 | Avg Train Loss: 1.5514 | KLD Beta: 0.0500
+  Seg Loss: 0.3086 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 251/400 | Avg Train Loss: 1.6013 | KLD Beta: 0.0500
+  Seg Loss: 0.3186 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 252/400 | Avg Train Loss: 1.5724 | KLD Beta: 0.0500
+  Seg Loss: 0.3128 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 253/400 | Avg Train Loss: 1.5328 | KLD Beta: 0.0500
+  Seg Loss: 0.3049 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 254/400 | Avg Train Loss: 1.5588 | KLD Beta: 0.0500
+  Seg Loss: 0.3101 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 255/400 | Avg Train Loss: 1.5466 | KLD Beta: 0.0500
+  Seg Loss: 0.3077 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 256/400 | Avg Train Loss: 1.5851 | KLD Beta: 0.0500
+  Seg Loss: 0.3154 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 257/400 | Avg Train Loss: 1.5381 | KLD Beta: 0.0500
+  Seg Loss: 0.3060 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 258/400 | Avg Train Loss: 1.5754 | KLD Beta: 0.0500
+  Seg Loss: 0.3134 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 259/400 | Avg Train Loss: 1.5404 | KLD Beta: 0.0500
+  Seg Loss: 0.3064 | Recon Loss: 0.0080 | KLD Loss: 0.0031
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0260_predictions.png
+Epoch 260/400 | Avg Train Loss: 1.5813 | KLD Beta: 0.0500
+  Seg Loss: 0.3147 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 261/400 | Avg Train Loss: 1.5507 | KLD Beta: 0.0500
+  Seg Loss: 0.3085 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 262/400 | Avg Train Loss: 1.5854 | KLD Beta: 0.0500
+  Seg Loss: 0.3154 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 263/400 | Avg Train Loss: 1.5789 | KLD Beta: 0.0500
+  Seg Loss: 0.3141 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 264/400 | Avg Train Loss: 1.5823 | KLD Beta: 0.0500
+  Seg Loss: 0.3148 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 265/400 | Avg Train Loss: 1.5486 | KLD Beta: 0.0500
+  Seg Loss: 0.3081 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 266/400 | Avg Train Loss: 1.5423 | KLD Beta: 0.0500
+  Seg Loss: 0.3068 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 267/400 | Avg Train Loss: 1.5244 | KLD Beta: 0.0500
+  Seg Loss: 0.3033 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 268/400 | Avg Train Loss: 1.5601 | KLD Beta: 0.0500
+  Seg Loss: 0.3104 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 269/400 | Avg Train Loss: 1.5939 | KLD Beta: 0.0500
+  Seg Loss: 0.3171 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 270/400 | Avg Train Loss: 1.5608 | KLD Beta: 0.0500
+  Seg Loss: 0.3105 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 271/400 | Avg Train Loss: 1.5834 | KLD Beta: 0.0500
+  Seg Loss: 0.3151 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 272/400 | Avg Train Loss: 1.6041 | KLD Beta: 0.0500
+  Seg Loss: 0.3192 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 273/400 | Avg Train Loss: 1.5598 | KLD Beta: 0.0500
+  Seg Loss: 0.3104 | Recon Loss: 0.0078 | KLD Loss: 0.0029
+Epoch 274/400 | Avg Train Loss: 1.5884 | KLD Beta: 0.0500
+  Seg Loss: 0.3160 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 275/400 | Avg Train Loss: 1.5610 | KLD Beta: 0.0500
+  Seg Loss: 0.3106 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 276/400 | Avg Train Loss: 1.5289 | KLD Beta: 0.0500
+  Seg Loss: 0.3042 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 277/400 | Avg Train Loss: 1.5542 | KLD Beta: 0.0500
+  Seg Loss: 0.3092 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 278/400 | Avg Train Loss: 1.5727 | KLD Beta: 0.0500
+  Seg Loss: 0.3129 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 279/400 | Avg Train Loss: 1.5651 | KLD Beta: 0.0500
+  Seg Loss: 0.3114 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0280_predictions.png
+Epoch 280/400 | Avg Train Loss: 1.5711 | KLD Beta: 0.0500
+  Seg Loss: 0.3126 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 281/400 | Avg Train Loss: 1.5356 | KLD Beta: 0.0500
+  Seg Loss: 0.3055 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 282/400 | Avg Train Loss: 1.5513 | KLD Beta: 0.0500
+  Seg Loss: 0.3086 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 283/400 | Avg Train Loss: 1.5665 | KLD Beta: 0.0500
+  Seg Loss: 0.3117 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 284/400 | Avg Train Loss: 1.5928 | KLD Beta: 0.0500
+  Seg Loss: 0.3169 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 285/400 | Avg Train Loss: 1.5595 | KLD Beta: 0.0500
+  Seg Loss: 0.3103 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 286/400 | Avg Train Loss: 1.5457 | KLD Beta: 0.0500
+  Seg Loss: 0.3075 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 287/400 | Avg Train Loss: 1.5651 | KLD Beta: 0.0500
+  Seg Loss: 0.3114 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 288/400 | Avg Train Loss: 1.5811 | KLD Beta: 0.0500
+  Seg Loss: 0.3146 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 289/400 | Avg Train Loss: 1.5468 | KLD Beta: 0.0500
+  Seg Loss: 0.3077 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 290/400 | Avg Train Loss: 1.5874 | KLD Beta: 0.0500
+  Seg Loss: 0.3158 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 291/400 | Avg Train Loss: 1.5505 | KLD Beta: 0.0500
+  Seg Loss: 0.3085 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 292/400 | Avg Train Loss: 1.6117 | KLD Beta: 0.0500
+  Seg Loss: 0.3207 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 293/400 | Avg Train Loss: 1.5638 | KLD Beta: 0.0500
+  Seg Loss: 0.3111 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 294/400 | Avg Train Loss: 1.5750 | KLD Beta: 0.0500
+  Seg Loss: 0.3134 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 295/400 | Avg Train Loss: 1.5283 | KLD Beta: 0.0500
+  Seg Loss: 0.3040 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 296/400 | Avg Train Loss: 1.5232 | KLD Beta: 0.0500
+  Seg Loss: 0.3030 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 297/400 | Avg Train Loss: 1.5893 | KLD Beta: 0.0500
+  Seg Loss: 0.3162 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 298/400 | Avg Train Loss: 1.5433 | KLD Beta: 0.0500
+  Seg Loss: 0.3070 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 299/400 | Avg Train Loss: 1.5507 | KLD Beta: 0.0500
+  Seg Loss: 0.3085 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0300_predictions.png
+Epoch 300/400 | Avg Train Loss: 1.5654 | KLD Beta: 0.0500
+  Seg Loss: 0.3115 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 301/400 | Avg Train Loss: 1.5392 | KLD Beta: 0.0500
+  Seg Loss: 0.3062 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 302/400 | Avg Train Loss: 1.6063 | KLD Beta: 0.0500
+  Seg Loss: 0.3196 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 303/400 | Avg Train Loss: 1.5563 | KLD Beta: 0.0500
+  Seg Loss: 0.3096 | Recon Loss: 0.0079 | KLD Loss: 0.0030
+Epoch 304/400 | Avg Train Loss: 1.5382 | KLD Beta: 0.0500
+  Seg Loss: 0.3060 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 305/400 | Avg Train Loss: 1.5757 | KLD Beta: 0.0500
+  Seg Loss: 0.3135 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 306/400 | Avg Train Loss: 1.5785 | KLD Beta: 0.0500
+  Seg Loss: 0.3141 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 307/400 | Avg Train Loss: 1.5313 | KLD Beta: 0.0500
+  Seg Loss: 0.3046 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 308/400 | Avg Train Loss: 1.5457 | KLD Beta: 0.0500
+  Seg Loss: 0.3075 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 309/400 | Avg Train Loss: 1.5334 | KLD Beta: 0.0500
+  Seg Loss: 0.3051 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 310/400 | Avg Train Loss: 1.5703 | KLD Beta: 0.0500
+  Seg Loss: 0.3124 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 311/400 | Avg Train Loss: 1.5690 | KLD Beta: 0.0500
+  Seg Loss: 0.3122 | Recon Loss: 0.0079 | KLD Loss: 0.0028
+Epoch 312/400 | Avg Train Loss: 1.5835 | KLD Beta: 0.0500
+  Seg Loss: 0.3151 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 313/400 | Avg Train Loss: 1.6046 | KLD Beta: 0.0500
+  Seg Loss: 0.3193 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 314/400 | Avg Train Loss: 1.5441 | KLD Beta: 0.0500
+  Seg Loss: 0.3072 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 315/400 | Avg Train Loss: 1.5600 | KLD Beta: 0.0500
+  Seg Loss: 0.3104 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 316/400 | Avg Train Loss: 1.5430 | KLD Beta: 0.0500
+  Seg Loss: 0.3070 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 317/400 | Avg Train Loss: 1.5456 | KLD Beta: 0.0500
+  Seg Loss: 0.3075 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 318/400 | Avg Train Loss: 1.5555 | KLD Beta: 0.0500
+  Seg Loss: 0.3095 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 319/400 | Avg Train Loss: 1.5605 | KLD Beta: 0.0500
+  Seg Loss: 0.3105 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0320_predictions.png
+Epoch 320/400 | Avg Train Loss: 1.5778 | KLD Beta: 0.0500
+  Seg Loss: 0.3139 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 321/400 | Avg Train Loss: 1.5185 | KLD Beta: 0.0500
+  Seg Loss: 0.3021 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 322/400 | Avg Train Loss: 1.5562 | KLD Beta: 0.0500
+  Seg Loss: 0.3096 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 323/400 | Avg Train Loss: 1.5843 | KLD Beta: 0.0500
+  Seg Loss: 0.3152 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 324/400 | Avg Train Loss: 1.5823 | KLD Beta: 0.0500
+  Seg Loss: 0.3148 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 325/400 | Avg Train Loss: 1.5761 | KLD Beta: 0.0500
+  Seg Loss: 0.3136 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 326/400 | Avg Train Loss: 1.6081 | KLD Beta: 0.0500
+  Seg Loss: 0.3200 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 327/400 | Avg Train Loss: 1.5415 | KLD Beta: 0.0500
+  Seg Loss: 0.3067 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 328/400 | Avg Train Loss: 1.6128 | KLD Beta: 0.0500
+  Seg Loss: 0.3210 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 329/400 | Avg Train Loss: 1.5706 | KLD Beta: 0.0500
+  Seg Loss: 0.3125 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 330/400 | Avg Train Loss: 1.5798 | KLD Beta: 0.0500
+  Seg Loss: 0.3143 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 331/400 | Avg Train Loss: 1.5548 | KLD Beta: 0.0500
+  Seg Loss: 0.3093 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 332/400 | Avg Train Loss: 1.5543 | KLD Beta: 0.0500
+  Seg Loss: 0.3092 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 333/400 | Avg Train Loss: 1.5822 | KLD Beta: 0.0500
+  Seg Loss: 0.3148 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 334/400 | Avg Train Loss: 1.5528 | KLD Beta: 0.0500
+  Seg Loss: 0.3089 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 335/400 | Avg Train Loss: 1.5857 | KLD Beta: 0.0500
+  Seg Loss: 0.3155 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 336/400 | Avg Train Loss: 1.5476 | KLD Beta: 0.0500
+  Seg Loss: 0.3079 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 337/400 | Avg Train Loss: 1.5218 | KLD Beta: 0.0500
+  Seg Loss: 0.3027 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 338/400 | Avg Train Loss: 1.5838 | KLD Beta: 0.0500
+  Seg Loss: 0.3151 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 339/400 | Avg Train Loss: 1.5649 | KLD Beta: 0.0500
+  Seg Loss: 0.3114 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0340_predictions.png
+Epoch 340/400 | Avg Train Loss: 1.5621 | KLD Beta: 0.0500
+  Seg Loss: 0.3108 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 341/400 | Avg Train Loss: 1.5776 | KLD Beta: 0.0500
+  Seg Loss: 0.3139 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 342/400 | Avg Train Loss: 1.5715 | KLD Beta: 0.0500
+  Seg Loss: 0.3127 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 343/400 | Avg Train Loss: 1.5710 | KLD Beta: 0.0500
+  Seg Loss: 0.3126 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 344/400 | Avg Train Loss: 1.5714 | KLD Beta: 0.0500
+  Seg Loss: 0.3127 | Recon Loss: 0.0080 | KLD Loss: 0.0031
+Epoch 345/400 | Avg Train Loss: 1.5403 | KLD Beta: 0.0500
+  Seg Loss: 0.3064 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 346/400 | Avg Train Loss: 1.5515 | KLD Beta: 0.0500
+  Seg Loss: 0.3087 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 347/400 | Avg Train Loss: 1.5373 | KLD Beta: 0.0500
+  Seg Loss: 0.3058 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 348/400 | Avg Train Loss: 1.5726 | KLD Beta: 0.0500
+  Seg Loss: 0.3129 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 349/400 | Avg Train Loss: 1.5741 | KLD Beta: 0.0500
+  Seg Loss: 0.3132 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 350/400 | Avg Train Loss: 1.5337 | KLD Beta: 0.0500
+  Seg Loss: 0.3051 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 351/400 | Avg Train Loss: 1.5452 | KLD Beta: 0.0500
+  Seg Loss: 0.3074 | Recon Loss: 0.0079 | KLD Loss: 0.0029
+Epoch 352/400 | Avg Train Loss: 1.5561 | KLD Beta: 0.0500
+  Seg Loss: 0.3096 | Recon Loss: 0.0080 | KLD Loss: 0.0027
+Epoch 353/400 | Avg Train Loss: 1.5725 | KLD Beta: 0.0500
+  Seg Loss: 0.3129 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 354/400 | Avg Train Loss: 1.5837 | KLD Beta: 0.0500
+  Seg Loss: 0.3151 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 355/400 | Avg Train Loss: 1.5664 | KLD Beta: 0.0500
+  Seg Loss: 0.3116 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 356/400 | Avg Train Loss: 1.5518 | KLD Beta: 0.0500
+  Seg Loss: 0.3087 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 357/400 | Avg Train Loss: 1.5454 | KLD Beta: 0.0500
+  Seg Loss: 0.3074 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 358/400 | Avg Train Loss: 1.5010 | KLD Beta: 0.0500
+  Seg Loss: 0.2986 | Recon Loss: 0.0081 | KLD Loss: 0.0030
+Epoch 359/400 | Avg Train Loss: 1.5599 | KLD Beta: 0.0500
+  Seg Loss: 0.3103 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0360_predictions.png
+Epoch 360/400 | Avg Train Loss: 1.5607 | KLD Beta: 0.0500
+  Seg Loss: 0.3105 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 361/400 | Avg Train Loss: 1.5795 | KLD Beta: 0.0500
+  Seg Loss: 0.3143 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 362/400 | Avg Train Loss: 1.5584 | KLD Beta: 0.0500
+  Seg Loss: 0.3100 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 363/400 | Avg Train Loss: 1.5602 | KLD Beta: 0.0500
+  Seg Loss: 0.3104 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 364/400 | Avg Train Loss: 1.5731 | KLD Beta: 0.0500
+  Seg Loss: 0.3130 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 365/400 | Avg Train Loss: 1.5474 | KLD Beta: 0.0500
+  Seg Loss: 0.3079 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 366/400 | Avg Train Loss: 1.5348 | KLD Beta: 0.0500
+  Seg Loss: 0.3053 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 367/400 | Avg Train Loss: 1.5695 | KLD Beta: 0.0500
+  Seg Loss: 0.3123 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 368/400 | Avg Train Loss: 1.5719 | KLD Beta: 0.0500
+  Seg Loss: 0.3127 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 369/400 | Avg Train Loss: 1.5612 | KLD Beta: 0.0500
+  Seg Loss: 0.3106 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 370/400 | Avg Train Loss: 1.5768 | KLD Beta: 0.0500
+  Seg Loss: 0.3137 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 371/400 | Avg Train Loss: 1.5756 | KLD Beta: 0.0500
+  Seg Loss: 0.3135 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 372/400 | Avg Train Loss: 1.5621 | KLD Beta: 0.0500
+  Seg Loss: 0.3108 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 373/400 | Avg Train Loss: 1.5693 | KLD Beta: 0.0500
+  Seg Loss: 0.3122 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 374/400 | Avg Train Loss: 1.5611 | KLD Beta: 0.0500
+  Seg Loss: 0.3106 | Recon Loss: 0.0081 | KLD Loss: 0.0030
+Epoch 375/400 | Avg Train Loss: 1.5490 | KLD Beta: 0.0500
+  Seg Loss: 0.3082 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 376/400 | Avg Train Loss: 1.5630 | KLD Beta: 0.0500
+  Seg Loss: 0.3110 | Recon Loss: 0.0080 | KLD Loss: 0.0030
+Epoch 377/400 | Avg Train Loss: 1.5685 | KLD Beta: 0.0500
+  Seg Loss: 0.3121 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 378/400 | Avg Train Loss: 1.5673 | KLD Beta: 0.0500
+  Seg Loss: 0.3118 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 379/400 | Avg Train Loss: 1.5710 | KLD Beta: 0.0500
+  Seg Loss: 0.3126 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0380_predictions.png
+Epoch 380/400 | Avg Train Loss: 1.5384 | KLD Beta: 0.0500
+  Seg Loss: 0.3060 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 381/400 | Avg Train Loss: 1.5500 | KLD Beta: 0.0500
+  Seg Loss: 0.3084 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 382/400 | Avg Train Loss: 1.5429 | KLD Beta: 0.0500
+  Seg Loss: 0.3069 | Recon Loss: 0.0081 | KLD Loss: 0.0030
+Epoch 383/400 | Avg Train Loss: 1.5955 | KLD Beta: 0.0500
+  Seg Loss: 0.3175 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 384/400 | Avg Train Loss: 1.5547 | KLD Beta: 0.0500
+  Seg Loss: 0.3093 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 385/400 | Avg Train Loss: 1.5825 | KLD Beta: 0.0500
+  Seg Loss: 0.3149 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 386/400 | Avg Train Loss: 1.5745 | KLD Beta: 0.0500
+  Seg Loss: 0.3133 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 387/400 | Avg Train Loss: 1.5897 | KLD Beta: 0.0500
+  Seg Loss: 0.3163 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 388/400 | Avg Train Loss: 1.5421 | KLD Beta: 0.0500
+  Seg Loss: 0.3068 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 389/400 | Avg Train Loss: 1.5804 | KLD Beta: 0.0500
+  Seg Loss: 0.3144 | Recon Loss: 0.0081 | KLD Loss: 0.0028
+Epoch 390/400 | Avg Train Loss: 1.5699 | KLD Beta: 0.0500
+  Seg Loss: 0.3124 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 391/400 | Avg Train Loss: 1.5691 | KLD Beta: 0.0500
+  Seg Loss: 0.3122 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 392/400 | Avg Train Loss: 1.5697 | KLD Beta: 0.0500
+  Seg Loss: 0.3123 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 393/400 | Avg Train Loss: 1.5715 | KLD Beta: 0.0500
+  Seg Loss: 0.3127 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 394/400 | Avg Train Loss: 1.5477 | KLD Beta: 0.0500
+  Seg Loss: 0.3079 | Recon Loss: 0.0080 | KLD Loss: 0.0029
+Epoch 395/400 | Avg Train Loss: 1.5897 | KLD Beta: 0.0500
+  Seg Loss: 0.3163 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 396/400 | Avg Train Loss: 1.5799 | KLD Beta: 0.0500
+  Seg Loss: 0.3143 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 397/400 | Avg Train Loss: 1.5666 | KLD Beta: 0.0500
+  Seg Loss: 0.3117 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Epoch 398/400 | Avg Train Loss: 1.5980 | KLD Beta: 0.0500
+  Seg Loss: 0.3180 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+Epoch 399/400 | Avg Train Loss: 1.5573 | KLD Beta: 0.0500
+  Seg Loss: 0.3098 | Recon Loss: 0.0081 | KLD Loss: 0.0029
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/outputs_VAE/AG_epoch_0400_predictions.png
+Epoch 400/400 | Avg Train Loss: 1.5995 | KLD Beta: 0.0500
+  Seg Loss: 0.3183 | Recon Loss: 0.0080 | KLD Loss: 0.0028
+Training complete.
+Saved trained model to /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/VAE.pth
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27093688: <VAE_job> in cluster <dcc> Done
+
+Job <VAE_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Wed Nov 19 16:07:34 2025
+Job was executed on host(s) <8*n-62-13-14>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Wed Nov 19 16:07:36 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Wed Nov 19 16:07:36 2025
+Terminated at Thu Nov 20 05:20:25 2025
+Results reported at Thu Nov 20 05:20:25 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J VAE_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.err
+### --- Resource Requests ---
+#BSUB -q gpul40s           # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 8                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=16GB]"   # Request 16GB memory
+#BSUB -W 15:00                # 4 hour runtime limit
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+# This is the full, correct path to your environment
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+### --- Run Script ---
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   231765.00 sec.
+    Max Memory :                                 2018 MB
+    Average Memory :                             1450.31 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               129054.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                77
+    Run time :                                   47582 sec.
+    Turnaround time :                            47571 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_27093688.err> for stderr output of this job.
+
