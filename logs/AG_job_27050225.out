@@ -1,0 +1,983 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Found 28 image/label pairs.
+--- success ---
+Found 119 unlabeled images.
+--- success ---
+
+--- Epoch 1/300 ---
+Batch 0/28 | Total Loss: 4.9620 | Recon Loss: 0.4432 | Seg Loss: 1.1297
+
+--- Epoch 2/300 ---
+Batch 0/28 | Total Loss: 3.4169 | Recon Loss: 0.2253 | Seg Loss: 0.7979
+
+--- Epoch 3/300 ---
+Batch 0/28 | Total Loss: 2.8963 | Recon Loss: 0.1424 | Seg Loss: 0.6885
+
+--- Epoch 4/300 ---
+Batch 0/28 | Total Loss: 2.6902 | Recon Loss: 0.1032 | Seg Loss: 0.6468
+
+--- Epoch 5/300 ---
+Batch 0/28 | Total Loss: 2.2207 | Recon Loss: 0.1556 | Seg Loss: 0.5163
+
+--- Epoch 6/300 ---
+Batch 0/28 | Total Loss: 2.1409 | Recon Loss: 0.0764 | Seg Loss: 0.5161
+
+--- Epoch 7/300 ---
+Batch 0/28 | Total Loss: 1.7151 | Recon Loss: 0.0298 | Seg Loss: 0.4213
+
+--- Epoch 8/300 ---
+Batch 0/28 | Total Loss: 1.7596 | Recon Loss: 0.0274 | Seg Loss: 0.4330
+
+--- Epoch 9/300 ---
+Batch 0/28 | Total Loss: 1.8109 | Recon Loss: 0.0361 | Seg Loss: 0.4437
+
+--- Epoch 10/300 ---
+Batch 0/28 | Total Loss: 1.6509 | Recon Loss: 0.0233 | Seg Loss: 0.4069
+
+--- Epoch 11/300 ---
+Batch 0/28 | Total Loss: 1.6982 | Recon Loss: 0.0113 | Seg Loss: 0.4217
+
+--- Epoch 12/300 ---
+Batch 0/28 | Total Loss: 1.9911 | Recon Loss: 0.0100 | Seg Loss: 0.4953
+
+--- Epoch 13/300 ---
+Batch 0/28 | Total Loss: 1.7066 | Recon Loss: 0.0413 | Seg Loss: 0.4163
+
+--- Epoch 14/300 ---
+Batch 0/28 | Total Loss: 1.5952 | Recon Loss: 0.0243 | Seg Loss: 0.3927
+
+--- Epoch 15/300 ---
+Batch 0/28 | Total Loss: 1.5294 | Recon Loss: 0.0074 | Seg Loss: 0.3805
+
+--- Epoch 16/300 ---
+Batch 0/28 | Total Loss: 1.4582 | Recon Loss: 0.0097 | Seg Loss: 0.3621
+
+--- Epoch 17/300 ---
+Batch 0/28 | Total Loss: 1.4252 | Recon Loss: 0.0089 | Seg Loss: 0.3541
+
+--- Epoch 18/300 ---
+Batch 0/28 | Total Loss: 1.6721 | Recon Loss: 0.0061 | Seg Loss: 0.4165
+
+--- Epoch 19/300 ---
+Batch 0/28 | Total Loss: 1.5277 | Recon Loss: 0.0082 | Seg Loss: 0.3799
+
+--- Epoch 20/300 ---
+Batch 0/28 | Total Loss: 1.7434 | Recon Loss: 0.0140 | Seg Loss: 0.4324
+
+--- Epoch 21/300 ---
+Batch 0/28 | Total Loss: 1.8036 | Recon Loss: 0.0139 | Seg Loss: 0.4474
+
+--- Epoch 22/300 ---
+Batch 0/28 | Total Loss: 1.4874 | Recon Loss: 0.0088 | Seg Loss: 0.3697
+
+--- Epoch 23/300 ---
+Batch 0/28 | Total Loss: 1.5821 | Recon Loss: 0.0081 | Seg Loss: 0.3935
+
+--- Epoch 24/300 ---
+Batch 0/28 | Total Loss: 1.6457 | Recon Loss: 0.0084 | Seg Loss: 0.4093
+
+--- Epoch 25/300 ---
+Batch 0/28 | Total Loss: 1.7849 | Recon Loss: 0.0075 | Seg Loss: 0.4444
+
+--- Epoch 26/300 ---
+Batch 0/28 | Total Loss: 1.5649 | Recon Loss: 0.0045 | Seg Loss: 0.3901
+
+--- Epoch 27/300 ---
+Batch 0/28 | Total Loss: 1.7280 | Recon Loss: 0.0043 | Seg Loss: 0.4309
+
+--- Epoch 28/300 ---
+Batch 0/28 | Total Loss: 1.3914 | Recon Loss: 0.0063 | Seg Loss: 0.3463
+
+--- Epoch 29/300 ---
+Batch 0/28 | Total Loss: 1.4811 | Recon Loss: 0.0063 | Seg Loss: 0.3687
+
+--- Epoch 30/300 ---
+Batch 0/28 | Total Loss: 1.8349 | Recon Loss: 0.0041 | Seg Loss: 0.4577
+
+--- Epoch 31/300 ---
+Batch 0/28 | Total Loss: 1.5794 | Recon Loss: 0.0085 | Seg Loss: 0.3927
+
+--- Epoch 32/300 ---
+Batch 0/28 | Total Loss: 1.5507 | Recon Loss: 0.0115 | Seg Loss: 0.3848
+
+--- Epoch 33/300 ---
+Batch 0/28 | Total Loss: 1.4109 | Recon Loss: 0.0159 | Seg Loss: 0.3487
+
+--- Epoch 34/300 ---
+Batch 0/28 | Total Loss: 1.4983 | Recon Loss: 0.0115 | Seg Loss: 0.3717
+
+--- Epoch 35/300 ---
+Batch 0/28 | Total Loss: 1.6705 | Recon Loss: 0.0050 | Seg Loss: 0.4164
+
+--- Epoch 36/300 ---
+Batch 0/28 | Total Loss: 1.4080 | Recon Loss: 0.0064 | Seg Loss: 0.3504
+
+--- Epoch 37/300 ---
+Batch 0/28 | Total Loss: 1.4316 | Recon Loss: 0.0067 | Seg Loss: 0.3562
+
+--- Epoch 38/300 ---
+Batch 0/28 | Total Loss: 1.6204 | Recon Loss: 0.0065 | Seg Loss: 0.4035
+
+--- Epoch 39/300 ---
+Batch 0/28 | Total Loss: 1.4171 | Recon Loss: 0.0102 | Seg Loss: 0.3517
+
+--- Epoch 40/300 ---
+Batch 0/28 | Total Loss: 1.6152 | Recon Loss: 0.0122 | Seg Loss: 0.4008
+
+--- Epoch 41/300 ---
+Batch 0/28 | Total Loss: 1.4298 | Recon Loss: 0.0055 | Seg Loss: 0.3561
+
+--- Epoch 42/300 ---
+Batch 0/28 | Total Loss: 1.3709 | Recon Loss: 0.0065 | Seg Loss: 0.3411
+
+--- Epoch 43/300 ---
+Batch 0/28 | Total Loss: 1.4538 | Recon Loss: 0.0053 | Seg Loss: 0.3621
+
+--- Epoch 44/300 ---
+Batch 0/28 | Total Loss: 1.5585 | Recon Loss: 0.0122 | Seg Loss: 0.3866
+
+--- Epoch 45/300 ---
+Batch 0/28 | Total Loss: 1.3410 | Recon Loss: 0.0050 | Seg Loss: 0.3340
+
+--- Epoch 46/300 ---
+Batch 0/28 | Total Loss: 1.6262 | Recon Loss: 0.0093 | Seg Loss: 0.4042
+
+--- Epoch 47/300 ---
+Batch 0/28 | Total Loss: 1.5309 | Recon Loss: 0.0075 | Seg Loss: 0.3808
+
+--- Epoch 48/300 ---
+Batch 0/28 | Total Loss: 1.4967 | Recon Loss: 0.0069 | Seg Loss: 0.3725
+
+--- Epoch 49/300 ---
+Batch 0/28 | Total Loss: 1.6268 | Recon Loss: 0.0050 | Seg Loss: 0.4054
+
+--- Epoch 50/300 ---
+Batch 0/28 | Total Loss: 1.4003 | Recon Loss: 0.0054 | Seg Loss: 0.3487
+
+--- Epoch 51/300 ---
+Batch 0/28 | Total Loss: 1.4947 | Recon Loss: 0.0055 | Seg Loss: 0.3723
+
+--- Epoch 52/300 ---
+Batch 0/28 | Total Loss: 1.3483 | Recon Loss: 0.0060 | Seg Loss: 0.3356
+
+--- Epoch 53/300 ---
+Batch 0/28 | Total Loss: 1.4188 | Recon Loss: 0.0055 | Seg Loss: 0.3533
+
+--- Epoch 54/300 ---
+Batch 0/28 | Total Loss: 1.3267 | Recon Loss: 0.0127 | Seg Loss: 0.3285
+
+--- Epoch 55/300 ---
+Batch 0/28 | Total Loss: 1.4725 | Recon Loss: 0.0069 | Seg Loss: 0.3664
+
+--- Epoch 56/300 ---
+Batch 0/28 | Total Loss: 1.3674 | Recon Loss: 0.0038 | Seg Loss: 0.3409
+
+--- Epoch 57/300 ---
+Batch 0/28 | Total Loss: 1.6327 | Recon Loss: 0.0056 | Seg Loss: 0.4068
+
+--- Epoch 58/300 ---
+Batch 0/28 | Total Loss: 1.4967 | Recon Loss: 0.0064 | Seg Loss: 0.3726
+
+--- Epoch 59/300 ---
+Batch 0/28 | Total Loss: 1.5617 | Recon Loss: 0.0071 | Seg Loss: 0.3886
+
+--- Epoch 60/300 ---
+Batch 0/28 | Total Loss: 1.4301 | Recon Loss: 0.0040 | Seg Loss: 0.3565
+
+--- Epoch 61/300 ---
+Batch 0/28 | Total Loss: 1.4863 | Recon Loss: 0.0052 | Seg Loss: 0.3703
+
+--- Epoch 62/300 ---
+Batch 0/28 | Total Loss: 1.6189 | Recon Loss: 0.0057 | Seg Loss: 0.4033
+
+--- Epoch 63/300 ---
+Batch 0/28 | Total Loss: 1.3965 | Recon Loss: 0.0056 | Seg Loss: 0.3477
+
+--- Epoch 64/300 ---
+Batch 0/28 | Total Loss: 1.3671 | Recon Loss: 0.0084 | Seg Loss: 0.3397
+
+--- Epoch 65/300 ---
+Batch 0/28 | Total Loss: 1.4355 | Recon Loss: 0.0082 | Seg Loss: 0.3568
+
+--- Epoch 66/300 ---
+Batch 0/28 | Total Loss: 1.4075 | Recon Loss: 0.0060 | Seg Loss: 0.3504
+
+--- Epoch 67/300 ---
+Batch 0/28 | Total Loss: 1.4078 | Recon Loss: 0.0038 | Seg Loss: 0.3510
+
+--- Epoch 68/300 ---
+Batch 0/28 | Total Loss: 1.3922 | Recon Loss: 0.0060 | Seg Loss: 0.3466
+
+--- Epoch 69/300 ---
+Batch 0/28 | Total Loss: 1.4169 | Recon Loss: 0.0038 | Seg Loss: 0.3533
+
+--- Epoch 70/300 ---
+Batch 0/28 | Total Loss: 1.2875 | Recon Loss: 0.0052 | Seg Loss: 0.3206
+
+--- Epoch 71/300 ---
+Batch 0/28 | Total Loss: 1.4192 | Recon Loss: 0.0027 | Seg Loss: 0.3541
+
+--- Epoch 72/300 ---
+Batch 0/28 | Total Loss: 1.3975 | Recon Loss: 0.0063 | Seg Loss: 0.3478
+
+--- Epoch 73/300 ---
+Batch 0/28 | Total Loss: 1.4647 | Recon Loss: 0.0027 | Seg Loss: 0.3655
+
+--- Epoch 74/300 ---
+Batch 0/28 | Total Loss: 1.6358 | Recon Loss: 0.0050 | Seg Loss: 0.4077
+
+--- Epoch 75/300 ---
+Batch 0/28 | Total Loss: 1.2519 | Recon Loss: 0.0081 | Seg Loss: 0.3110
+
+--- Epoch 76/300 ---
+Batch 0/28 | Total Loss: 1.3609 | Recon Loss: 0.0063 | Seg Loss: 0.3386
+
+--- Epoch 77/300 ---
+Batch 0/28 | Total Loss: 1.5792 | Recon Loss: 0.0063 | Seg Loss: 0.3932
+
+--- Epoch 78/300 ---
+Batch 0/28 | Total Loss: 1.5571 | Recon Loss: 0.0053 | Seg Loss: 0.3880
+
+--- Epoch 79/300 ---
+Batch 0/28 | Total Loss: 1.4299 | Recon Loss: 0.0053 | Seg Loss: 0.3561
+
+--- Epoch 80/300 ---
+Batch 0/28 | Total Loss: 1.4451 | Recon Loss: 0.0045 | Seg Loss: 0.3602
+
+--- Epoch 81/300 ---
+Batch 0/28 | Total Loss: 1.5424 | Recon Loss: 0.0067 | Seg Loss: 0.3839
+
+--- Epoch 82/300 ---
+Batch 0/28 | Total Loss: 1.3595 | Recon Loss: 0.0055 | Seg Loss: 0.3385
+
+--- Epoch 83/300 ---
+Batch 0/28 | Total Loss: 1.4072 | Recon Loss: 0.0057 | Seg Loss: 0.3504
+
+--- Epoch 84/300 ---
+Batch 0/28 | Total Loss: 1.3281 | Recon Loss: 0.0044 | Seg Loss: 0.3309
+
+--- Epoch 85/300 ---
+Batch 0/28 | Total Loss: 1.5665 | Recon Loss: 0.0044 | Seg Loss: 0.3905
+
+--- Epoch 86/300 ---
+Batch 0/28 | Total Loss: 1.3840 | Recon Loss: 0.0056 | Seg Loss: 0.3446
+
+--- Epoch 87/300 ---
+Batch 0/28 | Total Loss: 1.4065 | Recon Loss: 0.0062 | Seg Loss: 0.3501
+
+--- Epoch 88/300 ---
+Batch 0/28 | Total Loss: 1.4104 | Recon Loss: 0.0071 | Seg Loss: 0.3508
+
+--- Epoch 89/300 ---
+Batch 0/28 | Total Loss: 1.2351 | Recon Loss: 0.0073 | Seg Loss: 0.3070
+
+--- Epoch 90/300 ---
+Batch 0/28 | Total Loss: 1.3385 | Recon Loss: 0.0099 | Seg Loss: 0.3321
+
+--- Epoch 91/300 ---
+Batch 0/28 | Total Loss: 1.5030 | Recon Loss: 0.0051 | Seg Loss: 0.3745
+
+--- Epoch 92/300 ---
+Batch 0/28 | Total Loss: 1.3649 | Recon Loss: 0.0063 | Seg Loss: 0.3397
+
+--- Epoch 93/300 ---
+Batch 0/28 | Total Loss: 1.2956 | Recon Loss: 0.0078 | Seg Loss: 0.3220
+
+--- Epoch 94/300 ---
+Batch 0/28 | Total Loss: 1.2783 | Recon Loss: 0.0069 | Seg Loss: 0.3179
+
+--- Epoch 95/300 ---
+Batch 0/28 | Total Loss: 1.1572 | Recon Loss: 0.0050 | Seg Loss: 0.2880
+
+--- Epoch 96/300 ---
+Batch 0/28 | Total Loss: 1.5045 | Recon Loss: 0.0046 | Seg Loss: 0.3750
+
+--- Epoch 97/300 ---
+Batch 0/28 | Total Loss: 1.1742 | Recon Loss: 0.0054 | Seg Loss: 0.2922
+
+--- Epoch 98/300 ---
+Batch 0/28 | Total Loss: 1.3622 | Recon Loss: 0.0040 | Seg Loss: 0.3396
+
+--- Epoch 99/300 ---
+Batch 0/28 | Total Loss: 1.1275 | Recon Loss: 0.0045 | Seg Loss: 0.2807
+
+--- Epoch 100/300 ---
+Batch 0/28 | Total Loss: 1.3334 | Recon Loss: 0.0091 | Seg Loss: 0.3311
+
+--- Epoch 101/300 ---
+Batch 0/28 | Total Loss: 1.3981 | Recon Loss: 0.0079 | Seg Loss: 0.3476
+
+--- Epoch 102/300 ---
+Batch 0/28 | Total Loss: 0.6792 | Recon Loss: 0.0045 | Seg Loss: 0.1687
+
+--- Epoch 103/300 ---
+Batch 0/28 | Total Loss: 1.4136 | Recon Loss: 0.0040 | Seg Loss: 0.3524
+
+--- Epoch 104/300 ---
+Batch 0/28 | Total Loss: 1.3177 | Recon Loss: 0.0041 | Seg Loss: 0.3284
+
+--- Epoch 105/300 ---
+Batch 0/28 | Total Loss: 1.4263 | Recon Loss: 0.0040 | Seg Loss: 0.3556
+
+--- Epoch 106/300 ---
+Batch 0/28 | Total Loss: 0.7669 | Recon Loss: 0.0047 | Seg Loss: 0.1905
+
+--- Epoch 107/300 ---
+Batch 0/28 | Total Loss: 1.3249 | Recon Loss: 0.0055 | Seg Loss: 0.3298
+
+--- Epoch 108/300 ---
+Batch 0/28 | Total Loss: 1.3642 | Recon Loss: 0.0054 | Seg Loss: 0.3397
+
+--- Epoch 109/300 ---
+Batch 0/28 | Total Loss: 0.8671 | Recon Loss: 0.0043 | Seg Loss: 0.2157
+
+--- Epoch 110/300 ---
+Batch 0/28 | Total Loss: 1.0358 | Recon Loss: 0.0029 | Seg Loss: 0.2582
+
+--- Epoch 111/300 ---
+Batch 0/28 | Total Loss: 1.4365 | Recon Loss: 0.0051 | Seg Loss: 0.3579
+
+--- Epoch 112/300 ---
+Batch 0/28 | Total Loss: 0.4453 | Recon Loss: 0.0045 | Seg Loss: 0.1102
+
+--- Epoch 113/300 ---
+Batch 0/28 | Total Loss: 1.3626 | Recon Loss: 0.0035 | Seg Loss: 0.3398
+
+--- Epoch 114/300 ---
+Batch 0/28 | Total Loss: 1.3673 | Recon Loss: 0.0103 | Seg Loss: 0.3392
+
+--- Epoch 115/300 ---
+Batch 0/28 | Total Loss: 0.7859 | Recon Loss: 0.0040 | Seg Loss: 0.1955
+
+--- Epoch 116/300 ---
+Batch 0/28 | Total Loss: 1.5547 | Recon Loss: 0.0076 | Seg Loss: 0.3868
+
+--- Epoch 117/300 ---
+Batch 0/28 | Total Loss: 1.3522 | Recon Loss: 0.0056 | Seg Loss: 0.3367
+
+--- Epoch 118/300 ---
+Batch 0/28 | Total Loss: 1.3793 | Recon Loss: 0.0051 | Seg Loss: 0.3436
+
+--- Epoch 119/300 ---
+Batch 0/28 | Total Loss: 1.4704 | Recon Loss: 0.0055 | Seg Loss: 0.3662
+
+--- Epoch 120/300 ---
+Batch 0/28 | Total Loss: 1.4197 | Recon Loss: 0.0047 | Seg Loss: 0.3538
+
+--- Epoch 121/300 ---
+Batch 0/28 | Total Loss: 1.3733 | Recon Loss: 0.0041 | Seg Loss: 0.3423
+
+--- Epoch 122/300 ---
+Batch 0/28 | Total Loss: 1.5199 | Recon Loss: 0.0060 | Seg Loss: 0.3785
+
+--- Epoch 123/300 ---
+Batch 0/28 | Total Loss: 1.2269 | Recon Loss: 0.0074 | Seg Loss: 0.3049
+
+--- Epoch 124/300 ---
+Batch 0/28 | Total Loss: 0.3863 | Recon Loss: 0.0047 | Seg Loss: 0.0954
+
+--- Epoch 125/300 ---
+Batch 0/28 | Total Loss: 1.2428 | Recon Loss: 0.0039 | Seg Loss: 0.3097
+
+--- Epoch 126/300 ---
+Batch 0/28 | Total Loss: 1.4191 | Recon Loss: 0.0059 | Seg Loss: 0.3533
+
+--- Epoch 127/300 ---
+Batch 0/28 | Total Loss: 1.3592 | Recon Loss: 0.0047 | Seg Loss: 0.3386
+
+--- Epoch 128/300 ---
+Batch 0/28 | Total Loss: 1.2751 | Recon Loss: 0.0063 | Seg Loss: 0.3172
+
+--- Epoch 129/300 ---
+Batch 0/28 | Total Loss: 1.3397 | Recon Loss: 0.0034 | Seg Loss: 0.3341
+
+--- Epoch 130/300 ---
+Batch 0/28 | Total Loss: 0.8599 | Recon Loss: 0.0027 | Seg Loss: 0.2143
+
+--- Epoch 131/300 ---
+Batch 0/28 | Total Loss: 1.1311 | Recon Loss: 0.0040 | Seg Loss: 0.2818
+
+--- Epoch 132/300 ---
+Batch 0/28 | Total Loss: 0.4513 | Recon Loss: 0.0063 | Seg Loss: 0.1113
+
+--- Epoch 133/300 ---
+Batch 0/28 | Total Loss: 1.0161 | Recon Loss: 0.0036 | Seg Loss: 0.2531
+
+--- Epoch 134/300 ---
+Batch 0/28 | Total Loss: 1.4261 | Recon Loss: 0.0039 | Seg Loss: 0.3555
+
+--- Epoch 135/300 ---
+Batch 0/28 | Total Loss: 0.9003 | Recon Loss: 0.0039 | Seg Loss: 0.2241
+
+--- Epoch 136/300 ---
+Batch 0/28 | Total Loss: 1.3432 | Recon Loss: 0.0063 | Seg Loss: 0.3342
+
+--- Epoch 137/300 ---
+Batch 0/28 | Total Loss: 0.9499 | Recon Loss: 0.0046 | Seg Loss: 0.2363
+
+--- Epoch 138/300 ---
+Batch 0/28 | Total Loss: 1.3962 | Recon Loss: 0.0067 | Seg Loss: 0.3474
+
+--- Epoch 139/300 ---
+Batch 0/28 | Total Loss: 0.8818 | Recon Loss: 0.0054 | Seg Loss: 0.2191
+
+--- Epoch 140/300 ---
+Batch 0/28 | Total Loss: 1.4049 | Recon Loss: 0.0047 | Seg Loss: 0.3501
+
+--- Epoch 141/300 ---
+Batch 0/28 | Total Loss: 1.3409 | Recon Loss: 0.0049 | Seg Loss: 0.3340
+
+--- Epoch 142/300 ---
+Batch 0/28 | Total Loss: 1.2382 | Recon Loss: 0.0044 | Seg Loss: 0.3085
+
+--- Epoch 143/300 ---
+Batch 0/28 | Total Loss: 1.0287 | Recon Loss: 0.0038 | Seg Loss: 0.2562
+
+--- Epoch 144/300 ---
+Batch 0/28 | Total Loss: 1.4770 | Recon Loss: 0.0057 | Seg Loss: 0.3678
+
+--- Epoch 145/300 ---
+Batch 0/28 | Total Loss: 1.0734 | Recon Loss: 0.0058 | Seg Loss: 0.2669
+
+--- Epoch 146/300 ---
+Batch 0/28 | Total Loss: 0.6054 | Recon Loss: 0.0066 | Seg Loss: 0.1497
+
+--- Epoch 147/300 ---
+Batch 0/28 | Total Loss: 1.3096 | Recon Loss: 0.0028 | Seg Loss: 0.3267
+
+--- Epoch 148/300 ---
+Batch 0/28 | Total Loss: 1.2793 | Recon Loss: 0.0045 | Seg Loss: 0.3187
+
+--- Epoch 149/300 ---
+Batch 0/28 | Total Loss: 1.2888 | Recon Loss: 0.0036 | Seg Loss: 0.3213
+
+--- Epoch 150/300 ---
+Batch 0/28 | Total Loss: 1.8569 | Recon Loss: 0.0038 | Seg Loss: 0.4633
+
+--- Epoch 151/300 ---
+Batch 0/28 | Total Loss: 1.3667 | Recon Loss: 0.0080 | Seg Loss: 0.3397
+
+--- Epoch 152/300 ---
+Batch 0/28 | Total Loss: 1.4307 | Recon Loss: 0.0030 | Seg Loss: 0.3569
+
+--- Epoch 153/300 ---
+Batch 0/28 | Total Loss: 1.3656 | Recon Loss: 0.0037 | Seg Loss: 0.3405
+
+--- Epoch 154/300 ---
+Batch 0/28 | Total Loss: 1.3845 | Recon Loss: 0.0022 | Seg Loss: 0.3456
+
+--- Epoch 155/300 ---
+Batch 0/28 | Total Loss: 1.3557 | Recon Loss: 0.0041 | Seg Loss: 0.3379
+
+--- Epoch 156/300 ---
+Batch 0/28 | Total Loss: 1.3813 | Recon Loss: 0.0099 | Seg Loss: 0.3428
+
+--- Epoch 157/300 ---
+Batch 0/28 | Total Loss: 1.8333 | Recon Loss: 0.0042 | Seg Loss: 0.4573
+
+--- Epoch 158/300 ---
+Batch 0/28 | Total Loss: 1.3556 | Recon Loss: 0.0032 | Seg Loss: 0.3381
+
+--- Epoch 159/300 ---
+Batch 0/28 | Total Loss: 1.4656 | Recon Loss: 0.0030 | Seg Loss: 0.3656
+
+--- Epoch 160/300 ---
+Batch 0/28 | Total Loss: 0.6824 | Recon Loss: 0.0047 | Seg Loss: 0.1694
+
+--- Epoch 161/300 ---
+Batch 0/28 | Total Loss: 1.2246 | Recon Loss: 0.0049 | Seg Loss: 0.3049
+
+--- Epoch 162/300 ---
+Batch 0/28 | Total Loss: 1.3373 | Recon Loss: 0.0060 | Seg Loss: 0.3328
+
+--- Epoch 163/300 ---
+Batch 0/28 | Total Loss: 0.9430 | Recon Loss: 0.0052 | Seg Loss: 0.2345
+
+--- Epoch 164/300 ---
+Batch 0/28 | Total Loss: 1.4148 | Recon Loss: 0.0043 | Seg Loss: 0.3526
+
+--- Epoch 165/300 ---
+Batch 0/28 | Total Loss: 1.1623 | Recon Loss: 0.0037 | Seg Loss: 0.2896
+
+--- Epoch 166/300 ---
+Batch 0/28 | Total Loss: 0.8932 | Recon Loss: 0.0053 | Seg Loss: 0.2220
+
+--- Epoch 167/300 ---
+Batch 0/28 | Total Loss: 1.3076 | Recon Loss: 0.0043 | Seg Loss: 0.3258
+
+--- Epoch 168/300 ---
+Batch 0/28 | Total Loss: 1.1625 | Recon Loss: 0.0084 | Seg Loss: 0.2885
+
+--- Epoch 169/300 ---
+Batch 0/28 | Total Loss: 1.3543 | Recon Loss: 0.0037 | Seg Loss: 0.3377
+
+--- Epoch 170/300 ---
+Batch 0/28 | Total Loss: 0.7324 | Recon Loss: 0.0035 | Seg Loss: 0.1822
+
+--- Epoch 171/300 ---
+Batch 0/28 | Total Loss: 0.9155 | Recon Loss: 0.0033 | Seg Loss: 0.2281
+
+--- Epoch 172/300 ---
+Batch 0/28 | Total Loss: 1.2226 | Recon Loss: 0.0028 | Seg Loss: 0.3049
+
+--- Epoch 173/300 ---
+Batch 0/28 | Total Loss: 0.4258 | Recon Loss: 0.0040 | Seg Loss: 0.1055
+
+--- Epoch 174/300 ---
+Batch 0/28 | Total Loss: 0.9887 | Recon Loss: 0.0032 | Seg Loss: 0.2464
+
+--- Epoch 175/300 ---
+Batch 0/28 | Total Loss: 1.3696 | Recon Loss: 0.0053 | Seg Loss: 0.3411
+
+--- Epoch 176/300 ---
+Batch 0/28 | Total Loss: 2.2888 | Recon Loss: 0.0042 | Seg Loss: 0.5711
+
+--- Epoch 177/300 ---
+Batch 0/28 | Total Loss: 1.5156 | Recon Loss: 0.0037 | Seg Loss: 0.3780
+
+--- Epoch 178/300 ---
+Batch 0/28 | Total Loss: 1.9353 | Recon Loss: 0.0042 | Seg Loss: 0.4828
+
+--- Epoch 179/300 ---
+Batch 0/28 | Total Loss: 1.3595 | Recon Loss: 0.0034 | Seg Loss: 0.3390
+
+--- Epoch 180/300 ---
+Batch 0/28 | Total Loss: 0.9449 | Recon Loss: 0.0044 | Seg Loss: 0.2351
+
+--- Epoch 181/300 ---
+Batch 0/28 | Total Loss: 0.6173 | Recon Loss: 0.0093 | Seg Loss: 0.1520
+
+--- Epoch 182/300 ---
+Batch 0/28 | Total Loss: 1.3543 | Recon Loss: 0.0044 | Seg Loss: 0.3375
+
+--- Epoch 183/300 ---
+Batch 0/28 | Total Loss: 0.8266 | Recon Loss: 0.0049 | Seg Loss: 0.2054
+
+--- Epoch 184/300 ---
+Batch 0/28 | Total Loss: 0.6769 | Recon Loss: 0.0045 | Seg Loss: 0.1681
+
+--- Epoch 185/300 ---
+Batch 0/28 | Total Loss: 0.9483 | Recon Loss: 0.0055 | Seg Loss: 0.2357
+
+--- Epoch 186/300 ---
+Batch 0/28 | Total Loss: 1.4006 | Recon Loss: 0.0026 | Seg Loss: 0.3495
+
+--- Epoch 187/300 ---
+Batch 0/28 | Total Loss: 0.9786 | Recon Loss: 0.0038 | Seg Loss: 0.2437
+
+--- Epoch 188/300 ---
+Batch 0/28 | Total Loss: 1.4347 | Recon Loss: 0.0039 | Seg Loss: 0.3577
+
+--- Epoch 189/300 ---
+Batch 0/28 | Total Loss: 1.3425 | Recon Loss: 0.0034 | Seg Loss: 0.3348
+
+--- Epoch 190/300 ---
+Batch 0/28 | Total Loss: 0.6699 | Recon Loss: 0.0040 | Seg Loss: 0.1665
+
+--- Epoch 191/300 ---
+Batch 0/28 | Total Loss: 1.3356 | Recon Loss: 0.0032 | Seg Loss: 0.3331
+
+--- Epoch 192/300 ---
+Batch 0/28 | Total Loss: 1.3786 | Recon Loss: 0.0044 | Seg Loss: 0.3436
+
+--- Epoch 193/300 ---
+Batch 0/28 | Total Loss: 1.3718 | Recon Loss: 0.0050 | Seg Loss: 0.3417
+
+--- Epoch 194/300 ---
+Batch 0/28 | Total Loss: 1.0251 | Recon Loss: 0.0048 | Seg Loss: 0.2551
+
+--- Epoch 195/300 ---
+Batch 0/28 | Total Loss: 1.3252 | Recon Loss: 0.0033 | Seg Loss: 0.3305
+
+--- Epoch 196/300 ---
+Batch 0/28 | Total Loss: 0.8655 | Recon Loss: 0.0042 | Seg Loss: 0.2153
+
+--- Epoch 197/300 ---
+Batch 0/28 | Total Loss: 0.4375 | Recon Loss: 0.0039 | Seg Loss: 0.1084
+
+--- Epoch 198/300 ---
+Batch 0/28 | Total Loss: 1.3169 | Recon Loss: 0.0028 | Seg Loss: 0.3285
+
+--- Epoch 199/300 ---
+Batch 0/28 | Total Loss: 1.1687 | Recon Loss: 0.0101 | Seg Loss: 0.2896
+
+--- Epoch 200/300 ---
+Batch 0/28 | Total Loss: 0.3637 | Recon Loss: 0.0031 | Seg Loss: 0.0902
+
+--- Epoch 201/300 ---
+Batch 0/28 | Total Loss: 0.8378 | Recon Loss: 0.0042 | Seg Loss: 0.2084
+
+--- Epoch 202/300 ---
+Batch 0/28 | Total Loss: 1.3984 | Recon Loss: 0.0035 | Seg Loss: 0.3487
+
+--- Epoch 203/300 ---
+Batch 0/28 | Total Loss: 1.2260 | Recon Loss: 0.0049 | Seg Loss: 0.3053
+
+--- Epoch 204/300 ---
+Batch 0/28 | Total Loss: 1.2689 | Recon Loss: 0.0096 | Seg Loss: 0.3148
+
+--- Epoch 205/300 ---
+Batch 0/28 | Total Loss: 0.3994 | Recon Loss: 0.0035 | Seg Loss: 0.0990
+
+--- Epoch 206/300 ---
+Batch 0/28 | Total Loss: 1.0718 | Recon Loss: 0.0036 | Seg Loss: 0.2671
+
+--- Epoch 207/300 ---
+Batch 0/28 | Total Loss: 1.1979 | Recon Loss: 0.0042 | Seg Loss: 0.2984
+
+--- Epoch 208/300 ---
+Batch 0/28 | Total Loss: 1.3499 | Recon Loss: 0.0046 | Seg Loss: 0.3363
+
+--- Epoch 209/300 ---
+Batch 0/28 | Total Loss: 0.4490 | Recon Loss: 0.0046 | Seg Loss: 0.1111
+
+--- Epoch 210/300 ---
+Batch 0/28 | Total Loss: 0.4494 | Recon Loss: 0.0063 | Seg Loss: 0.1108
+
+--- Epoch 211/300 ---
+Batch 0/28 | Total Loss: 1.1007 | Recon Loss: 0.0036 | Seg Loss: 0.2743
+
+--- Epoch 212/300 ---
+Batch 0/28 | Total Loss: 0.5954 | Recon Loss: 0.0030 | Seg Loss: 0.1481
+
+--- Epoch 213/300 ---
+Batch 0/28 | Total Loss: 0.4061 | Recon Loss: 0.0048 | Seg Loss: 0.1003
+
+--- Epoch 214/300 ---
+Batch 0/28 | Total Loss: 1.1624 | Recon Loss: 0.0043 | Seg Loss: 0.2895
+
+--- Epoch 215/300 ---
+Batch 0/28 | Total Loss: 0.3346 | Recon Loss: 0.0042 | Seg Loss: 0.0826
+
+--- Epoch 216/300 ---
+Batch 0/28 | Total Loss: 0.3679 | Recon Loss: 0.0050 | Seg Loss: 0.0907
+
+--- Epoch 217/300 ---
+Batch 0/28 | Total Loss: 1.4943 | Recon Loss: 0.0035 | Seg Loss: 0.3727
+
+--- Epoch 218/300 ---
+Batch 0/28 | Total Loss: 0.4616 | Recon Loss: 0.0053 | Seg Loss: 0.1141
+
+--- Epoch 219/300 ---
+Batch 0/28 | Total Loss: 0.9954 | Recon Loss: 0.0045 | Seg Loss: 0.2477
+
+--- Epoch 220/300 ---
+Batch 0/28 | Total Loss: 1.3466 | Recon Loss: 0.0044 | Seg Loss: 0.3356
+
+--- Epoch 221/300 ---
+Batch 0/28 | Total Loss: 1.5081 | Recon Loss: 0.0027 | Seg Loss: 0.3764
+
+--- Epoch 222/300 ---
+Batch 0/28 | Total Loss: 1.4289 | Recon Loss: 0.0053 | Seg Loss: 0.3559
+
+--- Epoch 223/300 ---
+Batch 0/28 | Total Loss: 0.4834 | Recon Loss: 0.0028 | Seg Loss: 0.1201
+
+--- Epoch 224/300 ---
+Batch 0/28 | Total Loss: 1.0626 | Recon Loss: 0.0038 | Seg Loss: 0.2647
+
+--- Epoch 225/300 ---
+Batch 0/28 | Total Loss: 1.5773 | Recon Loss: 0.0023 | Seg Loss: 0.3938
+
+--- Epoch 226/300 ---
+Batch 0/28 | Total Loss: 0.7695 | Recon Loss: 0.0045 | Seg Loss: 0.1912
+
+--- Epoch 227/300 ---
+Batch 0/28 | Total Loss: 1.0802 | Recon Loss: 0.0027 | Seg Loss: 0.2694
+
+--- Epoch 228/300 ---
+Batch 0/28 | Total Loss: 0.6298 | Recon Loss: 0.0030 | Seg Loss: 0.1567
+
+--- Epoch 229/300 ---
+Batch 0/28 | Total Loss: 1.1057 | Recon Loss: 0.0047 | Seg Loss: 0.2752
+
+--- Epoch 230/300 ---
+Batch 0/28 | Total Loss: 0.7177 | Recon Loss: 0.0044 | Seg Loss: 0.1783
+
+--- Epoch 231/300 ---
+Batch 0/28 | Total Loss: 0.4477 | Recon Loss: 0.0037 | Seg Loss: 0.1110
+
+--- Epoch 232/300 ---
+Batch 0/28 | Total Loss: 0.5810 | Recon Loss: 0.0034 | Seg Loss: 0.1444
+
+--- Epoch 233/300 ---
+Batch 0/28 | Total Loss: 0.2575 | Recon Loss: 0.0028 | Seg Loss: 0.0637
+
+--- Epoch 234/300 ---
+Batch 0/28 | Total Loss: 1.3259 | Recon Loss: 0.0030 | Seg Loss: 0.3307
+
+--- Epoch 235/300 ---
+Batch 0/28 | Total Loss: 1.4102 | Recon Loss: 0.0039 | Seg Loss: 0.3516
+
+--- Epoch 236/300 ---
+Batch 0/28 | Total Loss: 0.3222 | Recon Loss: 0.0050 | Seg Loss: 0.0793
+
+--- Epoch 237/300 ---
+Batch 0/28 | Total Loss: 0.7817 | Recon Loss: 0.0079 | Seg Loss: 0.1934
+
+--- Epoch 238/300 ---
+Batch 0/28 | Total Loss: 0.9786 | Recon Loss: 0.0041 | Seg Loss: 0.2436
+
+--- Epoch 239/300 ---
+Batch 0/28 | Total Loss: 0.7480 | Recon Loss: 0.0034 | Seg Loss: 0.1862
+
+--- Epoch 240/300 ---
+Batch 0/28 | Total Loss: 1.0706 | Recon Loss: 0.0035 | Seg Loss: 0.2668
+
+--- Epoch 241/300 ---
+Batch 0/28 | Total Loss: 1.7404 | Recon Loss: 0.0031 | Seg Loss: 0.4343
+
+--- Epoch 242/300 ---
+Batch 0/28 | Total Loss: 0.6962 | Recon Loss: 0.0037 | Seg Loss: 0.1731
+
+--- Epoch 243/300 ---
+Batch 0/28 | Total Loss: 0.3252 | Recon Loss: 0.0042 | Seg Loss: 0.0802
+
+--- Epoch 244/300 ---
+Batch 0/28 | Total Loss: 0.4863 | Recon Loss: 0.0045 | Seg Loss: 0.1205
+
+--- Epoch 245/300 ---
+Batch 0/28 | Total Loss: 1.3269 | Recon Loss: 0.0040 | Seg Loss: 0.3307
+
+--- Epoch 246/300 ---
+Batch 0/28 | Total Loss: 1.3272 | Recon Loss: 0.0022 | Seg Loss: 0.3312
+
+--- Epoch 247/300 ---
+Batch 0/28 | Total Loss: 1.3651 | Recon Loss: 0.0034 | Seg Loss: 0.3404
+
+--- Epoch 248/300 ---
+Batch 0/28 | Total Loss: 1.3497 | Recon Loss: 0.0032 | Seg Loss: 0.3366
+
+--- Epoch 249/300 ---
+Batch 0/28 | Total Loss: 0.3912 | Recon Loss: 0.0027 | Seg Loss: 0.0971
+
+--- Epoch 250/300 ---
+Batch 0/28 | Total Loss: 1.3402 | Recon Loss: 0.0023 | Seg Loss: 0.3345
+
+--- Epoch 251/300 ---
+Batch 0/28 | Total Loss: 1.3758 | Recon Loss: 0.0023 | Seg Loss: 0.3434
+
+--- Epoch 252/300 ---
+Batch 0/28 | Total Loss: 0.8709 | Recon Loss: 0.0034 | Seg Loss: 0.2169
+
+--- Epoch 253/300 ---
+Batch 0/28 | Total Loss: 0.4850 | Recon Loss: 0.0040 | Seg Loss: 0.1203
+
+--- Epoch 254/300 ---
+Batch 0/28 | Total Loss: 0.4665 | Recon Loss: 0.0048 | Seg Loss: 0.1154
+
+--- Epoch 255/300 ---
+Batch 0/28 | Total Loss: 1.0358 | Recon Loss: 0.0038 | Seg Loss: 0.2580
+
+--- Epoch 256/300 ---
+Batch 0/28 | Total Loss: 0.8012 | Recon Loss: 0.0025 | Seg Loss: 0.1997
+
+--- Epoch 257/300 ---
+Batch 0/28 | Total Loss: 1.3013 | Recon Loss: 0.0027 | Seg Loss: 0.3246
+
+--- Epoch 258/300 ---
+Batch 0/28 | Total Loss: 0.8118 | Recon Loss: 0.0030 | Seg Loss: 0.2022
+
+--- Epoch 259/300 ---
+Batch 0/28 | Total Loss: 0.3278 | Recon Loss: 0.0042 | Seg Loss: 0.0809
+
+--- Epoch 260/300 ---
+Batch 0/28 | Total Loss: 0.5366 | Recon Loss: 0.0025 | Seg Loss: 0.1335
+
+--- Epoch 261/300 ---
+Batch 0/28 | Total Loss: 0.9394 | Recon Loss: 0.0060 | Seg Loss: 0.2334
+
+--- Epoch 262/300 ---
+Batch 0/28 | Total Loss: 0.4408 | Recon Loss: 0.0048 | Seg Loss: 0.1090
+
+--- Epoch 263/300 ---
+Batch 0/28 | Total Loss: 1.1223 | Recon Loss: 0.0053 | Seg Loss: 0.2792
+
+--- Epoch 264/300 ---
+Batch 0/28 | Total Loss: 0.2941 | Recon Loss: 0.0024 | Seg Loss: 0.0729
+
+--- Epoch 265/300 ---
+Batch 0/28 | Total Loss: 1.3898 | Recon Loss: 0.0055 | Seg Loss: 0.3461
+
+--- Epoch 266/300 ---
+Batch 0/28 | Total Loss: 0.6322 | Recon Loss: 0.0051 | Seg Loss: 0.1568
+
+--- Epoch 267/300 ---
+Batch 0/28 | Total Loss: 0.4281 | Recon Loss: 0.0032 | Seg Loss: 0.1062
+
+--- Epoch 268/300 ---
+Batch 0/28 | Total Loss: 1.1757 | Recon Loss: 0.0030 | Seg Loss: 0.2932
+
+--- Epoch 269/300 ---
+Batch 0/28 | Total Loss: 0.8079 | Recon Loss: 0.0035 | Seg Loss: 0.2011
+
+--- Epoch 270/300 ---
+Batch 0/28 | Total Loss: 0.3966 | Recon Loss: 0.0043 | Seg Loss: 0.0981
+
+--- Epoch 271/300 ---
+Batch 0/28 | Total Loss: 0.7981 | Recon Loss: 0.0026 | Seg Loss: 0.1989
+
+--- Epoch 272/300 ---
+Batch 0/28 | Total Loss: 0.4020 | Recon Loss: 0.0034 | Seg Loss: 0.0997
+
+--- Epoch 273/300 ---
+Batch 0/28 | Total Loss: 0.2924 | Recon Loss: 0.0054 | Seg Loss: 0.0717
+
+--- Epoch 274/300 ---
+Batch 0/28 | Total Loss: 0.7563 | Recon Loss: 0.0043 | Seg Loss: 0.1880
+
+--- Epoch 275/300 ---
+Batch 0/28 | Total Loss: 0.8137 | Recon Loss: 0.0043 | Seg Loss: 0.2023
+
+--- Epoch 276/300 ---
+Batch 0/28 | Total Loss: 0.6695 | Recon Loss: 0.0047 | Seg Loss: 0.1662
+
+--- Epoch 277/300 ---
+Batch 0/28 | Total Loss: 0.7071 | Recon Loss: 0.0037 | Seg Loss: 0.1759
+
+--- Epoch 278/300 ---
+Batch 0/28 | Total Loss: 1.2767 | Recon Loss: 0.0039 | Seg Loss: 0.3182
+
+--- Epoch 279/300 ---
+Batch 0/28 | Total Loss: 0.3505 | Recon Loss: 0.0031 | Seg Loss: 0.0868
+
+--- Epoch 280/300 ---
+Batch 0/28 | Total Loss: 0.6632 | Recon Loss: 0.0052 | Seg Loss: 0.1645
+
+--- Epoch 281/300 ---
+Batch 0/28 | Total Loss: 0.7648 | Recon Loss: 0.0022 | Seg Loss: 0.1907
+
+--- Epoch 282/300 ---
+Batch 0/28 | Total Loss: 0.4303 | Recon Loss: 0.0042 | Seg Loss: 0.1065
+
+--- Epoch 283/300 ---
+Batch 0/28 | Total Loss: 0.3006 | Recon Loss: 0.0027 | Seg Loss: 0.0745
+
+--- Epoch 284/300 ---
+Batch 0/28 | Total Loss: 0.9951 | Recon Loss: 0.0026 | Seg Loss: 0.2481
+
+--- Epoch 285/300 ---
+Batch 0/28 | Total Loss: 0.3176 | Recon Loss: 0.0042 | Seg Loss: 0.0784
+
+--- Epoch 286/300 ---
+Batch 0/28 | Total Loss: 1.0324 | Recon Loss: 0.0054 | Seg Loss: 0.2567
+
+--- Epoch 287/300 ---
+Batch 0/28 | Total Loss: 0.5705 | Recon Loss: 0.0025 | Seg Loss: 0.1420
+
+--- Epoch 288/300 ---
+Batch 0/28 | Total Loss: 1.1823 | Recon Loss: 0.0059 | Seg Loss: 0.2941
+
+--- Epoch 289/300 ---
+Batch 0/28 | Total Loss: 0.4665 | Recon Loss: 0.0037 | Seg Loss: 0.1157
+
+--- Epoch 290/300 ---
+Batch 0/28 | Total Loss: 0.3900 | Recon Loss: 0.0043 | Seg Loss: 0.0964
+
+--- Epoch 291/300 ---
+Batch 0/28 | Total Loss: 1.2439 | Recon Loss: 0.0052 | Seg Loss: 0.3097
+
+--- Epoch 292/300 ---
+Batch 0/28 | Total Loss: 1.2266 | Recon Loss: 0.0047 | Seg Loss: 0.3055
+
+--- Epoch 293/300 ---
+Batch 0/28 | Total Loss: 1.1472 | Recon Loss: 0.0031 | Seg Loss: 0.2860
+
+--- Epoch 294/300 ---
+Batch 0/28 | Total Loss: 1.3424 | Recon Loss: 0.0023 | Seg Loss: 0.3350
+
+--- Epoch 295/300 ---
+Batch 0/28 | Total Loss: 0.5347 | Recon Loss: 0.0038 | Seg Loss: 0.1327
+
+--- Epoch 296/300 ---
+Batch 0/28 | Total Loss: 0.2414 | Recon Loss: 0.0050 | Seg Loss: 0.0591
+
+--- Epoch 297/300 ---
+Batch 0/28 | Total Loss: 0.5395 | Recon Loss: 0.0039 | Seg Loss: 0.1339
+
+--- Epoch 298/300 ---
+Batch 0/28 | Total Loss: 0.4188 | Recon Loss: 0.0040 | Seg Loss: 0.1037
+
+--- Epoch 299/300 ---
+Batch 0/28 | Total Loss: 1.2564 | Recon Loss: 0.0033 | Seg Loss: 0.3133
+
+--- Epoch 300/300 ---
+Batch 0/28 | Total Loss: 0.7410 | Recon Loss: 0.0034 | Seg Loss: 0.1844
+--- Training Finished ---
+Model saved to /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/AG.pth
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27050225: <AG_job> in cluster <dcc> Done
+
+Job <AG_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Mon Nov 17 10:19:51 2025
+Job was executed on host(s) <8*n-62-13-17>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Mon Nov 17 14:34:30 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Mon Nov 17 14:34:30 2025
+Terminated at Mon Nov 17 15:35:45 2025
+Results reported at Mon Nov 17 15:35:45 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J AG_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_%J.err
+
+### --- Resource Requests ---
+#BSUB -q gpul40s           # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 8                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=60GB]"   # Request 16GB memory
+#BSUB -W 04:00                # 4 hour runtime limit
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3918.00 sec.
+    Max Memory :                                 1688 MB
+    Average Memory :                             1457.08 MB
+    Total Requested Memory :                     491520.00 MB
+    Delta Memory :                               489832.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                10
+    Run time :                                   3676 sec.
+    Turnaround time :                            18954 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_27050225.err> for stderr output of this job.
+

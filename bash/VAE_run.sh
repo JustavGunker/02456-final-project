@@ -23,6 +23,6 @@ echo "Environment 'MBML' activated."
 
 ### --- Run Script ---
 echo "Starting Python script..."
-python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE_test.py
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE.py
 
 echo "Job Finished."

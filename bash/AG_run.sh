@@ -23,6 +23,6 @@ source /zhome/d2/4/167803/miniforge3/bin/activate MBML
 echo "Environment 'MBML' activated."
 
 echo "Starting Python script..."
-python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG.py
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_test.py
 
 echo "Job Finished."

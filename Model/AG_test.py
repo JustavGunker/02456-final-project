@@ -19,7 +19,7 @@ sys.path.append(str(PROJECT_ROOT))
 from func.utill import visualize_slices, DiceLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet
 from func.dataloads import LiverDataset_aug, LiverUnlabeledDataset_aug
-from func.loss import BoundaryLoss, ComboLoss
+from func.loss import BoundaryLoss, ComboLoss, TverskyLoss
 
 INPUT_SHAPE = (128, 160, 160) # ( D, H, W)
 NUM_CLASSES = 3  # Background, Segment 1, Segment 2
@@ -102,10 +102,11 @@ if __name__ == "__main__":
     ).to(device)
 
     # Segmentation Loss (Dice + CE)
-    loss_fn_seg_dice = DiceLoss(num_classes=NUM_CLASSES)
+    #loss_fn_seg_dice = DiceLoss(num_classes=NUM_CLASSES)
+    Tversky = TverskyLoss(num_classes=NUM_CLASSES, alpha=0.7, beta=0.3)
     loss_fn_seg_cross = nn.CrossEntropyLoss()
     loss_fn_seg = ComboLoss(
-        dice_loss_fn=loss_fn_seg_dice,
+        dice_loss_fn=Tversky,
         wce_loss_fn=loss_fn_seg_cross,
         alpha=0.6, beta=0.4  # You can tune these alpha/beta from func/loss.py
     ).to(device)
