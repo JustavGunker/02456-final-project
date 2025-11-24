@@ -7,11 +7,12 @@
 #BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_%J.err
 
 ### --- Resource Requests ---
-#BSUB -q gpul40s           # Request GPU queue
+#BSUB -q gpua100           # Request GPU queue
 #BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
 #BSUB -n 8                    # Request 4 CPU cores
-#BSUB -R "rusage[mem=60GB]"   # Request 16GB memory
-#BSUB -W 04:00                # 4 hour runtime limit
+#BSUB -R "rusage[mem=64GB]"   # Request 16GB memory
+#BSUB -W 25:00                # 4 hour runtime limit
+
 
 ### --- Setup Environment ---
 echo "Loading CUDA module..."
@@ -23,6 +24,6 @@ source /zhome/d2/4/167803/miniforge3/bin/activate MBML
 echo "Environment 'MBML' activated."
 
 echo "Starting Python script..."
-python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_test.py
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_vali.py
 
 echo "Job Finished."
