@@ -167,85 +167,74 @@ class DiceLoss(nn.Module):
 
 class FocalLoss(nn.Module):
     """
-    L_Focal = (1 - pt)^gamma * L_CE
-    
-    Where pt is the probability of the correct class.
+    Explicit 3D Focal Loss implementation.
+    L = -weight * (1 - pt)^gamma * log(pt)
     """
-    def __init__(self, gamma=2.0, reduction='mean'):
+    def __init__(self, gamma=2.0, weight=None, reduction='mean'):
         """
         Args:
-            gamma (float): The "focusing" parameter. Higher values
-                           focus more on hard examples.
-            reduction (str): 'mean', 'sum', or 'none'
+            gamma (float): Focusing parameter.
+            weight (torch.Tensor, optional): Class weights (C,).
+            reduction (str): 'mean', 'sum', or 'none'.
         """
         super(FocalLoss, self).__init__()
         self.gamma = gamma
+        self.weight = weight
         self.reduction = reduction
 
     def forward(self, inputs, targets):
         """
         Args:
-            inputs (torch.Tensor): Model logits (B, C, D, H, W)
-            targets (torch.Tensor): Ground truth labels (B, 1, D, H, W)
+            inputs: (B, C, D, H, W) - Unnormalized logits
+            targets: (B, D, H, W) or (B, 1, D, H, W) - Long indices
         """
-        # Ensure targets are the correct shape and type
-        # (B, 1, D, H, W) -> (B, D, H, W)
+        # 1. Handle Target Shape (B, 1, D, H, W) -> (B, D, H, W)
         if targets.dim() == 5:
             targets = targets.squeeze(1)
         targets = targets.long()
-        
-        # Calculate the standard cross entropy loss, but *without* reduction
-        # This is L_CE = -log(pt)
-        ce_loss = F.cross_entropy(inputs, targets, reduction='none')
-        
-        # Get the probability of the correct class (pt)
-        # pt = exp(-ce_loss)
-        pt = torch.exp(-ce_loss)
-        
-        # Calculate the final focal loss
-        # L_Focal = (1 - pt)^gamma * L_CE
-        focal_loss = ((1 - pt) ** self.gamma) * ce_loss
 
-        # Apply the specified reduction
+        # 2. Compute Log Softmax (numerical stability)
+        # log_probs: (B, C, D, H, W)
+        log_probs = F.log_softmax(inputs, dim=1)
+
+        # 3. Gather Log Probabilities of the True Class
+        # We need to unsqueeze targets to (B, 1, D, H, W) to use gather on dim 1
+        targets_unsqueezed = targets.unsqueeze(1)
+        # log_pt: (B, 1, D, H, W)
+        log_pt = log_probs.gather(1, targets_unsqueezed)
+        
+        # Squeeze back to (B, D, H, W)
+        log_pt = log_pt.squeeze(1)
+        pt = log_pt.exp()
+
+        # 4. Compute Focal Term
+        focal_term = (1 - pt) ** self.gamma
+
+        # 5. Compute Basic Loss
+        loss = -focal_term * log_pt
+
+        # 6. Apply Class Weights (if provided)
+        if self.weight is not None:
+            if self.weight.device != inputs.device:
+                self.weight = self.weight.to(inputs.device)
+            
+            # Broadcast weights: weight[targets] creates a tensor of shape (B, D, H, W)
+            # containing the weight corresponding to the class at each voxel
+            loss = loss * self.weight[targets]
+
+        # 7. Reduction
         if self.reduction == 'mean':
-            return focal_loss.mean()
+            if self.weight is not None:
+                # Weighted average: sum(loss) / sum(weights for valid pixels)
+                # This prevents loss explosion when using high class weights
+                return loss.sum() / self.weight[targets].sum()
+            else:
+                return loss.mean()
         elif self.reduction == 'sum':
-            return focal_loss.sum()
+            return loss.sum()
         else:
-            return focal_loss
-    
-class BoundaryLoss(nn.Module):
-    """
-    Implements the Boundary Loss (L_B) from Eq. 23.
-    L_B = integral( phi_G(q) * s(q) )
-    
-    phi_G(q) is the pre-computed distance map.
-    s(q) is the model's softmax probability for the foreground class.
-    """
-    def __init__(self, num_classes=2):
-        super().__init__()
-        self.num_classes = num_classes
-
-    def forward(self, inputs, dist_map):
-        """
-        Args:
-            inputs (torch.Tensor): Model logits (B, C, D, H, W)
-            dist_map (torch.Tensor): Pre-computed dist map (B, 1, D, H, W)
-        """
-        # Convert logits to probabilities
-        s = F.softmax(inputs, dim=1)
+            return loss
         
-        # We only care about the foreground class (class 1)
-        # You may need to change '1' if your liver is a different class index
-        s_foreground = s[:, 1, ...].unsqueeze(1) # -> (B, 1, D, H, W)
-        
-        # L_B = element-wise multiplication and then sum
-        # This is the integral( phi_G(q) * s(q) )
-        loss = torch.sum(s_foreground * dist_map)
-        
-        # Normalize by batch size
-        return loss / inputs.size(0)
-
 ## KL Divergence Loss
 def kld_loss(mu, log_var):
     """

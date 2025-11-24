@@ -24,57 +24,59 @@ from func.Models import VAE
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-# --- GLOBAL CONFIGURATION (ADAPTED FOR PATCHES) ---
 LATENT_DIM = 256
 num_epochs = 400
 KLD_WEIGHT = 0.0001
 BATCH_SIZE = 2
 INPUT_SHAPE = (128, 128, 128) 
 NUM_CLASSES = 4 # 0, 1, 2, 3
-# ----------------------------------------------------
 
-# Data path is now managed internally by VolumetricPatchDataset to use $BLACKHOLE
-data_root_folder = PROJECT_ROOT # Placeholder, actual path is in the Dataset class
-OUTPUT_DIR = PROJECT_ROOT / "outputs_VAE"
+OUTPUT_DIR = PROJECT_ROOT / "output_VAE"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-print(f"Saving visualizations to: {OUTPUT_DIR}")
 
-if __name__ != "__main__":
-    print(f"Project root folder: {PROJECT_ROOT}")
+
+all_train_cols = list(range(1, 35)) # Columns 1 to 34
+labeled_cols = all_train_cols[:10]  # 1 to 10
+unlabeled_cols = all_train_cols[10:] # 11 to 34
+
+print(f"Training Configuration:")
+print(f"  - Labeled Columns: {labeled_cols}")
+print(f"  - Unlabeled Columns: {unlabeled_cols}")
+print(f"  - Reserved Test Columns: {list(range(35, 39))} (NOT used in this script)")
 
 try:
-    # 1. Labeled Dataset: Instantiate the new patch-based class
-    labeled_dataset = VolumetricPatchDataset(augment=True, is_labeled=True)
+    # 1. Labeled Dataset
+    labeled_dataset = VolumetricPatchDataset(
+        selected_columns=labeled_cols, 
+        augment=True, 
+        is_labeled=True
+    )
     
-    # DataLoader for labeled data
     labeled_loader = DataLoader(
         dataset=labeled_dataset,
         batch_size=BATCH_SIZE,
         shuffle=True,
-        # NOTE: Reduced num_workers since batch size is 1.
-        num_workers=2 
+        num_workers=8
     )
-    print("--- Labeled DataLoader success (using patched data) ---")
+    print("--- Labeled DataLoader created successfully ---")
 
-except Exception as e:
-    print(f"Error creating Labeled dataset: {e}")
-    exit()
-
-try:
-    # 2. Unlabeled Dataset: Instantiate the new patch-based class
-    unlabeled_dataset = VolumetricPatchDataset(augment=False, is_labeled=False)
+    # 2. Unlabeled Dataset
+    unlabeled_dataset = VolumetricPatchDataset(
+        selected_columns=unlabeled_cols,
+        augment=False, # Usually no aug for unsupervised reconstruction target
+        is_labeled=False
+    )
     
-    # DataLoader for unlabeled data
     unlabeled_loader = DataLoader(
         dataset=unlabeled_dataset,
-        batch_size=BATCH_SIZE,
+        batch_size=BATCH_SIZE, 
         shuffle=True,
-        num_workers=2
+        num_workers=4
     )
-    print("--- Unlabeled DataLoader success (using patched data) ---")
+    print("--- Unlabeled DataLoader created successfully ---")
 
 except Exception as e:
-    print(f"Error creating Unlabeled dataset: {e}")
+    print(f"Error creating Datasets: {e}")
     exit()
 
 if __name__ == "__main__":
@@ -89,7 +91,7 @@ if __name__ == "__main__":
     focal = FocalLoss(gamma=2.0).to(device)
 
     loss_fn_recon = nn.MSELoss()
-    optimizer_model = optim.Adam(model.parameters(), lr=1e-3, weight_decay=0.001)
+    optimizer_model = optim.Adam(model.parameters(), lr=1e-4, weight_decay=0.001)
     loss_fn_seg = ComboLoss(
         dice_loss_fn=Tversky,
         wce_loss_fn=focal,

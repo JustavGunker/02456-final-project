@@ -21,24 +21,35 @@ from func.dataloaders import VolumetricPatchDataset
 from func.loss import BoundaryLoss, ComboLoss, TverskyLoss, DiceLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet 
 
-# --- GLOBAL CONFIGURATION (ADAPTED FOR PATCHES) ---
-# FIX: The model input shape is now the patch shape (D, H, W)
-INPUT_SHAPE = (128,128,128) 
-NUM_CLASSES = 4  # (Classes 0, 1, 2, 3)
+INPUT_SHAPE = (128, 128, 128) 
+NUM_CLASSES = 4
 LATENT_DIM = 256 
-BATCH_SIZE = 3
+BATCH_SIZE = 3 # As requested
 SAVE_INTERVAL = 20
+NUM_EPOCHS = 400
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-# Data path is now managed internally by VolumetricPatchDataset to use $BLACKHOLE
-OUTPUT_DIR = PROJECT_ROOT / "output_AG "
+OUTPUT_DIR = PROJECT_ROOT / "output_AG"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+all_train_cols = list(range(1, 35)) # Columns 1 to 34
+labeled_cols = all_train_cols[:10]  # 1 to 10
+unlabeled_cols = all_train_cols[10:] # 11 to 34
+
+print(f"Training Configuration:")
+print(f"  - Labeled Columns: {labeled_cols}")
+print(f"  - Unlabeled Columns: {unlabeled_cols}")
+print(f"  - Reserved Test Columns: {list(range(35, 39))} (NOT used in this script)")
+
 try:
-    # 1. Labeled Dataset: Instantiate the new patch-based class
-    labeled_dataset = VolumetricPatchDataset(augment=True, is_labeled=True)
+    # 1. Labeled Dataset
+    labeled_dataset = VolumetricPatchDataset(
+        selected_columns=labeled_cols, 
+        augment=True, 
+        is_labeled=True
+    )
     
     labeled_loader = DataLoader(
         dataset=labeled_dataset,
@@ -46,15 +57,11 @@ try:
         shuffle=True,
         num_workers=8
     )
-    print("--- Labeled DataLoader success (using patched data) ---")
+    print("--- Labeled DataLoader created successfully ---")
 
-except Exception as e:
-    print(f"Error creating Labeled dataset: {e}")
-    exit()
-
-try:
-    # 2. Unlabeled Dataset: Instantiate the new patch-based class
+    # 2. Unlabeled Dataset
     unlabeled_dataset = VolumetricPatchDataset(
+        selected_columns=unlabeled_cols,
         augment=False, 
         is_labeled=False
     )
@@ -65,10 +72,10 @@ try:
         shuffle=True,
         num_workers=4
     )
-    print("--- Unlabeled DataLoader success (using patched data) ---")
+    print("--- Unlabeled DataLoader created successfully ---")
 
 except Exception as e:
-    print(f"Error creating Unlabeled dataset: {e}")
+    print(f"Error creating Datasets: {e}")
     exit()
 
 if __name__ == "__main__":

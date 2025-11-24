@@ -1,8 +1,0 @@
-Loaded module: cuda/11.6
-Traceback (most recent call last):
-  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/multi_big.py", line 120, in <module>
-    save_predictions(epoch, last_x, last_y, last_recon, last_seg, OUTPUT_DIR, slice_idx=64)
-  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/utill.py", line 259, in save_predictions
-    y_np = gt_y[0, slice_idx, :, :].cpu().numpy()       
-           ~~~~^^^^^^^^^^^^^^^^^^^^
-IndexError: index 64 is out of bounds for dimension 1 with size 1

@@ -21,12 +21,12 @@ from func.dataloaders import VolumetricPatchDataset
 
 BLACKHOLE_PATH = os.environ.get('BLACKHOLE', '.')
 
-
-INPUT_SHAPE_PATCH = (128, 128, 128)
+INPUT_SHAPE = (128, 128, 128) 
 NUM_CLASSES = 4
-LATENT_DIM = 256
-BATCH_SIZE = 2
+LATENT_DIM = 256 
+BATCH_SIZE = 3 # As requested
 SAVE_INTERVAL = 20
+NUM_EPOCHS = 400
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
@@ -34,15 +34,45 @@ print(f"Using device: {device}")
 OUTPUT_DIR = PROJECT_ROOT / "output_big"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+
+all_train_cols = list(range(1, 35)) # Columns 1 to 34
+labeled_cols = all_train_cols[:10]  # 1 to 10
+unlabeled_cols = all_train_cols[10:] # 11 to 34
+
+print(f"Training Configuration:")
+print(f"  - Labeled Columns: {labeled_cols}")
+print(f"  - Unlabeled Columns: {unlabeled_cols}")
+print(f"  - Reserved Test Columns: {list(range(35, 39))} (NOT used in this script)")
+
 try:
     # 1. Labeled Dataset
-    labeled_dataset = VolumetricPatchDataset(augment=True, is_labeled=True)
-    labeled_loader = DataLoader(dataset=labeled_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+    labeled_dataset = VolumetricPatchDataset(
+        selected_columns=labeled_cols, 
+        augment=True, 
+        is_labeled=True
+    )
+    
+    labeled_loader = DataLoader(
+        dataset=labeled_dataset,
+        batch_size=BATCH_SIZE,
+        shuffle=True,
+        num_workers=8
+    )
     print("--- Labeled DataLoader created successfully ---")
 
     # 2. Unlabeled Dataset
-    unlabeled_dataset = VolumetricPatchDataset(augment=False, is_labeled=False)
-    unlabeled_loader = DataLoader(dataset=unlabeled_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+    unlabeled_dataset = VolumetricPatchDataset(
+        selected_columns=unlabeled_cols,
+        augment=False, # Usually no aug for unsupervised reconstruction target
+        is_labeled=False
+    )
+    
+    unlabeled_loader = DataLoader(
+        dataset=unlabeled_dataset,
+        batch_size=BATCH_SIZE, 
+        shuffle=True,
+        num_workers=4
+    )
     print("--- Unlabeled DataLoader created successfully ---")
 
 except Exception as e:
