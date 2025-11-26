@@ -14,7 +14,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from func.utill import save_predictions
+from func.utill import save_predictions, plot_learning_curves
 from func.dataloaders import VolumetricPatchDataset 
 from func.loss import ComboLoss, TverskyLoss, DiceLoss, FocalLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet 
@@ -30,16 +30,18 @@ WEIGHT_DECAY = 0.001
 ACCUM_STEPS = 4 
 
 # Weights for Multi-Task Loss
-SEG_WEIGHT = 5.0
+SEG_WEIGHT = 100
 RECON_WEIGHT = 1.0
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-CLASS_WEIGHTS = torch.tensor([0.1, 1.0, 1.5, 3.0]).to(device) 
+CLASS_WEIGHTS = torch.tensor([1.0, 1.0, 1.0, 3.0]).to(device) 
 print(f"Using Class Weights: {CLASS_WEIGHTS}")
 
 OUTPUT_DIR = PROJECT_ROOT / "Output_AG_vali"
+CURVE_DIR = PROJECT_ROOT / "curves"
+CURVE_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SAVE_PATH_FINAL = PROJECT_ROOT / "Trained_models" / "AG_val_final.pth"
 SAVE_PATH = PROJECT_ROOT / "Trained_models" / "AG_val_best.pth"
@@ -131,6 +133,11 @@ if __name__ == "__main__":
     )
 
     best_val_iou = 0.0
+    
+    # --- LOSS HISTORY ---
+    train_loss_history = []
+    val_loss_history = []
+    val_iou_history = []
     print("--- Starting Training ---")
     
     for epoch in range(NUM_EPOCHS):
@@ -166,7 +173,7 @@ if __name__ == "__main__":
             loss_recon = loss_fn_recon(recon_out_labeled, x) + \
                          loss_fn_recon(recon_out_unlabeled, x_unlabeled)
             
-            total_loss = loss_seg+ loss_recon
+            total_loss = (loss_seg*SEG_WEIGHT) + (loss_recon*RECON_WEIGHT)
             
             total_loss.backward()
             optimizer_model.step()
@@ -200,12 +207,14 @@ if __name__ == "__main__":
         avg_train_loss = epoch_train_loss / len(labeled_loader)
         avg_seg_loss = epoch_seg_loss / len(labeled_loader)
         avg_recon_loss = epoch_recon_loss / len(labeled_loader)
+        train_loss_history.append(avg_train_loss)
         
         # --- VALIDATION PHASE ---
         model.eval()
         #total_val_iou = 0.0
         class_inter = np.zeros(NUM_CLASSES)
         class_union = np.zeros(NUM_CLASSES)
+        loss_val = 0.0
         with torch.no_grad():
             for (x_val, y_val_seg) in val_loader:
                 x_val = x_val.to(device)
@@ -214,6 +223,8 @@ if __name__ == "__main__":
                 val_seg_out, _ = model(x_val)
                 val_preds = torch.argmax(val_seg_out, dim=1)
 
+                loss = loss_fn_seg(val_seg_out, y_val_seg)
+                loss_val += loss.item()
                 for c in range(NUM_CLASSES):
                     pred_c = (val_preds == c)
                     true_c = (y_val_seg == c)
@@ -224,7 +235,10 @@ if __name__ == "__main__":
                     class_inter[c] += inter
                     class_union[c] += union
 
+        avg_val_loss = loss_val / len(val_loader)
+        val_loss_history.append(avg_val_loss)
         class_iou =[]
+
         for c in range(NUM_CLASSES):
             if class_union[c] > c:
                 iou = class_inter[c]/class_union[c]
@@ -262,4 +276,6 @@ if __name__ == "__main__":
     print(f"Best model saved {SAVE_PATH}")
     print(f"Final model saved {SAVE_PATH_FINAL}")
     print("Done.")
+    plot_learning_curves(train_loss_history, val_loss_history, val_iou_history, CURVE_DIR)
+
     

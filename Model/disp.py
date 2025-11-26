@@ -25,11 +25,12 @@ BATCH_SIZE = 1
 
 # DATA SPLIT: Use only the Test Set columns
 # Training: 1-26, Validation: 27-32, Test: 33-38
-TEST_COLUMNS = list(range(33, 39)) 
+TEST_COLUMNS = [1,2, 33, 34]      
+
 
 # Update this to point to the model you want to test
-MODEL_WEIGHTS_PATH = PROJECT_ROOT / "Trained_models" / "multi_big_final.pth"
-SAVE_FILENAME = PROJECT_ROOT / "save_preds" / "multi_big_final.png"
+MODEL_WEIGHTS_PATH = PROJECT_ROOT / "Trained_models" / "VAE_val_best.pth"
+SAVE_FILENAME = PROJECT_ROOT / "save_preds" / "VAE_val_best.png"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"--- Using device: {device} ---")
@@ -73,9 +74,9 @@ if __name__ == "__main__":
     # A. Load the Model
     print(f"Loading model structure...")
     # UNCOMMENT the model you are testing
-    #model = VAE(in_channels=1, latent_dim=LATENT_DIM, NUM_CLASSES=NUM_CLASSES).to(device)
+    model = VAE(in_channels=1, latent_dim=LATENT_DIM, NUM_CLASSES=NUM_CLASSES).to(device)
     #model = MultiTaskNet_ag(in_channels=1, num_classes=NUM_CLASSES, latent_dim=LATENT_DIM).to(device)
-    model = MultiTaskNet_big(in_channels=1, num_classes=NUM_CLASSES, latent_dim=LATENT_DIM).to(device)
+    #model = MultiTaskNet_big(in_channels=1, num_classes=NUM_CLASSES, latent_dim=LATENT_DIM).to(device)
     
     if MODEL_WEIGHTS_PATH.exists():
         print(f"Loading weights from: {MODEL_WEIGHTS_PATH}")
@@ -98,7 +99,7 @@ if __name__ == "__main__":
         test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=True)
         
         print(f"Test set contains {len(test_dataset)} patches.")
-        
+        print(f"shape of tensor: {test_loader.shape}")
         # Grab a single batch
         x_batch, y_batch = next(iter(test_loader))
         

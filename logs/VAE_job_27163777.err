@@ -1,0 +1,17 @@
+Loaded module: cuda/11.6
+/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE_vali.py", line 274, in <module>
+    plot_learning_curves(train_loss_history, val_loss_history, val_iou_history, CURVE_DIR)
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/utill.py", line 309, in plot_learning_curves
+    ax2.plot(epochs, val_ious, 'g-', label='Validation mIoU')
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 1777, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 297, in __call__
+    yield from self._plot_args(
+               ^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 494, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (800,) and (0,)

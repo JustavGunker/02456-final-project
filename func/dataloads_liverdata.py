@@ -630,3 +630,169 @@ class LiverUnlabeledDataset(Dataset):
             return final_data
         
         return data_cropped
+
+
+
+PATCH_SIZE_SPATIAL = 128
+# ---------------------
+
+class TransferLabeledDataset(Dataset):
+    """
+    Loads the Labeled .mat file (22 slices).
+    - Train: Uses slices 0-15 (Depth 16).
+    - Test: Uses slices 16-end. Interpolates depth to 8.
+    """
+    def __init__(self, mode='train', mat_path=LABELED_DATA_PATH, augment=True):
+        self.mode = mode
+        self.augment = augment
+        
+        if not os.path.exists(mat_path):
+            raise FileNotFoundError(f"Labeled data not found at {mat_path}")
+            
+        # Load the full volume (22, 750, 750)
+        data = loadmat(str(mat_path))
+        full_volume = data['top']      
+        full_mask = data['gt_top']     
+        
+        # --- SPLIT BY Z-AXIS ---
+        if mode == 'train':
+            # Slices 0-15 (16 slices) -> Perfect for pooling
+            self.volume = full_volume[0:16, :, :]
+            self.mask = full_mask[0:16, :, :]
+            self.current_depth = 16
+            self.target_depth = 16
+            
+        elif mode == 'test':
+            # Remaining slices (e.g., 16-21)
+            self.volume = full_volume[16:, :, :]
+            self.mask = full_mask[16:, :, :]
+            self.current_depth = self.volume.shape[0]
+            self.target_depth = 8  # Interpolate to 8 for valid pooling
+        else:
+            raise ValueError("Mode must be 'train' or 'test'")
+            
+        self.h_lim = self.volume.shape[1]
+        self.w_lim = self.volume.shape[2]
+        # Set a virtual length so we can iterate over random crops
+        self.length = 200 if mode == 'train' else 50
+
+    def __len__(self):
+        return self.length
+
+    def __getitem__(self, index):
+        # 1. Random Spatial Crop (H, W)
+        h_start = np.random.randint(0, self.h_lim - PATCH_SIZE_SPATIAL + 1)
+        w_start = np.random.randint(0, self.w_lim - PATCH_SIZE_SPATIAL + 1)
+        
+        # Crop full available depth, random spatial
+        img_patch = self.volume[:, h_start:h_start+PATCH_SIZE_SPATIAL, w_start:w_start+PATCH_SIZE_SPATIAL]
+        mask_patch = self.mask[:, h_start:h_start+PATCH_SIZE_SPATIAL, w_start:w_start+PATCH_SIZE_SPATIAL]
+        
+        # 2. Resize Depth if needed (Test set)
+        if self.current_depth != self.target_depth:
+            img_patch, mask_patch = self._resize_depth(img_patch, mask_patch)
+        
+        # 3. Normalize
+        img_patch = img_patch.astype(np.float32) / 255.0
+        
+        # 4. Augment
+        if self.augment:
+            img_patch, mask_patch = self._augment(img_patch, mask_patch)
+            
+        # 5. To Tensor (C, D, H, W)
+        img_tensor = torch.from_numpy(img_patch).unsqueeze(0).float()
+        mask_tensor = torch.from_numpy(mask_patch).unsqueeze(0).long()
+        
+        return img_tensor, mask_tensor
+
+    def _resize_depth(self, img, mask):
+        z_factor = self.target_depth / self.current_depth
+        img_resized = zoom(img, (z_factor, 1, 1), order=1) # Bilinear
+        mask_resized = zoom(mask, (z_factor, 1, 1), order=0) # Nearest (keep labels int)
+        return img_resized, mask_resized
+
+    def _augment(self, img, mask):
+        if np.random.rand() > 0.5:
+            img = np.flip(img, axis=0); mask = np.flip(mask, axis=0)
+        if np.random.rand() > 0.5:
+            img = np.flip(img, axis=1); mask = np.flip(mask, axis=1)
+        if np.random.rand() > 0.5:
+            img = np.flip(img, axis=2); mask = np.flip(mask, axis=2)
+        img = random_noise(img, mode='gaussian', var=0.005)
+        return img.copy(), mask.copy()
+
+
+class TransferUnlabeledDataset(Dataset):
+    """
+    Loads 128x128x128 patches from the raw .tif volumes.
+    """
+    def __init__(self, tiff_dir=TIFF_DATA_DIR, patch_size=128, augment=True):
+        self.tiff_dir = Path(tiff_dir)
+        self.augment = augment
+        self.patch_size = patch_size
+        
+        # List of specific filenames you mentioned
+        target_files = ["3min_HT.tif", "10min_HT.tif", "30min_HT.tif", "1h_HT.tif"]
+        self.volumes = []
+        
+        print(f"Loading Unlabeled TIFFs from {self.tiff_dir}...")
+        for fname in target_files:
+            fpath = self.tiff_dir / fname
+            if fpath.exists():
+                print(f"  Loading {fname}...")
+                # Read volume into memory (RAM permitting)
+                vol = tifffile.imread(str(fpath))
+                # Ensure float32 and normalize 0-1
+                # Assuming TIFFs are 8-bit (0-255) or 16-bit (0-65535)
+                if vol.max() > 1.0:
+                     vol = vol.astype(np.float32) / vol.max() # Normalize by max value
+                self.volumes.append(vol)
+            else:
+                print(f"  ⚠️ Warning: {fname} not found.")
+        
+        if not self.volumes:
+            raise FileNotFoundError("No unlabeled TIFF volumes loaded.")
+            
+        self.n_volumes = len(self.volumes)
+        # Arbitrary length for iteration
+        self.length = 500 
+
+    def __len__(self):
+        return self.length
+
+    def __getitem__(self, index):
+        # 1. Pick a random volume
+        vol_idx = np.random.randint(0, self.n_volumes)
+        volume = self.volumes[vol_idx]
+        
+        # 2. Random Crop (128, 128, 128)
+        D, H, W = volume.shape
+        
+        # Ensure volume is large enough
+        if D < self.patch_size or H < self.patch_size or W < self.patch_size:
+            # Fallback: pad or crash. Assuming volumes are large enough based on names.
+            return torch.zeros((1, 128, 128, 128), dtype=torch.float32)
+
+        d_start = np.random.randint(0, D - self.patch_size + 1)
+        h_start = np.random.randint(0, H - self.patch_size + 1)
+        w_start = np.random.randint(0, W - self.patch_size + 1)
+        
+        patch = volume[
+            d_start : d_start + self.patch_size,
+            h_start : h_start + self.patch_size,
+            w_start : w_start + self.patch_size
+        ]
+        
+        # 3. Augment
+        if self.augment:
+            patch = self._augment(patch)
+            
+        # 4. To Tensor (C, D, H, W)
+        return torch.from_numpy(patch).unsqueeze(0).float()
+
+    def _augment(self, img):
+        if np.random.rand() > 0.5: img = np.flip(img, axis=0)
+        if np.random.rand() > 0.5: img = np.flip(img, axis=1)
+        if np.random.rand() > 0.5: img = np.flip(img, axis=2)
+        img = random_noise(img, mode='gaussian', var=0.005)
+        return img.copy()

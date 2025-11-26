@@ -283,8 +283,49 @@ def save_predictions(epoch, input_x, gt_y, recon_out, seg_out, output_dir, slice
         if i == 1 or i == 3:
             fig.colorbar(cax, ax=ax, ticks=range(NUM_CLASSES))
 
-    save_path = output_dir / f"AG_epoch_{epoch+1:04d}_predictions.png"
+    save_path = output_dir / f"curve_{epoch+1:04d}_predictions.png"
     plt.suptitle(f"Epoch {epoch+1} Visualization (Patch Center Slice {slice_idx})")
     plt.savefig(save_path)
     plt.close(fig)
     print(f"  Visuals saved to: {save_path}")
+
+def plot_learning_curves(train_losses, val_losses, val_ious, output_dir):
+    """Plots Training/Validation Loss and mIoU curves."""
+    
+    # Check if we actually have data to plot
+    if len(train_losses) == 0:
+        print("No training data to plot.")
+        return
+
+    epochs = range(1, len(train_losses) + 1)
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
+
+    # Plot Losses
+    ax1.plot(epochs, train_losses, 'b-', label='Training Loss')
+    # Only plot validation loss if we have the same number of data points
+    if len(val_losses) == len(epochs):
+        ax1.plot(epochs, val_losses, 'r-', label='Validation Loss')
+    ax1.set_title('Training and Validation Loss')
+    ax1.set_xlabel('Epochs')
+    ax1.set_ylabel('Loss')
+    ax1.legend()
+    ax1.grid(True)
+
+    # Plot mIoU
+    if len(val_ious) > 0:
+        ax2.plot(epochs, val_ious, 'g-', label='Validation mIoU')
+        ax2.set_title('Validation Mean IoU')
+        ax2.set_xlabel('Epochs')
+        ax2.set_ylabel('mIoU')
+        ax2.legend()
+        ax2.grid(True)
+
+    plt.tight_layout()
+    
+    # FIX: Construct a full file path including the filename
+    save_path = output_dir / "AG_learning_curve.png"
+    
+    plt.savefig(save_path)
+    plt.close(fig)
+    print(f"  Learning curves saved to: {save_path}")

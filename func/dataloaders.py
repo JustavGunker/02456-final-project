@@ -7,6 +7,7 @@ from scipy.io import loadmat
 from skimage.util import random_noise
 from pathlib import Path
 import itertools # Needed for generating 3D partition indices
+import tifffile
 
 BLACKHOLE_PATH = os.environ.get('BLACKHOLE', '.')
 BASE_DATA_DIR = os.path.join(BLACKHOLE_PATH, 'deep_learning_214776', 'extracted_datasets', 'datasets_processed_latest')
