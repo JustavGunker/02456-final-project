@@ -331,3 +331,3408 @@ Epoch 63/800 | Train Loss: 1.7977
   Val mIoU: 0.7176 (Best: 0.7865)
   [Class IoU] C1: 0.9271 | C2: 0.7789 | C3: 0.4469
   Patience count: 17/50
+Epoch 64/800 | Train Loss: 1.7624
+  Seg: 0.3514 | Recon: 0.0052
+  Val mIoU: 0.7845 (Best: 0.7865)
+  [Class IoU] C1: 0.9121 | C2: 0.8472 | C3: 0.5942
+  Patience count: 18/50
+Epoch 65/800 | Train Loss: 1.8497
+  Seg: 0.3689 | Recon: 0.0053
+  Val mIoU: 0.6635 (Best: 0.7865)
+  [Class IoU] C1: 0.9236 | C2: 0.6992 | C3: 0.3678
+  Patience count: 19/50
+Epoch 66/800 | Train Loss: 1.8518
+  Seg: 0.3693 | Recon: 0.0052
+  Val mIoU: 0.7870 (Best: 0.7865)
+  [Class IoU] C1: 0.9194 | C2: 0.8464 | C3: 0.5952
+  --> New Best Model Saved!
+Epoch 67/800 | Train Loss: 1.7701
+  Seg: 0.3530 | Recon: 0.0052
+  Val mIoU: 0.6072 (Best: 0.7870)
+  [Class IoU] C1: 0.9252 | C2: 0.6100 | C3: 0.2864
+  Patience count: 1/50
+Epoch 68/800 | Train Loss: 1.8425
+  Seg: 0.3675 | Recon: 0.0053
+  Val mIoU: 0.7703 (Best: 0.7870)
+  [Class IoU] C1: 0.9210 | C2: 0.8315 | C3: 0.5584
+  Patience count: 2/50
+Epoch 69/800 | Train Loss: 1.8386
+  Seg: 0.3667 | Recon: 0.0053
+  Val mIoU: 0.7128 (Best: 0.7870)
+  [Class IoU] C1: 0.9244 | C2: 0.7749 | C3: 0.4390
+  Patience count: 3/50
+Epoch 70/800 | Train Loss: 1.7716
+  Seg: 0.3533 | Recon: 0.0053
+  Val mIoU: 0.6632 (Best: 0.7870)
+  [Class IoU] C1: 0.9159 | C2: 0.6934 | C3: 0.3804
+  Patience count: 4/50
+Epoch 71/800 | Train Loss: 1.8011
+  Seg: 0.3592 | Recon: 0.0052
+  Val mIoU: 0.7868 (Best: 0.7870)
+  [Class IoU] C1: 0.9160 | C2: 0.8425 | C3: 0.6019
+  Patience count: 5/50
+Epoch 72/800 | Train Loss: 1.8078
+  Seg: 0.3605 | Recon: 0.0053
+  Val mIoU: 0.7648 (Best: 0.7870)
+  [Class IoU] C1: 0.9250 | C2: 0.8263 | C3: 0.5430
+  Patience count: 6/50
+Epoch 73/800 | Train Loss: 1.7923
+  Seg: 0.3574 | Recon: 0.0052
+  Val mIoU: 0.7661 (Best: 0.7870)
+  [Class IoU] C1: 0.9232 | C2: 0.8276 | C3: 0.5476
+  Patience count: 7/50
+Epoch 74/800 | Train Loss: 1.7620
+  Seg: 0.3514 | Recon: 0.0051
+  Val mIoU: 0.7876 (Best: 0.7870)
+  [Class IoU] C1: 0.9271 | C2: 0.8519 | C3: 0.5838
+  --> New Best Model Saved!
+Epoch 75/800 | Train Loss: 1.7689
+  Seg: 0.3528 | Recon: 0.0049
+  Val mIoU: 0.6515 (Best: 0.7876)
+  [Class IoU] C1: 0.9027 | C2: 0.7013 | C3: 0.3504
+  Patience count: 1/50
+Epoch 76/800 | Train Loss: 1.7581
+  Seg: 0.3506 | Recon: 0.0050
+  Val mIoU: 0.7590 (Best: 0.7876)
+  [Class IoU] C1: 0.9162 | C2: 0.8314 | C3: 0.5292
+  Patience count: 2/50
+Epoch 77/800 | Train Loss: 1.7744
+  Seg: 0.3539 | Recon: 0.0051
+  Val mIoU: 0.7426 (Best: 0.7876)
+  [Class IoU] C1: 0.9174 | C2: 0.8123 | C3: 0.4982
+  Patience count: 3/50
+Epoch 78/800 | Train Loss: 1.7538
+  Seg: 0.3497 | Recon: 0.0051
+  Val mIoU: 0.7436 (Best: 0.7876)
+  [Class IoU] C1: 0.9260 | C2: 0.8090 | C3: 0.4960
+  Patience count: 4/50
+Epoch 79/800 | Train Loss: 1.7885
+  Seg: 0.3567 | Recon: 0.0050
+  Val mIoU: 0.7692 (Best: 0.7876)
+  [Class IoU] C1: 0.9258 | C2: 0.8424 | C3: 0.5393
+  Patience count: 5/50
+Epoch 80/800 | Train Loss: 1.7319
+  Seg: 0.3454 | Recon: 0.0050
+  Val mIoU: 0.7755 (Best: 0.7876)
+  [Class IoU] C1: 0.9228 | C2: 0.8470 | C3: 0.5566
+  Patience count: 6/50
+  Saving visuals for Epoch 80...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0080_predictions.png
+Epoch 81/800 | Train Loss: 1.7707
+  Seg: 0.3531 | Recon: 0.0050
+  Val mIoU: 0.7921 (Best: 0.7876)
+  [Class IoU] C1: 0.9221 | C2: 0.8609 | C3: 0.5933
+  --> New Best Model Saved!
+Epoch 82/800 | Train Loss: 1.7964
+  Seg: 0.3583 | Recon: 0.0051
+  Val mIoU: 0.7843 (Best: 0.7921)
+  [Class IoU] C1: 0.9222 | C2: 0.8549 | C3: 0.5758
+  Patience count: 1/50
+Epoch 83/800 | Train Loss: 1.7735
+  Seg: 0.3537 | Recon: 0.0051
+  Val mIoU: 0.6800 (Best: 0.7921)
+  [Class IoU] C1: 0.9143 | C2: 0.7360 | C3: 0.3895
+  Patience count: 2/50
+Epoch 84/800 | Train Loss: 1.8187
+  Seg: 0.3627 | Recon: 0.0051
+  Val mIoU: 0.8028 (Best: 0.7921)
+  [Class IoU] C1: 0.9153 | C2: 0.8546 | C3: 0.6385
+  --> New Best Model Saved!
+Epoch 85/800 | Train Loss: 1.7802
+  Seg: 0.3550 | Recon: 0.0051
+  Val mIoU: 0.8051 (Best: 0.8028)
+  [Class IoU] C1: 0.9237 | C2: 0.8592 | C3: 0.6323
+  --> New Best Model Saved!
+Epoch 86/800 | Train Loss: 1.8125
+  Seg: 0.3615 | Recon: 0.0050
+  Val mIoU: 0.8092 (Best: 0.8051)
+  [Class IoU] C1: 0.9187 | C2: 0.8660 | C3: 0.6430
+  --> New Best Model Saved!
+Epoch 87/800 | Train Loss: 1.7878
+  Seg: 0.3566 | Recon: 0.0050
+  Val mIoU: 0.7532 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8218 | C3: 0.5133
+  Patience count: 1/50
+Epoch 88/800 | Train Loss: 1.7443
+  Seg: 0.3479 | Recon: 0.0050
+  Val mIoU: 0.7600 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8303 | C3: 0.5258
+  Patience count: 2/50
+Epoch 89/800 | Train Loss: 1.7968
+  Seg: 0.3583 | Recon: 0.0051
+  Val mIoU: 0.7088 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.7697 | C3: 0.4349
+  Patience count: 3/50
+Epoch 90/800 | Train Loss: 1.7519
+  Seg: 0.3494 | Recon: 0.0049
+  Val mIoU: 0.7900 (Best: 0.8092)
+  [Class IoU] C1: 0.9025 | C2: 0.8607 | C3: 0.6068
+  Patience count: 4/50
+Epoch 91/800 | Train Loss: 1.7502
+  Seg: 0.3490 | Recon: 0.0050
+  Val mIoU: 0.7853 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8488 | C3: 0.5840
+  Patience count: 5/50
+Epoch 92/800 | Train Loss: 1.7494
+  Seg: 0.3489 | Recon: 0.0050
+  Val mIoU: 0.5843 (Best: 0.8092)
+  [Class IoU] C1: 0.8828 | C2: 0.5935 | C3: 0.2768
+  Patience count: 6/50
+Epoch 93/800 | Train Loss: 1.7737
+  Seg: 0.3538 | Recon: 0.0049
+  Val mIoU: 0.6614 (Best: 0.8092)
+  [Class IoU] C1: 0.9264 | C2: 0.6986 | C3: 0.3593
+  Patience count: 7/50
+Epoch 94/800 | Train Loss: 1.7735
+  Seg: 0.3537 | Recon: 0.0050
+  Val mIoU: 0.6511 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.6938 | C3: 0.3367
+  Patience count: 8/50
+Epoch 95/800 | Train Loss: 1.7634
+  Seg: 0.3517 | Recon: 0.0048
+  Val mIoU: 0.7193 (Best: 0.8092)
+  [Class IoU] C1: 0.9254 | C2: 0.7861 | C3: 0.4463
+  Patience count: 9/50
+Epoch 96/800 | Train Loss: 1.7205
+  Seg: 0.3431 | Recon: 0.0049
+  Val mIoU: 0.7596 (Best: 0.8092)
+  [Class IoU] C1: 0.9177 | C2: 0.8297 | C3: 0.5312
+  Patience count: 10/50
+Epoch 97/800 | Train Loss: 1.7591
+  Seg: 0.3508 | Recon: 0.0050
+  Val mIoU: 0.7609 (Best: 0.8092)
+  [Class IoU] C1: 0.9126 | C2: 0.8380 | C3: 0.5320
+  Patience count: 11/50
+Epoch 98/800 | Train Loss: 1.7713
+  Seg: 0.3533 | Recon: 0.0049
+  Val mIoU: 0.7587 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8284 | C3: 0.5260
+  Patience count: 12/50
+Epoch 99/800 | Train Loss: 1.7694
+  Seg: 0.3529 | Recon: 0.0049
+  Val mIoU: 0.7443 (Best: 0.8092)
+  [Class IoU] C1: 0.9212 | C2: 0.8103 | C3: 0.5014
+  Patience count: 13/50
+Epoch 100/800 | Train Loss: 1.7614
+  Seg: 0.3513 | Recon: 0.0049
+  Val mIoU: 0.7746 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8345 | C3: 0.5655
+  Patience count: 14/50
+  Saving visuals for Epoch 100...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0100_predictions.png
+Epoch 101/800 | Train Loss: 1.7493
+  Seg: 0.3489 | Recon: 0.0050
+  Val mIoU: 0.8078 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8645 | C3: 0.6363
+  Patience count: 15/50
+Epoch 102/800 | Train Loss: 1.7370
+  Seg: 0.3464 | Recon: 0.0048
+  Val mIoU: 0.7462 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8174 | C3: 0.4967
+  Patience count: 16/50
+Epoch 103/800 | Train Loss: 1.7426
+  Seg: 0.3476 | Recon: 0.0047
+  Val mIoU: 0.7423 (Best: 0.8092)
+  [Class IoU] C1: 0.8891 | C2: 0.8131 | C3: 0.5248
+  Patience count: 17/50
+Epoch 104/800 | Train Loss: 1.7395
+  Seg: 0.3469 | Recon: 0.0049
+  Val mIoU: 0.7784 (Best: 0.8092)
+  [Class IoU] C1: 0.9260 | C2: 0.8371 | C3: 0.5723
+  Patience count: 18/50
+Epoch 105/800 | Train Loss: 1.7054
+  Seg: 0.3401 | Recon: 0.0051
+  Val mIoU: 0.7741 (Best: 0.8092)
+  [Class IoU] C1: 0.8977 | C2: 0.8536 | C3: 0.5712
+  Patience count: 19/50
+Epoch 106/800 | Train Loss: 1.7632
+  Seg: 0.3517 | Recon: 0.0048
+  Val mIoU: 0.7489 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8174 | C3: 0.5062
+  Patience count: 20/50
+Epoch 107/800 | Train Loss: 1.7492
+  Seg: 0.3489 | Recon: 0.0049
+  Val mIoU: 0.7711 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8359 | C3: 0.5541
+  Patience count: 21/50
+Epoch 108/800 | Train Loss: 1.7557
+  Seg: 0.3502 | Recon: 0.0047
+  Val mIoU: 0.7634 (Best: 0.8092)
+  [Class IoU] C1: 0.9115 | C2: 0.8344 | C3: 0.5444
+  Patience count: 22/50
+Epoch 109/800 | Train Loss: 1.7715
+  Seg: 0.3534 | Recon: 0.0048
+  Val mIoU: 0.7017 (Best: 0.8092)
+  [Class IoU] C1: 0.9066 | C2: 0.7626 | C3: 0.4358
+  Patience count: 23/50
+Epoch 110/800 | Train Loss: 1.6853
+  Seg: 0.3361 | Recon: 0.0048
+  Val mIoU: 0.7072 (Best: 0.8092)
+  [Class IoU] C1: 0.9098 | C2: 0.7765 | C3: 0.4352
+  Patience count: 24/50
+Epoch 111/800 | Train Loss: 1.7437
+  Seg: 0.3478 | Recon: 0.0048
+  Val mIoU: 0.7528 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8255 | C3: 0.5107
+  Patience count: 25/50
+Epoch 112/800 | Train Loss: 1.6850
+  Seg: 0.3360 | Recon: 0.0048
+  Val mIoU: 0.7089 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.7694 | C3: 0.4317
+  Patience count: 26/50
+Epoch 113/800 | Train Loss: 1.7299
+  Seg: 0.3450 | Recon: 0.0048
+  Val mIoU: 0.6945 (Best: 0.8092)
+  [Class IoU] C1: 0.9257 | C2: 0.7640 | C3: 0.3938
+  Patience count: 27/50
+Epoch 114/800 | Train Loss: 1.7403
+  Seg: 0.3471 | Recon: 0.0049
+  Val mIoU: 0.7119 (Best: 0.8092)
+  [Class IoU] C1: 0.9087 | C2: 0.7851 | C3: 0.4420
+  Patience count: 28/50
+Epoch 115/800 | Train Loss: 1.7211
+  Seg: 0.3433 | Recon: 0.0047
+  Val mIoU: 0.7387 (Best: 0.8092)
+  [Class IoU] C1: 0.9071 | C2: 0.8126 | C3: 0.4964
+  Patience count: 29/50
+Epoch 116/800 | Train Loss: 1.7238
+  Seg: 0.3438 | Recon: 0.0047
+  Val mIoU: 0.7609 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8288 | C3: 0.5305
+  Patience count: 30/50
+Epoch 117/800 | Train Loss: 1.7006
+  Seg: 0.3392 | Recon: 0.0047
+  Val mIoU: 0.7785 (Best: 0.8092)
+  [Class IoU] C1: 0.9109 | C2: 0.8514 | C3: 0.5732
+  Patience count: 31/50
+Epoch 118/800 | Train Loss: 1.7166
+  Seg: 0.3424 | Recon: 0.0048
+  Val mIoU: 0.7864 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8553 | C3: 0.5802
+  Patience count: 32/50
+Epoch 119/800 | Train Loss: 1.7070
+  Seg: 0.3404 | Recon: 0.0049
+  Val mIoU: 0.7702 (Best: 0.8092)
+  [Class IoU] C1: 0.9207 | C2: 0.8434 | C3: 0.5464
+  Patience count: 33/50
+Epoch 120/800 | Train Loss: 1.7212
+  Seg: 0.3433 | Recon: 0.0047
+  Val mIoU: 0.7764 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8460 | C3: 0.5591
+  Patience count: 34/50
+  Saving visuals for Epoch 120...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0120_predictions.png
+Epoch 121/800 | Train Loss: 1.7683
+  Seg: 0.3527 | Recon: 0.0047
+  Val mIoU: 0.7776 (Best: 0.8092)
+  [Class IoU] C1: 0.9263 | C2: 0.8497 | C3: 0.5568
+  Patience count: 35/50
+Epoch 122/800 | Train Loss: 1.6831
+  Seg: 0.3357 | Recon: 0.0048
+  Val mIoU: 0.7531 (Best: 0.8092)
+  [Class IoU] C1: 0.9194 | C2: 0.8387 | C3: 0.5013
+  Patience count: 36/50
+Epoch 123/800 | Train Loss: 1.6995
+  Seg: 0.3389 | Recon: 0.0048
+  Val mIoU: 0.7329 (Best: 0.8092)
+  [Class IoU] C1: 0.9200 | C2: 0.8213 | C3: 0.4573
+  Patience count: 37/50
+Epoch 124/800 | Train Loss: 1.7409
+  Seg: 0.3472 | Recon: 0.0048
+  Val mIoU: 0.7622 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8392 | C3: 0.5262
+  Patience count: 38/50
+Epoch 125/800 | Train Loss: 1.6948
+  Seg: 0.3380 | Recon: 0.0048
+  Val mIoU: 0.7500 (Best: 0.8092)
+  [Class IoU] C1: 0.9194 | C2: 0.8273 | C3: 0.5034
+  Patience count: 39/50
+Epoch 126/800 | Train Loss: 1.7098
+  Seg: 0.3410 | Recon: 0.0047
+  Val mIoU: 0.7450 (Best: 0.8092)
+  [Class IoU] C1: 0.9158 | C2: 0.8232 | C3: 0.4959
+  Patience count: 40/50
+Epoch 127/800 | Train Loss: 1.7258
+  Seg: 0.3442 | Recon: 0.0048
+  Val mIoU: 0.7430 (Best: 0.8092)
+  [Class IoU] C1: 0.9188 | C2: 0.8232 | C3: 0.4870
+  Patience count: 41/50
+Epoch 128/800 | Train Loss: 1.7431
+  Seg: 0.3477 | Recon: 0.0047
+  Val mIoU: 0.7163 (Best: 0.8092)
+  [Class IoU] C1: 0.9019 | C2: 0.7966 | C3: 0.4505
+  Patience count: 42/50
+Epoch 129/800 | Train Loss: 1.7392
+  Seg: 0.3469 | Recon: 0.0048
+  Val mIoU: 0.7209 (Best: 0.8092)
+  [Class IoU] C1: 0.9142 | C2: 0.8069 | C3: 0.4415
+  Patience count: 43/50
+Epoch 130/800 | Train Loss: 1.7129
+  Seg: 0.3416 | Recon: 0.0049
+  Val mIoU: 0.7324 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8142 | C3: 0.4600
+  Patience count: 44/50
+Epoch 131/800 | Train Loss: 1.7545
+  Seg: 0.3499 | Recon: 0.0048
+  Val mIoU: 0.7758 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8483 | C3: 0.5574
+  Patience count: 45/50
+Epoch 132/800 | Train Loss: 1.7099
+  Seg: 0.3410 | Recon: 0.0047
+  Val mIoU: 0.7772 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8520 | C3: 0.5572
+  Patience count: 46/50
+Epoch 133/800 | Train Loss: 1.6850
+  Seg: 0.3361 | Recon: 0.0047
+  Val mIoU: 0.7887 (Best: 0.8092)
+  [Class IoU] C1: 0.9213 | C2: 0.8569 | C3: 0.5878
+  Patience count: 47/50
+Epoch 134/800 | Train Loss: 1.6815
+  Seg: 0.3354 | Recon: 0.0047
+  Val mIoU: 0.7752 (Best: 0.8092)
+  [Class IoU] C1: 0.9186 | C2: 0.8501 | C3: 0.5570
+  Patience count: 48/50
+Epoch 135/800 | Train Loss: 1.7036
+  Seg: 0.3398 | Recon: 0.0048
+  Val mIoU: 0.7894 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8577 | C3: 0.5874
+  Patience count: 49/50
+Epoch 136/800 | Train Loss: 1.6865
+  Seg: 0.3364 | Recon: 0.0047
+  Val mIoU: 0.7943 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8627 | C3: 0.5967
+  Patience count: 50/50
+Epoch 137/800 | Train Loss: 1.6979
+  Seg: 0.3386 | Recon: 0.0047
+  Val mIoU: 0.7871 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8572 | C3: 0.5799
+  Patience count: 51/50
+Epoch 138/800 | Train Loss: 1.6947
+  Seg: 0.3380 | Recon: 0.0047
+  Val mIoU: 0.7858 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8537 | C3: 0.5807
+  Patience count: 52/50
+Epoch 139/800 | Train Loss: 1.6975
+  Seg: 0.3386 | Recon: 0.0046
+  Val mIoU: 0.7839 (Best: 0.8092)
+  [Class IoU] C1: 0.9192 | C2: 0.8548 | C3: 0.5777
+  Patience count: 53/50
+Epoch 140/800 | Train Loss: 1.6869
+  Seg: 0.3364 | Recon: 0.0047
+  Val mIoU: 0.7863 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8547 | C3: 0.5797
+  Patience count: 54/50
+  Saving visuals for Epoch 140...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0140_predictions.png
+Epoch 141/800 | Train Loss: 1.7296
+  Seg: 0.3450 | Recon: 0.0047
+  Val mIoU: 0.7671 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8392 | C3: 0.5379
+  Patience count: 55/50
+Epoch 142/800 | Train Loss: 1.7087
+  Seg: 0.3408 | Recon: 0.0048
+  Val mIoU: 0.7762 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8477 | C3: 0.5562
+  Patience count: 56/50
+Epoch 143/800 | Train Loss: 1.7020
+  Seg: 0.3395 | Recon: 0.0047
+  Val mIoU: 0.7394 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8192 | C3: 0.4748
+  Patience count: 57/50
+Epoch 144/800 | Train Loss: 1.7301
+  Seg: 0.3451 | Recon: 0.0047
+  Val mIoU: 0.7703 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8458 | C3: 0.5425
+  Patience count: 58/50
+Epoch 145/800 | Train Loss: 1.7231
+  Seg: 0.3437 | Recon: 0.0048
+  Val mIoU: 0.7529 (Best: 0.8092)
+  [Class IoU] C1: 0.9155 | C2: 0.8341 | C3: 0.5090
+  Patience count: 59/50
+Epoch 146/800 | Train Loss: 1.7126
+  Seg: 0.3415 | Recon: 0.0048
+  Val mIoU: 0.7273 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8076 | C3: 0.4533
+  Patience count: 60/50
+Epoch 147/800 | Train Loss: 1.6720
+  Seg: 0.3335 | Recon: 0.0046
+  Val mIoU: 0.7228 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8043 | C3: 0.4401
+  Patience count: 61/50
+Epoch 148/800 | Train Loss: 1.6303
+  Seg: 0.3251 | Recon: 0.0047
+  Val mIoU: 0.7344 (Best: 0.8092)
+  [Class IoU] C1: 0.9250 | C2: 0.8195 | C3: 0.4587
+  Patience count: 62/50
+Epoch 149/800 | Train Loss: 1.6801
+  Seg: 0.3351 | Recon: 0.0047
+  Val mIoU: 0.7901 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8636 | C3: 0.5828
+  Patience count: 63/50
+Epoch 150/800 | Train Loss: 1.7086
+  Seg: 0.3408 | Recon: 0.0045
+  Val mIoU: 0.7881 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8618 | C3: 0.5777
+  Patience count: 64/50
+Epoch 151/800 | Train Loss: 1.6791
+  Seg: 0.3349 | Recon: 0.0046
+  Val mIoU: 0.7775 (Best: 0.8092)
+  [Class IoU] C1: 0.9213 | C2: 0.8544 | C3: 0.5568
+  Patience count: 65/50
+Epoch 152/800 | Train Loss: 1.7095
+  Seg: 0.3409 | Recon: 0.0048
+  Val mIoU: 0.7874 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8602 | C3: 0.5788
+  Patience count: 66/50
+Epoch 153/800 | Train Loss: 1.6620
+  Seg: 0.3315 | Recon: 0.0047
+  Val mIoU: 0.7708 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8475 | C3: 0.5418
+  Patience count: 67/50
+Epoch 154/800 | Train Loss: 1.7018
+  Seg: 0.3394 | Recon: 0.0048
+  Val mIoU: 0.7914 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8598 | C3: 0.5900
+  Patience count: 68/50
+Epoch 155/800 | Train Loss: 1.7227
+  Seg: 0.3436 | Recon: 0.0047
+  Val mIoU: 0.7847 (Best: 0.8092)
+  [Class IoU] C1: 0.9250 | C2: 0.8594 | C3: 0.5695
+  Patience count: 69/50
+Epoch 156/800 | Train Loss: 1.6865
+  Seg: 0.3364 | Recon: 0.0047
+  Val mIoU: 0.7757 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8525 | C3: 0.5514
+  Patience count: 70/50
+Epoch 157/800 | Train Loss: 1.7088
+  Seg: 0.3408 | Recon: 0.0046
+  Val mIoU: 0.7465 (Best: 0.8092)
+  [Class IoU] C1: 0.8921 | C2: 0.8375 | C3: 0.5101
+  Patience count: 71/50
+Epoch 158/800 | Train Loss: 1.6695
+  Seg: 0.3330 | Recon: 0.0047
+  Val mIoU: 0.7680 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8447 | C3: 0.5357
+  Patience count: 72/50
+Epoch 159/800 | Train Loss: 1.6663
+  Seg: 0.3323 | Recon: 0.0046
+  Val mIoU: 0.7392 (Best: 0.8092)
+  [Class IoU] C1: 0.8983 | C2: 0.8252 | C3: 0.4942
+  Patience count: 73/50
+Epoch 160/800 | Train Loss: 1.6951
+  Seg: 0.3381 | Recon: 0.0046
+  Val mIoU: 0.7744 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8529 | C3: 0.5463
+  Patience count: 74/50
+  Saving visuals for Epoch 160...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0160_predictions.png
+Epoch 161/800 | Train Loss: 1.7116
+  Seg: 0.3414 | Recon: 0.0047
+  Val mIoU: 0.7547 (Best: 0.8092)
+  [Class IoU] C1: 0.9210 | C2: 0.8377 | C3: 0.5053
+  Patience count: 75/50
+Epoch 162/800 | Train Loss: 1.7126
+  Seg: 0.3416 | Recon: 0.0048
+  Val mIoU: 0.7786 (Best: 0.8092)
+  [Class IoU] C1: 0.9257 | C2: 0.8508 | C3: 0.5594
+  Patience count: 76/50
+Epoch 163/800 | Train Loss: 1.6865
+  Seg: 0.3364 | Recon: 0.0046
+  Val mIoU: 0.7618 (Best: 0.8092)
+  [Class IoU] C1: 0.9199 | C2: 0.8386 | C3: 0.5269
+  Patience count: 77/50
+Epoch 164/800 | Train Loss: 1.6761
+  Seg: 0.3343 | Recon: 0.0047
+  Val mIoU: 0.7813 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8525 | C3: 0.5690
+  Patience count: 78/50
+Epoch 165/800 | Train Loss: 1.6797
+  Seg: 0.3350 | Recon: 0.0047
+  Val mIoU: 0.7722 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8472 | C3: 0.5461
+  Patience count: 79/50
+Epoch 166/800 | Train Loss: 1.6881
+  Seg: 0.3367 | Recon: 0.0046
+  Val mIoU: 0.7594 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8385 | C3: 0.5171
+  Patience count: 80/50
+Epoch 167/800 | Train Loss: 1.6790
+  Seg: 0.3349 | Recon: 0.0047
+  Val mIoU: 0.7795 (Best: 0.8092)
+  [Class IoU] C1: 0.9185 | C2: 0.8512 | C3: 0.5689
+  Patience count: 81/50
+Epoch 168/800 | Train Loss: 1.6931
+  Seg: 0.3377 | Recon: 0.0046
+  Val mIoU: 0.7931 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8592 | C3: 0.5963
+  Patience count: 82/50
+Epoch 169/800 | Train Loss: 1.6802
+  Seg: 0.3351 | Recon: 0.0047
+  Val mIoU: 0.7781 (Best: 0.8092)
+  [Class IoU] C1: 0.9200 | C2: 0.8527 | C3: 0.5617
+  Patience count: 83/50
+Epoch 170/800 | Train Loss: 1.6775
+  Seg: 0.3346 | Recon: 0.0047
+  Val mIoU: 0.7889 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8584 | C3: 0.5840
+  Patience count: 84/50
+Epoch 171/800 | Train Loss: 1.7245
+  Seg: 0.3440 | Recon: 0.0047
+  Val mIoU: 0.7976 (Best: 0.8092)
+  [Class IoU] C1: 0.9188 | C2: 0.8616 | C3: 0.6122
+  Patience count: 85/50
+Epoch 172/800 | Train Loss: 1.6849
+  Seg: 0.3361 | Recon: 0.0046
+  Val mIoU: 0.7881 (Best: 0.8092)
+  [Class IoU] C1: 0.9122 | C2: 0.8569 | C3: 0.5953
+  Patience count: 86/50
+Epoch 173/800 | Train Loss: 1.6364
+  Seg: 0.3263 | Recon: 0.0047
+  Val mIoU: 0.7858 (Best: 0.8092)
+  [Class IoU] C1: 0.9267 | C2: 0.8571 | C3: 0.5737
+  Patience count: 87/50
+Epoch 174/800 | Train Loss: 1.7145
+  Seg: 0.3419 | Recon: 0.0048
+  Val mIoU: 0.7785 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8499 | C3: 0.5637
+  Patience count: 88/50
+Epoch 175/800 | Train Loss: 1.6592
+  Seg: 0.3309 | Recon: 0.0048
+  Val mIoU: 0.7747 (Best: 0.8092)
+  [Class IoU] C1: 0.9208 | C2: 0.8499 | C3: 0.5533
+  Patience count: 89/50
+Epoch 176/800 | Train Loss: 1.6964
+  Seg: 0.3383 | Recon: 0.0047
+  Val mIoU: 0.8079 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8677 | C3: 0.6342
+  Patience count: 90/50
+Epoch 177/800 | Train Loss: 1.7017
+  Seg: 0.3394 | Recon: 0.0047
+  Val mIoU: 0.7910 (Best: 0.8092)
+  [Class IoU] C1: 0.9183 | C2: 0.8577 | C3: 0.5971
+  Patience count: 91/50
+Epoch 178/800 | Train Loss: 1.6417
+  Seg: 0.3274 | Recon: 0.0046
+  Val mIoU: 0.7750 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8465 | C3: 0.5563
+  Patience count: 92/50
+Epoch 179/800 | Train Loss: 1.6762
+  Seg: 0.3343 | Recon: 0.0046
+  Val mIoU: 0.7625 (Best: 0.8092)
+  [Class IoU] C1: 0.9171 | C2: 0.8404 | C3: 0.5301
+  Patience count: 93/50
+Epoch 180/800 | Train Loss: 1.6737
+  Seg: 0.3338 | Recon: 0.0048
+  Val mIoU: 0.7829 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8538 | C3: 0.5717
+  Patience count: 94/50
+  Saving visuals for Epoch 180...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0180_predictions.png
+Epoch 181/800 | Train Loss: 1.6737
+  Seg: 0.3338 | Recon: 0.0046
+  Val mIoU: 0.7831 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8561 | C3: 0.5679
+  Patience count: 95/50
+Epoch 182/800 | Train Loss: 1.6694
+  Seg: 0.3330 | Recon: 0.0046
+  Val mIoU: 0.7930 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8561 | C3: 0.5994
+  Patience count: 96/50
+Epoch 183/800 | Train Loss: 1.6634
+  Seg: 0.3317 | Recon: 0.0047
+  Val mIoU: 0.7762 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8469 | C3: 0.5589
+  Patience count: 97/50
+Epoch 184/800 | Train Loss: 1.6621
+  Seg: 0.3315 | Recon: 0.0047
+  Val mIoU: 0.7731 (Best: 0.8092)
+  [Class IoU] C1: 0.9264 | C2: 0.8487 | C3: 0.5441
+  Patience count: 98/50
+Epoch 185/800 | Train Loss: 1.6808
+  Seg: 0.3352 | Recon: 0.0046
+  Val mIoU: 0.7523 (Best: 0.8092)
+  [Class IoU] C1: 0.8907 | C2: 0.8357 | C3: 0.5304
+  Patience count: 99/50
+Epoch 186/800 | Train Loss: 1.7156
+  Seg: 0.3422 | Recon: 0.0047
+  Val mIoU: 0.7706 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8435 | C3: 0.5454
+  Patience count: 100/50
+Epoch 187/800 | Train Loss: 1.6428
+  Seg: 0.3276 | Recon: 0.0046
+  Val mIoU: 0.7768 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8465 | C3: 0.5595
+  Patience count: 101/50
+Epoch 188/800 | Train Loss: 1.6598
+  Seg: 0.3310 | Recon: 0.0047
+  Val mIoU: 0.7722 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8438 | C3: 0.5496
+  Patience count: 102/50
+Epoch 189/800 | Train Loss: 1.6814
+  Seg: 0.3354 | Recon: 0.0047
+  Val mIoU: 0.7886 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8574 | C3: 0.5844
+  Patience count: 103/50
+Epoch 190/800 | Train Loss: 1.7133
+  Seg: 0.3418 | Recon: 0.0046
+  Val mIoU: 0.7897 (Best: 0.8092)
+  [Class IoU] C1: 0.9254 | C2: 0.8606 | C3: 0.5831
+  Patience count: 104/50
+Epoch 191/800 | Train Loss: 1.6774
+  Seg: 0.3345 | Recon: 0.0047
+  Val mIoU: 0.7928 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8599 | C3: 0.5947
+  Patience count: 105/50
+Epoch 192/800 | Train Loss: 1.6955
+  Seg: 0.3382 | Recon: 0.0047
+  Val mIoU: 0.7809 (Best: 0.8092)
+  [Class IoU] C1: 0.9195 | C2: 0.8519 | C3: 0.5711
+  Patience count: 106/50
+Epoch 193/800 | Train Loss: 1.6845
+  Seg: 0.3360 | Recon: 0.0047
+  Val mIoU: 0.7656 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.8419 | C3: 0.5293
+  Patience count: 107/50
+Epoch 194/800 | Train Loss: 1.7117
+  Seg: 0.3414 | Recon: 0.0047
+  Val mIoU: 0.7830 (Best: 0.8092)
+  [Class IoU] C1: 0.9251 | C2: 0.8531 | C3: 0.5708
+  Patience count: 108/50
+Epoch 195/800 | Train Loss: 1.7028
+  Seg: 0.3396 | Recon: 0.0047
+  Val mIoU: 0.7657 (Best: 0.8092)
+  [Class IoU] C1: 0.9202 | C2: 0.8430 | C3: 0.5339
+  Patience count: 109/50
+Epoch 196/800 | Train Loss: 1.6420
+  Seg: 0.3275 | Recon: 0.0046
+  Val mIoU: 0.7791 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8522 | C3: 0.5619
+  Patience count: 110/50
+Epoch 197/800 | Train Loss: 1.6777
+  Seg: 0.3346 | Recon: 0.0046
+  Val mIoU: 0.7807 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8505 | C3: 0.5689
+  Patience count: 111/50
+Epoch 198/800 | Train Loss: 1.6893
+  Seg: 0.3369 | Recon: 0.0046
+  Val mIoU: 0.7929 (Best: 0.8092)
+  [Class IoU] C1: 0.9193 | C2: 0.8610 | C3: 0.5985
+  Patience count: 112/50
+Epoch 199/800 | Train Loss: 1.6797
+  Seg: 0.3350 | Recon: 0.0047
+  Val mIoU: 0.7694 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8418 | C3: 0.5448
+  Patience count: 113/50
+Epoch 200/800 | Train Loss: 1.6776
+  Seg: 0.3346 | Recon: 0.0045
+  Val mIoU: 0.7981 (Best: 0.8092)
+  [Class IoU] C1: 0.9187 | C2: 0.8629 | C3: 0.6127
+  Patience count: 114/50
+  Saving visuals for Epoch 200...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0200_predictions.png
+Epoch 201/800 | Train Loss: 1.7075
+  Seg: 0.3406 | Recon: 0.0046
+  Val mIoU: 0.7826 (Best: 0.8092)
+  [Class IoU] C1: 0.9175 | C2: 0.8523 | C3: 0.5779
+  Patience count: 115/50
+Epoch 202/800 | Train Loss: 1.6714
+  Seg: 0.3334 | Recon: 0.0046
+  Val mIoU: 0.7805 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8521 | C3: 0.5663
+  Patience count: 116/50
+Epoch 203/800 | Train Loss: 1.7167
+  Seg: 0.3424 | Recon: 0.0046
+  Val mIoU: 0.7820 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8515 | C3: 0.5714
+  Patience count: 117/50
+Epoch 204/800 | Train Loss: 1.6829
+  Seg: 0.3356 | Recon: 0.0047
+  Val mIoU: 0.7769 (Best: 0.8092)
+  [Class IoU] C1: 0.9202 | C2: 0.8470 | C3: 0.5636
+  Patience count: 118/50
+Epoch 205/800 | Train Loss: 1.7304
+  Seg: 0.3452 | Recon: 0.0047
+  Val mIoU: 0.7626 (Best: 0.8092)
+  [Class IoU] C1: 0.8893 | C2: 0.8444 | C3: 0.5541
+  Patience count: 119/50
+Epoch 206/800 | Train Loss: 1.6958
+  Seg: 0.3382 | Recon: 0.0047
+  Val mIoU: 0.7795 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8489 | C3: 0.5671
+  Patience count: 120/50
+Epoch 207/800 | Train Loss: 1.6573
+  Seg: 0.3305 | Recon: 0.0047
+  Val mIoU: 0.7984 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8630 | C3: 0.6081
+  Patience count: 121/50
+Epoch 208/800 | Train Loss: 1.6983
+  Seg: 0.3387 | Recon: 0.0047
+  Val mIoU: 0.7754 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8470 | C3: 0.5549
+  Patience count: 122/50
+Epoch 209/800 | Train Loss: 1.7056
+  Seg: 0.3402 | Recon: 0.0046
+  Val mIoU: 0.7708 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8441 | C3: 0.5472
+  Patience count: 123/50
+Epoch 210/800 | Train Loss: 1.6937
+  Seg: 0.3378 | Recon: 0.0048
+  Val mIoU: 0.7875 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8539 | C3: 0.5864
+  Patience count: 124/50
+Epoch 211/800 | Train Loss: 1.6458
+  Seg: 0.3282 | Recon: 0.0046
+  Val mIoU: 0.7855 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8533 | C3: 0.5804
+  Patience count: 125/50
+Epoch 212/800 | Train Loss: 1.6636
+  Seg: 0.3318 | Recon: 0.0046
+  Val mIoU: 0.7791 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8488 | C3: 0.5656
+  Patience count: 126/50
+Epoch 213/800 | Train Loss: 1.6364
+  Seg: 0.3264 | Recon: 0.0047
+  Val mIoU: 0.7765 (Best: 0.8092)
+  [Class IoU] C1: 0.9168 | C2: 0.8490 | C3: 0.5638
+  Patience count: 127/50
+Epoch 214/800 | Train Loss: 1.7047
+  Seg: 0.3400 | Recon: 0.0046
+  Val mIoU: 0.7764 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8466 | C3: 0.5609
+  Patience count: 128/50
+Epoch 215/800 | Train Loss: 1.7156
+  Seg: 0.3422 | Recon: 0.0046
+  Val mIoU: 0.7760 (Best: 0.8092)
+  [Class IoU] C1: 0.9165 | C2: 0.8515 | C3: 0.5601
+  Patience count: 129/50
+Epoch 216/800 | Train Loss: 1.6754
+  Seg: 0.3341 | Recon: 0.0047
+  Val mIoU: 0.7765 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8480 | C3: 0.5568
+  Patience count: 130/50
+Epoch 217/800 | Train Loss: 1.6954
+  Seg: 0.3382 | Recon: 0.0045
+  Val mIoU: 0.7659 (Best: 0.8092)
+  [Class IoU] C1: 0.9191 | C2: 0.8391 | C3: 0.5397
+  Patience count: 131/50
+Epoch 218/800 | Train Loss: 1.7086
+  Seg: 0.3408 | Recon: 0.0047
+  Val mIoU: 0.7759 (Best: 0.8092)
+  [Class IoU] C1: 0.9155 | C2: 0.8459 | C3: 0.5661
+  Patience count: 132/50
+Epoch 219/800 | Train Loss: 1.6497
+  Seg: 0.3290 | Recon: 0.0047
+  Val mIoU: 0.7764 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8485 | C3: 0.5576
+  Patience count: 133/50
+Epoch 220/800 | Train Loss: 1.6644
+  Seg: 0.3320 | Recon: 0.0046
+  Val mIoU: 0.7772 (Best: 0.8092)
+  [Class IoU] C1: 0.9199 | C2: 0.8493 | C3: 0.5626
+  Patience count: 134/50
+  Saving visuals for Epoch 220...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0220_predictions.png
+Epoch 221/800 | Train Loss: 1.6569
+  Seg: 0.3304 | Recon: 0.0048
+  Val mIoU: 0.7827 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8501 | C3: 0.5739
+  Patience count: 135/50
+Epoch 222/800 | Train Loss: 1.6804
+  Seg: 0.3352 | Recon: 0.0046
+  Val mIoU: 0.7695 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8381 | C3: 0.5481
+  Patience count: 136/50
+Epoch 223/800 | Train Loss: 1.6919
+  Seg: 0.3374 | Recon: 0.0047
+  Val mIoU: 0.7907 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8593 | C3: 0.5894
+  Patience count: 137/50
+Epoch 224/800 | Train Loss: 1.6862
+  Seg: 0.3363 | Recon: 0.0047
+  Val mIoU: 0.7741 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8457 | C3: 0.5516
+  Patience count: 138/50
+Epoch 225/800 | Train Loss: 1.7056
+  Seg: 0.3402 | Recon: 0.0047
+  Val mIoU: 0.7742 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8450 | C3: 0.5551
+  Patience count: 139/50
+Epoch 226/800 | Train Loss: 1.6851
+  Seg: 0.3361 | Recon: 0.0047
+  Val mIoU: 0.7533 (Best: 0.8092)
+  [Class IoU] C1: 0.9171 | C2: 0.8300 | C3: 0.5127
+  Patience count: 140/50
+Epoch 227/800 | Train Loss: 1.7051
+  Seg: 0.3401 | Recon: 0.0046
+  Val mIoU: 0.7822 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.8514 | C3: 0.5696
+  Patience count: 141/50
+Epoch 228/800 | Train Loss: 1.7169
+  Seg: 0.3424 | Recon: 0.0046
+  Val mIoU: 0.7785 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8486 | C3: 0.5632
+  Patience count: 142/50
+Epoch 229/800 | Train Loss: 1.6677
+  Seg: 0.3326 | Recon: 0.0046
+  Val mIoU: 0.7767 (Best: 0.8092)
+  [Class IoU] C1: 0.9186 | C2: 0.8460 | C3: 0.5655
+  Patience count: 143/50
+Epoch 230/800 | Train Loss: 1.6591
+  Seg: 0.3309 | Recon: 0.0047
+  Val mIoU: 0.7723 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8458 | C3: 0.5486
+  Patience count: 144/50
+Epoch 231/800 | Train Loss: 1.6387
+  Seg: 0.3268 | Recon: 0.0047
+  Val mIoU: 0.7900 (Best: 0.8092)
+  [Class IoU] C1: 0.9150 | C2: 0.8566 | C3: 0.5985
+  Patience count: 145/50
+Epoch 232/800 | Train Loss: 1.6877
+  Seg: 0.3366 | Recon: 0.0046
+  Val mIoU: 0.7692 (Best: 0.8092)
+  [Class IoU] C1: 0.9252 | C2: 0.8423 | C3: 0.5402
+  Patience count: 146/50
+Epoch 233/800 | Train Loss: 1.7032
+  Seg: 0.3397 | Recon: 0.0047
+  Val mIoU: 0.7838 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8513 | C3: 0.5761
+  Patience count: 147/50
+Epoch 234/800 | Train Loss: 1.6810
+  Seg: 0.3353 | Recon: 0.0044
+  Val mIoU: 0.7862 (Best: 0.8092)
+  [Class IoU] C1: 0.9151 | C2: 0.8543 | C3: 0.5891
+  Patience count: 148/50
+Epoch 235/800 | Train Loss: 1.7038
+  Seg: 0.3398 | Recon: 0.0047
+  Val mIoU: 0.7843 (Best: 0.8092)
+  [Class IoU] C1: 0.9155 | C2: 0.8544 | C3: 0.5831
+  Patience count: 149/50
+Epoch 236/800 | Train Loss: 1.6856
+  Seg: 0.3362 | Recon: 0.0046
+  Val mIoU: 0.7744 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8468 | C3: 0.5544
+  Patience count: 150/50
+Epoch 237/800 | Train Loss: 1.6736
+  Seg: 0.3338 | Recon: 0.0047
+  Val mIoU: 0.7872 (Best: 0.8092)
+  [Class IoU] C1: 0.9102 | C2: 0.8589 | C3: 0.5925
+  Patience count: 151/50
+Epoch 238/800 | Train Loss: 1.6613
+  Seg: 0.3313 | Recon: 0.0046
+  Val mIoU: 0.7460 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8253 | C3: 0.4899
+  Patience count: 152/50
+Epoch 239/800 | Train Loss: 1.6486
+  Seg: 0.3288 | Recon: 0.0047
+  Val mIoU: 0.7641 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8384 | C3: 0.5316
+  Patience count: 153/50
+Epoch 240/800 | Train Loss: 1.6846
+  Seg: 0.3360 | Recon: 0.0047
+  Val mIoU: 0.7802 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8466 | C3: 0.5708
+  Patience count: 154/50
+  Saving visuals for Epoch 240...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0240_predictions.png
+Epoch 241/800 | Train Loss: 1.6515
+  Seg: 0.3294 | Recon: 0.0047
+  Val mIoU: 0.7879 (Best: 0.8092)
+  [Class IoU] C1: 0.9208 | C2: 0.8562 | C3: 0.5867
+  Patience count: 155/50
+Epoch 242/800 | Train Loss: 1.6522
+  Seg: 0.3295 | Recon: 0.0047
+  Val mIoU: 0.7900 (Best: 0.8092)
+  [Class IoU] C1: 0.9178 | C2: 0.8551 | C3: 0.5970
+  Patience count: 156/50
+Epoch 243/800 | Train Loss: 1.6814
+  Seg: 0.3353 | Recon: 0.0047
+  Val mIoU: 0.7815 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8470 | C3: 0.5770
+  Patience count: 157/50
+Epoch 244/800 | Train Loss: 1.6991
+  Seg: 0.3389 | Recon: 0.0047
+  Val mIoU: 0.7686 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8420 | C3: 0.5420
+  Patience count: 158/50
+Epoch 245/800 | Train Loss: 1.6871
+  Seg: 0.3365 | Recon: 0.0047
+  Val mIoU: 0.7702 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8415 | C3: 0.5469
+  Patience count: 159/50
+Epoch 246/800 | Train Loss: 1.6599
+  Seg: 0.3311 | Recon: 0.0047
+  Val mIoU: 0.7823 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8507 | C3: 0.5717
+  Patience count: 160/50
+Epoch 247/800 | Train Loss: 1.6748
+  Seg: 0.3340 | Recon: 0.0048
+  Val mIoU: 0.7810 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8479 | C3: 0.5718
+  Patience count: 161/50
+Epoch 248/800 | Train Loss: 1.6655
+  Seg: 0.3322 | Recon: 0.0046
+  Val mIoU: 0.7762 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8488 | C3: 0.5579
+  Patience count: 162/50
+Epoch 249/800 | Train Loss: 1.6963
+  Seg: 0.3383 | Recon: 0.0048
+  Val mIoU: 0.7652 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8401 | C3: 0.5326
+  Patience count: 163/50
+Epoch 250/800 | Train Loss: 1.7024
+  Seg: 0.3396 | Recon: 0.0047
+  Val mIoU: 0.7689 (Best: 0.8092)
+  [Class IoU] C1: 0.9210 | C2: 0.8413 | C3: 0.5445
+  Patience count: 164/50
+Epoch 251/800 | Train Loss: 1.6392
+  Seg: 0.3269 | Recon: 0.0047
+  Val mIoU: 0.7713 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8432 | C3: 0.5485
+  Patience count: 165/50
+Epoch 252/800 | Train Loss: 1.7093
+  Seg: 0.3409 | Recon: 0.0048
+  Val mIoU: 0.7834 (Best: 0.8092)
+  [Class IoU] C1: 0.9177 | C2: 0.8502 | C3: 0.5824
+  Patience count: 166/50
+Epoch 253/800 | Train Loss: 1.6915
+  Seg: 0.3374 | Recon: 0.0047
+  Val mIoU: 0.8004 (Best: 0.8092)
+  [Class IoU] C1: 0.9257 | C2: 0.8621 | C3: 0.6134
+  Patience count: 167/50
+Epoch 254/800 | Train Loss: 1.7294
+  Seg: 0.3450 | Recon: 0.0046
+  Val mIoU: 0.7747 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8478 | C3: 0.5534
+  Patience count: 168/50
+Epoch 255/800 | Train Loss: 1.6789
+  Seg: 0.3349 | Recon: 0.0044
+  Val mIoU: 0.7785 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8484 | C3: 0.5634
+  Patience count: 169/50
+Epoch 256/800 | Train Loss: 1.7155
+  Seg: 0.3422 | Recon: 0.0047
+  Val mIoU: 0.7619 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8383 | C3: 0.5237
+  Patience count: 170/50
+Epoch 257/800 | Train Loss: 1.6927
+  Seg: 0.3376 | Recon: 0.0047
+  Val mIoU: 0.7798 (Best: 0.8092)
+  [Class IoU] C1: 0.9251 | C2: 0.8507 | C3: 0.5636
+  Patience count: 171/50
+Epoch 258/800 | Train Loss: 1.7015
+  Seg: 0.3393 | Recon: 0.0048
+  Val mIoU: 0.7820 (Best: 0.8092)
+  [Class IoU] C1: 0.9189 | C2: 0.8507 | C3: 0.5764
+  Patience count: 172/50
+Epoch 259/800 | Train Loss: 1.6701
+  Seg: 0.3331 | Recon: 0.0046
+  Val mIoU: 0.7909 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8559 | C3: 0.5936
+  Patience count: 173/50
+Epoch 260/800 | Train Loss: 1.6664
+  Seg: 0.3323 | Recon: 0.0047
+  Val mIoU: 0.7749 (Best: 0.8092)
+  [Class IoU] C1: 0.9204 | C2: 0.8458 | C3: 0.5586
+  Patience count: 174/50
+  Saving visuals for Epoch 260...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0260_predictions.png
+Epoch 261/800 | Train Loss: 1.6784
+  Seg: 0.3348 | Recon: 0.0046
+  Val mIoU: 0.7849 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8498 | C3: 0.5808
+  Patience count: 175/50
+Epoch 262/800 | Train Loss: 1.6773
+  Seg: 0.3345 | Recon: 0.0047
+  Val mIoU: 0.7781 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8465 | C3: 0.5640
+  Patience count: 176/50
+Epoch 263/800 | Train Loss: 1.7018
+  Seg: 0.3394 | Recon: 0.0047
+  Val mIoU: 0.7756 (Best: 0.8092)
+  [Class IoU] C1: 0.9121 | C2: 0.8492 | C3: 0.5653
+  Patience count: 177/50
+Epoch 264/800 | Train Loss: 1.6684
+  Seg: 0.3327 | Recon: 0.0047
+  Val mIoU: 0.7813 (Best: 0.8092)
+  [Class IoU] C1: 0.9163 | C2: 0.8537 | C3: 0.5740
+  Patience count: 178/50
+Epoch 265/800 | Train Loss: 1.7119
+  Seg: 0.3414 | Recon: 0.0047
+  Val mIoU: 0.7688 (Best: 0.8092)
+  [Class IoU] C1: 0.9202 | C2: 0.8400 | C3: 0.5462
+  Patience count: 179/50
+Epoch 266/800 | Train Loss: 1.6751
+  Seg: 0.3341 | Recon: 0.0047
+  Val mIoU: 0.7767 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8476 | C3: 0.5600
+  Patience count: 180/50
+Epoch 267/800 | Train Loss: 1.6913
+  Seg: 0.3373 | Recon: 0.0046
+  Val mIoU: 0.7876 (Best: 0.8092)
+  [Class IoU] C1: 0.9202 | C2: 0.8526 | C3: 0.5901
+  Patience count: 181/50
+Epoch 268/800 | Train Loss: 1.6878
+  Seg: 0.3366 | Recon: 0.0047
+  Val mIoU: 0.7677 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8422 | C3: 0.5399
+  Patience count: 182/50
+Epoch 269/800 | Train Loss: 1.6906
+  Seg: 0.3372 | Recon: 0.0045
+  Val mIoU: 0.7762 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8465 | C3: 0.5586
+  Patience count: 183/50
+Epoch 270/800 | Train Loss: 1.6840
+  Seg: 0.3359 | Recon: 0.0046
+  Val mIoU: 0.7897 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8552 | C3: 0.5906
+  Patience count: 184/50
+Epoch 271/800 | Train Loss: 1.6567
+  Seg: 0.3304 | Recon: 0.0047
+  Val mIoU: 0.7856 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8523 | C3: 0.5829
+  Patience count: 185/50
+Epoch 272/800 | Train Loss: 1.6868
+  Seg: 0.3364 | Recon: 0.0047
+  Val mIoU: 0.7920 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8562 | C3: 0.5953
+  Patience count: 186/50
+Epoch 273/800 | Train Loss: 1.6906
+  Seg: 0.3372 | Recon: 0.0048
+  Val mIoU: 0.7770 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.8471 | C3: 0.5585
+  Patience count: 187/50
+Epoch 274/800 | Train Loss: 1.6913
+  Seg: 0.3373 | Recon: 0.0047
+  Val mIoU: 0.7689 (Best: 0.8092)
+  [Class IoU] C1: 0.9188 | C2: 0.8415 | C3: 0.5464
+  Patience count: 188/50
+Epoch 275/800 | Train Loss: 1.7248
+  Seg: 0.3440 | Recon: 0.0047
+  Val mIoU: 0.7994 (Best: 0.8092)
+  [Class IoU] C1: 0.9258 | C2: 0.8608 | C3: 0.6116
+  Patience count: 189/50
+Epoch 276/800 | Train Loss: 1.6343
+  Seg: 0.3259 | Recon: 0.0046
+  Val mIoU: 0.7740 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8451 | C3: 0.5532
+  Patience count: 190/50
+Epoch 277/800 | Train Loss: 1.6808
+  Seg: 0.3352 | Recon: 0.0048
+  Val mIoU: 0.7815 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8488 | C3: 0.5728
+  Patience count: 191/50
+Epoch 278/800 | Train Loss: 1.6437
+  Seg: 0.3278 | Recon: 0.0047
+  Val mIoU: 0.7688 (Best: 0.8092)
+  [Class IoU] C1: 0.9131 | C2: 0.8426 | C3: 0.5507
+  Patience count: 192/50
+Epoch 279/800 | Train Loss: 1.6871
+  Seg: 0.3365 | Recon: 0.0046
+  Val mIoU: 0.7836 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8504 | C3: 0.5789
+  Patience count: 193/50
+Epoch 280/800 | Train Loss: 1.6783
+  Seg: 0.3347 | Recon: 0.0046
+  Val mIoU: 0.7894 (Best: 0.8092)
+  [Class IoU] C1: 0.9210 | C2: 0.8547 | C3: 0.5925
+  Patience count: 194/50
+  Saving visuals for Epoch 280...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0280_predictions.png
+Epoch 281/800 | Train Loss: 1.6617
+  Seg: 0.3314 | Recon: 0.0048
+  Val mIoU: 0.7872 (Best: 0.8092)
+  [Class IoU] C1: 0.9196 | C2: 0.8540 | C3: 0.5880
+  Patience count: 195/50
+Epoch 282/800 | Train Loss: 1.6655
+  Seg: 0.3322 | Recon: 0.0046
+  Val mIoU: 0.7840 (Best: 0.8092)
+  [Class IoU] C1: 0.9143 | C2: 0.8537 | C3: 0.5840
+  Patience count: 196/50
+Epoch 283/800 | Train Loss: 1.6505
+  Seg: 0.3292 | Recon: 0.0046
+  Val mIoU: 0.7635 (Best: 0.8092)
+  [Class IoU] C1: 0.8866 | C2: 0.8423 | C3: 0.5615
+  Patience count: 197/50
+Epoch 284/800 | Train Loss: 1.6920
+  Seg: 0.3374 | Recon: 0.0047
+  Val mIoU: 0.7925 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8576 | C3: 0.5956
+  Patience count: 198/50
+Epoch 285/800 | Train Loss: 1.6847
+  Seg: 0.3360 | Recon: 0.0046
+  Val mIoU: 0.7820 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8485 | C3: 0.5753
+  Patience count: 199/50
+Epoch 286/800 | Train Loss: 1.6748
+  Seg: 0.3340 | Recon: 0.0047
+  Val mIoU: 0.7923 (Best: 0.8092)
+  [Class IoU] C1: 0.9180 | C2: 0.8571 | C3: 0.6020
+  Patience count: 200/50
+Epoch 287/800 | Train Loss: 1.6800
+  Seg: 0.3351 | Recon: 0.0047
+  Val mIoU: 0.7865 (Best: 0.8092)
+  [Class IoU] C1: 0.9103 | C2: 0.8495 | C3: 0.5998
+  Patience count: 201/50
+Epoch 288/800 | Train Loss: 1.6842
+  Seg: 0.3359 | Recon: 0.0047
+  Val mIoU: 0.7961 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8576 | C3: 0.6069
+  Patience count: 202/50
+Epoch 289/800 | Train Loss: 1.7103
+  Seg: 0.3411 | Recon: 0.0046
+  Val mIoU: 0.7649 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8364 | C3: 0.5355
+  Patience count: 203/50
+Epoch 290/800 | Train Loss: 1.7059
+  Seg: 0.3403 | Recon: 0.0046
+  Val mIoU: 0.7880 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8543 | C3: 0.5860
+  Patience count: 204/50
+Epoch 291/800 | Train Loss: 1.7103
+  Seg: 0.3411 | Recon: 0.0047
+  Val mIoU: 0.7810 (Best: 0.8092)
+  [Class IoU] C1: 0.9192 | C2: 0.8516 | C3: 0.5722
+  Patience count: 205/50
+Epoch 292/800 | Train Loss: 1.6493
+  Seg: 0.3290 | Recon: 0.0045
+  Val mIoU: 0.7830 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8520 | C3: 0.5736
+  Patience count: 206/50
+Epoch 293/800 | Train Loss: 1.6812
+  Seg: 0.3353 | Recon: 0.0046
+  Val mIoU: 0.7668 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8406 | C3: 0.5361
+  Patience count: 207/50
+Epoch 294/800 | Train Loss: 1.6788
+  Seg: 0.3348 | Recon: 0.0048
+  Val mIoU: 0.7838 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8503 | C3: 0.5779
+  Patience count: 208/50
+Epoch 295/800 | Train Loss: 1.7236
+  Seg: 0.3438 | Recon: 0.0047
+  Val mIoU: 0.7655 (Best: 0.8092)
+  [Class IoU] C1: 0.9205 | C2: 0.8372 | C3: 0.5388
+  Patience count: 209/50
+Epoch 296/800 | Train Loss: 1.6536
+  Seg: 0.3298 | Recon: 0.0046
+  Val mIoU: 0.7919 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8584 | C3: 0.5929
+  Patience count: 210/50
+Epoch 297/800 | Train Loss: 1.6649
+  Seg: 0.3321 | Recon: 0.0045
+  Val mIoU: 0.7940 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8552 | C3: 0.6025
+  Patience count: 211/50
+Epoch 298/800 | Train Loss: 1.6707
+  Seg: 0.3332 | Recon: 0.0047
+  Val mIoU: 0.7810 (Best: 0.8092)
+  [Class IoU] C1: 0.9201 | C2: 0.8461 | C3: 0.5768
+  Patience count: 212/50
+Epoch 299/800 | Train Loss: 1.6863
+  Seg: 0.3363 | Recon: 0.0047
+  Val mIoU: 0.8004 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8627 | C3: 0.6144
+  Patience count: 213/50
+Epoch 300/800 | Train Loss: 1.6955
+  Seg: 0.3381 | Recon: 0.0048
+  Val mIoU: 0.7825 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8526 | C3: 0.5719
+  Patience count: 214/50
+  Saving visuals for Epoch 300...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0300_predictions.png
+Epoch 301/800 | Train Loss: 1.6932
+  Seg: 0.3377 | Recon: 0.0046
+  Val mIoU: 0.7905 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8590 | C3: 0.5911
+  Patience count: 215/50
+Epoch 302/800 | Train Loss: 1.6603
+  Seg: 0.3311 | Recon: 0.0046
+  Val mIoU: 0.7780 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8471 | C3: 0.5616
+  Patience count: 216/50
+Epoch 303/800 | Train Loss: 1.6673
+  Seg: 0.3325 | Recon: 0.0046
+  Val mIoU: 0.7763 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8484 | C3: 0.5576
+  Patience count: 217/50
+Epoch 304/800 | Train Loss: 1.6648
+  Seg: 0.3320 | Recon: 0.0046
+  Val mIoU: 0.7824 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8535 | C3: 0.5708
+  Patience count: 218/50
+Epoch 305/800 | Train Loss: 1.6738
+  Seg: 0.3338 | Recon: 0.0047
+  Val mIoU: 0.7680 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8428 | C3: 0.5383
+  Patience count: 219/50
+Epoch 306/800 | Train Loss: 1.6979
+  Seg: 0.3387 | Recon: 0.0046
+  Val mIoU: 0.7894 (Best: 0.8092)
+  [Class IoU] C1: 0.9251 | C2: 0.8547 | C3: 0.5886
+  Patience count: 220/50
+Epoch 307/800 | Train Loss: 1.6848
+  Seg: 0.3361 | Recon: 0.0045
+  Val mIoU: 0.7704 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8417 | C3: 0.5475
+  Patience count: 221/50
+Epoch 308/800 | Train Loss: 1.6846
+  Seg: 0.3360 | Recon: 0.0047
+  Val mIoU: 0.7661 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8374 | C3: 0.5394
+  Patience count: 222/50
+Epoch 309/800 | Train Loss: 1.6805
+  Seg: 0.3352 | Recon: 0.0047
+  Val mIoU: 0.7785 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8508 | C3: 0.5626
+  Patience count: 223/50
+Epoch 310/800 | Train Loss: 1.6417
+  Seg: 0.3274 | Recon: 0.0046
+  Val mIoU: 0.7916 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8571 | C3: 0.5944
+  Patience count: 224/50
+Epoch 311/800 | Train Loss: 1.6873
+  Seg: 0.3365 | Recon: 0.0046
+  Val mIoU: 0.7862 (Best: 0.8092)
+  [Class IoU] C1: 0.9249 | C2: 0.8522 | C3: 0.5816
+  Patience count: 225/50
+Epoch 312/800 | Train Loss: 1.6645
+  Seg: 0.3320 | Recon: 0.0047
+  Val mIoU: 0.7767 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8459 | C3: 0.5617
+  Patience count: 226/50
+Epoch 313/800 | Train Loss: 1.6883
+  Seg: 0.3367 | Recon: 0.0046
+  Val mIoU: 0.7820 (Best: 0.8092)
+  [Class IoU] C1: 0.9210 | C2: 0.8494 | C3: 0.5755
+  Patience count: 227/50
+Epoch 314/800 | Train Loss: 1.7399
+  Seg: 0.3470 | Recon: 0.0047
+  Val mIoU: 0.7789 (Best: 0.8092)
+  [Class IoU] C1: 0.9200 | C2: 0.8493 | C3: 0.5673
+  Patience count: 228/50
+Epoch 315/800 | Train Loss: 1.6549
+  Seg: 0.3300 | Recon: 0.0048
+  Val mIoU: 0.7699 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8395 | C3: 0.5477
+  Patience count: 229/50
+Epoch 316/800 | Train Loss: 1.6791
+  Seg: 0.3349 | Recon: 0.0047
+  Val mIoU: 0.7776 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8502 | C3: 0.5591
+  Patience count: 230/50
+Epoch 317/800 | Train Loss: 1.6920
+  Seg: 0.3375 | Recon: 0.0046
+  Val mIoU: 0.7853 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8533 | C3: 0.5772
+  Patience count: 231/50
+Epoch 318/800 | Train Loss: 1.6527
+  Seg: 0.3296 | Recon: 0.0045
+  Val mIoU: 0.7906 (Best: 0.8092)
+  [Class IoU] C1: 0.9155 | C2: 0.8565 | C3: 0.5999
+  Patience count: 232/50
+Epoch 319/800 | Train Loss: 1.6991
+  Seg: 0.3389 | Recon: 0.0048
+  Val mIoU: 0.7770 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8466 | C3: 0.5613
+  Patience count: 233/50
+Epoch 320/800 | Train Loss: 1.6549
+  Seg: 0.3301 | Recon: 0.0046
+  Val mIoU: 0.7703 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8402 | C3: 0.5489
+  Patience count: 234/50
+  Saving visuals for Epoch 320...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0320_predictions.png
+Epoch 321/800 | Train Loss: 1.7069
+  Seg: 0.3405 | Recon: 0.0045
+  Val mIoU: 0.7693 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8421 | C3: 0.5432
+  Patience count: 235/50
+Epoch 322/800 | Train Loss: 1.6680
+  Seg: 0.3327 | Recon: 0.0047
+  Val mIoU: 0.7749 (Best: 0.8092)
+  [Class IoU] C1: 0.9205 | C2: 0.8446 | C3: 0.5598
+  Patience count: 236/50
+Epoch 323/800 | Train Loss: 1.7053
+  Seg: 0.3401 | Recon: 0.0046
+  Val mIoU: 0.8022 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8611 | C3: 0.6219
+  Patience count: 237/50
+Epoch 324/800 | Train Loss: 1.6789
+  Seg: 0.3348 | Recon: 0.0047
+  Val mIoU: 0.7782 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8457 | C3: 0.5674
+  Patience count: 238/50
+Epoch 325/800 | Train Loss: 1.6860
+  Seg: 0.3363 | Recon: 0.0046
+  Val mIoU: 0.7826 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8523 | C3: 0.5746
+  Patience count: 239/50
+Epoch 326/800 | Train Loss: 1.6714
+  Seg: 0.3333 | Recon: 0.0047
+  Val mIoU: 0.7805 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8505 | C3: 0.5696
+  Patience count: 240/50
+Epoch 327/800 | Train Loss: 1.6745
+  Seg: 0.3340 | Recon: 0.0045
+  Val mIoU: 0.7611 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8363 | C3: 0.5226
+  Patience count: 241/50
+Epoch 328/800 | Train Loss: 1.6907
+  Seg: 0.3372 | Recon: 0.0046
+  Val mIoU: 0.7782 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8487 | C3: 0.5614
+  Patience count: 242/50
+Epoch 329/800 | Train Loss: 1.6409
+  Seg: 0.3272 | Recon: 0.0047
+  Val mIoU: 0.7740 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8442 | C3: 0.5537
+  Patience count: 243/50
+Epoch 330/800 | Train Loss: 1.6841
+  Seg: 0.3359 | Recon: 0.0047
+  Val mIoU: 0.7712 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8405 | C3: 0.5507
+  Patience count: 244/50
+Epoch 331/800 | Train Loss: 1.6661
+  Seg: 0.3323 | Recon: 0.0047
+  Val mIoU: 0.7654 (Best: 0.8092)
+  [Class IoU] C1: 0.9167 | C2: 0.8364 | C3: 0.5432
+  Patience count: 245/50
+Epoch 332/800 | Train Loss: 1.6477
+  Seg: 0.3286 | Recon: 0.0048
+  Val mIoU: 0.7809 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8486 | C3: 0.5707
+  Patience count: 246/50
+Epoch 333/800 | Train Loss: 1.6745
+  Seg: 0.3340 | Recon: 0.0046
+  Val mIoU: 0.7920 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8542 | C3: 0.5978
+  Patience count: 247/50
+Epoch 334/800 | Train Loss: 1.6926
+  Seg: 0.3376 | Recon: 0.0046
+  Val mIoU: 0.7708 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8419 | C3: 0.5481
+  Patience count: 248/50
+Epoch 335/800 | Train Loss: 1.7094
+  Seg: 0.3409 | Recon: 0.0048
+  Val mIoU: 0.7897 (Best: 0.8092)
+  [Class IoU] C1: 0.9213 | C2: 0.8571 | C3: 0.5908
+  Patience count: 249/50
+Epoch 336/800 | Train Loss: 1.6468
+  Seg: 0.3285 | Recon: 0.0046
+  Val mIoU: 0.7858 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8534 | C3: 0.5805
+  Patience count: 250/50
+Epoch 337/800 | Train Loss: 1.6871
+  Seg: 0.3365 | Recon: 0.0046
+  Val mIoU: 0.7813 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8481 | C3: 0.5733
+  Patience count: 251/50
+Epoch 338/800 | Train Loss: 1.6714
+  Seg: 0.3334 | Recon: 0.0045
+  Val mIoU: 0.7863 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8522 | C3: 0.5838
+  Patience count: 252/50
+Epoch 339/800 | Train Loss: 1.6505
+  Seg: 0.3292 | Recon: 0.0046
+  Val mIoU: 0.7993 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8606 | C3: 0.6146
+  Patience count: 253/50
+Epoch 340/800 | Train Loss: 1.6469
+  Seg: 0.3284 | Recon: 0.0047
+  Val mIoU: 0.7787 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8483 | C3: 0.5657
+  Patience count: 254/50
+  Saving visuals for Epoch 340...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0340_predictions.png
+Epoch 341/800 | Train Loss: 1.6600
+  Seg: 0.3311 | Recon: 0.0047
+  Val mIoU: 0.7851 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8518 | C3: 0.5794
+  Patience count: 255/50
+Epoch 342/800 | Train Loss: 1.6985
+  Seg: 0.3388 | Recon: 0.0047
+  Val mIoU: 0.7814 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8490 | C3: 0.5728
+  Patience count: 256/50
+Epoch 343/800 | Train Loss: 1.6519
+  Seg: 0.3295 | Recon: 0.0047
+  Val mIoU: 0.7750 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8468 | C3: 0.5565
+  Patience count: 257/50
+Epoch 344/800 | Train Loss: 1.6570
+  Seg: 0.3305 | Recon: 0.0046
+  Val mIoU: 0.7892 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8532 | C3: 0.5903
+  Patience count: 258/50
+Epoch 345/800 | Train Loss: 1.6242
+  Seg: 0.3239 | Recon: 0.0047
+  Val mIoU: 0.7800 (Best: 0.8092)
+  [Class IoU] C1: 0.9208 | C2: 0.8495 | C3: 0.5696
+  Patience count: 259/50
+Epoch 346/800 | Train Loss: 1.6787
+  Seg: 0.3348 | Recon: 0.0045
+  Val mIoU: 0.7789 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8481 | C3: 0.5663
+  Patience count: 260/50
+Epoch 347/800 | Train Loss: 1.6869
+  Seg: 0.3364 | Recon: 0.0048
+  Val mIoU: 0.7742 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8464 | C3: 0.5532
+  Patience count: 261/50
+Epoch 348/800 | Train Loss: 1.6712
+  Seg: 0.3333 | Recon: 0.0048
+  Val mIoU: 0.7587 (Best: 0.8092)
+  [Class IoU] C1: 0.9115 | C2: 0.8371 | C3: 0.5273
+  Patience count: 262/50
+Epoch 349/800 | Train Loss: 1.6589
+  Seg: 0.3309 | Recon: 0.0046
+  Val mIoU: 0.7946 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8582 | C3: 0.6011
+  Patience count: 263/50
+Epoch 350/800 | Train Loss: 1.6751
+  Seg: 0.3341 | Recon: 0.0046
+  Val mIoU: 0.7698 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8408 | C3: 0.5469
+  Patience count: 264/50
+Epoch 351/800 | Train Loss: 1.6934
+  Seg: 0.3377 | Recon: 0.0047
+  Val mIoU: 0.7746 (Best: 0.8092)
+  [Class IoU] C1: 0.9093 | C2: 0.8496 | C3: 0.5650
+  Patience count: 265/50
+Epoch 352/800 | Train Loss: 1.6773
+  Seg: 0.3345 | Recon: 0.0047
+  Val mIoU: 0.7756 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8465 | C3: 0.5578
+  Patience count: 266/50
+Epoch 353/800 | Train Loss: 1.6734
+  Seg: 0.3338 | Recon: 0.0046
+  Val mIoU: 0.7557 (Best: 0.8092)
+  [Class IoU] C1: 0.9202 | C2: 0.8303 | C3: 0.5166
+  Patience count: 267/50
+Epoch 354/800 | Train Loss: 1.6638
+  Seg: 0.3318 | Recon: 0.0047
+  Val mIoU: 0.7833 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8500 | C3: 0.5773
+  Patience count: 268/50
+Epoch 355/800 | Train Loss: 1.6560
+  Seg: 0.3303 | Recon: 0.0046
+  Val mIoU: 0.7578 (Best: 0.8092)
+  [Class IoU] C1: 0.9097 | C2: 0.8384 | C3: 0.5254
+  Patience count: 269/50
+Epoch 356/800 | Train Loss: 1.6630
+  Seg: 0.3317 | Recon: 0.0047
+  Val mIoU: 0.7922 (Best: 0.8092)
+  [Class IoU] C1: 0.9166 | C2: 0.8582 | C3: 0.6019
+  Patience count: 270/50
+Epoch 357/800 | Train Loss: 1.6671
+  Seg: 0.3325 | Recon: 0.0046
+  Val mIoU: 0.7744 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8462 | C3: 0.5539
+  Patience count: 271/50
+Epoch 358/800 | Train Loss: 1.6821
+  Seg: 0.3355 | Recon: 0.0045
+  Val mIoU: 0.7824 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8508 | C3: 0.5731
+  Patience count: 272/50
+Epoch 359/800 | Train Loss: 1.6835
+  Seg: 0.3358 | Recon: 0.0047
+  Val mIoU: 0.7716 (Best: 0.8092)
+  [Class IoU] C1: 0.9167 | C2: 0.8415 | C3: 0.5565
+  Patience count: 273/50
+Epoch 360/800 | Train Loss: 1.6399
+  Seg: 0.3270 | Recon: 0.0047
+  Val mIoU: 0.7694 (Best: 0.8092)
+  [Class IoU] C1: 0.9144 | C2: 0.8432 | C3: 0.5506
+  Patience count: 274/50
+  Saving visuals for Epoch 360...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0360_predictions.png
+Epoch 361/800 | Train Loss: 1.7023
+  Seg: 0.3396 | Recon: 0.0046
+  Val mIoU: 0.7675 (Best: 0.8092)
+  [Class IoU] C1: 0.9181 | C2: 0.8398 | C3: 0.5447
+  Patience count: 275/50
+Epoch 362/800 | Train Loss: 1.7194
+  Seg: 0.3430 | Recon: 0.0046
+  Val mIoU: 0.7915 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8550 | C3: 0.5972
+  Patience count: 276/50
+Epoch 363/800 | Train Loss: 1.6831
+  Seg: 0.3357 | Recon: 0.0046
+  Val mIoU: 0.7790 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8466 | C3: 0.5671
+  Patience count: 277/50
+Epoch 364/800 | Train Loss: 1.7181
+  Seg: 0.3427 | Recon: 0.0047
+  Val mIoU: 0.7917 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8505 | C3: 0.6023
+  Patience count: 278/50
+Epoch 365/800 | Train Loss: 1.6702
+  Seg: 0.3331 | Recon: 0.0047
+  Val mIoU: 0.7984 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8621 | C3: 0.6078
+  Patience count: 279/50
+Epoch 366/800 | Train Loss: 1.7009
+  Seg: 0.3392 | Recon: 0.0047
+  Val mIoU: 0.7771 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8486 | C3: 0.5587
+  Patience count: 280/50
+Epoch 367/800 | Train Loss: 1.6949
+  Seg: 0.3381 | Recon: 0.0046
+  Val mIoU: 0.7717 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8433 | C3: 0.5475
+  Patience count: 281/50
+Epoch 368/800 | Train Loss: 1.6898
+  Seg: 0.3370 | Recon: 0.0046
+  Val mIoU: 0.7866 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8560 | C3: 0.5805
+  Patience count: 282/50
+Epoch 369/800 | Train Loss: 1.6958
+  Seg: 0.3382 | Recon: 0.0046
+  Val mIoU: 0.7938 (Best: 0.8092)
+  [Class IoU] C1: 0.9242 | C2: 0.8609 | C3: 0.5962
+  Patience count: 283/50
+Epoch 370/800 | Train Loss: 1.6720
+  Seg: 0.3335 | Recon: 0.0047
+  Val mIoU: 0.7812 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8513 | C3: 0.5684
+  Patience count: 284/50
+Epoch 371/800 | Train Loss: 1.6750
+  Seg: 0.3341 | Recon: 0.0045
+  Val mIoU: 0.7764 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8464 | C3: 0.5594
+  Patience count: 285/50
+Epoch 372/800 | Train Loss: 1.6743
+  Seg: 0.3339 | Recon: 0.0047
+  Val mIoU: 0.7838 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8510 | C3: 0.5787
+  Patience count: 286/50
+Epoch 373/800 | Train Loss: 1.6779
+  Seg: 0.3347 | Recon: 0.0046
+  Val mIoU: 0.7771 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8477 | C3: 0.5596
+  Patience count: 287/50
+Epoch 374/800 | Train Loss: 1.6832
+  Seg: 0.3357 | Recon: 0.0048
+  Val mIoU: 0.7725 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8468 | C3: 0.5482
+  Patience count: 288/50
+Epoch 375/800 | Train Loss: 1.6570
+  Seg: 0.3305 | Recon: 0.0047
+  Val mIoU: 0.7737 (Best: 0.8092)
+  [Class IoU] C1: 0.9204 | C2: 0.8471 | C3: 0.5537
+  Patience count: 289/50
+Epoch 376/800 | Train Loss: 1.6544
+  Seg: 0.3300 | Recon: 0.0045
+  Val mIoU: 0.7770 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8489 | C3: 0.5589
+  Patience count: 290/50
+Epoch 377/800 | Train Loss: 1.7025
+  Seg: 0.3395 | Recon: 0.0048
+  Val mIoU: 0.7688 (Best: 0.8092)
+  [Class IoU] C1: 0.9191 | C2: 0.8410 | C3: 0.5463
+  Patience count: 291/50
+Epoch 378/800 | Train Loss: 1.6359
+  Seg: 0.3263 | Recon: 0.0046
+  Val mIoU: 0.7592 (Best: 0.8092)
+  [Class IoU] C1: 0.9141 | C2: 0.8358 | C3: 0.5277
+  Patience count: 292/50
+Epoch 379/800 | Train Loss: 1.6754
+  Seg: 0.3342 | Recon: 0.0046
+  Val mIoU: 0.7702 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.8432 | C3: 0.5420
+  Patience count: 293/50
+Epoch 380/800 | Train Loss: 1.6555
+  Seg: 0.3302 | Recon: 0.0047
+  Val mIoU: 0.7738 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8422 | C3: 0.5572
+  Patience count: 294/50
+  Saving visuals for Epoch 380...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0380_predictions.png
+Epoch 381/800 | Train Loss: 1.6907
+  Seg: 0.3372 | Recon: 0.0048
+  Val mIoU: 0.7481 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8247 | C3: 0.4976
+  Patience count: 295/50
+Epoch 382/800 | Train Loss: 1.6794
+  Seg: 0.3350 | Recon: 0.0045
+  Val mIoU: 0.7958 (Best: 0.8092)
+  [Class IoU] C1: 0.9252 | C2: 0.8603 | C3: 0.6021
+  Patience count: 296/50
+Epoch 383/800 | Train Loss: 1.6950
+  Seg: 0.3381 | Recon: 0.0046
+  Val mIoU: 0.7598 (Best: 0.8092)
+  [Class IoU] C1: 0.9235 | C2: 0.8331 | C3: 0.5229
+  Patience count: 297/50
+Epoch 384/800 | Train Loss: 1.6957
+  Seg: 0.3382 | Recon: 0.0048
+  Val mIoU: 0.7758 (Best: 0.8092)
+  [Class IoU] C1: 0.9203 | C2: 0.8459 | C3: 0.5611
+  Patience count: 298/50
+Epoch 385/800 | Train Loss: 1.6671
+  Seg: 0.3325 | Recon: 0.0047
+  Val mIoU: 0.7738 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8430 | C3: 0.5565
+  Patience count: 299/50
+Epoch 386/800 | Train Loss: 1.6468
+  Seg: 0.3284 | Recon: 0.0046
+  Val mIoU: 0.7811 (Best: 0.8092)
+  [Class IoU] C1: 0.9176 | C2: 0.8517 | C3: 0.5741
+  Patience count: 300/50
+Epoch 387/800 | Train Loss: 1.6869
+  Seg: 0.3365 | Recon: 0.0046
+  Val mIoU: 0.7731 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8437 | C3: 0.5516
+  Patience count: 301/50
+Epoch 388/800 | Train Loss: 1.6900
+  Seg: 0.3371 | Recon: 0.0047
+  Val mIoU: 0.7869 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8524 | C3: 0.5838
+  Patience count: 302/50
+Epoch 389/800 | Train Loss: 1.6916
+  Seg: 0.3374 | Recon: 0.0046
+  Val mIoU: 0.7623 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8341 | C3: 0.5290
+  Patience count: 303/50
+Epoch 390/800 | Train Loss: 1.6793
+  Seg: 0.3349 | Recon: 0.0046
+  Val mIoU: 0.7930 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8573 | C3: 0.5986
+  Patience count: 304/50
+Epoch 391/800 | Train Loss: 1.6354
+  Seg: 0.3261 | Recon: 0.0047
+  Val mIoU: 0.7793 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8484 | C3: 0.5671
+  Patience count: 305/50
+Epoch 392/800 | Train Loss: 1.6634
+  Seg: 0.3317 | Recon: 0.0047
+  Val mIoU: 0.7914 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8573 | C3: 0.5923
+  Patience count: 306/50
+Epoch 393/800 | Train Loss: 1.7188
+  Seg: 0.3428 | Recon: 0.0047
+  Val mIoU: 0.7852 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8547 | C3: 0.5789
+  Patience count: 307/50
+Epoch 394/800 | Train Loss: 1.6896
+  Seg: 0.3370 | Recon: 0.0048
+  Val mIoU: 0.7678 (Best: 0.8092)
+  [Class IoU] C1: 0.9204 | C2: 0.8391 | C3: 0.5439
+  Patience count: 308/50
+Epoch 395/800 | Train Loss: 1.6656
+  Seg: 0.3322 | Recon: 0.0047
+  Val mIoU: 0.7894 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8558 | C3: 0.5912
+  Patience count: 309/50
+Epoch 396/800 | Train Loss: 1.6709
+  Seg: 0.3332 | Recon: 0.0047
+  Val mIoU: 0.7662 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8386 | C3: 0.5382
+  Patience count: 310/50
+Epoch 397/800 | Train Loss: 1.6823
+  Seg: 0.3355 | Recon: 0.0047
+  Val mIoU: 0.7826 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8500 | C3: 0.5760
+  Patience count: 311/50
+Epoch 398/800 | Train Loss: 1.6785
+  Seg: 0.3348 | Recon: 0.0046
+  Val mIoU: 0.7697 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8414 | C3: 0.5438
+  Patience count: 312/50
+Epoch 399/800 | Train Loss: 1.7157
+  Seg: 0.3422 | Recon: 0.0046
+  Val mIoU: 0.7775 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8474 | C3: 0.5623
+  Patience count: 313/50
+Epoch 400/800 | Train Loss: 1.6203
+  Seg: 0.3231 | Recon: 0.0047
+  Val mIoU: 0.7577 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8301 | C3: 0.5216
+  Patience count: 314/50
+  Saving visuals for Epoch 400...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0400_predictions.png
+Epoch 401/800 | Train Loss: 1.6536
+  Seg: 0.3298 | Recon: 0.0047
+  Val mIoU: 0.7704 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8428 | C3: 0.5455
+  Patience count: 315/50
+Epoch 402/800 | Train Loss: 1.7001
+  Seg: 0.3391 | Recon: 0.0045
+  Val mIoU: 0.8015 (Best: 0.8092)
+  [Class IoU] C1: 0.9263 | C2: 0.8630 | C3: 0.6152
+  Patience count: 316/50
+Epoch 403/800 | Train Loss: 1.6621
+  Seg: 0.3315 | Recon: 0.0047
+  Val mIoU: 0.7915 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8578 | C3: 0.5936
+  Patience count: 317/50
+Epoch 404/800 | Train Loss: 1.6750
+  Seg: 0.3341 | Recon: 0.0047
+  Val mIoU: 0.7807 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8521 | C3: 0.5657
+  Patience count: 318/50
+Epoch 405/800 | Train Loss: 1.6937
+  Seg: 0.3378 | Recon: 0.0046
+  Val mIoU: 0.7876 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8535 | C3: 0.5844
+  Patience count: 319/50
+Epoch 406/800 | Train Loss: 1.6588
+  Seg: 0.3309 | Recon: 0.0046
+  Val mIoU: 0.7876 (Best: 0.8092)
+  [Class IoU] C1: 0.9180 | C2: 0.8556 | C3: 0.5893
+  Patience count: 320/50
+Epoch 407/800 | Train Loss: 1.6683
+  Seg: 0.3328 | Recon: 0.0045
+  Val mIoU: 0.7870 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8553 | C3: 0.5824
+  Patience count: 321/50
+Epoch 408/800 | Train Loss: 1.7020
+  Seg: 0.3395 | Recon: 0.0046
+  Val mIoU: 0.7908 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8537 | C3: 0.5964
+  Patience count: 322/50
+Epoch 409/800 | Train Loss: 1.6600
+  Seg: 0.3311 | Recon: 0.0046
+  Val mIoU: 0.7740 (Best: 0.8092)
+  [Class IoU] C1: 0.9068 | C2: 0.8491 | C3: 0.5660
+  Patience count: 323/50
+Epoch 410/800 | Train Loss: 1.6791
+  Seg: 0.3349 | Recon: 0.0046
+  Val mIoU: 0.7814 (Best: 0.8092)
+  [Class IoU] C1: 0.9051 | C2: 0.8553 | C3: 0.5837
+  Patience count: 324/50
+Epoch 411/800 | Train Loss: 1.6547
+  Seg: 0.3301 | Recon: 0.0045
+  Val mIoU: 0.7964 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8593 | C3: 0.6069
+  Patience count: 325/50
+Epoch 412/800 | Train Loss: 1.7452
+  Seg: 0.3481 | Recon: 0.0047
+  Val mIoU: 0.7670 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8373 | C3: 0.5428
+  Patience count: 326/50
+Epoch 413/800 | Train Loss: 1.6911
+  Seg: 0.3373 | Recon: 0.0048
+  Val mIoU: 0.7895 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8537 | C3: 0.5917
+  Patience count: 327/50
+Epoch 414/800 | Train Loss: 1.6404
+  Seg: 0.3272 | Recon: 0.0046
+  Val mIoU: 0.7887 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8556 | C3: 0.5869
+  Patience count: 328/50
+Epoch 415/800 | Train Loss: 1.6720
+  Seg: 0.3335 | Recon: 0.0046
+  Val mIoU: 0.7772 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8503 | C3: 0.5606
+  Patience count: 329/50
+Epoch 416/800 | Train Loss: 1.6588
+  Seg: 0.3308 | Recon: 0.0047
+  Val mIoU: 0.7911 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8570 | C3: 0.5933
+  Patience count: 330/50
+Epoch 417/800 | Train Loss: 1.6656
+  Seg: 0.3322 | Recon: 0.0046
+  Val mIoU: 0.7835 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8506 | C3: 0.5753
+  Patience count: 331/50
+Epoch 418/800 | Train Loss: 1.6412
+  Seg: 0.3273 | Recon: 0.0047
+  Val mIoU: 0.7816 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8489 | C3: 0.5741
+  Patience count: 332/50
+Epoch 419/800 | Train Loss: 1.6837
+  Seg: 0.3358 | Recon: 0.0047
+  Val mIoU: 0.7843 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8504 | C3: 0.5810
+  Patience count: 333/50
+Epoch 420/800 | Train Loss: 1.6591
+  Seg: 0.3309 | Recon: 0.0045
+  Val mIoU: 0.7874 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8516 | C3: 0.5883
+  Patience count: 334/50
+  Saving visuals for Epoch 420...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0420_predictions.png
+Epoch 421/800 | Train Loss: 1.6495
+  Seg: 0.3290 | Recon: 0.0046
+  Val mIoU: 0.7803 (Best: 0.8092)
+  [Class IoU] C1: 0.9207 | C2: 0.8478 | C3: 0.5723
+  Patience count: 335/50
+Epoch 422/800 | Train Loss: 1.6666
+  Seg: 0.3324 | Recon: 0.0047
+  Val mIoU: 0.7873 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8503 | C3: 0.5886
+  Patience count: 336/50
+Epoch 423/800 | Train Loss: 1.6350
+  Seg: 0.3261 | Recon: 0.0046
+  Val mIoU: 0.7750 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8481 | C3: 0.5562
+  Patience count: 337/50
+Epoch 424/800 | Train Loss: 1.6410
+  Seg: 0.3273 | Recon: 0.0047
+  Val mIoU: 0.7818 (Best: 0.8092)
+  [Class IoU] C1: 0.9208 | C2: 0.8516 | C3: 0.5729
+  Patience count: 338/50
+Epoch 425/800 | Train Loss: 1.6612
+  Seg: 0.3313 | Recon: 0.0047
+  Val mIoU: 0.7833 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8530 | C3: 0.5739
+  Patience count: 339/50
+Epoch 426/800 | Train Loss: 1.6630
+  Seg: 0.3316 | Recon: 0.0048
+  Val mIoU: 0.7876 (Best: 0.8092)
+  [Class IoU] C1: 0.9189 | C2: 0.8518 | C3: 0.5922
+  Patience count: 340/50
+Epoch 427/800 | Train Loss: 1.6591
+  Seg: 0.3309 | Recon: 0.0048
+  Val mIoU: 0.7916 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8535 | C3: 0.5973
+  Patience count: 341/50
+Epoch 428/800 | Train Loss: 1.6688
+  Seg: 0.3328 | Recon: 0.0046
+  Val mIoU: 0.7836 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8513 | C3: 0.5759
+  Patience count: 342/50
+Epoch 429/800 | Train Loss: 1.6759
+  Seg: 0.3342 | Recon: 0.0047
+  Val mIoU: 0.7760 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8473 | C3: 0.5562
+  Patience count: 343/50
+Epoch 430/800 | Train Loss: 1.6858
+  Seg: 0.3362 | Recon: 0.0046
+  Val mIoU: 0.7850 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8534 | C3: 0.5767
+  Patience count: 344/50
+Epoch 431/800 | Train Loss: 1.6350
+  Seg: 0.3261 | Recon: 0.0045
+  Val mIoU: 0.7949 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8598 | C3: 0.6009
+  Patience count: 345/50
+Epoch 432/800 | Train Loss: 1.6791
+  Seg: 0.3349 | Recon: 0.0046
+  Val mIoU: 0.7717 (Best: 0.8092)
+  [Class IoU] C1: 0.9163 | C2: 0.8452 | C3: 0.5535
+  Patience count: 346/50
+Epoch 433/800 | Train Loss: 1.6879
+  Seg: 0.3366 | Recon: 0.0047
+  Val mIoU: 0.7751 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8449 | C3: 0.5570
+  Patience count: 347/50
+Epoch 434/800 | Train Loss: 1.6600
+  Seg: 0.3311 | Recon: 0.0046
+  Val mIoU: 0.7769 (Best: 0.8092)
+  [Class IoU] C1: 0.9183 | C2: 0.8504 | C3: 0.5621
+  Patience count: 348/50
+Epoch 435/800 | Train Loss: 1.6877
+  Seg: 0.3366 | Recon: 0.0047
+  Val mIoU: 0.7830 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8539 | C3: 0.5698
+  Patience count: 349/50
+Epoch 436/800 | Train Loss: 1.6660
+  Seg: 0.3323 | Recon: 0.0046
+  Val mIoU: 0.7521 (Best: 0.8092)
+  [Class IoU] C1: 0.9175 | C2: 0.8303 | C3: 0.5086
+  Patience count: 350/50
+Epoch 437/800 | Train Loss: 1.7117
+  Seg: 0.3414 | Recon: 0.0047
+  Val mIoU: 0.7910 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8567 | C3: 0.5926
+  Patience count: 351/50
+Epoch 438/800 | Train Loss: 1.6892
+  Seg: 0.3369 | Recon: 0.0047
+  Val mIoU: 0.7816 (Best: 0.8092)
+  [Class IoU] C1: 0.9258 | C2: 0.8518 | C3: 0.5673
+  Patience count: 352/50
+Epoch 439/800 | Train Loss: 1.6529
+  Seg: 0.3297 | Recon: 0.0046
+  Val mIoU: 0.7752 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8457 | C3: 0.5551
+  Patience count: 353/50
+Epoch 440/800 | Train Loss: 1.6638
+  Seg: 0.3319 | Recon: 0.0045
+  Val mIoU: 0.7804 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8493 | C3: 0.5700
+  Patience count: 354/50
+  Saving visuals for Epoch 440...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0440_predictions.png
+Epoch 441/800 | Train Loss: 1.6631
+  Seg: 0.3317 | Recon: 0.0047
+  Val mIoU: 0.7831 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8498 | C3: 0.5761
+  Patience count: 355/50
+Epoch 442/800 | Train Loss: 1.6885
+  Seg: 0.3368 | Recon: 0.0047
+  Val mIoU: 0.7713 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8401 | C3: 0.5518
+  Patience count: 356/50
+Epoch 443/800 | Train Loss: 1.6932
+  Seg: 0.3377 | Recon: 0.0046
+  Val mIoU: 0.7834 (Best: 0.8092)
+  [Class IoU] C1: 0.9168 | C2: 0.8511 | C3: 0.5822
+  Patience count: 357/50
+Epoch 444/800 | Train Loss: 1.6877
+  Seg: 0.3366 | Recon: 0.0046
+  Val mIoU: 0.7877 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8512 | C3: 0.5887
+  Patience count: 358/50
+Epoch 445/800 | Train Loss: 1.6782
+  Seg: 0.3347 | Recon: 0.0045
+  Val mIoU: 0.7897 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8541 | C3: 0.5937
+  Patience count: 359/50
+Epoch 446/800 | Train Loss: 1.6456
+  Seg: 0.3282 | Recon: 0.0045
+  Val mIoU: 0.7721 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8433 | C3: 0.5512
+  Patience count: 360/50
+Epoch 447/800 | Train Loss: 1.6879
+  Seg: 0.3366 | Recon: 0.0047
+  Val mIoU: 0.7659 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8360 | C3: 0.5394
+  Patience count: 361/50
+Epoch 448/800 | Train Loss: 1.6637
+  Seg: 0.3318 | Recon: 0.0046
+  Val mIoU: 0.7747 (Best: 0.8092)
+  [Class IoU] C1: 0.9207 | C2: 0.8476 | C3: 0.5558
+  Patience count: 362/50
+Epoch 449/800 | Train Loss: 1.6781
+  Seg: 0.3347 | Recon: 0.0047
+  Val mIoU: 0.7830 (Best: 0.8092)
+  [Class IoU] C1: 0.9184 | C2: 0.8520 | C3: 0.5786
+  Patience count: 363/50
+Epoch 450/800 | Train Loss: 1.6914
+  Seg: 0.3374 | Recon: 0.0046
+  Val mIoU: 0.7775 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8440 | C3: 0.5670
+  Patience count: 364/50
+Epoch 451/800 | Train Loss: 1.6704
+  Seg: 0.3332 | Recon: 0.0047
+  Val mIoU: 0.7949 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8608 | C3: 0.5992
+  Patience count: 365/50
+Epoch 452/800 | Train Loss: 1.6482
+  Seg: 0.3287 | Recon: 0.0048
+  Val mIoU: 0.7812 (Best: 0.8092)
+  [Class IoU] C1: 0.9153 | C2: 0.8461 | C3: 0.5821
+  Patience count: 366/50
+Epoch 453/800 | Train Loss: 1.6743
+  Seg: 0.3339 | Recon: 0.0047
+  Val mIoU: 0.7727 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8448 | C3: 0.5502
+  Patience count: 367/50
+Epoch 454/800 | Train Loss: 1.6667
+  Seg: 0.3324 | Recon: 0.0046
+  Val mIoU: 0.7837 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8524 | C3: 0.5770
+  Patience count: 368/50
+Epoch 455/800 | Train Loss: 1.7158
+  Seg: 0.3422 | Recon: 0.0047
+  Val mIoU: 0.7778 (Best: 0.8092)
+  [Class IoU] C1: 0.9259 | C2: 0.8488 | C3: 0.5587
+  Patience count: 369/50
+Epoch 456/800 | Train Loss: 1.7063
+  Seg: 0.3403 | Recon: 0.0046
+  Val mIoU: 0.7699 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8431 | C3: 0.5443
+  Patience count: 370/50
+Epoch 457/800 | Train Loss: 1.6903
+  Seg: 0.3371 | Recon: 0.0046
+  Val mIoU: 0.7867 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8540 | C3: 0.5840
+  Patience count: 371/50
+Epoch 458/800 | Train Loss: 1.7232
+  Seg: 0.3437 | Recon: 0.0047
+  Val mIoU: 0.7829 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8504 | C3: 0.5744
+  Patience count: 372/50
+Epoch 459/800 | Train Loss: 1.6841
+  Seg: 0.3359 | Recon: 0.0046
+  Val mIoU: 0.7870 (Best: 0.8092)
+  [Class IoU] C1: 0.9139 | C2: 0.8566 | C3: 0.5906
+  Patience count: 373/50
+Epoch 460/800 | Train Loss: 1.6804
+  Seg: 0.3351 | Recon: 0.0047
+  Val mIoU: 0.7877 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8545 | C3: 0.5846
+  Patience count: 374/50
+  Saving visuals for Epoch 460...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0460_predictions.png
+Epoch 461/800 | Train Loss: 1.6848
+  Seg: 0.3360 | Recon: 0.0046
+  Val mIoU: 0.8013 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8629 | C3: 0.6186
+  Patience count: 375/50
+Epoch 462/800 | Train Loss: 1.6892
+  Seg: 0.3369 | Recon: 0.0046
+  Val mIoU: 0.7650 (Best: 0.8092)
+  [Class IoU] C1: 0.9165 | C2: 0.8362 | C3: 0.5423
+  Patience count: 376/50
+Epoch 463/800 | Train Loss: 1.6928
+  Seg: 0.3376 | Recon: 0.0048
+  Val mIoU: 0.7834 (Best: 0.8092)
+  [Class IoU] C1: 0.9151 | C2: 0.8526 | C3: 0.5825
+  Patience count: 377/50
+Epoch 464/800 | Train Loss: 1.6684
+  Seg: 0.3328 | Recon: 0.0046
+  Val mIoU: 0.7740 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8443 | C3: 0.5557
+  Patience count: 378/50
+Epoch 465/800 | Train Loss: 1.6697
+  Seg: 0.3330 | Recon: 0.0046
+  Val mIoU: 0.7874 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8545 | C3: 0.5831
+  Patience count: 379/50
+Epoch 466/800 | Train Loss: 1.7062
+  Seg: 0.3403 | Recon: 0.0047
+  Val mIoU: 0.7838 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8534 | C3: 0.5747
+  Patience count: 380/50
+Epoch 467/800 | Train Loss: 1.6801
+  Seg: 0.3351 | Recon: 0.0046
+  Val mIoU: 0.7835 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8523 | C3: 0.5743
+  Patience count: 381/50
+Epoch 468/800 | Train Loss: 1.6964
+  Seg: 0.3383 | Recon: 0.0047
+  Val mIoU: 0.7951 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8599 | C3: 0.6005
+  Patience count: 382/50
+Epoch 469/800 | Train Loss: 1.6841
+  Seg: 0.3359 | Recon: 0.0047
+  Val mIoU: 0.7816 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8504 | C3: 0.5711
+  Patience count: 383/50
+Epoch 470/800 | Train Loss: 1.6854
+  Seg: 0.3361 | Recon: 0.0047
+  Val mIoU: 0.7898 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8554 | C3: 0.5894
+  Patience count: 384/50
+Epoch 471/800 | Train Loss: 1.6608
+  Seg: 0.3312 | Recon: 0.0047
+  Val mIoU: 0.7936 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8606 | C3: 0.5978
+  Patience count: 385/50
+Epoch 472/800 | Train Loss: 1.6820
+  Seg: 0.3355 | Recon: 0.0047
+  Val mIoU: 0.7865 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8532 | C3: 0.5823
+  Patience count: 386/50
+Epoch 473/800 | Train Loss: 1.6512
+  Seg: 0.3293 | Recon: 0.0046
+  Val mIoU: 0.7697 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8407 | C3: 0.5463
+  Patience count: 387/50
+Epoch 474/800 | Train Loss: 1.6659
+  Seg: 0.3323 | Recon: 0.0046
+  Val mIoU: 0.7769 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8436 | C3: 0.5648
+  Patience count: 388/50
+Epoch 475/800 | Train Loss: 1.6945
+  Seg: 0.3380 | Recon: 0.0046
+  Val mIoU: 0.7780 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8486 | C3: 0.5600
+  Patience count: 389/50
+Epoch 476/800 | Train Loss: 1.6868
+  Seg: 0.3364 | Recon: 0.0047
+  Val mIoU: 0.7849 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8550 | C3: 0.5791
+  Patience count: 390/50
+Epoch 477/800 | Train Loss: 1.6493
+  Seg: 0.3289 | Recon: 0.0046
+  Val mIoU: 0.7923 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8564 | C3: 0.6001
+  Patience count: 391/50
+Epoch 478/800 | Train Loss: 1.6690
+  Seg: 0.3329 | Recon: 0.0046
+  Val mIoU: 0.7725 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8425 | C3: 0.5526
+  Patience count: 392/50
+Epoch 479/800 | Train Loss: 1.6268
+  Seg: 0.3244 | Recon: 0.0047
+  Val mIoU: 0.7800 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8478 | C3: 0.5698
+  Patience count: 393/50
+Epoch 480/800 | Train Loss: 1.7041
+  Seg: 0.3399 | Recon: 0.0047
+  Val mIoU: 0.7696 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8423 | C3: 0.5440
+  Patience count: 394/50
+  Saving visuals for Epoch 480...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0480_predictions.png
+Epoch 481/800 | Train Loss: 1.6863
+  Seg: 0.3363 | Recon: 0.0046
+  Val mIoU: 0.7706 (Best: 0.8092)
+  [Class IoU] C1: 0.9173 | C2: 0.8461 | C3: 0.5483
+  Patience count: 395/50
+Epoch 482/800 | Train Loss: 1.6848
+  Seg: 0.3361 | Recon: 0.0045
+  Val mIoU: 0.7872 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8539 | C3: 0.5830
+  Patience count: 396/50
+Epoch 483/800 | Train Loss: 1.6975
+  Seg: 0.3385 | Recon: 0.0048
+  Val mIoU: 0.7890 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8560 | C3: 0.5864
+  Patience count: 397/50
+Epoch 484/800 | Train Loss: 1.6594
+  Seg: 0.3310 | Recon: 0.0046
+  Val mIoU: 0.7737 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8463 | C3: 0.5510
+  Patience count: 398/50
+Epoch 485/800 | Train Loss: 1.7079
+  Seg: 0.3407 | Recon: 0.0045
+  Val mIoU: 0.7695 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8404 | C3: 0.5446
+  Patience count: 399/50
+Epoch 486/800 | Train Loss: 1.6378
+  Seg: 0.3266 | Recon: 0.0047
+  Val mIoU: 0.7704 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8444 | C3: 0.5433
+  Patience count: 400/50
+Epoch 487/800 | Train Loss: 1.6701
+  Seg: 0.3331 | Recon: 0.0046
+  Val mIoU: 0.7816 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8515 | C3: 0.5694
+  Patience count: 401/50
+Epoch 488/800 | Train Loss: 1.6714
+  Seg: 0.3334 | Recon: 0.0044
+  Val mIoU: 0.7866 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8529 | C3: 0.5831
+  Patience count: 402/50
+Epoch 489/800 | Train Loss: 1.6903
+  Seg: 0.3371 | Recon: 0.0048
+  Val mIoU: 0.7698 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8451 | C3: 0.5428
+  Patience count: 403/50
+Epoch 490/800 | Train Loss: 1.6845
+  Seg: 0.3360 | Recon: 0.0047
+  Val mIoU: 0.7604 (Best: 0.8092)
+  [Class IoU] C1: 0.9235 | C2: 0.8366 | C3: 0.5211
+  Patience count: 404/50
+Epoch 491/800 | Train Loss: 1.7062
+  Seg: 0.3403 | Recon: 0.0046
+  Val mIoU: 0.7866 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8539 | C3: 0.5812
+  Patience count: 405/50
+Epoch 492/800 | Train Loss: 1.7182
+  Seg: 0.3427 | Recon: 0.0045
+  Val mIoU: 0.7681 (Best: 0.8092)
+  [Class IoU] C1: 0.8989 | C2: 0.8457 | C3: 0.5596
+  Patience count: 406/50
+Epoch 493/800 | Train Loss: 1.6684
+  Seg: 0.3327 | Recon: 0.0048
+  Val mIoU: 0.7701 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8427 | C3: 0.5436
+  Patience count: 407/50
+Epoch 494/800 | Train Loss: 1.6515
+  Seg: 0.3294 | Recon: 0.0046
+  Val mIoU: 0.7905 (Best: 0.8092)
+  [Class IoU] C1: 0.9247 | C2: 0.8538 | C3: 0.5929
+  Patience count: 408/50
+Epoch 495/800 | Train Loss: 1.7099
+  Seg: 0.3411 | Recon: 0.0047
+  Val mIoU: 0.7932 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8567 | C3: 0.5992
+  Patience count: 409/50
+Epoch 496/800 | Train Loss: 1.6756
+  Seg: 0.3342 | Recon: 0.0047
+  Val mIoU: 0.7759 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8482 | C3: 0.5578
+  Patience count: 410/50
+Epoch 497/800 | Train Loss: 1.6964
+  Seg: 0.3384 | Recon: 0.0046
+  Val mIoU: 0.7804 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8489 | C3: 0.5689
+  Patience count: 411/50
+Epoch 498/800 | Train Loss: 1.6789
+  Seg: 0.3348 | Recon: 0.0047
+  Val mIoU: 0.7781 (Best: 0.8092)
+  [Class IoU] C1: 0.9150 | C2: 0.8512 | C3: 0.5682
+  Patience count: 412/50
+Epoch 499/800 | Train Loss: 1.6918
+  Seg: 0.3375 | Recon: 0.0045
+  Val mIoU: 0.7891 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8561 | C3: 0.5870
+  Patience count: 413/50
+Epoch 500/800 | Train Loss: 1.6815
+  Seg: 0.3354 | Recon: 0.0045
+  Val mIoU: 0.7866 (Best: 0.8092)
+  [Class IoU] C1: 0.9198 | C2: 0.8547 | C3: 0.5854
+  Patience count: 414/50
+  Saving visuals for Epoch 500...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0500_predictions.png
+Epoch 501/800 | Train Loss: 1.6882
+  Seg: 0.3367 | Recon: 0.0046
+  Val mIoU: 0.7704 (Best: 0.8092)
+  [Class IoU] C1: 0.9162 | C2: 0.8448 | C3: 0.5502
+  Patience count: 415/50
+Epoch 502/800 | Train Loss: 1.6988
+  Seg: 0.3388 | Recon: 0.0047
+  Val mIoU: 0.7727 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8431 | C3: 0.5536
+  Patience count: 416/50
+Epoch 503/800 | Train Loss: 1.6981
+  Seg: 0.3387 | Recon: 0.0046
+  Val mIoU: 0.7812 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8526 | C3: 0.5674
+  Patience count: 417/50
+Epoch 504/800 | Train Loss: 1.6499
+  Seg: 0.3290 | Recon: 0.0047
+  Val mIoU: 0.7792 (Best: 0.8092)
+  [Class IoU] C1: 0.9190 | C2: 0.8504 | C3: 0.5681
+  Patience count: 418/50
+Epoch 505/800 | Train Loss: 1.6771
+  Seg: 0.3345 | Recon: 0.0047
+  Val mIoU: 0.7684 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8415 | C3: 0.5423
+  Patience count: 419/50
+Epoch 506/800 | Train Loss: 1.7207
+  Seg: 0.3432 | Recon: 0.0047
+  Val mIoU: 0.7701 (Best: 0.8092)
+  [Class IoU] C1: 0.9207 | C2: 0.8435 | C3: 0.5461
+  Patience count: 420/50
+Epoch 507/800 | Train Loss: 1.6670
+  Seg: 0.3325 | Recon: 0.0046
+  Val mIoU: 0.7657 (Best: 0.8092)
+  [Class IoU] C1: 0.9235 | C2: 0.8370 | C3: 0.5366
+  Patience count: 421/50
+Epoch 508/800 | Train Loss: 1.6650
+  Seg: 0.3321 | Recon: 0.0046
+  Val mIoU: 0.7774 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8476 | C3: 0.5629
+  Patience count: 422/50
+Epoch 509/800 | Train Loss: 1.6675
+  Seg: 0.3326 | Recon: 0.0047
+  Val mIoU: 0.7862 (Best: 0.8092)
+  [Class IoU] C1: 0.9235 | C2: 0.8557 | C3: 0.5792
+  Patience count: 423/50
+Epoch 510/800 | Train Loss: 1.6771
+  Seg: 0.3345 | Recon: 0.0047
+  Val mIoU: 0.7709 (Best: 0.8092)
+  [Class IoU] C1: 0.9208 | C2: 0.8445 | C3: 0.5474
+  Patience count: 424/50
+Epoch 511/800 | Train Loss: 1.6677
+  Seg: 0.3326 | Recon: 0.0048
+  Val mIoU: 0.8036 (Best: 0.8092)
+  [Class IoU] C1: 0.9250 | C2: 0.8661 | C3: 0.6196
+  Patience count: 425/50
+Epoch 512/800 | Train Loss: 1.7086
+  Seg: 0.3408 | Recon: 0.0047
+  Val mIoU: 0.7818 (Best: 0.8092)
+  [Class IoU] C1: 0.9256 | C2: 0.8519 | C3: 0.5679
+  Patience count: 426/50
+Epoch 513/800 | Train Loss: 1.6751
+  Seg: 0.3341 | Recon: 0.0046
+  Val mIoU: 0.7819 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8525 | C3: 0.5692
+  Patience count: 427/50
+Epoch 514/800 | Train Loss: 1.6576
+  Seg: 0.3306 | Recon: 0.0047
+  Val mIoU: 0.7887 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8551 | C3: 0.5884
+  Patience count: 428/50
+Epoch 515/800 | Train Loss: 1.7174
+  Seg: 0.3425 | Recon: 0.0047
+  Val mIoU: 0.7734 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8433 | C3: 0.5558
+  Patience count: 429/50
+Epoch 516/800 | Train Loss: 1.6777
+  Seg: 0.3346 | Recon: 0.0046
+  Val mIoU: 0.7817 (Best: 0.8092)
+  [Class IoU] C1: 0.9180 | C2: 0.8502 | C3: 0.5769
+  Patience count: 430/50
+Epoch 517/800 | Train Loss: 1.6904
+  Seg: 0.3372 | Recon: 0.0046
+  Val mIoU: 0.7853 (Best: 0.8092)
+  [Class IoU] C1: 0.9171 | C2: 0.8567 | C3: 0.5820
+  Patience count: 431/50
+Epoch 518/800 | Train Loss: 1.6724
+  Seg: 0.3336 | Recon: 0.0046
+  Val mIoU: 0.7746 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8474 | C3: 0.5536
+  Patience count: 432/50
+Epoch 519/800 | Train Loss: 1.7029
+  Seg: 0.3396 | Recon: 0.0048
+  Val mIoU: 0.7891 (Best: 0.8092)
+  [Class IoU] C1: 0.9181 | C2: 0.8557 | C3: 0.5935
+  Patience count: 433/50
+Epoch 520/800 | Train Loss: 1.6926
+  Seg: 0.3376 | Recon: 0.0046
+  Val mIoU: 0.7650 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8351 | C3: 0.5380
+  Patience count: 434/50
+  Saving visuals for Epoch 520...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0520_predictions.png
+Epoch 521/800 | Train Loss: 1.6628
+  Seg: 0.3316 | Recon: 0.0045
+  Val mIoU: 0.7871 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8540 | C3: 0.5828
+  Patience count: 435/50
+Epoch 522/800 | Train Loss: 1.6875
+  Seg: 0.3366 | Recon: 0.0046
+  Val mIoU: 0.7746 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8464 | C3: 0.5546
+  Patience count: 436/50
+Epoch 523/800 | Train Loss: 1.6944
+  Seg: 0.3379 | Recon: 0.0047
+  Val mIoU: 0.7895 (Best: 0.8092)
+  [Class IoU] C1: 0.9249 | C2: 0.8551 | C3: 0.5885
+  Patience count: 437/50
+Epoch 524/800 | Train Loss: 1.6904
+  Seg: 0.3371 | Recon: 0.0047
+  Val mIoU: 0.7676 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8424 | C3: 0.5374
+  Patience count: 438/50
+Epoch 525/800 | Train Loss: 1.6481
+  Seg: 0.3287 | Recon: 0.0047
+  Val mIoU: 0.7870 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8543 | C3: 0.5836
+  Patience count: 439/50
+Epoch 526/800 | Train Loss: 1.6854
+  Seg: 0.3362 | Recon: 0.0046
+  Val mIoU: 0.7639 (Best: 0.8092)
+  [Class IoU] C1: 0.8788 | C2: 0.8443 | C3: 0.5685
+  Patience count: 440/50
+Epoch 527/800 | Train Loss: 1.6766
+  Seg: 0.3344 | Recon: 0.0045
+  Val mIoU: 0.7902 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8579 | C3: 0.5915
+  Patience count: 441/50
+Epoch 528/800 | Train Loss: 1.6769
+  Seg: 0.3344 | Recon: 0.0047
+  Val mIoU: 0.8036 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8610 | C3: 0.6252
+  Patience count: 442/50
+Epoch 529/800 | Train Loss: 1.6912
+  Seg: 0.3373 | Recon: 0.0047
+  Val mIoU: 0.7785 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8494 | C3: 0.5643
+  Patience count: 443/50
+Epoch 530/800 | Train Loss: 1.6554
+  Seg: 0.3302 | Recon: 0.0046
+  Val mIoU: 0.7881 (Best: 0.8092)
+  [Class IoU] C1: 0.9260 | C2: 0.8557 | C3: 0.5828
+  Patience count: 444/50
+Epoch 531/800 | Train Loss: 1.6658
+  Seg: 0.3322 | Recon: 0.0046
+  Val mIoU: 0.7818 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8498 | C3: 0.5723
+  Patience count: 445/50
+Epoch 532/800 | Train Loss: 1.6713
+  Seg: 0.3333 | Recon: 0.0046
+  Val mIoU: 0.7810 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8485 | C3: 0.5707
+  Patience count: 446/50
+Epoch 533/800 | Train Loss: 1.6638
+  Seg: 0.3318 | Recon: 0.0049
+  Val mIoU: 0.7817 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8518 | C3: 0.5702
+  Patience count: 447/50
+Epoch 534/800 | Train Loss: 1.6795
+  Seg: 0.3349 | Recon: 0.0049
+  Val mIoU: 0.7859 (Best: 0.8092)
+  [Class IoU] C1: 0.9250 | C2: 0.8547 | C3: 0.5779
+  Patience count: 448/50
+Epoch 535/800 | Train Loss: 1.6678
+  Seg: 0.3326 | Recon: 0.0046
+  Val mIoU: 0.7781 (Best: 0.8092)
+  [Class IoU] C1: 0.9098 | C2: 0.8494 | C3: 0.5750
+  Patience count: 449/50
+Epoch 536/800 | Train Loss: 1.6858
+  Seg: 0.3363 | Recon: 0.0046
+  Val mIoU: 0.7849 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8529 | C3: 0.5794
+  Patience count: 450/50
+Epoch 537/800 | Train Loss: 1.6609
+  Seg: 0.3313 | Recon: 0.0046
+  Val mIoU: 0.7765 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8475 | C3: 0.5571
+  Patience count: 451/50
+Epoch 538/800 | Train Loss: 1.6335
+  Seg: 0.3258 | Recon: 0.0046
+  Val mIoU: 0.7880 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8546 | C3: 0.5859
+  Patience count: 452/50
+Epoch 539/800 | Train Loss: 1.6815
+  Seg: 0.3354 | Recon: 0.0046
+  Val mIoU: 0.7986 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8602 | C3: 0.6118
+  Patience count: 453/50
+Epoch 540/800 | Train Loss: 1.6862
+  Seg: 0.3363 | Recon: 0.0046
+  Val mIoU: 0.7741 (Best: 0.8092)
+  [Class IoU] C1: 0.9181 | C2: 0.8479 | C3: 0.5562
+  Patience count: 454/50
+  Saving visuals for Epoch 540...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0540_predictions.png
+Epoch 541/800 | Train Loss: 1.6587
+  Seg: 0.3308 | Recon: 0.0047
+  Val mIoU: 0.7633 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8361 | C3: 0.5299
+  Patience count: 455/50
+Epoch 542/800 | Train Loss: 1.7099
+  Seg: 0.3410 | Recon: 0.0047
+  Val mIoU: 0.7820 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8509 | C3: 0.5723
+  Patience count: 456/50
+Epoch 543/800 | Train Loss: 1.6552
+  Seg: 0.3301 | Recon: 0.0046
+  Val mIoU: 0.7753 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8478 | C3: 0.5548
+  Patience count: 457/50
+Epoch 544/800 | Train Loss: 1.7000
+  Seg: 0.3391 | Recon: 0.0046
+  Val mIoU: 0.7873 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8558 | C3: 0.5835
+  Patience count: 458/50
+Epoch 545/800 | Train Loss: 1.6589
+  Seg: 0.3309 | Recon: 0.0045
+  Val mIoU: 0.7885 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8563 | C3: 0.5859
+  Patience count: 459/50
+Epoch 546/800 | Train Loss: 1.6601
+  Seg: 0.3311 | Recon: 0.0045
+  Val mIoU: 0.7705 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8384 | C3: 0.5504
+  Patience count: 460/50
+Epoch 547/800 | Train Loss: 1.7009
+  Seg: 0.3392 | Recon: 0.0047
+  Val mIoU: 0.7915 (Best: 0.8092)
+  [Class IoU] C1: 0.9180 | C2: 0.8588 | C3: 0.5978
+  Patience count: 461/50
+Epoch 548/800 | Train Loss: 1.6523
+  Seg: 0.3295 | Recon: 0.0047
+  Val mIoU: 0.7860 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8535 | C3: 0.5800
+  Patience count: 462/50
+Epoch 549/800 | Train Loss: 1.6624
+  Seg: 0.3316 | Recon: 0.0047
+  Val mIoU: 0.7783 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8496 | C3: 0.5640
+  Patience count: 463/50
+Epoch 550/800 | Train Loss: 1.7150
+  Seg: 0.3421 | Recon: 0.0047
+  Val mIoU: 0.7619 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8361 | C3: 0.5268
+  Patience count: 464/50
+Epoch 551/800 | Train Loss: 1.6805
+  Seg: 0.3352 | Recon: 0.0046
+  Val mIoU: 0.7853 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8539 | C3: 0.5804
+  Patience count: 465/50
+Epoch 552/800 | Train Loss: 1.6787
+  Seg: 0.3348 | Recon: 0.0046
+  Val mIoU: 0.7765 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8474 | C3: 0.5599
+  Patience count: 466/50
+Epoch 553/800 | Train Loss: 1.6701
+  Seg: 0.3331 | Recon: 0.0047
+  Val mIoU: 0.7727 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8464 | C3: 0.5470
+  Patience count: 467/50
+Epoch 554/800 | Train Loss: 1.6817
+  Seg: 0.3354 | Recon: 0.0048
+  Val mIoU: 0.7794 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8487 | C3: 0.5668
+  Patience count: 468/50
+Epoch 555/800 | Train Loss: 1.7060
+  Seg: 0.3403 | Recon: 0.0048
+  Val mIoU: 0.7667 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8401 | C3: 0.5391
+  Patience count: 469/50
+Epoch 556/800 | Train Loss: 1.6799
+  Seg: 0.3351 | Recon: 0.0046
+  Val mIoU: 0.7837 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8505 | C3: 0.5790
+  Patience count: 470/50
+Epoch 557/800 | Train Loss: 1.6495
+  Seg: 0.3290 | Recon: 0.0045
+  Val mIoU: 0.7868 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8534 | C3: 0.5845
+  Patience count: 471/50
+Epoch 558/800 | Train Loss: 1.6191
+  Seg: 0.3229 | Recon: 0.0047
+  Val mIoU: 0.7795 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8485 | C3: 0.5680
+  Patience count: 472/50
+Epoch 559/800 | Train Loss: 1.6692
+  Seg: 0.3329 | Recon: 0.0045
+  Val mIoU: 0.7836 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8538 | C3: 0.5746
+  Patience count: 473/50
+Epoch 560/800 | Train Loss: 1.6607
+  Seg: 0.3312 | Recon: 0.0046
+  Val mIoU: 0.7981 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8625 | C3: 0.6074
+  Patience count: 474/50
+  Saving visuals for Epoch 560...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0560_predictions.png
+Epoch 561/800 | Train Loss: 1.7068
+  Seg: 0.3404 | Recon: 0.0045
+  Val mIoU: 0.7860 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8531 | C3: 0.5811
+  Patience count: 475/50
+Epoch 562/800 | Train Loss: 1.7187
+  Seg: 0.3428 | Recon: 0.0046
+  Val mIoU: 0.7696 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8407 | C3: 0.5469
+  Patience count: 476/50
+Epoch 563/800 | Train Loss: 1.6960
+  Seg: 0.3383 | Recon: 0.0047
+  Val mIoU: 0.8027 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8642 | C3: 0.6202
+  Patience count: 477/50
+Epoch 564/800 | Train Loss: 1.6819
+  Seg: 0.3355 | Recon: 0.0046
+  Val mIoU: 0.7777 (Best: 0.8092)
+  [Class IoU] C1: 0.9212 | C2: 0.8464 | C3: 0.5655
+  Patience count: 478/50
+Epoch 565/800 | Train Loss: 1.7157
+  Seg: 0.3422 | Recon: 0.0047
+  Val mIoU: 0.7720 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8443 | C3: 0.5479
+  Patience count: 479/50
+Epoch 566/800 | Train Loss: 1.6825
+  Seg: 0.3356 | Recon: 0.0046
+  Val mIoU: 0.7625 (Best: 0.8092)
+  [Class IoU] C1: 0.9223 | C2: 0.8359 | C3: 0.5294
+  Patience count: 480/50
+Epoch 567/800 | Train Loss: 1.6666
+  Seg: 0.3324 | Recon: 0.0047
+  Val mIoU: 0.7793 (Best: 0.8092)
+  [Class IoU] C1: 0.9220 | C2: 0.8497 | C3: 0.5661
+  Patience count: 481/50
+Epoch 568/800 | Train Loss: 1.6534
+  Seg: 0.3298 | Recon: 0.0045
+  Val mIoU: 0.7868 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8545 | C3: 0.5840
+  Patience count: 482/50
+Epoch 569/800 | Train Loss: 1.6768
+  Seg: 0.3344 | Recon: 0.0047
+  Val mIoU: 0.7771 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8418 | C3: 0.5677
+  Patience count: 483/50
+Epoch 570/800 | Train Loss: 1.6644
+  Seg: 0.3319 | Recon: 0.0047
+  Val mIoU: 0.7851 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8531 | C3: 0.5777
+  Patience count: 484/50
+Epoch 571/800 | Train Loss: 1.6691
+  Seg: 0.3329 | Recon: 0.0046
+  Val mIoU: 0.7763 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8469 | C3: 0.5603
+  Patience count: 485/50
+Epoch 572/800 | Train Loss: 1.6555
+  Seg: 0.3302 | Recon: 0.0046
+  Val mIoU: 0.7813 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8490 | C3: 0.5731
+  Patience count: 486/50
+Epoch 573/800 | Train Loss: 1.6985
+  Seg: 0.3388 | Recon: 0.0046
+  Val mIoU: 0.7770 (Best: 0.8092)
+  [Class IoU] C1: 0.9177 | C2: 0.8455 | C3: 0.5678
+  Patience count: 487/50
+Epoch 574/800 | Train Loss: 1.6689
+  Seg: 0.3329 | Recon: 0.0046
+  Val mIoU: 0.7898 (Best: 0.8092)
+  [Class IoU] C1: 0.9199 | C2: 0.8580 | C3: 0.5916
+  Patience count: 488/50
+Epoch 575/800 | Train Loss: 1.7093
+  Seg: 0.3409 | Recon: 0.0047
+  Val mIoU: 0.7793 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8481 | C3: 0.5670
+  Patience count: 489/50
+Epoch 576/800 | Train Loss: 1.6723
+  Seg: 0.3335 | Recon: 0.0046
+  Val mIoU: 0.7741 (Best: 0.8092)
+  [Class IoU] C1: 0.9208 | C2: 0.8454 | C3: 0.5562
+  Patience count: 490/50
+Epoch 577/800 | Train Loss: 1.6535
+  Seg: 0.3297 | Recon: 0.0047
+  Val mIoU: 0.7747 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8465 | C3: 0.5534
+  Patience count: 491/50
+Epoch 578/800 | Train Loss: 1.6943
+  Seg: 0.3379 | Recon: 0.0047
+  Val mIoU: 0.7837 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8517 | C3: 0.5776
+  Patience count: 492/50
+Epoch 579/800 | Train Loss: 1.6834
+  Seg: 0.3358 | Recon: 0.0046
+  Val mIoU: 0.7725 (Best: 0.8092)
+  [Class IoU] C1: 0.9195 | C2: 0.8453 | C3: 0.5527
+  Patience count: 493/50
+Epoch 580/800 | Train Loss: 1.6697
+  Seg: 0.3330 | Recon: 0.0048
+  Val mIoU: 0.7772 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8480 | C3: 0.5592
+  Patience count: 494/50
+  Saving visuals for Epoch 580...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0580_predictions.png
+Epoch 581/800 | Train Loss: 1.6772
+  Seg: 0.3345 | Recon: 0.0045
+  Val mIoU: 0.8001 (Best: 0.8092)
+  [Class IoU] C1: 0.9251 | C2: 0.8606 | C3: 0.6146
+  Patience count: 495/50
+Epoch 582/800 | Train Loss: 1.6766
+  Seg: 0.3344 | Recon: 0.0047
+  Val mIoU: 0.7886 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8541 | C3: 0.5908
+  Patience count: 496/50
+Epoch 583/800 | Train Loss: 1.6566
+  Seg: 0.3304 | Recon: 0.0047
+  Val mIoU: 0.7996 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8655 | C3: 0.6117
+  Patience count: 497/50
+Epoch 584/800 | Train Loss: 1.6798
+  Seg: 0.3350 | Recon: 0.0047
+  Val mIoU: 0.7876 (Best: 0.8092)
+  [Class IoU] C1: 0.9249 | C2: 0.8546 | C3: 0.5832
+  Patience count: 498/50
+Epoch 585/800 | Train Loss: 1.6710
+  Seg: 0.3333 | Recon: 0.0046
+  Val mIoU: 0.7907 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8558 | C3: 0.5925
+  Patience count: 499/50
+Epoch 586/800 | Train Loss: 1.6932
+  Seg: 0.3377 | Recon: 0.0047
+  Val mIoU: 0.7943 (Best: 0.8092)
+  [Class IoU] C1: 0.9256 | C2: 0.8595 | C3: 0.5978
+  Patience count: 500/50
+Epoch 587/800 | Train Loss: 1.6918
+  Seg: 0.3374 | Recon: 0.0047
+  Val mIoU: 0.7658 (Best: 0.8092)
+  [Class IoU] C1: 0.9188 | C2: 0.8378 | C3: 0.5406
+  Patience count: 501/50
+Epoch 588/800 | Train Loss: 1.6639
+  Seg: 0.3318 | Recon: 0.0047
+  Val mIoU: 0.7650 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8377 | C3: 0.5333
+  Patience count: 502/50
+Epoch 589/800 | Train Loss: 1.6466
+  Seg: 0.3284 | Recon: 0.0047
+  Val mIoU: 0.7829 (Best: 0.8092)
+  [Class IoU] C1: 0.9178 | C2: 0.8508 | C3: 0.5801
+  Patience count: 503/50
+Epoch 590/800 | Train Loss: 1.6747
+  Seg: 0.3340 | Recon: 0.0046
+  Val mIoU: 0.7532 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8280 | C3: 0.5099
+  Patience count: 504/50
+Epoch 591/800 | Train Loss: 1.7043
+  Seg: 0.3399 | Recon: 0.0046
+  Val mIoU: 0.7949 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8602 | C3: 0.6003
+  Patience count: 505/50
+Epoch 592/800 | Train Loss: 1.6495
+  Seg: 0.3290 | Recon: 0.0047
+  Val mIoU: 0.7736 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8458 | C3: 0.5532
+  Patience count: 506/50
+Epoch 593/800 | Train Loss: 1.6806
+  Seg: 0.3352 | Recon: 0.0045
+  Val mIoU: 0.7762 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8430 | C3: 0.5632
+  Patience count: 507/50
+Epoch 594/800 | Train Loss: 1.6953
+  Seg: 0.3381 | Recon: 0.0046
+  Val mIoU: 0.7889 (Best: 0.8092)
+  [Class IoU] C1: 0.9212 | C2: 0.8513 | C3: 0.5941
+  Patience count: 508/50
+Epoch 595/800 | Train Loss: 1.7052
+  Seg: 0.3401 | Recon: 0.0046
+  Val mIoU: 0.7764 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8458 | C3: 0.5607
+  Patience count: 509/50
+Epoch 596/800 | Train Loss: 1.7207
+  Seg: 0.3432 | Recon: 0.0046
+  Val mIoU: 0.7991 (Best: 0.8092)
+  [Class IoU] C1: 0.9205 | C2: 0.8616 | C3: 0.6152
+  Patience count: 510/50
+Epoch 597/800 | Train Loss: 1.6921
+  Seg: 0.3375 | Recon: 0.0046
+  Val mIoU: 0.7765 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8481 | C3: 0.5582
+  Patience count: 511/50
+Epoch 598/800 | Train Loss: 1.7064
+  Seg: 0.3403 | Recon: 0.0046
+  Val mIoU: 0.7751 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8454 | C3: 0.5558
+  Patience count: 512/50
+Epoch 599/800 | Train Loss: 1.6830
+  Seg: 0.3357 | Recon: 0.0047
+  Val mIoU: 0.7745 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8465 | C3: 0.5527
+  Patience count: 513/50
+Epoch 600/800 | Train Loss: 1.7020
+  Seg: 0.3394 | Recon: 0.0048
+  Val mIoU: 0.7559 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8293 | C3: 0.5168
+  Patience count: 514/50
+  Saving visuals for Epoch 600...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0600_predictions.png
+Epoch 601/800 | Train Loss: 1.6508
+  Seg: 0.3292 | Recon: 0.0047
+  Val mIoU: 0.7816 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8517 | C3: 0.5711
+  Patience count: 515/50
+Epoch 602/800 | Train Loss: 1.6793
+  Seg: 0.3349 | Recon: 0.0046
+  Val mIoU: 0.7850 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8522 | C3: 0.5799
+  Patience count: 516/50
+Epoch 603/800 | Train Loss: 1.6843
+  Seg: 0.3359 | Recon: 0.0046
+  Val mIoU: 0.7886 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8569 | C3: 0.5871
+  Patience count: 517/50
+Epoch 604/800 | Train Loss: 1.7142
+  Seg: 0.3419 | Recon: 0.0045
+  Val mIoU: 0.7830 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8528 | C3: 0.5743
+  Patience count: 518/50
+Epoch 605/800 | Train Loss: 1.6869
+  Seg: 0.3365 | Recon: 0.0046
+  Val mIoU: 0.7750 (Best: 0.8092)
+  [Class IoU] C1: 0.9235 | C2: 0.8439 | C3: 0.5576
+  Patience count: 519/50
+Epoch 606/800 | Train Loss: 1.7254
+  Seg: 0.3441 | Recon: 0.0047
+  Val mIoU: 0.7622 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8357 | C3: 0.5270
+  Patience count: 520/50
+Epoch 607/800 | Train Loss: 1.6496
+  Seg: 0.3290 | Recon: 0.0045
+  Val mIoU: 0.7839 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8520 | C3: 0.5749
+  Patience count: 521/50
+Epoch 608/800 | Train Loss: 1.6780
+  Seg: 0.3346 | Recon: 0.0048
+  Val mIoU: 0.7697 (Best: 0.8092)
+  [Class IoU] C1: 0.9191 | C2: 0.8425 | C3: 0.5476
+  Patience count: 522/50
+Epoch 609/800 | Train Loss: 1.6730
+  Seg: 0.3337 | Recon: 0.0047
+  Val mIoU: 0.7662 (Best: 0.8092)
+  [Class IoU] C1: 0.9193 | C2: 0.8391 | C3: 0.5402
+  Patience count: 523/50
+Epoch 610/800 | Train Loss: 1.6935
+  Seg: 0.3378 | Recon: 0.0046
+  Val mIoU: 0.7690 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8404 | C3: 0.5436
+  Patience count: 524/50
+Epoch 611/800 | Train Loss: 1.6666
+  Seg: 0.3324 | Recon: 0.0047
+  Val mIoU: 0.7718 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8442 | C3: 0.5485
+  Patience count: 525/50
+Epoch 612/800 | Train Loss: 1.6796
+  Seg: 0.3350 | Recon: 0.0045
+  Val mIoU: 0.7709 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8453 | C3: 0.5440
+  Patience count: 526/50
+Epoch 613/800 | Train Loss: 1.6610
+  Seg: 0.3313 | Recon: 0.0046
+  Val mIoU: 0.7818 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8507 | C3: 0.5719
+  Patience count: 527/50
+Epoch 614/800 | Train Loss: 1.6886
+  Seg: 0.3368 | Recon: 0.0047
+  Val mIoU: 0.7871 (Best: 0.8092)
+  [Class IoU] C1: 0.9207 | C2: 0.8542 | C3: 0.5864
+  Patience count: 528/50
+Epoch 615/800 | Train Loss: 1.6775
+  Seg: 0.3346 | Recon: 0.0046
+  Val mIoU: 0.7843 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8518 | C3: 0.5770
+  Patience count: 529/50
+Epoch 616/800 | Train Loss: 1.6557
+  Seg: 0.3302 | Recon: 0.0047
+  Val mIoU: 0.7760 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8476 | C3: 0.5560
+  Patience count: 530/50
+Epoch 617/800 | Train Loss: 1.7102
+  Seg: 0.3411 | Recon: 0.0046
+  Val mIoU: 0.7797 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8487 | C3: 0.5673
+  Patience count: 531/50
+Epoch 618/800 | Train Loss: 1.7022
+  Seg: 0.3395 | Recon: 0.0047
+  Val mIoU: 0.7798 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8482 | C3: 0.5703
+  Patience count: 532/50
+Epoch 619/800 | Train Loss: 1.6761
+  Seg: 0.3343 | Recon: 0.0048
+  Val mIoU: 0.7833 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8520 | C3: 0.5773
+  Patience count: 533/50
+Epoch 620/800 | Train Loss: 1.6816
+  Seg: 0.3354 | Recon: 0.0046
+  Val mIoU: 0.7841 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8517 | C3: 0.5777
+  Patience count: 534/50
+  Saving visuals for Epoch 620...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0620_predictions.png
+Epoch 621/800 | Train Loss: 1.6617
+  Seg: 0.3314 | Recon: 0.0047
+  Val mIoU: 0.7711 (Best: 0.8092)
+  [Class IoU] C1: 0.9047 | C2: 0.8460 | C3: 0.5627
+  Patience count: 535/50
+Epoch 622/800 | Train Loss: 1.6846
+  Seg: 0.3360 | Recon: 0.0046
+  Val mIoU: 0.7759 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8469 | C3: 0.5576
+  Patience count: 536/50
+Epoch 623/800 | Train Loss: 1.6534
+  Seg: 0.3298 | Recon: 0.0045
+  Val mIoU: 0.7685 (Best: 0.8092)
+  [Class IoU] C1: 0.9189 | C2: 0.8430 | C3: 0.5437
+  Patience count: 537/50
+Epoch 624/800 | Train Loss: 1.6972
+  Seg: 0.3385 | Recon: 0.0045
+  Val mIoU: 0.7706 (Best: 0.8092)
+  [Class IoU] C1: 0.9128 | C2: 0.8458 | C3: 0.5532
+  Patience count: 538/50
+Epoch 625/800 | Train Loss: 1.6421
+  Seg: 0.3275 | Recon: 0.0046
+  Val mIoU: 0.7957 (Best: 0.8092)
+  [Class IoU] C1: 0.9210 | C2: 0.8606 | C3: 0.6056
+  Patience count: 539/50
+Epoch 626/800 | Train Loss: 1.6745
+  Seg: 0.3340 | Recon: 0.0046
+  Val mIoU: 0.7926 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8562 | C3: 0.5986
+  Patience count: 540/50
+Epoch 627/800 | Train Loss: 1.6527
+  Seg: 0.3296 | Recon: 0.0046
+  Val mIoU: 0.7702 (Best: 0.8092)
+  [Class IoU] C1: 0.9230 | C2: 0.8405 | C3: 0.5471
+  Patience count: 541/50
+Epoch 628/800 | Train Loss: 1.6832
+  Seg: 0.3357 | Recon: 0.0047
+  Val mIoU: 0.7682 (Best: 0.8092)
+  [Class IoU] C1: 0.9153 | C2: 0.8375 | C3: 0.5517
+  Patience count: 542/50
+Epoch 629/800 | Train Loss: 1.7051
+  Seg: 0.3401 | Recon: 0.0047
+  Val mIoU: 0.7694 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8438 | C3: 0.5412
+  Patience count: 543/50
+Epoch 630/800 | Train Loss: 1.6680
+  Seg: 0.3326 | Recon: 0.0048
+  Val mIoU: 0.7783 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8490 | C3: 0.5648
+  Patience count: 544/50
+Epoch 631/800 | Train Loss: 1.6762
+  Seg: 0.3343 | Recon: 0.0046
+  Val mIoU: 0.7698 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8423 | C3: 0.5450
+  Patience count: 545/50
+Epoch 632/800 | Train Loss: 1.6755
+  Seg: 0.3341 | Recon: 0.0048
+  Val mIoU: 0.7632 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8374 | C3: 0.5308
+  Patience count: 546/50
+Epoch 633/800 | Train Loss: 1.6799
+  Seg: 0.3351 | Recon: 0.0046
+  Val mIoU: 0.7980 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8607 | C3: 0.6095
+  Patience count: 547/50
+Epoch 634/800 | Train Loss: 1.6974
+  Seg: 0.3385 | Recon: 0.0047
+  Val mIoU: 0.7903 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8540 | C3: 0.5929
+  Patience count: 548/50
+Epoch 635/800 | Train Loss: 1.6675
+  Seg: 0.3326 | Recon: 0.0045
+  Val mIoU: 0.7825 (Best: 0.8092)
+  [Class IoU] C1: 0.9177 | C2: 0.8511 | C3: 0.5787
+  Patience count: 549/50
+Epoch 636/800 | Train Loss: 1.6753
+  Seg: 0.3342 | Recon: 0.0045
+  Val mIoU: 0.7924 (Best: 0.8092)
+  [Class IoU] C1: 0.9186 | C2: 0.8584 | C3: 0.6002
+  Patience count: 550/50
+Epoch 637/800 | Train Loss: 1.6739
+  Seg: 0.3338 | Recon: 0.0047
+  Val mIoU: 0.7687 (Best: 0.8092)
+  [Class IoU] C1: 0.9155 | C2: 0.8425 | C3: 0.5480
+  Patience count: 551/50
+Epoch 638/800 | Train Loss: 1.6831
+  Seg: 0.3357 | Recon: 0.0048
+  Val mIoU: 0.7677 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8408 | C3: 0.5406
+  Patience count: 552/50
+Epoch 639/800 | Train Loss: 1.6783
+  Seg: 0.3347 | Recon: 0.0047
+  Val mIoU: 0.7727 (Best: 0.8092)
+  [Class IoU] C1: 0.9207 | C2: 0.8448 | C3: 0.5525
+  Patience count: 553/50
+Epoch 640/800 | Train Loss: 1.6979
+  Seg: 0.3386 | Recon: 0.0047
+  Val mIoU: 0.7821 (Best: 0.8092)
+  [Class IoU] C1: 0.9259 | C2: 0.8535 | C3: 0.5670
+  Patience count: 554/50
+  Saving visuals for Epoch 640...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0640_predictions.png
+Epoch 641/800 | Train Loss: 1.6735
+  Seg: 0.3338 | Recon: 0.0045
+  Val mIoU: 0.7715 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8436 | C3: 0.5503
+  Patience count: 555/50
+Epoch 642/800 | Train Loss: 1.6960
+  Seg: 0.3383 | Recon: 0.0047
+  Val mIoU: 0.7826 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8499 | C3: 0.5746
+  Patience count: 556/50
+Epoch 643/800 | Train Loss: 1.6749
+  Seg: 0.3340 | Recon: 0.0047
+  Val mIoU: 0.7640 (Best: 0.8092)
+  [Class IoU] C1: 0.9253 | C2: 0.8389 | C3: 0.5278
+  Patience count: 557/50
+Epoch 644/800 | Train Loss: 1.6572
+  Seg: 0.3305 | Recon: 0.0048
+  Val mIoU: 0.7867 (Best: 0.8092)
+  [Class IoU] C1: 0.9211 | C2: 0.8556 | C3: 0.5836
+  Patience count: 558/50
+Epoch 645/800 | Train Loss: 1.6427
+  Seg: 0.3276 | Recon: 0.0049
+  Val mIoU: 0.7732 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8443 | C3: 0.5529
+  Patience count: 559/50
+Epoch 646/800 | Train Loss: 1.6619
+  Seg: 0.3315 | Recon: 0.0046
+  Val mIoU: 0.7731 (Best: 0.8092)
+  [Class IoU] C1: 0.9238 | C2: 0.8443 | C3: 0.5512
+  Patience count: 560/50
+Epoch 647/800 | Train Loss: 1.6335
+  Seg: 0.3258 | Recon: 0.0047
+  Val mIoU: 0.7763 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8483 | C3: 0.5575
+  Patience count: 561/50
+Epoch 648/800 | Train Loss: 1.6692
+  Seg: 0.3329 | Recon: 0.0046
+  Val mIoU: 0.7846 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8535 | C3: 0.5781
+  Patience count: 562/50
+Epoch 649/800 | Train Loss: 1.6944
+  Seg: 0.3379 | Recon: 0.0047
+  Val mIoU: 0.7834 (Best: 0.8092)
+  [Class IoU] C1: 0.9086 | C2: 0.8525 | C3: 0.5890
+  Patience count: 563/50
+Epoch 650/800 | Train Loss: 1.6468
+  Seg: 0.3284 | Recon: 0.0046
+  Val mIoU: 0.7855 (Best: 0.8092)
+  [Class IoU] C1: 0.9217 | C2: 0.8503 | C3: 0.5847
+  Patience count: 564/50
+Epoch 651/800 | Train Loss: 1.6414
+  Seg: 0.3274 | Recon: 0.0046
+  Val mIoU: 0.7647 (Best: 0.8092)
+  [Class IoU] C1: 0.9197 | C2: 0.8358 | C3: 0.5385
+  Patience count: 565/50
+Epoch 652/800 | Train Loss: 1.7214
+  Seg: 0.3433 | Recon: 0.0047
+  Val mIoU: 0.7744 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8464 | C3: 0.5523
+  Patience count: 566/50
+Epoch 653/800 | Train Loss: 1.6374
+  Seg: 0.3266 | Recon: 0.0046
+  Val mIoU: 0.7706 (Best: 0.8092)
+  [Class IoU] C1: 0.9244 | C2: 0.8432 | C3: 0.5443
+  Patience count: 567/50
+Epoch 654/800 | Train Loss: 1.6567
+  Seg: 0.3304 | Recon: 0.0047
+  Val mIoU: 0.7766 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8457 | C3: 0.5599
+  Patience count: 568/50
+Epoch 655/800 | Train Loss: 1.6999
+  Seg: 0.3390 | Recon: 0.0047
+  Val mIoU: 0.7760 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8452 | C3: 0.5598
+  Patience count: 569/50
+Epoch 656/800 | Train Loss: 1.6888
+  Seg: 0.3368 | Recon: 0.0046
+  Val mIoU: 0.7859 (Best: 0.8092)
+  [Class IoU] C1: 0.9225 | C2: 0.8514 | C3: 0.5838
+  Patience count: 570/50
+Epoch 657/800 | Train Loss: 1.7092
+  Seg: 0.3409 | Recon: 0.0046
+  Val mIoU: 0.7802 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8506 | C3: 0.5672
+  Patience count: 571/50
+Epoch 658/800 | Train Loss: 1.6665
+  Seg: 0.3324 | Recon: 0.0047
+  Val mIoU: 0.7813 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8509 | C3: 0.5717
+  Patience count: 572/50
+Epoch 659/800 | Train Loss: 1.6762
+  Seg: 0.3343 | Recon: 0.0046
+  Val mIoU: 0.7998 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8614 | C3: 0.6148
+  Patience count: 573/50
+Epoch 660/800 | Train Loss: 1.7088
+  Seg: 0.3408 | Recon: 0.0047
+  Val mIoU: 0.7852 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8530 | C3: 0.5783
+  Patience count: 574/50
+  Saving visuals for Epoch 660...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0660_predictions.png
+Epoch 661/800 | Train Loss: 1.6472
+  Seg: 0.3285 | Recon: 0.0045
+  Val mIoU: 0.7711 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8439 | C3: 0.5473
+  Patience count: 575/50
+Epoch 662/800 | Train Loss: 1.6743
+  Seg: 0.3339 | Recon: 0.0046
+  Val mIoU: 0.7786 (Best: 0.8092)
+  [Class IoU] C1: 0.9246 | C2: 0.8493 | C3: 0.5618
+  Patience count: 576/50
+Epoch 663/800 | Train Loss: 1.6453
+  Seg: 0.3281 | Recon: 0.0046
+  Val mIoU: 0.7750 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8479 | C3: 0.5557
+  Patience count: 577/50
+Epoch 664/800 | Train Loss: 1.6701
+  Seg: 0.3331 | Recon: 0.0047
+  Val mIoU: 0.7887 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8560 | C3: 0.5876
+  Patience count: 578/50
+Epoch 665/800 | Train Loss: 1.6798
+  Seg: 0.3350 | Recon: 0.0048
+  Val mIoU: 0.7646 (Best: 0.8092)
+  [Class IoU] C1: 0.9228 | C2: 0.8387 | C3: 0.5322
+  Patience count: 579/50
+Epoch 666/800 | Train Loss: 1.6714
+  Seg: 0.3334 | Recon: 0.0046
+  Val mIoU: 0.7880 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.8563 | C3: 0.5821
+  Patience count: 580/50
+Epoch 667/800 | Train Loss: 1.7117
+  Seg: 0.3414 | Recon: 0.0046
+  Val mIoU: 0.7882 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8546 | C3: 0.5858
+  Patience count: 581/50
+Epoch 668/800 | Train Loss: 1.7399
+  Seg: 0.3470 | Recon: 0.0047
+  Val mIoU: 0.7716 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8440 | C3: 0.5475
+  Patience count: 582/50
+Epoch 669/800 | Train Loss: 1.6808
+  Seg: 0.3352 | Recon: 0.0046
+  Val mIoU: 0.7790 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8472 | C3: 0.5672
+  Patience count: 583/50
+Epoch 670/800 | Train Loss: 1.7143
+  Seg: 0.3419 | Recon: 0.0047
+  Val mIoU: 0.7857 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8547 | C3: 0.5788
+  Patience count: 584/50
+Epoch 671/800 | Train Loss: 1.6186
+  Seg: 0.3228 | Recon: 0.0047
+  Val mIoU: 0.7919 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8577 | C3: 0.5944
+  Patience count: 585/50
+Epoch 672/800 | Train Loss: 1.6792
+  Seg: 0.3349 | Recon: 0.0047
+  Val mIoU: 0.7832 (Best: 0.8092)
+  [Class IoU] C1: 0.9209 | C2: 0.8469 | C3: 0.5818
+  Patience count: 586/50
+Epoch 673/800 | Train Loss: 1.6938
+  Seg: 0.3378 | Recon: 0.0047
+  Val mIoU: 0.7873 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8541 | C3: 0.5847
+  Patience count: 587/50
+Epoch 674/800 | Train Loss: 1.7117
+  Seg: 0.3414 | Recon: 0.0048
+  Val mIoU: 0.7897 (Best: 0.8092)
+  [Class IoU] C1: 0.9248 | C2: 0.8571 | C3: 0.5871
+  Patience count: 588/50
+Epoch 675/800 | Train Loss: 1.6732
+  Seg: 0.3337 | Recon: 0.0046
+  Val mIoU: 0.7859 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8544 | C3: 0.5791
+  Patience count: 589/50
+Epoch 676/800 | Train Loss: 1.6724
+  Seg: 0.3336 | Recon: 0.0046
+  Val mIoU: 0.7635 (Best: 0.8092)
+  [Class IoU] C1: 0.9210 | C2: 0.8383 | C3: 0.5313
+  Patience count: 590/50
+Epoch 677/800 | Train Loss: 1.6896
+  Seg: 0.3370 | Recon: 0.0047
+  Val mIoU: 0.7723 (Best: 0.8092)
+  [Class IoU] C1: 0.9187 | C2: 0.8455 | C3: 0.5528
+  Patience count: 591/50
+Epoch 678/800 | Train Loss: 1.6905
+  Seg: 0.3372 | Recon: 0.0047
+  Val mIoU: 0.7750 (Best: 0.8092)
+  [Class IoU] C1: 0.9239 | C2: 0.8475 | C3: 0.5535
+  Patience count: 592/50
+Epoch 679/800 | Train Loss: 1.6995
+  Seg: 0.3389 | Recon: 0.0047
+  Val mIoU: 0.7808 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8459 | C3: 0.5749
+  Patience count: 593/50
+Epoch 680/800 | Train Loss: 1.6962
+  Seg: 0.3383 | Recon: 0.0046
+  Val mIoU: 0.7825 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8490 | C3: 0.5757
+  Patience count: 594/50
+  Saving visuals for Epoch 680...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0680_predictions.png
+Epoch 681/800 | Train Loss: 1.7106
+  Seg: 0.3412 | Recon: 0.0048
+  Val mIoU: 0.7851 (Best: 0.8092)
+  [Class IoU] C1: 0.9222 | C2: 0.8501 | C3: 0.5829
+  Patience count: 595/50
+Epoch 682/800 | Train Loss: 1.6580
+  Seg: 0.3307 | Recon: 0.0047
+  Val mIoU: 0.7937 (Best: 0.8092)
+  [Class IoU] C1: 0.9170 | C2: 0.8564 | C3: 0.6078
+  Patience count: 596/50
+Epoch 683/800 | Train Loss: 1.6901
+  Seg: 0.3371 | Recon: 0.0047
+  Val mIoU: 0.7583 (Best: 0.8092)
+  [Class IoU] C1: 0.9216 | C2: 0.8313 | C3: 0.5219
+  Patience count: 597/50
+Epoch 684/800 | Train Loss: 1.6609
+  Seg: 0.3313 | Recon: 0.0047
+  Val mIoU: 0.7854 (Best: 0.8092)
+  [Class IoU] C1: 0.9153 | C2: 0.8540 | C3: 0.5869
+  Patience count: 598/50
+Epoch 685/800 | Train Loss: 1.6517
+  Seg: 0.3294 | Recon: 0.0046
+  Val mIoU: 0.7824 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8509 | C3: 0.5735
+  Patience count: 599/50
+Epoch 686/800 | Train Loss: 1.6777
+  Seg: 0.3346 | Recon: 0.0048
+  Val mIoU: 0.7753 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8443 | C3: 0.5589
+  Patience count: 600/50
+Epoch 687/800 | Train Loss: 1.6671
+  Seg: 0.3325 | Recon: 0.0047
+  Val mIoU: 0.7824 (Best: 0.8092)
+  [Class IoU] C1: 0.9229 | C2: 0.8502 | C3: 0.5742
+  Patience count: 601/50
+Epoch 688/800 | Train Loss: 1.6409
+  Seg: 0.3272 | Recon: 0.0046
+  Val mIoU: 0.7817 (Best: 0.8092)
+  [Class IoU] C1: 0.9074 | C2: 0.8546 | C3: 0.5831
+  Patience count: 602/50
+Epoch 689/800 | Train Loss: 1.7093
+  Seg: 0.3409 | Recon: 0.0047
+  Val mIoU: 0.7742 (Best: 0.8092)
+  [Class IoU] C1: 0.9249 | C2: 0.8468 | C3: 0.5510
+  Patience count: 603/50
+Epoch 690/800 | Train Loss: 1.6585
+  Seg: 0.3308 | Recon: 0.0047
+  Val mIoU: 0.7800 (Best: 0.8092)
+  [Class IoU] C1: 0.9224 | C2: 0.8465 | C3: 0.5711
+  Patience count: 604/50
+Epoch 691/800 | Train Loss: 1.6745
+  Seg: 0.3340 | Recon: 0.0047
+  Val mIoU: 0.7830 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8494 | C3: 0.5770
+  Patience count: 605/50
+Epoch 692/800 | Train Loss: 1.6946
+  Seg: 0.3380 | Recon: 0.0046
+  Val mIoU: 0.7975 (Best: 0.8092)
+  [Class IoU] C1: 0.9245 | C2: 0.8607 | C3: 0.6073
+  Patience count: 606/50
+Epoch 693/800 | Train Loss: 1.6918
+  Seg: 0.3374 | Recon: 0.0046
+  Val mIoU: 0.7953 (Best: 0.8092)
+  [Class IoU] C1: 0.9241 | C2: 0.8586 | C3: 0.6034
+  Patience count: 607/50
+Epoch 694/800 | Train Loss: 1.6654
+  Seg: 0.3322 | Recon: 0.0046
+  Val mIoU: 0.7788 (Best: 0.8092)
+  [Class IoU] C1: 0.9213 | C2: 0.8508 | C3: 0.5643
+  Patience count: 608/50
+Epoch 695/800 | Train Loss: 1.6646
+  Seg: 0.3320 | Recon: 0.0047
+  Val mIoU: 0.7952 (Best: 0.8092)
+  [Class IoU] C1: 0.9232 | C2: 0.8563 | C3: 0.6060
+  Patience count: 609/50
+Epoch 696/800 | Train Loss: 1.6530
+  Seg: 0.3297 | Recon: 0.0047
+  Val mIoU: 0.7846 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8507 | C3: 0.5792
+  Patience count: 610/50
+Epoch 697/800 | Train Loss: 1.6985
+  Seg: 0.3388 | Recon: 0.0047
+  Val mIoU: 0.7649 (Best: 0.8092)
+  [Class IoU] C1: 0.9221 | C2: 0.8379 | C3: 0.5347
+  Patience count: 611/50
+Epoch 698/800 | Train Loss: 1.6894
+  Seg: 0.3369 | Recon: 0.0047
+  Val mIoU: 0.7765 (Best: 0.8092)
+  [Class IoU] C1: 0.9237 | C2: 0.8466 | C3: 0.5591
+  Patience count: 612/50
+Epoch 699/800 | Train Loss: 1.7028
+  Seg: 0.3396 | Recon: 0.0047
+  Val mIoU: 0.7914 (Best: 0.8092)
+  [Class IoU] C1: 0.9236 | C2: 0.8563 | C3: 0.5942
+  Patience count: 613/50
+Epoch 700/800 | Train Loss: 1.6449
+  Seg: 0.3281 | Recon: 0.0047
+  Val mIoU: 0.7796 (Best: 0.8092)
+  [Class IoU] C1: 0.9226 | C2: 0.8459 | C3: 0.5703
+  Patience count: 614/50
+  Saving visuals for Epoch 700...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/output_big_vali/AG_epoch_0700_predictions.png
+Epoch 701/800 | Train Loss: 1.6905
+  Seg: 0.3372 | Recon: 0.0046
+  Val mIoU: 0.7969 (Best: 0.8092)
+  [Class IoU] C1: 0.9219 | C2: 0.8578 | C3: 0.6109
+  Patience count: 615/50
+Epoch 702/800 | Train Loss: 1.7206
+  Seg: 0.3432 | Recon: 0.0047
+  Val mIoU: 0.7768 (Best: 0.8092)
+  [Class IoU] C1: 0.9243 | C2: 0.8490 | C3: 0.5571
+  Patience count: 616/50
+Epoch 703/800 | Train Loss: 1.6543
+  Seg: 0.3299 | Recon: 0.0047
+  Val mIoU: 0.7706 (Best: 0.8092)
+  [Class IoU] C1: 0.9146 | C2: 0.8433 | C3: 0.5539
+  Patience count: 617/50
+Epoch 704/800 | Train Loss: 1.6347
+  Seg: 0.3260 | Recon: 0.0046
+  Val mIoU: 0.7702 (Best: 0.8092)
+  [Class IoU] C1: 0.9054 | C2: 0.8472 | C3: 0.5580
+  Patience count: 618/50
+Epoch 705/800 | Train Loss: 1.6830
+  Seg: 0.3357 | Recon: 0.0045
+  Val mIoU: 0.7894 (Best: 0.8092)
+  [Class IoU] C1: 0.9255 | C2: 0.8554 | C3: 0.5873
+  Patience count: 619/50
+Epoch 706/800 | Train Loss: 1.6690
+  Seg: 0.3329 | Recon: 0.0046
+  Val mIoU: 0.8026 (Best: 0.8092)
+  [Class IoU] C1: 0.9234 | C2: 0.8617 | C3: 0.6228
+  Patience count: 620/50
+Epoch 707/800 | Train Loss: 1.6815
+  Seg: 0.3354 | Recon: 0.0046
+  Val mIoU: 0.7704 (Best: 0.8092)
+  [Class IoU] C1: 0.9218 | C2: 0.8383 | C3: 0.5512
+  Patience count: 621/50
+Epoch 708/800 | Train Loss: 1.6530
+  Seg: 0.3297 | Recon: 0.0047
+  Val mIoU: 0.7883 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8576 | C3: 0.5844
+  Patience count: 622/50
+Epoch 709/800 | Train Loss: 1.6921
+  Seg: 0.3375 | Recon: 0.0046
+  Val mIoU: 0.7665 (Best: 0.8092)
+  [Class IoU] C1: 0.9214 | C2: 0.8376 | C3: 0.5406
+  Patience count: 623/50
+Epoch 710/800 | Train Loss: 1.6884
+  Seg: 0.3367 | Recon: 0.0047
+  Val mIoU: 0.7645 (Best: 0.8092)
+  [Class IoU] C1: 0.9094 | C2: 0.8350 | C3: 0.5491
+  Patience count: 624/50
+Epoch 711/800 | Train Loss: 1.6892
+  Seg: 0.3369 | Recon: 0.0047
+  Val mIoU: 0.7833 (Best: 0.8092)
+  [Class IoU] C1: 0.9231 | C2: 0.8515 | C3: 0.5754
+  Patience count: 625/50
+Epoch 712/800 | Train Loss: 1.7032
+  Seg: 0.3397 | Recon: 0.0047
+  Val mIoU: 0.7883 (Best: 0.8092)
+  [Class IoU] C1: 0.9233 | C2: 0.8536 | C3: 0.5881
+  Patience count: 626/50
+Epoch 713/800 | Train Loss: 1.6733
+  Seg: 0.3337 | Recon: 0.0047
+  Val mIoU: 0.7759 (Best: 0.8092)
+  [Class IoU] C1: 0.9240 | C2: 0.8481 | C3: 0.5556
+  Patience count: 627/50
+Epoch 714/800 | Train Loss: 1.6837
+  Seg: 0.3358 | Recon: 0.0046
+  Val mIoU: 0.7793 (Best: 0.8092)
+  [Class IoU] C1: 0.9250 | C2: 0.8491 | C3: 0.5639
+  Patience count: 628/50
+Epoch 715/800 | Train Loss: 1.6424
+  Seg: 0.3276 | Recon: 0.0046
+  Val mIoU: 0.7715 (Best: 0.8092)
+  [Class IoU] C1: 0.9227 | C2: 0.8437 | C3: 0.5480
+  Patience count: 629/50
+Epoch 716/800 | Train Loss: 1.7282
+  Seg: 0.3447 | Recon: 0.0046
+  Val mIoU: 0.7971 (Best: 0.8092)
+  [Class IoU] C1: 0.9206 | C2: 0.8588 | C3: 0.6118
+  Patience count: 630/50
+Epoch 717/800 | Train Loss: 1.6762
+  Seg: 0.3343 | Recon: 0.0046
+  Val mIoU: 0.7826 (Best: 0.8092)
+  [Class IoU] C1: 0.9215 | C2: 0.8531 | C3: 0.5733
+  Patience count: 631/50
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27152776: <multi_big_job> in cluster <dcc> Exited
+
+Job <multi_big_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Mon Nov 24 09:04:07 2025
+Job was executed on host(s) <8*n-62-13-16>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Mon Nov 24 09:04:09 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Mon Nov 24 09:04:09 2025
+Terminated at Mon Nov 24 19:03:44 2025
+Results reported at Mon Nov 24 19:03:44 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J multi_big_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/multi_big_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/multi_big_job_%J.err
+### --- Resource Requests ---
+#BSUB -q gpul40s             # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 8                   # Request 4 CPU cores
+#BSUB -R "rusage[mem=32GB]"   # Request 8GB memory
+#BSUB -W 10:00                # 4 hour runtime limit
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+# This is the full, correct path to your environment
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+### --- Run Script ---
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/multi_big_vali.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   162801.00 sec.
+    Max Memory :                                 4201 MB
+    Average Memory :                             2831.10 MB
+    Total Requested Memory :                     262144.00 MB
+    Delta Memory :                               257943.00 MB
+    Max Swap :                                   -
+    Max Processes :                              20
+    Max Threads :                                109
+    Run time :                                   36014 sec.
+    Turnaround time :                            35977 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/multi_big_job_27152776.err> for stderr output of this job.
+

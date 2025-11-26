@@ -1,0 +1,11 @@
+Loaded module: cuda/11.6
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_vali.py", line 18, in <module>
+    from func.dataloaders import VolumetricPatchDataset 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/dataloaders.py", line 229, in <module>
+    class TransferUnlabeledDataset(Dataset):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/dataloaders.py", line 234, in TransferUnlabeledDataset
+    def __init__(self, selected_columns, base_dir=UNLABELED_DATA_DIR, augment=True):
+                                                  ^^^^^^^^^^^^^^^^^^
+NameError: name 'UNLABELED_DATA_DIR' is not defined. Did you mean: 'LABELED_DATA_PATH'?

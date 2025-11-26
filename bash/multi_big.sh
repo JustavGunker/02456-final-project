@@ -10,7 +10,7 @@
 #BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
 #BSUB -n 8                   # Request 4 CPU cores
 #BSUB -R "rusage[mem=32GB]"   # Request 8GB memory
-#BSUB -W 10:00                # 4 hour runtime limit
+#BSUB -W 15:00                # 4 hour runtime limit
 
 ### --- Setup Environment ---
 echo "Loading CUDA module..."

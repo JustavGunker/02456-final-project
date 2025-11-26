@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from func.utill import save_predictions
+from func.utill import save_predictions, plot_learning_curves
 from func.loss import DiceLoss, ComboLoss, TverskyLoss, FocalLoss
 from func.Models import MultiTaskNet_big
 from func.dataloaders import VolumetricPatchDataset
@@ -29,9 +29,10 @@ SAVE_INTERVAL = 20
 NUM_EPOCHS = 800
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {DEVICE}")
-class_weight = torch.tensor([0.6, 1.0, 1.0, 3.0])
+class_weight = torch.tensor([0.1, 1.0, 1.0, 2.0])
 
 OUTPUT_DIR = PROJECT_ROOT / "output_big_vali"
+CURVE_DIR = PROJECT_ROOT / "curves" 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SAVE_PATH = PROJECT_ROOT / "Trained_models" / "multi_big_best.pth"
 SAVE_PATH_FINAL = PROJECT_ROOT / "Trained_models" / "multi_big_final.pth"
@@ -83,6 +84,11 @@ if __name__ == "__main__":
     patience_counter = 0
     EARLY_STOPPING_PATIENCE = 50
     
+    # --- LOSS HISTORY ---
+    train_loss_history = []
+    val_loss_history = []
+    val_iou_history = []
+    
     print("--- Starting Training ---")
     
     unlabeled_iterator = itertools.cycle(unlabeled_loader)
@@ -91,7 +97,7 @@ if __name__ == "__main__":
         
         # === TRAINING ===
         model.train() 
-        train_loss = 0
+        train_loss = 0.0
         epoch_seg_loss = 0.0
         epoch_recon_loss = 0.0
         
@@ -139,12 +145,14 @@ if __name__ == "__main__":
         avg_train_loss = train_loss / len(labeled_loader)
         avg_seg_loss = epoch_seg_loss / len(labeled_loader)
         avg_recon_loss = epoch_recon_loss / len(labeled_loader)
+        train_loss_history.append(avg_train_loss)
 
         # === VALIDATION ===
         model.eval()
         class_inter = np.zeros(NUM_CLASSES)
         class_union = np.zeros(NUM_CLASSES)
-        
+        loss_val = 0.0
+
         with torch.no_grad():
             # BUG FIX 1: Use consistent variable names (vx, vy)
             for vx, vy_seg in val_loader:
@@ -154,6 +162,8 @@ if __name__ == "__main__":
                 val_seg_out, _, _ = model(vx)
                 val_preds = torch.argmax(val_seg_out, dim=1)
 
+                loss = loss_seg_fn(val_seg_out, vy_seg)
+                loss_val += loss.item()
                 for c in range(NUM_CLASSES):
                     pred_c = (val_preds == c)
                     true_c = (vy_seg == c)
@@ -164,7 +174,10 @@ if __name__ == "__main__":
                     class_inter[c] += inter
                     class_union[c] += union
 
+        avg_val_loss = loss_val / len(val_loader)
+        val_loss_history.append(avg_val_loss)
         class_iou = []
+
         for c in range(NUM_CLASSES):
             # BUG FIX 3: Correct logic for IoU calculation
             if class_union[c] > 0:
@@ -201,3 +214,4 @@ if __name__ == "__main__":
     print(f"Best model saved {SAVE_PATH}")
     print(f"Final model saved {SAVE_PATH_FINAL}")
     print("Done.")
+    plot_learning_curves(train_loss_history, val_loss_history, val_iou_history, CURVE_DIR)
