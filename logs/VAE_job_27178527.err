@@ -1,3 +1,29 @@
 Loaded module: cuda/11.6
 /zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
   warnings.warn(
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/VAE_vali.py", line 274, in <module>
+    plot_learning_curves(train_loss_history, val_loss_history, val_iou_history, CURVE_DIR)
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/utill.py", line 329, in plot_learning_curves
+    plt.savefig(save_path)
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1250, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2186, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2042, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/matplotlib/image.py", line 1657, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/PIL/Image.py", line 2566, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/curves/AG_learning_curve.png'

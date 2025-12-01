@@ -1,0 +1,56 @@
+Loaded module: cuda/11.6
+/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/multi_big_vali.py", line 129, in <module>
+    _ , recon_out_unlabeled = model(x_unlabeled_noisy)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 161, in forward
+    seg_output = self.seg_decoder(b, s1, s2, s3)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 96, in forward
+    ds3 = self.dec_seg3(torch.cat([us3, s1], dim=1)) # cat [32x32x32] w [32x32x32]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 25, in forward
+    return self.conv(x)
+           ^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/batchnorm.py", line 176, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/functional.py", line 2512, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 44.39 GiB of which 417.31 MiB is free. Including non-PyTorch memory, this process has 43.98 GiB memory in use. Of the allocated memory 42.90 GiB is allocated by PyTorch, and 602.22 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

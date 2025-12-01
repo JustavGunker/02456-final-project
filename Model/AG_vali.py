@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader
 from torch.optim import lr_scheduler 
 import os
 import sys
+import csv
 import itertools
 from pathlib import Path
 
@@ -24,7 +25,7 @@ NUM_CLASSES = 4
 LATENT_DIM = 256 
 BATCH_SIZE = 2
 SAVE_INTERVAL = 20
-NUM_EPOCHS = 800
+NUM_EPOCHS = 400
 LEARNING_RATE = 1e-4
 WEIGHT_DECAY = 0.001
 ACCUM_STEPS = 4 
@@ -36,12 +37,11 @@ RECON_WEIGHT = 1.0
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-CLASS_WEIGHTS = torch.tensor([1.0, 1.0, 1.0, 3.0]).to(device) 
+CLASS_WEIGHTS = torch.tensor([0.5, 1.5, 1.0, 4.0]).to(device) 
 print(f"Using Class Weights: {CLASS_WEIGHTS}")
 
 OUTPUT_DIR = PROJECT_ROOT / "Output_AG_vali"
-CURVE_DIR = PROJECT_ROOT / "curves"
-CURVE_DIR.mkdir(parents=True, exist_ok=True)
+CSV_PATH =  PROJECT_ROOT / "stats" / "training_log_ag.csv"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SAVE_PATH_FINAL = PROJECT_ROOT / "Trained_models" / "AG_val_final.pth"
 SAVE_PATH = PROJECT_ROOT / "Trained_models" / "AG_val_best.pth"
@@ -51,6 +51,10 @@ test_cols = [1,2, 33, 34]
 val_cols = [27, 28, 29, 30]
 labeled_train_cols = [3,4,5,6,7,8 , 35,36,36,37,38]
 unlabeled_train_cols = list(range(9, 27))
+
+with open(CSV_PATH, mode='w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Epoch', 'Train_Loss', 'Val_Loss', 'Val_mIoU'])
 
 print(f"--- Data Splits ---")
 print(f"Test (Reserved): {test_cols}")
@@ -248,11 +252,16 @@ if __name__ == "__main__":
         
         foreground = class_iou[1:]
         mIoU = np.mean(foreground)
+        val_iou_history.append(mIoU)
 
+        with open(CSV_PATH, mode='a', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow([epoch + 1, avg_train_loss, avg_val_loss, mIoU])
+            
         print(f"Epoch {epoch+1}/{NUM_EPOCHS} | Train Loss: {avg_train_loss:.4f}")
         print(f" Avg Train Loss: {avg_train_loss:.4f} | Seg Loss: {avg_seg_loss:.4f} | Recon Loss: {avg_recon_loss:.4f}")
         print(f"  Val mIoU: {mIoU:.4f} (Best: {best_val_iou:.4f})")
-        print(f"  [Class IoU]  C1: {class_iou[1]:.4f} | C2: {class_iou[2]:.4f} | C3: {class_iou[3]:.4f}")
+        print(f" [Class IoU] C0: {class_iou[0]:.4f} C1: {class_iou[1]:.4f} | C2: {class_iou[2]:.4f} | C3: {class_iou[3]:.4f}")
         # Scheduler Step
         scheduler.step(mIoU)
 
@@ -276,6 +285,5 @@ if __name__ == "__main__":
     print(f"Best model saved {SAVE_PATH}")
     print(f"Final model saved {SAVE_PATH_FINAL}")
     print("Done.")
-    plot_learning_curves(train_loss_history, val_loss_history, val_iou_history, CURVE_DIR)
 
     

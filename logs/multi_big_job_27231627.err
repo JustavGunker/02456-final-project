@@ -1,0 +1,35 @@
+Loaded module: cuda/11.6
+/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/multi_big_vali.py", line 122, in <module>
+    seg_out, recon_out_labeled = model(x)
+                                 ^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 164, in forward
+    recon_output = self.recon_decoder(b, s1, s2, s3)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/func/Models.py", line 119, in forward
+    ur1 = self.up_recon1(b)
+          ^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 1100, in forward
+    return F.conv_transpose3d(
+           ^^^^^^^^^^^^^^^^^^^
+RuntimeError: Given transposed=1, weight of size [516, 256, 2, 2, 2], expected input[3, 512, 16, 16, 16] to have 516 channels, but got 512 channels instead

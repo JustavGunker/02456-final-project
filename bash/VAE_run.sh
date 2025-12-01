@@ -1,10 +1,10 @@
 #!/bin/sh
 ### --- Job Name ---
-#BSUB -J VAE_job
+#BSUB -J VAE_job_resnet
 
 ### --- Log files ---
-#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.out
-#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_job_%J.err
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_res_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/VAE_res_job_%J.err
 ### --- Resource Requests ---
 #BSUB -q gpul40s           # Request GPU queue
 #BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself

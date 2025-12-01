@@ -1,0 +1,239 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Using Class Weights: tensor([1., 1., 1., 4.], device='cuda:0')
+--- Data Splits ---
+Test (Reserved): [1, 2, 33, 34]
+Validation: [27, 28, 29, 30]
+Labeled Train: [3, 4, 5, 6, 7, 8, 35, 36, 36, 37, 38]
+Unlabeled Train: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+--- Labeled Loader Ready ---
+--- Unlabeled Loader Ready ---
+--- Validation Loader Ready ---
+Train Batches: 88
+Val Batches: 24
+--- Starting Training ---
+Epoch 1/400 | Train Loss: 71.4096
+ Avg Train Loss: 71.4096 | Seg Loss: 0.7135 | Recon Loss: 0.0594
+  Val mIoU: 0.6304 (Best: 0.0000)
+  [Class IoU]  C1: 0.7981 | C2: 0.7317 | C3: 0.3615
+  --> New Best Model Saved!
+Epoch 2/400 | Train Loss: 60.2913
+ Avg Train Loss: 60.2913 | Seg Loss: 0.6027 | Recon Loss: 0.0203
+  Val mIoU: 0.4803 (Best: 0.6304)
+  [Class IoU]  C1: 0.6188 | C2: 0.7356 | C3: 0.0866
+Epoch 3/400 | Train Loss: 55.8490
+ Avg Train Loss: 55.8490 | Seg Loss: 0.5584 | Recon Loss: 0.0108
+  Val mIoU: 0.4932 (Best: 0.6304)
+  [Class IoU]  C1: 0.6234 | C2: 0.7542 | C3: 0.1019
+Epoch 4/400 | Train Loss: 52.9896
+ Avg Train Loss: 52.9896 | Seg Loss: 0.5298 | Recon Loss: 0.0092
+  Val mIoU: 0.6535 (Best: 0.6304)
+  [Class IoU]  C1: 0.8198 | C2: 0.7866 | C3: 0.3543
+  --> New Best Model Saved!
+Epoch 5/400 | Train Loss: 51.3904
+ Avg Train Loss: 51.3904 | Seg Loss: 0.5138 | Recon Loss: 0.0086
+  Val mIoU: 0.6533 (Best: 0.6535)
+  [Class IoU]  C1: 0.8321 | C2: 0.7893 | C3: 0.3384
+Epoch 6/400 | Train Loss: 49.4257
+ Avg Train Loss: 49.4257 | Seg Loss: 0.4942 | Recon Loss: 0.0086
+  Val mIoU: 0.7571 (Best: 0.6535)
+  [Class IoU]  C1: 0.9139 | C2: 0.8166 | C3: 0.5410
+  --> New Best Model Saved!
+Epoch 7/400 | Train Loss: 48.3655
+ Avg Train Loss: 48.3655 | Seg Loss: 0.4836 | Recon Loss: 0.0081
+  Val mIoU: 0.6407 (Best: 0.7571)
+  [Class IoU]  C1: 0.9117 | C2: 0.7812 | C3: 0.2293
+Epoch 8/400 | Train Loss: 46.5516
+ Avg Train Loss: 46.5516 | Seg Loss: 0.4654 | Recon Loss: 0.0079
+  Val mIoU: 0.7099 (Best: 0.7571)
+  [Class IoU]  C1: 0.7480 | C2: 0.8036 | C3: 0.5780
+Epoch 9/400 | Train Loss: 45.7101
+ Avg Train Loss: 45.7101 | Seg Loss: 0.4570 | Recon Loss: 0.0078
+  Val mIoU: 0.7756 (Best: 0.7571)
+  [Class IoU]  C1: 0.9206 | C2: 0.8155 | C3: 0.5906
+  --> New Best Model Saved!
+Epoch 10/400 | Train Loss: 44.5771
+ Avg Train Loss: 44.5771 | Seg Loss: 0.4457 | Recon Loss: 0.0077
+  Val mIoU: 0.7590 (Best: 0.7756)
+  [Class IoU]  C1: 0.9233 | C2: 0.8192 | C3: 0.5346
+Epoch 11/400 | Train Loss: 43.5101
+ Avg Train Loss: 43.5101 | Seg Loss: 0.4350 | Recon Loss: 0.0072
+  Val mIoU: 0.7576 (Best: 0.7756)
+  [Class IoU]  C1: 0.9069 | C2: 0.8112 | C3: 0.5548
+Epoch 12/400 | Train Loss: 42.8224
+ Avg Train Loss: 42.8224 | Seg Loss: 0.4281 | Recon Loss: 0.0075
+  Val mIoU: 0.5021 (Best: 0.7756)
+  [Class IoU]  C1: 0.7864 | C2: 0.4839 | C3: 0.2361
+Epoch 13/400 | Train Loss: 42.4383
+ Avg Train Loss: 42.4383 | Seg Loss: 0.4243 | Recon Loss: 0.0073
+  Val mIoU: 0.7532 (Best: 0.7756)
+  [Class IoU]  C1: 0.8757 | C2: 0.8124 | C3: 0.5715
+Epoch 14/400 | Train Loss: 41.5354
+ Avg Train Loss: 41.5354 | Seg Loss: 0.4153 | Recon Loss: 0.0075
+  Val mIoU: 0.5150 (Best: 0.7756)
+  [Class IoU]  C1: 0.9153 | C2: 0.4031 | C3: 0.2266
+Epoch 15/400 | Train Loss: 40.7113
+ Avg Train Loss: 40.7113 | Seg Loss: 0.4070 | Recon Loss: 0.0070
+  Val mIoU: 0.7901 (Best: 0.7756)
+  [Class IoU]  C1: 0.9219 | C2: 0.8285 | C3: 0.6198
+  --> New Best Model Saved!
+Epoch 16/400 | Train Loss: 39.9629
+ Avg Train Loss: 39.9629 | Seg Loss: 0.3996 | Recon Loss: 0.0068
+  Val mIoU: 0.7842 (Best: 0.7901)
+  [Class IoU]  C1: 0.9265 | C2: 0.8292 | C3: 0.5968
+Epoch 17/400 | Train Loss: 40.1291
+ Avg Train Loss: 40.1291 | Seg Loss: 0.4012 | Recon Loss: 0.0071
+  Val mIoU: 0.7111 (Best: 0.7901)
+  [Class IoU]  C1: 0.9161 | C2: 0.7596 | C3: 0.4576
+Epoch 18/400 | Train Loss: 39.0187
+ Avg Train Loss: 39.0187 | Seg Loss: 0.3901 | Recon Loss: 0.0066
+  Val mIoU: 0.7822 (Best: 0.7901)
+  [Class IoU]  C1: 0.9141 | C2: 0.8272 | C3: 0.6054
+Epoch 19/400 | Train Loss: 38.8315
+ Avg Train Loss: 38.8315 | Seg Loss: 0.3882 | Recon Loss: 0.0067
+  Val mIoU: 0.7602 (Best: 0.7901)
+  [Class IoU]  C1: 0.9171 | C2: 0.8280 | C3: 0.5356
+Epoch 20/400 | Train Loss: 38.5070
+ Avg Train Loss: 38.5070 | Seg Loss: 0.3850 | Recon Loss: 0.0064
+  Val mIoU: 0.7633 (Best: 0.7901)
+  [Class IoU]  C1: 0.9111 | C2: 0.8218 | C3: 0.5571
+  Saving visuals for Epoch 20...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0020_predictions.png
+Epoch 21/400 | Train Loss: 37.7505
+ Avg Train Loss: 37.7505 | Seg Loss: 0.3774 | Recon Loss: 0.0064
+  Val mIoU: 0.7456 (Best: 0.7901)
+  [Class IoU]  C1: 0.9171 | C2: 0.8056 | C3: 0.5141
+Epoch 22/400 | Train Loss: 37.9789
+ Avg Train Loss: 37.9789 | Seg Loss: 0.3797 | Recon Loss: 0.0066
+  Val mIoU: 0.7850 (Best: 0.7901)
+  [Class IoU]  C1: 0.9226 | C2: 0.8220 | C3: 0.6105
+Epoch 23/400 | Train Loss: 37.0482
+ Avg Train Loss: 37.0482 | Seg Loss: 0.3704 | Recon Loss: 0.0065
+  Val mIoU: 0.7896 (Best: 0.7901)
+  [Class IoU]  C1: 0.9229 | C2: 0.8223 | C3: 0.6237
+Epoch 24/400 | Train Loss: 36.2663
+ Avg Train Loss: 36.2663 | Seg Loss: 0.3626 | Recon Loss: 0.0064
+  Val mIoU: 0.7003 (Best: 0.7901)
+  [Class IoU]  C1: 0.9191 | C2: 0.7453 | C3: 0.4364
+Epoch 25/400 | Train Loss: 36.2913
+ Avg Train Loss: 36.2913 | Seg Loss: 0.3629 | Recon Loss: 0.0063
+  Val mIoU: 0.7252 (Best: 0.7901)
+  [Class IoU]  C1: 0.9231 | C2: 0.7619 | C3: 0.4905
+Epoch 26/400 | Train Loss: 35.9031
+ Avg Train Loss: 35.9031 | Seg Loss: 0.3590 | Recon Loss: 0.0062
+  Val mIoU: 0.7525 (Best: 0.7901)
+  [Class IoU]  C1: 0.9223 | C2: 0.7996 | C3: 0.5356
+Epoch 27/400 | Train Loss: 36.0407
+ Avg Train Loss: 36.0407 | Seg Loss: 0.3603 | Recon Loss: 0.0061
+  Val mIoU: 0.7106 (Best: 0.7901)
+  [Class IoU]  C1: 0.9150 | C2: 0.7647 | C3: 0.4521
+Epoch 28/400 | Train Loss: 35.3627
+ Avg Train Loss: 35.3627 | Seg Loss: 0.3536 | Recon Loss: 0.0061
+  Val mIoU: 0.7122 (Best: 0.7901)
+  [Class IoU]  C1: 0.9224 | C2: 0.7585 | C3: 0.4557
+Epoch 29/400 | Train Loss: 35.1217
+ Avg Train Loss: 35.1217 | Seg Loss: 0.3512 | Recon Loss: 0.0059
+  Val mIoU: 0.7927 (Best: 0.7901)
+  [Class IoU]  C1: 0.9250 | C2: 0.8342 | C3: 0.6189
+  --> New Best Model Saved!
+Epoch 30/400 | Train Loss: 35.1107
+ Avg Train Loss: 35.1107 | Seg Loss: 0.3510 | Recon Loss: 0.0058
+  Val mIoU: 0.7986 (Best: 0.7927)
+  [Class IoU]  C1: 0.9213 | C2: 0.8425 | C3: 0.6319
+  --> New Best Model Saved!
+Epoch 31/400 | Train Loss: 35.2419
+ Avg Train Loss: 35.2419 | Seg Loss: 0.3524 | Recon Loss: 0.0062
+  Val mIoU: 0.7932 (Best: 0.7986)
+  [Class IoU]  C1: 0.9224 | C2: 0.8241 | C3: 0.6332
+Epoch 32/400 | Train Loss: 34.4891
+ Avg Train Loss: 34.4891 | Seg Loss: 0.3448 | Recon Loss: 0.0060
+  Val mIoU: 0.7636 (Best: 0.7986)
+  [Class IoU]  C1: 0.9258 | C2: 0.8096 | C3: 0.5554
+Epoch 33/400 | Train Loss: 34.0467
+ Avg Train Loss: 34.0467 | Seg Loss: 0.3404 | Recon Loss: 0.0059
+  Val mIoU: 0.7542 (Best: 0.7986)
+  [Class IoU]  C1: 0.9167 | C2: 0.8012 | C3: 0.5448
+Epoch 34/400 | Train Loss: 34.5249
+ Avg Train Loss: 34.5249 | Seg Loss: 0.3452 | Recon Loss: 0.0058
+  Val mIoU: 0.6342 (Best: 0.7986)
+  [Class IoU]  C1: 0.9260 | C2: 0.6332 | C3: 0.3435
+Epoch 35/400 | Train Loss: 34.4067
+ Avg Train Loss: 34.4067 | Seg Loss: 0.3440 | Recon Loss: 0.0057
+  Val mIoU: 0.7525 (Best: 0.7986)
+  [Class IoU]  C1: 0.9268 | C2: 0.8006 | C3: 0.5301
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27221036: <AG_job> in cluster <dcc> Exited
+
+Job <AG_job> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Sun Nov 30 19:33:44 2025
+Job was executed on host(s) <8*n-62-13-16>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Sun Nov 30 21:25:30 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Sun Nov 30 21:25:30 2025
+Terminated at Sun Nov 30 21:56:19 2025
+Results reported at Sun Nov 30 21:56:19 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J AG_job
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_%J.err
+
+### --- Resource Requests ---
+#BSUB -q gpul40s           # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 8                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=64GB]"   # Request 16GB memory
+#BSUB -W 25:00                # 4 hour runtime limit
+
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_vali.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   8744.00 sec.
+    Max Memory :                                 2211 MB
+    Average Memory :                             1797.53 MB
+    Total Requested Memory :                     524288.00 MB
+    Delta Memory :                               522077.00 MB
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                76
+    Run time :                                   1849 sec.
+    Turnaround time :                            8555 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_27221036.err> for stderr output of this job.
+
