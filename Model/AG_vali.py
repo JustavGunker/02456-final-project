@@ -15,7 +15,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from func.utill import save_predictions, plot_learning_curves
+from func.utill import save_predictions
 from func.dataloaders import VolumetricPatchDataset 
 from func.loss import ComboLoss, TverskyLoss, DiceLoss, FocalLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet 
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     loss_fn_recon = nn.MSELoss().to(device)
 
     loss_fn_seg = ComboLoss(
-        dice_loss_fn=Tversky,
+        dice_loss_fn=Tversky, # normally dice
         wce_loss_fn=focal, # normally cross
         alpha=0.6, beta=0.4
     ).to(device)
@@ -181,16 +181,6 @@ if __name__ == "__main__":
             
             total_loss.backward()
             optimizer_model.step()
-            #loss_normalized = total_loss / ACCUM_STEPS
-            #loss_normalized.backward()
-            
-            ##  Step Optimizer only every ACCUM_STEPS
-            #if (batch_idx + 1) % ACCUM_STEPS == 0:
-            ##    optimizer_model.step()
-            #    optimizer_model.zero_grad()
-            
-            #total_loss.backward()
-            #optimizer_model.step()
             
             epoch_train_loss += total_loss.item()
             epoch_seg_loss += loss_seg.item()
@@ -202,11 +192,6 @@ if __name__ == "__main__":
                 last_y = y_seg_target.detach()
                 last_recon = recon_out_labeled.detach()
                 last_seg = seg_out.detach()
-
-                # Ensure step is taken if last batch wasn't divisible
-        #if len(labeled_loader) % ACCUM_STEPS != 0:
-        #     optimizer_model.step()
-        #     optimizer_model.zero_grad()
              
         avg_train_loss = epoch_train_loss / len(labeled_loader)
         avg_seg_loss = epoch_seg_loss / len(labeled_loader)
@@ -250,8 +235,7 @@ if __name__ == "__main__":
                 iou = 0.0
             class_iou.append(iou)
         
-        foreground = class_iou[1:]
-        mIoU = np.mean(foreground)
+        mIoU = np.mean(class_iou)
         val_iou_history.append(mIoU)
 
         with open(CSV_PATH, mode='a', newline='') as f:

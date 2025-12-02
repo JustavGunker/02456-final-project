@@ -52,13 +52,13 @@ class Encoder(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         # Input: 1x32x32x32
-        self.enc1 = ConvBlock(in_channels, 64) # -> 32x32x32
+        self.enc1 = ConvBlock(in_channels, 32) # -> 32x32x32
         self.pool1 = nn.MaxPool3d(2)           # -> 32x16x16
         
-        self.enc2 = ConvBlock(64, 128)          # -> 64x16x16
+        self.enc2 = ConvBlock(32, 64)          # -> 64x16x16
         self.pool2 = nn.MaxPool3d(2)           # -> 64x8x8
 
-        self.enc3 = ConvBlock(128, 256)         # -> 128x8x8
+        self.enc3 = ConvBlock(64, 128)         # -> 128x8x8
         self.pool3 = nn.MaxPool3d(2)           # -> 128x4x4
         
     def forward(self, x):
@@ -74,16 +74,16 @@ class Seg_decoder_big(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
         # b (bottleneck) is 256x4x4
-        self.up_seg1 = nn.ConvTranspose3d(512, 256, kernel_size=2, stride=2) # -> 128x8x8
-        self.dec_seg1 = ConvBlock(512, 256) # add skip size
+        self.up_seg1 = nn.ConvTranspose3d(256, 128, kernel_size=2, stride=2) # -> 128x8x8
+        self.dec_seg1 = ConvBlock(256, 128) # add skip size
         
-        self.up_seg2 = nn.ConvTranspose3d(256, 128, kernel_size=2, stride=2) # -> 64x16x16
-        self.dec_seg2 = ConvBlock(256, 128) # skip
+        self.up_seg2 = nn.ConvTranspose3d(128, 64, kernel_size=2, stride=2) # -> 64x16x16
+        self.dec_seg2 = ConvBlock(128, 64) # skip
 
-        self.up_seg3 = nn.ConvTranspose3d(128, 64, kernel_size=2, stride=2) # -> 32x32x32
-        self.dec_seg3 = ConvBlock(128, 64) #  skip
+        self.up_seg3 = nn.ConvTranspose3d(64, 32, kernel_size=2, stride=2) # -> 32x32x32
+        self.dec_seg3 = ConvBlock(64, 32) #  skip
         
-        self.out_seg = nn.Conv3d(64, num_classes, kernel_size=1)
+        self.out_seg = nn.Conv3d(32, num_classes, kernel_size=1)
         
     def forward(self, b , s1, s2, s3):
         us1 = self.up_seg1(b) # 8x8x8
@@ -101,17 +101,17 @@ class Recon_decoder_big(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         # b (bottleneck) is 256x4x4
-        self.up_recon1 = nn.ConvTranspose3d(512, 256, kernel_size=2, stride=2) # -> 128x8x8
-        self.dec_recon1 = ConvBlock(512, 256)
+        self.up_recon1 = nn.ConvTranspose3d(256, 128, kernel_size=2, stride=2) # -> 128x8x8
+        self.dec_recon1 = ConvBlock(256, 128) # add skip size
+        
+        self.up_recon2 = nn.ConvTranspose3d(128, 64, kernel_size=2, stride=2) # -> 64x16x16
+        self.dec_recon2 = ConvBlock(128, 64) # skip
 
-        self.up_recon2 = nn.ConvTranspose3d(256, 128, kernel_size=2, stride=2) # -> 64x16x16
-        self.dec_recon2 = ConvBlock(256, 128)
-
-        self.up_recon3 = nn.ConvTranspose3d(128, 64, kernel_size=2, stride=2) # -> 32x32x32
-        self.dec_recon3 = ConvBlock(128, 64)
+        self.up_recon3 = nn.ConvTranspose3d(64, 32, kernel_size=2, stride=2) # -> 32x32x32
+        self.dec_recon3 = ConvBlock(64, 32) #  skip
 
         self.out_recon = nn.Sequential(
-            nn.Conv3d(64, in_channels, kernel_size=1),
+            nn.Conv3d(32, in_channels, kernel_size=1),
             nn.Sigmoid()
         )
 
@@ -139,8 +139,8 @@ class MultiTaskNet_big(nn.Module):
 
         # Bottleneck 
         #self.bottleneck = ConvBlock(128, 256) # -> 256x8x8x8
-        self.bottleneck_conv = nn.Conv3d(256, 512, kernel_size=1)
-        self.bottleneck = ResBlock(512)
+        self.bottleneck_conv = nn.Conv3d(128, 256, kernel_size=1)
+        self.bottleneck = ResBlock(256)
 
         # First decoder head for segmentation with skipped connect
         self.seg_decoder = Seg_decoder_big(num_classes=num_classes)
@@ -241,7 +241,7 @@ class Seg_decoder_ag(nn.Module):
         s3 = self.attn1(g=us1, x=s3)  # ag
         ds1 = self.dec_seg1(torch.cat([us1, s3], dim=1)) # Concat skip 2
         
-        us2 = self.up_seg2(ds1) # -> Bx32x28x28x28
+        us2 = self.up_seg2(ds1) # -> Bx32x28x2C8x28
         s2 = self.attn2(g=us2, x=s2)  # ag
         ds2 = self.dec_seg2(torch.cat([us2, s2], dim=1)) # Concat skip 1
 
@@ -472,4 +472,4 @@ class MultiTaskNet_simple(nn.Module):
         # Reconstruction decoder head without skips
         recon_output = self.recon_decoder(b, s1, s2)
         
-        return seg_output, recon_output, latent_z
+        return seg_output, recon_output

@@ -22,11 +22,11 @@ from func.utill import save_predictions, plot_learning_curves
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {DEVICE}")
 
-CLASS_WEIGHTS = torch.tensor([1.0, 1.0, 1.0, 3.0]).to(DEVICE) 
+CLASS_WEIGHTS = torch.tensor([1.0, 1.5, 1.0, 4.0]).to(DEVICE) 
 print(f"Using Class Weights: {CLASS_WEIGHTS}")
 
 LATENT_DIM = 512
-NUM_EPOCHS = 800
+NUM_EPOCHS = 400
 BATCH_SIZE = 3 
 INPUT_SHAPE = (128, 128, 128) 
 NUM_CLASSES = 4 # Background + 3 segments
@@ -183,14 +183,6 @@ if __name__ == "__main__":
             total_loss.backward()
             optimizer_model.step()
             
-            #loss_normalized = total_loss / ACCUM_STEPS
-            #loss_normalized.backward()
-            
-            # Step Optimizer only every ACCUM_STEPS
-           # if (batch_idx + 1) % ACCUM_STEPS == 0:
-            #    optimizer_model.step()
-             #   optimizer_model.zero_grad()
-            
             train_loss += total_loss.item()
             epoch_seg_loss += l_seg.item()
             epoch_recon_loss += l_recon.item()
@@ -200,10 +192,7 @@ if __name__ == "__main__":
                 last_y = y_target.detach()
                 last_recon = recon_out.detach()
                 last_seg = seg_out.detach()
-        
-        #if len(labeled_loader) % ACCUM_STEPS != 0:
-         #   optimizer_model.step()
-         #   optimizer_model.zero_grad()
+
 
         avg_train_loss = train_loss / len(labeled_loader)
         avg_seg_loss = epoch_seg_loss / len(labeled_loader)
