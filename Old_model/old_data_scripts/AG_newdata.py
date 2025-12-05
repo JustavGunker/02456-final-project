@@ -18,7 +18,7 @@ sys.path.append(str(PROJECT_ROOT))
 
 from func.utill import save_predictions
 from func.dataloaders import VolumetricPatchDataset 
-from func.loss import BoundaryLoss, ComboLoss, TverskyLoss, DiceLoss
+from func.loss import ComboLoss, TverskyLoss, DiceLoss
 from func.Models import MultiTaskNet_ag as MultiTaskNet 
 
 INPUT_SHAPE = (128, 128, 128) 
