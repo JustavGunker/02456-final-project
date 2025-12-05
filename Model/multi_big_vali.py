@@ -97,8 +97,6 @@ if __name__ == "__main__":
     
     print("--- Starting Training ---")
     
-    unlabeled_iterator = itertools.cycle(unlabeled_loader)
-
     for epoch in range(NUM_EPOCHS):
         
         # === TRAINING ===
