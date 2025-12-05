@@ -88,8 +88,8 @@ if __name__ == "__main__":
     
     optimizer_model = optim.Adam(model.parameters(), lr=1e-3)
 
-    NUM_EPOCHS = 700
-    SAVE_INTERVAL = 20 
+    NUM_EPOCHS = 400
+    SAVE_INTERVAL = 20
     
     for epoch in range(NUM_EPOCHS):
         print(f"\n--- Epoch {epoch+1}/{NUM_EPOCHS} ---")
