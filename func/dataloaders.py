@@ -114,6 +114,7 @@ class VolumetricPatchDataset(Dataset):
             X = np.flip(X, axis=2); Y = np.flip(Y, axis=2)
 
         X = random_noise(X, mode='gaussian', var=0.005) 
+        # intensity mod and rotation and constract
 
         X_augmented = np.expand_dims(X.copy(), axis=0)
         Y_augmented = Y.copy()

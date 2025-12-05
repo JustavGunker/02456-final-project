@@ -1,8 +1,0 @@
-Loaded module: cuda/11.6
-/zhome/d2/4/167803/miniforge3/envs/MBML/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
-  warnings.warn(
-Traceback (most recent call last):
-  File "/zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_vali.py", line 184, in <module>
-    epoch_train_loss += total_loss.item()
-                        ^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
