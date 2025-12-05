@@ -1,5 +1,4 @@
 Task03_Liver_rs/
 *.nii
 *.nii.gz
-*.csv
 /Trained_models/MultiTask_Unet_Best
