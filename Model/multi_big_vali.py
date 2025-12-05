@@ -44,7 +44,7 @@ SAVE_PATH.parent.mkdir(parents=True, exist_ok=True)
 test_cols = [1,2, 33, 34]      
 val_cols = [27, 28, 29, 30]
 labeled_cols = [3,4,5,6,7,8 , 35,36,36,37,38]
-unlabeled_cols = list(range(9, 27))
+unlabeled_cols = list(range(9, 27)) + list(range(40, 44))
 
 with open(CSV_PATH, mode='w', newline='') as f:
     writer = csv.writer(f)
@@ -97,8 +97,6 @@ if __name__ == "__main__":
     
     print("--- Starting Training ---")
     
-    unlabeled_iterator = itertools.cycle(unlabeled_loader)
-
     for epoch in range(NUM_EPOCHS):
         
         # === TRAINING ===
@@ -184,7 +182,6 @@ if __name__ == "__main__":
         class_iou = []
 
         for c in range(NUM_CLASSES):
-            # BUG FIX 3: Correct logic for IoU calculation
             if class_union[c] > 0:
                 iou = class_inter[c] / class_union[c]
             else:

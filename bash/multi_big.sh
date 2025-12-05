@@ -6,10 +6,10 @@
 #BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/multi_big_job_%J.out
 #BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/multi_big_job_%J.err
 ### --- Resource Requests ---
-#BSUB -q gpua100           # Request GPU queue
+#BSUB -q gpul40s           # Request GPU queue
 #BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
 #BSUB -n 4                 # Request 4 CPU cores
-#BSUB -R "rusage[mem=32GB]"   # Request 8GB memory
+#BSUB -R "rusage[mem=16GB]"   # Request 8GB memory
 #BSUB -W 15:00                # 4 hour runtime limit
 
 ### --- Setup Environment ---
