@@ -1,0 +1,1757 @@
+Loading CUDA module...
+Loading Conda...
+Environment 'MBML' activated.
+Starting Python script...
+Using device: cuda
+Using device: cuda
+Using Class Weights: tensor([1., 1., 1., 3.], device='cuda:0')
+--- Data Splits ---
+Test (Reserved): [1, 2, 33, 34]
+Validation: [27, 28, 29, 30]
+Labeled Train: [3, 4, 5, 6, 7, 8, 35, 36, 36, 37, 38]
+Unlabeled Train: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 40, 41, 42, 43]
+--- Labeled Loader Ready ---
+--- Unlabeled Loader Ready ---
+--- Validation Loader Ready ---
+Train Batches: 88
+Val Batches: 24
+--- Starting Training ---
+Epoch 1/400 | Train Loss: 71.4950
+ Avg Train Loss: 71.4950 | Seg Loss: 0.7144 | Recon Loss: 0.0558
+  Val mIoU: 0.4342 (Best: 0.0000)
+ [Class IoU] C0: 0.6089 C1: 0.0119 | C2: 0.6992 | C3: 0.4171
+  --> New Best Model Saved!
+Epoch 2/400 | Train Loss: 58.6446
+ Avg Train Loss: 58.6446 | Seg Loss: 0.5861 | Recon Loss: 0.0311
+  Val mIoU: 0.5729 (Best: 0.4342)
+ [Class IoU] C0: 0.7278 C1: 0.7013 | C2: 0.7570 | C3: 0.1056
+  --> New Best Model Saved!
+Epoch 3/400 | Train Loss: 54.5399
+ Avg Train Loss: 54.5399 | Seg Loss: 0.5453 | Recon Loss: 0.0146
+  Val mIoU: 0.6627 (Best: 0.5729)
+ [Class IoU] C0: 0.7253 C1: 0.6930 | C2: 0.7916 | C3: 0.4409
+  --> New Best Model Saved!
+Epoch 4/400 | Train Loss: 52.3627
+ Avg Train Loss: 52.3627 | Seg Loss: 0.5235 | Recon Loss: 0.0110
+  Val mIoU: 0.6623 (Best: 0.6627)
+ [Class IoU] C0: 0.7719 C1: 0.8896 | C2: 0.7668 | C3: 0.2209
+Epoch 5/400 | Train Loss: 50.4349
+ Avg Train Loss: 50.4349 | Seg Loss: 0.5043 | Recon Loss: 0.0095
+  Val mIoU: 0.6609 (Best: 0.6627)
+ [Class IoU] C0: 0.7601 C1: 0.8731 | C2: 0.7765 | C3: 0.2340
+Epoch 6/400 | Train Loss: 48.7609
+ Avg Train Loss: 48.7609 | Seg Loss: 0.4875 | Recon Loss: 0.0089
+  Val mIoU: 0.7417 (Best: 0.6627)
+ [Class IoU] C0: 0.7541 C1: 0.9041 | C2: 0.8065 | C3: 0.5021
+  --> New Best Model Saved!
+Epoch 7/400 | Train Loss: 46.1369
+ Avg Train Loss: 46.1369 | Seg Loss: 0.4613 | Recon Loss: 0.0083
+  Val mIoU: 0.7475 (Best: 0.7417)
+ [Class IoU] C0: 0.7735 C1: 0.8849 | C2: 0.8021 | C3: 0.5297
+  --> New Best Model Saved!
+Epoch 8/400 | Train Loss: 45.7797
+ Avg Train Loss: 45.7797 | Seg Loss: 0.4577 | Recon Loss: 0.0082
+  Val mIoU: 0.7542 (Best: 0.7475)
+ [Class IoU] C0: 0.7714 C1: 0.8943 | C2: 0.8178 | C3: 0.5331
+  --> New Best Model Saved!
+Epoch 9/400 | Train Loss: 44.1696
+ Avg Train Loss: 44.1696 | Seg Loss: 0.4416 | Recon Loss: 0.0082
+  Val mIoU: 0.7208 (Best: 0.7542)
+ [Class IoU] C0: 0.7708 C1: 0.9115 | C2: 0.8033 | C3: 0.3976
+Epoch 10/400 | Train Loss: 43.8482
+ Avg Train Loss: 43.8482 | Seg Loss: 0.4384 | Recon Loss: 0.0080
+  Val mIoU: 0.7498 (Best: 0.7542)
+ [Class IoU] C0: 0.7647 C1: 0.9050 | C2: 0.8170 | C3: 0.5125
+Epoch 11/400 | Train Loss: 43.0727
+ Avg Train Loss: 43.0727 | Seg Loss: 0.4306 | Recon Loss: 0.0077
+  Val mIoU: 0.7813 (Best: 0.7542)
+ [Class IoU] C0: 0.7867 C1: 0.9109 | C2: 0.8298 | C3: 0.5977
+  --> New Best Model Saved!
+Epoch 12/400 | Train Loss: 42.3640
+ Avg Train Loss: 42.3640 | Seg Loss: 0.4236 | Recon Loss: 0.0073
+  Val mIoU: 0.7648 (Best: 0.7813)
+ [Class IoU] C0: 0.7943 C1: 0.9248 | C2: 0.8245 | C3: 0.5156
+Epoch 13/400 | Train Loss: 41.5687
+ Avg Train Loss: 41.5687 | Seg Loss: 0.4156 | Recon Loss: 0.0077
+  Val mIoU: 0.7286 (Best: 0.7813)
+ [Class IoU] C0: 0.7895 C1: 0.9120 | C2: 0.8097 | C3: 0.4031
+Epoch 14/400 | Train Loss: 41.1739
+ Avg Train Loss: 41.1739 | Seg Loss: 0.4117 | Recon Loss: 0.0074
+  Val mIoU: 0.7518 (Best: 0.7813)
+ [Class IoU] C0: 0.7925 C1: 0.9277 | C2: 0.8181 | C3: 0.4692
+Epoch 15/400 | Train Loss: 41.0302
+ Avg Train Loss: 41.0302 | Seg Loss: 0.4102 | Recon Loss: 0.0070
+  Val mIoU: 0.7857 (Best: 0.7813)
+ [Class IoU] C0: 0.8084 C1: 0.9219 | C2: 0.8374 | C3: 0.5753
+  --> New Best Model Saved!
+Epoch 16/400 | Train Loss: 39.7311
+ Avg Train Loss: 39.7311 | Seg Loss: 0.3972 | Recon Loss: 0.0068
+  Val mIoU: 0.7257 (Best: 0.7857)
+ [Class IoU] C0: 0.7574 C1: 0.9168 | C2: 0.8045 | C3: 0.4240
+Epoch 17/400 | Train Loss: 39.5915
+ Avg Train Loss: 39.5915 | Seg Loss: 0.3958 | Recon Loss: 0.0069
+  Val mIoU: 0.7030 (Best: 0.7857)
+ [Class IoU] C0: 0.7956 C1: 0.9263 | C2: 0.7958 | C3: 0.2942
+Epoch 18/400 | Train Loss: 39.1667
+ Avg Train Loss: 39.1667 | Seg Loss: 0.3916 | Recon Loss: 0.0068
+  Val mIoU: 0.7875 (Best: 0.7857)
+ [Class IoU] C0: 0.8028 C1: 0.9216 | C2: 0.8388 | C3: 0.5868
+  --> New Best Model Saved!
+Epoch 19/400 | Train Loss: 38.4789
+ Avg Train Loss: 38.4789 | Seg Loss: 0.3847 | Recon Loss: 0.0068
+  Val mIoU: 0.8032 (Best: 0.7875)
+ [Class IoU] C0: 0.8048 C1: 0.9290 | C2: 0.8467 | C3: 0.6321
+  --> New Best Model Saved!
+Epoch 20/400 | Train Loss: 38.3375
+ Avg Train Loss: 38.3375 | Seg Loss: 0.3833 | Recon Loss: 0.0067
+  Val mIoU: 0.7718 (Best: 0.8032)
+ [Class IoU] C0: 0.8077 C1: 0.9300 | C2: 0.8332 | C3: 0.5161
+  Saving visuals for Epoch 20...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0020_predictions.png
+Epoch 21/400 | Train Loss: 37.6157
+ Avg Train Loss: 37.6157 | Seg Loss: 0.3761 | Recon Loss: 0.0063
+  Val mIoU: 0.8009 (Best: 0.8032)
+ [Class IoU] C0: 0.7995 C1: 0.9294 | C2: 0.8440 | C3: 0.6306
+Epoch 22/400 | Train Loss: 37.5426
+ Avg Train Loss: 37.5426 | Seg Loss: 0.3754 | Recon Loss: 0.0065
+  Val mIoU: 0.8075 (Best: 0.8032)
+ [Class IoU] C0: 0.7978 C1: 0.9314 | C2: 0.8496 | C3: 0.6514
+  --> New Best Model Saved!
+Epoch 23/400 | Train Loss: 37.4535
+ Avg Train Loss: 37.4535 | Seg Loss: 0.3745 | Recon Loss: 0.0066
+  Val mIoU: 0.7498 (Best: 0.8075)
+ [Class IoU] C0: 0.7484 C1: 0.9278 | C2: 0.8135 | C3: 0.5095
+Epoch 24/400 | Train Loss: 36.7898
+ Avg Train Loss: 36.7898 | Seg Loss: 0.3678 | Recon Loss: 0.0063
+  Val mIoU: 0.7463 (Best: 0.8075)
+ [Class IoU] C0: 0.7928 C1: 0.9303 | C2: 0.8190 | C3: 0.4433
+Epoch 25/400 | Train Loss: 36.2954
+ Avg Train Loss: 36.2954 | Seg Loss: 0.3629 | Recon Loss: 0.0061
+  Val mIoU: 0.7834 (Best: 0.8075)
+ [Class IoU] C0: 0.7679 C1: 0.9118 | C2: 0.8337 | C3: 0.6202
+Epoch 26/400 | Train Loss: 36.4349
+ Avg Train Loss: 36.4349 | Seg Loss: 0.3643 | Recon Loss: 0.0063
+  Val mIoU: 0.7371 (Best: 0.8075)
+ [Class IoU] C0: 0.7843 C1: 0.9298 | C2: 0.8131 | C3: 0.4213
+Epoch 27/400 | Train Loss: 35.9376
+ Avg Train Loss: 35.9376 | Seg Loss: 0.3593 | Recon Loss: 0.0062
+  Val mIoU: 0.7999 (Best: 0.8075)
+ [Class IoU] C0: 0.7896 C1: 0.9256 | C2: 0.8434 | C3: 0.6408
+Epoch 28/400 | Train Loss: 35.2639
+ Avg Train Loss: 35.2639 | Seg Loss: 0.3526 | Recon Loss: 0.0061
+  Val mIoU: 0.7952 (Best: 0.8075)
+ [Class IoU] C0: 0.7816 C1: 0.9189 | C2: 0.8385 | C3: 0.6417
+Epoch 29/400 | Train Loss: 35.7495
+ Avg Train Loss: 35.7495 | Seg Loss: 0.3574 | Recon Loss: 0.0059
+  Val mIoU: 0.8018 (Best: 0.8075)
+ [Class IoU] C0: 0.8053 C1: 0.9242 | C2: 0.8498 | C3: 0.6281
+Epoch 30/400 | Train Loss: 35.3251
+ Avg Train Loss: 35.3251 | Seg Loss: 0.3532 | Recon Loss: 0.0063
+  Val mIoU: 0.8037 (Best: 0.8075)
+ [Class IoU] C0: 0.7847 C1: 0.9272 | C2: 0.8446 | C3: 0.6585
+Epoch 31/400 | Train Loss: 35.2116
+ Avg Train Loss: 35.2116 | Seg Loss: 0.3521 | Recon Loss: 0.0061
+  Val mIoU: 0.8142 (Best: 0.8075)
+ [Class IoU] C0: 0.7965 C1: 0.9277 | C2: 0.8533 | C3: 0.6791
+  --> New Best Model Saved!
+Epoch 32/400 | Train Loss: 35.0470
+ Avg Train Loss: 35.0470 | Seg Loss: 0.3504 | Recon Loss: 0.0060
+  Val mIoU: 0.7886 (Best: 0.8142)
+ [Class IoU] C0: 0.8044 C1: 0.9317 | C2: 0.8341 | C3: 0.5843
+Epoch 33/400 | Train Loss: 34.4422
+ Avg Train Loss: 34.4422 | Seg Loss: 0.3444 | Recon Loss: 0.0060
+  Val mIoU: 0.7918 (Best: 0.8142)
+ [Class IoU] C0: 0.8116 C1: 0.9291 | C2: 0.8398 | C3: 0.5868
+Epoch 34/400 | Train Loss: 34.3696
+ Avg Train Loss: 34.3696 | Seg Loss: 0.3436 | Recon Loss: 0.0060
+  Val mIoU: 0.7526 (Best: 0.8142)
+ [Class IoU] C0: 0.7932 C1: 0.9141 | C2: 0.7961 | C3: 0.5071
+Epoch 35/400 | Train Loss: 33.9318
+ Avg Train Loss: 33.9318 | Seg Loss: 0.3393 | Recon Loss: 0.0057
+  Val mIoU: 0.8173 (Best: 0.8142)
+ [Class IoU] C0: 0.8161 C1: 0.9322 | C2: 0.8550 | C3: 0.6662
+  --> New Best Model Saved!
+Epoch 36/400 | Train Loss: 33.5834
+ Avg Train Loss: 33.5834 | Seg Loss: 0.3358 | Recon Loss: 0.0056
+  Val mIoU: 0.7892 (Best: 0.8173)
+ [Class IoU] C0: 0.7924 C1: 0.9197 | C2: 0.8369 | C3: 0.6076
+Epoch 37/400 | Train Loss: 33.5789
+ Avg Train Loss: 33.5789 | Seg Loss: 0.3357 | Recon Loss: 0.0058
+  Val mIoU: 0.8163 (Best: 0.8173)
+ [Class IoU] C0: 0.8174 C1: 0.9294 | C2: 0.8589 | C3: 0.6594
+Epoch 38/400 | Train Loss: 33.5893
+ Avg Train Loss: 33.5893 | Seg Loss: 0.3358 | Recon Loss: 0.0060
+  Val mIoU: 0.7766 (Best: 0.8173)
+ [Class IoU] C0: 0.8075 C1: 0.9310 | C2: 0.8201 | C3: 0.5478
+Epoch 39/400 | Train Loss: 34.0169
+ Avg Train Loss: 34.0169 | Seg Loss: 0.3401 | Recon Loss: 0.0058
+  Val mIoU: 0.8104 (Best: 0.8173)
+ [Class IoU] C0: 0.8085 C1: 0.9304 | C2: 0.8533 | C3: 0.6493
+Epoch 40/400 | Train Loss: 33.5143
+ Avg Train Loss: 33.5143 | Seg Loss: 0.3351 | Recon Loss: 0.0058
+  Val mIoU: 0.7984 (Best: 0.8173)
+ [Class IoU] C0: 0.8037 C1: 0.9288 | C2: 0.8471 | C3: 0.6141
+  Saving visuals for Epoch 40...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0040_predictions.png
+Epoch 41/400 | Train Loss: 33.5205
+ Avg Train Loss: 33.5205 | Seg Loss: 0.3351 | Recon Loss: 0.0056
+  Val mIoU: 0.8073 (Best: 0.8173)
+ [Class IoU] C0: 0.7737 C1: 0.9259 | C2: 0.8467 | C3: 0.6830
+Epoch 42/400 | Train Loss: 33.6215
+ Avg Train Loss: 33.6215 | Seg Loss: 0.3362 | Recon Loss: 0.0057
+  Val mIoU: 0.8197 (Best: 0.8173)
+ [Class IoU] C0: 0.8159 C1: 0.9214 | C2: 0.8617 | C3: 0.6799
+  --> New Best Model Saved!
+Epoch 43/400 | Train Loss: 32.9165
+ Avg Train Loss: 32.9165 | Seg Loss: 0.3291 | Recon Loss: 0.0055
+  Val mIoU: 0.7348 (Best: 0.8197)
+ [Class IoU] C0: 0.7789 C1: 0.9240 | C2: 0.7716 | C3: 0.4648
+Epoch 44/400 | Train Loss: 33.5214
+ Avg Train Loss: 33.5214 | Seg Loss: 0.3352 | Recon Loss: 0.0054
+  Val mIoU: 0.7178 (Best: 0.8197)
+ [Class IoU] C0: 0.7919 C1: 0.9295 | C2: 0.7436 | C3: 0.4062
+Epoch 45/400 | Train Loss: 32.8198
+ Avg Train Loss: 32.8198 | Seg Loss: 0.3281 | Recon Loss: 0.0054
+  Val mIoU: 0.7570 (Best: 0.8197)
+ [Class IoU] C0: 0.7288 C1: 0.9278 | C2: 0.8071 | C3: 0.5642
+Epoch 46/400 | Train Loss: 32.2022
+ Avg Train Loss: 32.2022 | Seg Loss: 0.3220 | Recon Loss: 0.0057
+  Val mIoU: 0.8142 (Best: 0.8197)
+ [Class IoU] C0: 0.8059 C1: 0.9284 | C2: 0.8586 | C3: 0.6637
+Epoch 47/400 | Train Loss: 32.9392
+ Avg Train Loss: 32.9392 | Seg Loss: 0.3293 | Recon Loss: 0.0055
+  Val mIoU: 0.7224 (Best: 0.8197)
+ [Class IoU] C0: 0.7004 C1: 0.8961 | C2: 0.7800 | C3: 0.5133
+Epoch 48/400 | Train Loss: 32.5512
+ Avg Train Loss: 32.5512 | Seg Loss: 0.3255 | Recon Loss: 0.0056
+  Val mIoU: 0.8059 (Best: 0.8197)
+ [Class IoU] C0: 0.7661 C1: 0.9297 | C2: 0.8423 | C3: 0.6854
+Epoch 49/400 | Train Loss: 32.2788
+ Avg Train Loss: 32.2788 | Seg Loss: 0.3227 | Recon Loss: 0.0055
+  Val mIoU: 0.7982 (Best: 0.8197)
+ [Class IoU] C0: 0.7731 C1: 0.9062 | C2: 0.8443 | C3: 0.6693
+Epoch 50/400 | Train Loss: 31.8597
+ Avg Train Loss: 31.8597 | Seg Loss: 0.3185 | Recon Loss: 0.0054
+  Val mIoU: 0.7917 (Best: 0.8197)
+ [Class IoU] C0: 0.7521 C1: 0.9308 | C2: 0.8292 | C3: 0.6547
+Epoch 51/400 | Train Loss: 32.0472
+ Avg Train Loss: 32.0472 | Seg Loss: 0.3204 | Recon Loss: 0.0053
+  Val mIoU: 0.8169 (Best: 0.8197)
+ [Class IoU] C0: 0.8306 C1: 0.9321 | C2: 0.8588 | C3: 0.6462
+Epoch 52/400 | Train Loss: 32.5468
+ Avg Train Loss: 32.5468 | Seg Loss: 0.3254 | Recon Loss: 0.0056
+  Val mIoU: 0.8116 (Best: 0.8197)
+ [Class IoU] C0: 0.8002 C1: 0.9291 | C2: 0.8523 | C3: 0.6647
+Epoch 53/400 | Train Loss: 31.7969
+ Avg Train Loss: 31.7969 | Seg Loss: 0.3179 | Recon Loss: 0.0054
+  Val mIoU: 0.8115 (Best: 0.8197)
+ [Class IoU] C0: 0.8122 C1: 0.9224 | C2: 0.8554 | C3: 0.6559
+Epoch 54/400 | Train Loss: 31.7811
+ Avg Train Loss: 31.7811 | Seg Loss: 0.3178 | Recon Loss: 0.0054
+  Val mIoU: 0.7957 (Best: 0.8197)
+ [Class IoU] C0: 0.8156 C1: 0.9315 | C2: 0.8378 | C3: 0.5978
+Epoch 55/400 | Train Loss: 32.1944
+ Avg Train Loss: 32.1944 | Seg Loss: 0.3219 | Recon Loss: 0.0053
+  Val mIoU: 0.7802 (Best: 0.8197)
+ [Class IoU] C0: 0.7289 C1: 0.9292 | C2: 0.8181 | C3: 0.6446
+Epoch 56/400 | Train Loss: 32.0827
+ Avg Train Loss: 32.0827 | Seg Loss: 0.3208 | Recon Loss: 0.0052
+  Val mIoU: 0.7742 (Best: 0.8197)
+ [Class IoU] C0: 0.7010 C1: 0.9195 | C2: 0.8135 | C3: 0.6626
+Epoch 57/400 | Train Loss: 31.3108
+ Avg Train Loss: 31.3108 | Seg Loss: 0.3131 | Recon Loss: 0.0053
+  Val mIoU: 0.7911 (Best: 0.8197)
+ [Class IoU] C0: 0.7691 C1: 0.9296 | C2: 0.8315 | C3: 0.6341
+Epoch 58/400 | Train Loss: 31.7782
+ Avg Train Loss: 31.7782 | Seg Loss: 0.3177 | Recon Loss: 0.0051
+  Val mIoU: 0.7979 (Best: 0.8197)
+ [Class IoU] C0: 0.7627 C1: 0.9308 | C2: 0.8391 | C3: 0.6592
+Epoch 59/400 | Train Loss: 31.5516
+ Avg Train Loss: 31.5516 | Seg Loss: 0.3155 | Recon Loss: 0.0053
+  Val mIoU: 0.8101 (Best: 0.8197)
+ [Class IoU] C0: 0.8194 C1: 0.9292 | C2: 0.8563 | C3: 0.6356
+Epoch 60/400 | Train Loss: 31.8155
+ Avg Train Loss: 31.8155 | Seg Loss: 0.3181 | Recon Loss: 0.0050
+  Val mIoU: 0.7337 (Best: 0.8197)
+ [Class IoU] C0: 0.8021 C1: 0.9297 | C2: 0.7618 | C3: 0.4411
+  Saving visuals for Epoch 60...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0060_predictions.png
+Epoch 61/400 | Train Loss: 31.0384
+ Avg Train Loss: 31.0384 | Seg Loss: 0.3103 | Recon Loss: 0.0051
+  Val mIoU: 0.8149 (Best: 0.8197)
+ [Class IoU] C0: 0.8251 C1: 0.9316 | C2: 0.8563 | C3: 0.6465
+Epoch 62/400 | Train Loss: 31.9891
+ Avg Train Loss: 31.9891 | Seg Loss: 0.3198 | Recon Loss: 0.0052
+  Val mIoU: 0.8204 (Best: 0.8197)
+ [Class IoU] C0: 0.8096 C1: 0.9295 | C2: 0.8567 | C3: 0.6859
+  --> New Best Model Saved!
+Epoch 63/400 | Train Loss: 31.1772
+ Avg Train Loss: 31.1772 | Seg Loss: 0.3117 | Recon Loss: 0.0051
+  Val mIoU: 0.8125 (Best: 0.8204)
+ [Class IoU] C0: 0.7786 C1: 0.9253 | C2: 0.8477 | C3: 0.6985
+Epoch 64/400 | Train Loss: 31.1773
+ Avg Train Loss: 31.1773 | Seg Loss: 0.3117 | Recon Loss: 0.0052
+  Val mIoU: 0.8230 (Best: 0.8204)
+ [Class IoU] C0: 0.8198 C1: 0.9293 | C2: 0.8597 | C3: 0.6832
+  --> New Best Model Saved!
+Epoch 65/400 | Train Loss: 31.6326
+ Avg Train Loss: 31.6326 | Seg Loss: 0.3163 | Recon Loss: 0.0051
+  Val mIoU: 0.8138 (Best: 0.8230)
+ [Class IoU] C0: 0.8132 C1: 0.9304 | C2: 0.8560 | C3: 0.6554
+Epoch 66/400 | Train Loss: 31.7927
+ Avg Train Loss: 31.7927 | Seg Loss: 0.3179 | Recon Loss: 0.0052
+  Val mIoU: 0.8191 (Best: 0.8230)
+ [Class IoU] C0: 0.8113 C1: 0.9288 | C2: 0.8600 | C3: 0.6762
+Epoch 67/400 | Train Loss: 31.0141
+ Avg Train Loss: 31.0141 | Seg Loss: 0.3101 | Recon Loss: 0.0050
+  Val mIoU: 0.7899 (Best: 0.8230)
+ [Class IoU] C0: 0.8100 C1: 0.9295 | C2: 0.8331 | C3: 0.5871
+Epoch 68/400 | Train Loss: 30.7894
+ Avg Train Loss: 30.7894 | Seg Loss: 0.3078 | Recon Loss: 0.0050
+  Val mIoU: 0.8090 (Best: 0.8230)
+ [Class IoU] C0: 0.8076 C1: 0.9301 | C2: 0.8479 | C3: 0.6502
+Epoch 69/400 | Train Loss: 30.4474
+ Avg Train Loss: 30.4474 | Seg Loss: 0.3044 | Recon Loss: 0.0050
+  Val mIoU: 0.8218 (Best: 0.8230)
+ [Class IoU] C0: 0.8238 C1: 0.9313 | C2: 0.8578 | C3: 0.6745
+Epoch 70/400 | Train Loss: 30.6629
+ Avg Train Loss: 30.6629 | Seg Loss: 0.3066 | Recon Loss: 0.0050
+  Val mIoU: 0.8158 (Best: 0.8230)
+ [Class IoU] C0: 0.8269 C1: 0.9276 | C2: 0.8525 | C3: 0.6561
+Epoch 71/400 | Train Loss: 31.2062
+ Avg Train Loss: 31.2062 | Seg Loss: 0.3120 | Recon Loss: 0.0050
+  Val mIoU: 0.8106 (Best: 0.8230)
+ [Class IoU] C0: 0.8097 C1: 0.9295 | C2: 0.8544 | C3: 0.6486
+Epoch 72/400 | Train Loss: 31.4156
+ Avg Train Loss: 31.4156 | Seg Loss: 0.3141 | Recon Loss: 0.0050
+  Val mIoU: 0.7844 (Best: 0.8230)
+ [Class IoU] C0: 0.8121 C1: 0.9148 | C2: 0.8270 | C3: 0.5836
+Epoch 73/400 | Train Loss: 30.6101
+ Avg Train Loss: 30.6101 | Seg Loss: 0.3061 | Recon Loss: 0.0050
+  Val mIoU: 0.8035 (Best: 0.8230)
+ [Class IoU] C0: 0.8254 C1: 0.9250 | C2: 0.8486 | C3: 0.6148
+Epoch 74/400 | Train Loss: 30.7849
+ Avg Train Loss: 30.7849 | Seg Loss: 0.3078 | Recon Loss: 0.0049
+  Val mIoU: 0.8284 (Best: 0.8230)
+ [Class IoU] C0: 0.8315 C1: 0.9318 | C2: 0.8659 | C3: 0.6845
+  --> New Best Model Saved!
+Epoch 75/400 | Train Loss: 31.2178
+ Avg Train Loss: 31.2178 | Seg Loss: 0.3121 | Recon Loss: 0.0051
+  Val mIoU: 0.7107 (Best: 0.8284)
+ [Class IoU] C0: 0.7683 C1: 0.9265 | C2: 0.7074 | C3: 0.4405
+Epoch 76/400 | Train Loss: 30.3485
+ Avg Train Loss: 30.3485 | Seg Loss: 0.3034 | Recon Loss: 0.0050
+  Val mIoU: 0.7671 (Best: 0.8284)
+ [Class IoU] C0: 0.8171 C1: 0.9291 | C2: 0.8018 | C3: 0.5204
+Epoch 77/400 | Train Loss: 30.3730
+ Avg Train Loss: 30.3730 | Seg Loss: 0.3037 | Recon Loss: 0.0049
+  Val mIoU: 0.7924 (Best: 0.8284)
+ [Class IoU] C0: 0.8121 C1: 0.9317 | C2: 0.8333 | C3: 0.5924
+Epoch 78/400 | Train Loss: 30.5999
+ Avg Train Loss: 30.5999 | Seg Loss: 0.3059 | Recon Loss: 0.0050
+  Val mIoU: 0.7905 (Best: 0.8284)
+ [Class IoU] C0: 0.8153 C1: 0.9325 | C2: 0.8324 | C3: 0.5818
+Epoch 79/400 | Train Loss: 31.2352
+ Avg Train Loss: 31.2352 | Seg Loss: 0.3123 | Recon Loss: 0.0050
+  Val mIoU: 0.7855 (Best: 0.8284)
+ [Class IoU] C0: 0.7612 C1: 0.9279 | C2: 0.8263 | C3: 0.6267
+Epoch 80/400 | Train Loss: 30.1499
+ Avg Train Loss: 30.1499 | Seg Loss: 0.3015 | Recon Loss: 0.0048
+  Val mIoU: 0.7213 (Best: 0.8284)
+ [Class IoU] C0: 0.7723 C1: 0.9279 | C2: 0.7457 | C3: 0.4392
+  Saving visuals for Epoch 80...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0080_predictions.png
+Epoch 81/400 | Train Loss: 30.1294
+ Avg Train Loss: 30.1294 | Seg Loss: 0.3012 | Recon Loss: 0.0050
+  Val mIoU: 0.7675 (Best: 0.8284)
+ [Class IoU] C0: 0.7701 C1: 0.9191 | C2: 0.8125 | C3: 0.5683
+Epoch 82/400 | Train Loss: 29.9408
+ Avg Train Loss: 29.9408 | Seg Loss: 0.2994 | Recon Loss: 0.0049
+  Val mIoU: 0.7998 (Best: 0.8284)
+ [Class IoU] C0: 0.8225 C1: 0.9318 | C2: 0.8415 | C3: 0.6033
+Epoch 83/400 | Train Loss: 30.7905
+ Avg Train Loss: 30.7905 | Seg Loss: 0.3079 | Recon Loss: 0.0046
+  Val mIoU: 0.7572 (Best: 0.8284)
+ [Class IoU] C0: 0.7840 C1: 0.9106 | C2: 0.8072 | C3: 0.5271
+Epoch 84/400 | Train Loss: 30.8024
+ Avg Train Loss: 30.8024 | Seg Loss: 0.3080 | Recon Loss: 0.0050
+  Val mIoU: 0.7897 (Best: 0.8284)
+ [Class IoU] C0: 0.8019 C1: 0.9227 | C2: 0.8385 | C3: 0.5956
+Epoch 85/400 | Train Loss: 29.8470
+ Avg Train Loss: 29.8470 | Seg Loss: 0.2984 | Recon Loss: 0.0049
+  Val mIoU: 0.7894 (Best: 0.8284)
+ [Class IoU] C0: 0.8081 C1: 0.9287 | C2: 0.8350 | C3: 0.5860
+Epoch 86/400 | Train Loss: 30.8285
+ Avg Train Loss: 30.8285 | Seg Loss: 0.3082 | Recon Loss: 0.0048
+  Val mIoU: 0.7927 (Best: 0.8284)
+ [Class IoU] C0: 0.8200 C1: 0.9272 | C2: 0.8333 | C3: 0.5901
+Epoch 87/400 | Train Loss: 29.8988
+ Avg Train Loss: 29.8988 | Seg Loss: 0.2989 | Recon Loss: 0.0048
+  Val mIoU: 0.7765 (Best: 0.8284)
+ [Class IoU] C0: 0.8165 C1: 0.9268 | C2: 0.8187 | C3: 0.5439
+Epoch 88/400 | Train Loss: 30.4707
+ Avg Train Loss: 30.4707 | Seg Loss: 0.3047 | Recon Loss: 0.0050
+  Val mIoU: 0.8137 (Best: 0.8284)
+ [Class IoU] C0: 0.8263 C1: 0.9300 | C2: 0.8550 | C3: 0.6436
+Epoch 89/400 | Train Loss: 29.6605
+ Avg Train Loss: 29.6605 | Seg Loss: 0.2966 | Recon Loss: 0.0048
+  Val mIoU: 0.8089 (Best: 0.8284)
+ [Class IoU] C0: 0.8233 C1: 0.9253 | C2: 0.8546 | C3: 0.6326
+Epoch 90/400 | Train Loss: 29.9066
+ Avg Train Loss: 29.9066 | Seg Loss: 0.2990 | Recon Loss: 0.0047
+  Val mIoU: 0.7954 (Best: 0.8284)
+ [Class IoU] C0: 0.8225 C1: 0.9292 | C2: 0.8387 | C3: 0.5911
+Epoch 91/400 | Train Loss: 29.1208
+ Avg Train Loss: 29.1208 | Seg Loss: 0.2912 | Recon Loss: 0.0049
+  Val mIoU: 0.8174 (Best: 0.8284)
+ [Class IoU] C0: 0.8278 C1: 0.9282 | C2: 0.8594 | C3: 0.6543
+Epoch 92/400 | Train Loss: 30.1037
+ Avg Train Loss: 30.1037 | Seg Loss: 0.3010 | Recon Loss: 0.0048
+  Val mIoU: 0.8165 (Best: 0.8284)
+ [Class IoU] C0: 0.8282 C1: 0.9301 | C2: 0.8551 | C3: 0.6527
+Epoch 93/400 | Train Loss: 29.6479
+ Avg Train Loss: 29.6479 | Seg Loss: 0.2964 | Recon Loss: 0.0047
+  Val mIoU: 0.8203 (Best: 0.8284)
+ [Class IoU] C0: 0.8282 C1: 0.9305 | C2: 0.8630 | C3: 0.6594
+Epoch 94/400 | Train Loss: 29.6703
+ Avg Train Loss: 29.6703 | Seg Loss: 0.2967 | Recon Loss: 0.0046
+  Val mIoU: 0.8319 (Best: 0.8284)
+ [Class IoU] C0: 0.8325 C1: 0.9334 | C2: 0.8694 | C3: 0.6923
+  --> New Best Model Saved!
+Epoch 95/400 | Train Loss: 29.1098
+ Avg Train Loss: 29.1098 | Seg Loss: 0.2911 | Recon Loss: 0.0047
+  Val mIoU: 0.8125 (Best: 0.8319)
+ [Class IoU] C0: 0.8304 C1: 0.9318 | C2: 0.8563 | C3: 0.6316
+Epoch 96/400 | Train Loss: 30.0182
+ Avg Train Loss: 30.0182 | Seg Loss: 0.3001 | Recon Loss: 0.0049
+  Val mIoU: 0.8197 (Best: 0.8319)
+ [Class IoU] C0: 0.8320 C1: 0.9306 | C2: 0.8601 | C3: 0.6562
+Epoch 97/400 | Train Loss: 30.3863
+ Avg Train Loss: 30.3863 | Seg Loss: 0.3038 | Recon Loss: 0.0049
+  Val mIoU: 0.8261 (Best: 0.8319)
+ [Class IoU] C0: 0.8241 C1: 0.9295 | C2: 0.8667 | C3: 0.6839
+Epoch 98/400 | Train Loss: 29.5123
+ Avg Train Loss: 29.5123 | Seg Loss: 0.2951 | Recon Loss: 0.0048
+  Val mIoU: 0.7933 (Best: 0.8319)
+ [Class IoU] C0: 0.8018 C1: 0.9279 | C2: 0.8379 | C3: 0.6057
+Epoch 99/400 | Train Loss: 30.2151
+ Avg Train Loss: 30.2151 | Seg Loss: 0.3021 | Recon Loss: 0.0047
+  Val mIoU: 0.8295 (Best: 0.8319)
+ [Class IoU] C0: 0.8167 C1: 0.9227 | C2: 0.8666 | C3: 0.7122
+Epoch 100/400 | Train Loss: 29.5361
+ Avg Train Loss: 29.5361 | Seg Loss: 0.2953 | Recon Loss: 0.0046
+  Val mIoU: 0.8127 (Best: 0.8319)
+ [Class IoU] C0: 0.8081 C1: 0.9302 | C2: 0.8559 | C3: 0.6564
+  Saving visuals for Epoch 100...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0100_predictions.png
+Epoch 101/400 | Train Loss: 28.6661
+ Avg Train Loss: 28.6661 | Seg Loss: 0.2866 | Recon Loss: 0.0047
+  Val mIoU: 0.8231 (Best: 0.8319)
+ [Class IoU] C0: 0.8285 C1: 0.9249 | C2: 0.8656 | C3: 0.6732
+Epoch 102/400 | Train Loss: 29.4796
+ Avg Train Loss: 29.4796 | Seg Loss: 0.2947 | Recon Loss: 0.0048
+  Val mIoU: 0.7734 (Best: 0.8319)
+ [Class IoU] C0: 0.7743 C1: 0.9165 | C2: 0.8190 | C3: 0.5836
+Epoch 103/400 | Train Loss: 29.6224
+ Avg Train Loss: 29.6224 | Seg Loss: 0.2962 | Recon Loss: 0.0046
+  Val mIoU: 0.8027 (Best: 0.8319)
+ [Class IoU] C0: 0.8217 C1: 0.9283 | C2: 0.8486 | C3: 0.6123
+Epoch 104/400 | Train Loss: 29.8372
+ Avg Train Loss: 29.8372 | Seg Loss: 0.2983 | Recon Loss: 0.0049
+  Val mIoU: 0.7984 (Best: 0.8319)
+ [Class IoU] C0: 0.8212 C1: 0.9209 | C2: 0.8387 | C3: 0.6126
+Epoch 105/400 | Train Loss: 29.7859
+ Avg Train Loss: 29.7859 | Seg Loss: 0.2978 | Recon Loss: 0.0047
+  Val mIoU: 0.8222 (Best: 0.8319)
+ [Class IoU] C0: 0.7951 C1: 0.9243 | C2: 0.8601 | C3: 0.7093
+Epoch 106/400 | Train Loss: 28.9977
+ Avg Train Loss: 28.9977 | Seg Loss: 0.2899 | Recon Loss: 0.0047
+  Val mIoU: 0.7984 (Best: 0.8319)
+ [Class IoU] C0: 0.8154 C1: 0.9177 | C2: 0.8449 | C3: 0.6157
+Epoch 107/400 | Train Loss: 29.2846
+ Avg Train Loss: 29.2846 | Seg Loss: 0.2928 | Recon Loss: 0.0047
+  Val mIoU: 0.8295 (Best: 0.8319)
+ [Class IoU] C0: 0.8128 C1: 0.9298 | C2: 0.8689 | C3: 0.7065
+Epoch 108/400 | Train Loss: 29.4791
+ Avg Train Loss: 29.4791 | Seg Loss: 0.2947 | Recon Loss: 0.0046
+  Val mIoU: 0.8274 (Best: 0.8319)
+ [Class IoU] C0: 0.8293 C1: 0.9317 | C2: 0.8666 | C3: 0.6818
+Epoch 109/400 | Train Loss: 28.8017
+ Avg Train Loss: 28.8017 | Seg Loss: 0.2880 | Recon Loss: 0.0048
+  Val mIoU: 0.7452 (Best: 0.8319)
+ [Class IoU] C0: 0.6563 C1: 0.8192 | C2: 0.8174 | C3: 0.6877
+Epoch 110/400 | Train Loss: 29.6181
+ Avg Train Loss: 29.6181 | Seg Loss: 0.2961 | Recon Loss: 0.0047
+  Val mIoU: 0.7619 (Best: 0.8319)
+ [Class IoU] C0: 0.7093 C1: 0.8008 | C2: 0.8394 | C3: 0.6980
+Epoch 111/400 | Train Loss: 29.3501
+ Avg Train Loss: 29.3501 | Seg Loss: 0.2935 | Recon Loss: 0.0046
+  Val mIoU: 0.8364 (Best: 0.8319)
+ [Class IoU] C0: 0.8204 C1: 0.9220 | C2: 0.8726 | C3: 0.7306
+  --> New Best Model Saved!
+Epoch 112/400 | Train Loss: 28.3057
+ Avg Train Loss: 28.3057 | Seg Loss: 0.2830 | Recon Loss: 0.0047
+  Val mIoU: 0.8332 (Best: 0.8364)
+ [Class IoU] C0: 0.8081 C1: 0.9231 | C2: 0.8703 | C3: 0.7313
+Epoch 113/400 | Train Loss: 28.7706
+ Avg Train Loss: 28.7706 | Seg Loss: 0.2877 | Recon Loss: 0.0046
+  Val mIoU: 0.8131 (Best: 0.8364)
+ [Class IoU] C0: 0.7985 C1: 0.9278 | C2: 0.8603 | C3: 0.6656
+Epoch 114/400 | Train Loss: 28.7748
+ Avg Train Loss: 28.7748 | Seg Loss: 0.2877 | Recon Loss: 0.0048
+  Val mIoU: 0.8158 (Best: 0.8364)
+ [Class IoU] C0: 0.7975 C1: 0.9236 | C2: 0.8618 | C3: 0.6805
+Epoch 115/400 | Train Loss: 29.4788
+ Avg Train Loss: 29.4788 | Seg Loss: 0.2947 | Recon Loss: 0.0048
+  Val mIoU: 0.7845 (Best: 0.8364)
+ [Class IoU] C0: 0.7487 C1: 0.9126 | C2: 0.8305 | C3: 0.6462
+Epoch 116/400 | Train Loss: 29.1036
+ Avg Train Loss: 29.1036 | Seg Loss: 0.2910 | Recon Loss: 0.0047
+  Val mIoU: 0.7956 (Best: 0.8364)
+ [Class IoU] C0: 0.8122 C1: 0.9297 | C2: 0.8408 | C3: 0.5996
+Epoch 117/400 | Train Loss: 29.3881
+ Avg Train Loss: 29.3881 | Seg Loss: 0.2938 | Recon Loss: 0.0048
+  Val mIoU: 0.7855 (Best: 0.8364)
+ [Class IoU] C0: 0.8191 C1: 0.9282 | C2: 0.8280 | C3: 0.5666
+Epoch 118/400 | Train Loss: 29.7864
+ Avg Train Loss: 29.7864 | Seg Loss: 0.2978 | Recon Loss: 0.0048
+  Val mIoU: 0.8162 (Best: 0.8364)
+ [Class IoU] C0: 0.8208 C1: 0.9293 | C2: 0.8593 | C3: 0.6554
+Epoch 119/400 | Train Loss: 29.6835
+ Avg Train Loss: 29.6835 | Seg Loss: 0.2968 | Recon Loss: 0.0048
+  Val mIoU: 0.7596 (Best: 0.8364)
+ [Class IoU] C0: 0.8104 C1: 0.9269 | C2: 0.7985 | C3: 0.5028
+Epoch 120/400 | Train Loss: 28.9977
+ Avg Train Loss: 28.9977 | Seg Loss: 0.2899 | Recon Loss: 0.0046
+  Val mIoU: 0.8286 (Best: 0.8364)
+ [Class IoU] C0: 0.8296 C1: 0.9288 | C2: 0.8666 | C3: 0.6896
+  Saving visuals for Epoch 120...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0120_predictions.png
+Epoch 121/400 | Train Loss: 29.0137
+ Avg Train Loss: 29.0137 | Seg Loss: 0.2901 | Recon Loss: 0.0047
+  Val mIoU: 0.8203 (Best: 0.8364)
+ [Class IoU] C0: 0.8296 C1: 0.9303 | C2: 0.8568 | C3: 0.6648
+Epoch 122/400 | Train Loss: 28.8511
+ Avg Train Loss: 28.8511 | Seg Loss: 0.2885 | Recon Loss: 0.0047
+  Val mIoU: 0.8122 (Best: 0.8364)
+ [Class IoU] C0: 0.8188 C1: 0.9304 | C2: 0.8558 | C3: 0.6438
+Epoch 123/400 | Train Loss: 28.2185
+ Avg Train Loss: 28.2185 | Seg Loss: 0.2821 | Recon Loss: 0.0046
+  Val mIoU: 0.8257 (Best: 0.8364)
+ [Class IoU] C0: 0.8176 C1: 0.9318 | C2: 0.8675 | C3: 0.6860
+Epoch 124/400 | Train Loss: 29.2021
+ Avg Train Loss: 29.2021 | Seg Loss: 0.2920 | Recon Loss: 0.0047
+  Val mIoU: 0.8143 (Best: 0.8364)
+ [Class IoU] C0: 0.8108 C1: 0.9133 | C2: 0.8595 | C3: 0.6736
+Epoch 125/400 | Train Loss: 29.5273
+ Avg Train Loss: 29.5273 | Seg Loss: 0.2952 | Recon Loss: 0.0047
+  Val mIoU: 0.8190 (Best: 0.8364)
+ [Class IoU] C0: 0.8134 C1: 0.9326 | C2: 0.8614 | C3: 0.6687
+Epoch 126/400 | Train Loss: 29.1272
+ Avg Train Loss: 29.1272 | Seg Loss: 0.2912 | Recon Loss: 0.0048
+  Val mIoU: 0.8292 (Best: 0.8364)
+ [Class IoU] C0: 0.8187 C1: 0.9269 | C2: 0.8658 | C3: 0.7055
+Epoch 127/400 | Train Loss: 29.1811
+ Avg Train Loss: 29.1811 | Seg Loss: 0.2918 | Recon Loss: 0.0048
+  Val mIoU: 0.8313 (Best: 0.8364)
+ [Class IoU] C0: 0.8248 C1: 0.9320 | C2: 0.8694 | C3: 0.6990
+Epoch 128/400 | Train Loss: 29.5398
+ Avg Train Loss: 29.5398 | Seg Loss: 0.2953 | Recon Loss: 0.0048
+  Val mIoU: 0.8184 (Best: 0.8364)
+ [Class IoU] C0: 0.8201 C1: 0.9218 | C2: 0.8622 | C3: 0.6695
+Epoch 129/400 | Train Loss: 28.0472
+ Avg Train Loss: 28.0472 | Seg Loss: 0.2804 | Recon Loss: 0.0046
+  Val mIoU: 0.8017 (Best: 0.8364)
+ [Class IoU] C0: 0.8134 C1: 0.9316 | C2: 0.8455 | C3: 0.6163
+Epoch 130/400 | Train Loss: 28.9618
+ Avg Train Loss: 28.9618 | Seg Loss: 0.2896 | Recon Loss: 0.0046
+  Val mIoU: 0.8498 (Best: 0.8364)
+ [Class IoU] C0: 0.8362 C1: 0.9318 | C2: 0.8811 | C3: 0.7500
+  --> New Best Model Saved!
+Epoch 131/400 | Train Loss: 28.9390
+ Avg Train Loss: 28.9390 | Seg Loss: 0.2893 | Recon Loss: 0.0047
+  Val mIoU: 0.8256 (Best: 0.8498)
+ [Class IoU] C0: 0.7981 C1: 0.9197 | C2: 0.8650 | C3: 0.7197
+Epoch 132/400 | Train Loss: 28.9227
+ Avg Train Loss: 28.9227 | Seg Loss: 0.2892 | Recon Loss: 0.0046
+  Val mIoU: 0.8043 (Best: 0.8498)
+ [Class IoU] C0: 0.8024 C1: 0.8746 | C2: 0.8654 | C3: 0.6748
+Epoch 133/400 | Train Loss: 28.9610
+ Avg Train Loss: 28.9610 | Seg Loss: 0.2896 | Recon Loss: 0.0048
+  Val mIoU: 0.8208 (Best: 0.8498)
+ [Class IoU] C0: 0.8154 C1: 0.9279 | C2: 0.8659 | C3: 0.6740
+Epoch 134/400 | Train Loss: 28.5321
+ Avg Train Loss: 28.5321 | Seg Loss: 0.2853 | Recon Loss: 0.0046
+  Val mIoU: 0.7871 (Best: 0.8498)
+ [Class IoU] C0: 0.8096 C1: 0.9296 | C2: 0.8359 | C3: 0.5733
+Epoch 135/400 | Train Loss: 28.7135
+ Avg Train Loss: 28.7135 | Seg Loss: 0.2871 | Recon Loss: 0.0048
+  Val mIoU: 0.7985 (Best: 0.8498)
+ [Class IoU] C0: 0.8083 C1: 0.9268 | C2: 0.8485 | C3: 0.6106
+Epoch 136/400 | Train Loss: 27.9056
+ Avg Train Loss: 27.9056 | Seg Loss: 0.2790 | Recon Loss: 0.0048
+  Val mIoU: 0.7975 (Best: 0.8498)
+ [Class IoU] C0: 0.8003 C1: 0.8738 | C2: 0.8591 | C3: 0.6569
+Epoch 137/400 | Train Loss: 29.3426
+ Avg Train Loss: 29.3426 | Seg Loss: 0.2934 | Recon Loss: 0.0047
+  Val mIoU: 0.8240 (Best: 0.8498)
+ [Class IoU] C0: 0.8267 C1: 0.9288 | C2: 0.8673 | C3: 0.6732
+Epoch 138/400 | Train Loss: 28.8600
+ Avg Train Loss: 28.8600 | Seg Loss: 0.2886 | Recon Loss: 0.0047
+  Val mIoU: 0.7823 (Best: 0.8498)
+ [Class IoU] C0: 0.8118 C1: 0.9179 | C2: 0.8358 | C3: 0.5637
+Epoch 139/400 | Train Loss: 29.1868
+ Avg Train Loss: 29.1868 | Seg Loss: 0.2918 | Recon Loss: 0.0048
+  Val mIoU: 0.8208 (Best: 0.8498)
+ [Class IoU] C0: 0.8246 C1: 0.9245 | C2: 0.8652 | C3: 0.6688
+Epoch 140/400 | Train Loss: 28.7530
+ Avg Train Loss: 28.7530 | Seg Loss: 0.2875 | Recon Loss: 0.0048
+  Val mIoU: 0.8372 (Best: 0.8498)
+ [Class IoU] C0: 0.8172 C1: 0.9307 | C2: 0.8744 | C3: 0.7264
+  Saving visuals for Epoch 140...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0140_predictions.png
+Epoch 141/400 | Train Loss: 28.7320
+ Avg Train Loss: 28.7320 | Seg Loss: 0.2873 | Recon Loss: 0.0046
+  Val mIoU: 0.8304 (Best: 0.8498)
+ [Class IoU] C0: 0.8339 C1: 0.9320 | C2: 0.8693 | C3: 0.6863
+Epoch 142/400 | Train Loss: 28.6256
+ Avg Train Loss: 28.6256 | Seg Loss: 0.2862 | Recon Loss: 0.0047
+  Val mIoU: 0.8028 (Best: 0.8498)
+ [Class IoU] C0: 0.8267 C1: 0.9304 | C2: 0.8475 | C3: 0.6069
+Epoch 143/400 | Train Loss: 28.6204
+ Avg Train Loss: 28.6204 | Seg Loss: 0.2862 | Recon Loss: 0.0047
+  Val mIoU: 0.7983 (Best: 0.8498)
+ [Class IoU] C0: 0.8244 C1: 0.9206 | C2: 0.8425 | C3: 0.6058
+Epoch 144/400 | Train Loss: 28.6265
+ Avg Train Loss: 28.6265 | Seg Loss: 0.2862 | Recon Loss: 0.0046
+  Val mIoU: 0.7952 (Best: 0.8498)
+ [Class IoU] C0: 0.8083 C1: 0.9072 | C2: 0.8524 | C3: 0.6127
+Epoch 145/400 | Train Loss: 27.9778
+ Avg Train Loss: 27.9778 | Seg Loss: 0.2797 | Recon Loss: 0.0048
+  Val mIoU: 0.8154 (Best: 0.8498)
+ [Class IoU] C0: 0.8039 C1: 0.9270 | C2: 0.8610 | C3: 0.6697
+Epoch 146/400 | Train Loss: 28.7364
+ Avg Train Loss: 28.7364 | Seg Loss: 0.2873 | Recon Loss: 0.0048
+  Val mIoU: 0.8321 (Best: 0.8498)
+ [Class IoU] C0: 0.8162 C1: 0.9271 | C2: 0.8721 | C3: 0.7129
+Epoch 147/400 | Train Loss: 28.0749
+ Avg Train Loss: 28.0749 | Seg Loss: 0.2807 | Recon Loss: 0.0046
+  Val mIoU: 0.8367 (Best: 0.8498)
+ [Class IoU] C0: 0.8251 C1: 0.9259 | C2: 0.8786 | C3: 0.7173
+Epoch 148/400 | Train Loss: 28.9497
+ Avg Train Loss: 28.9497 | Seg Loss: 0.2894 | Recon Loss: 0.0048
+  Val mIoU: 0.8239 (Best: 0.8498)
+ [Class IoU] C0: 0.8272 C1: 0.9172 | C2: 0.8688 | C3: 0.6826
+Epoch 149/400 | Train Loss: 28.3049
+ Avg Train Loss: 28.3049 | Seg Loss: 0.2830 | Recon Loss: 0.0048
+  Val mIoU: 0.8205 (Best: 0.8498)
+ [Class IoU] C0: 0.8271 C1: 0.9302 | C2: 0.8642 | C3: 0.6606
+Epoch 150/400 | Train Loss: 28.3477
+ Avg Train Loss: 28.3477 | Seg Loss: 0.2834 | Recon Loss: 0.0047
+  Val mIoU: 0.8167 (Best: 0.8498)
+ [Class IoU] C0: 0.8215 C1: 0.9200 | C2: 0.8637 | C3: 0.6615
+Epoch 151/400 | Train Loss: 27.3071
+ Avg Train Loss: 27.3071 | Seg Loss: 0.2730 | Recon Loss: 0.0047
+  Val mIoU: 0.8302 (Best: 0.8498)
+ [Class IoU] C0: 0.8200 C1: 0.9262 | C2: 0.8727 | C3: 0.7018
+Epoch 152/400 | Train Loss: 27.9288
+ Avg Train Loss: 27.9288 | Seg Loss: 0.2792 | Recon Loss: 0.0047
+  Val mIoU: 0.8165 (Best: 0.8498)
+ [Class IoU] C0: 0.8315 C1: 0.9305 | C2: 0.8596 | C3: 0.6446
+Epoch 153/400 | Train Loss: 28.3495
+ Avg Train Loss: 28.3495 | Seg Loss: 0.2834 | Recon Loss: 0.0048
+  Val mIoU: 0.8445 (Best: 0.8498)
+ [Class IoU] C0: 0.8258 C1: 0.9290 | C2: 0.8795 | C3: 0.7437
+Epoch 154/400 | Train Loss: 27.6933
+ Avg Train Loss: 27.6933 | Seg Loss: 0.2769 | Recon Loss: 0.0046
+  Val mIoU: 0.8261 (Best: 0.8498)
+ [Class IoU] C0: 0.8355 C1: 0.9311 | C2: 0.8644 | C3: 0.6733
+Epoch 155/400 | Train Loss: 27.9065
+ Avg Train Loss: 27.9065 | Seg Loss: 0.2790 | Recon Loss: 0.0047
+  Val mIoU: 0.8345 (Best: 0.8498)
+ [Class IoU] C0: 0.8309 C1: 0.9264 | C2: 0.8720 | C3: 0.7086
+Epoch 156/400 | Train Loss: 26.9899
+ Avg Train Loss: 26.9899 | Seg Loss: 0.2699 | Recon Loss: 0.0046
+  Val mIoU: 0.8383 (Best: 0.8498)
+ [Class IoU] C0: 0.8335 C1: 0.9277 | C2: 0.8779 | C3: 0.7139
+Epoch 157/400 | Train Loss: 28.1613
+ Avg Train Loss: 28.1613 | Seg Loss: 0.2816 | Recon Loss: 0.0046
+  Val mIoU: 0.8164 (Best: 0.8498)
+ [Class IoU] C0: 0.8317 C1: 0.9308 | C2: 0.8591 | C3: 0.6441
+Epoch 158/400 | Train Loss: 27.3369
+ Avg Train Loss: 27.3369 | Seg Loss: 0.2733 | Recon Loss: 0.0047
+  Val mIoU: 0.8021 (Best: 0.8498)
+ [Class IoU] C0: 0.8266 C1: 0.9243 | C2: 0.8452 | C3: 0.6124
+Epoch 159/400 | Train Loss: 27.8525
+ Avg Train Loss: 27.8525 | Seg Loss: 0.2785 | Recon Loss: 0.0046
+  Val mIoU: 0.8291 (Best: 0.8498)
+ [Class IoU] C0: 0.8288 C1: 0.9271 | C2: 0.8701 | C3: 0.6905
+Epoch 160/400 | Train Loss: 27.7420
+ Avg Train Loss: 27.7420 | Seg Loss: 0.2774 | Recon Loss: 0.0047
+  Val mIoU: 0.8361 (Best: 0.8498)
+ [Class IoU] C0: 0.8353 C1: 0.9315 | C2: 0.8755 | C3: 0.7021
+  Saving visuals for Epoch 160...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0160_predictions.png
+Epoch 161/400 | Train Loss: 27.4052
+ Avg Train Loss: 27.4052 | Seg Loss: 0.2740 | Recon Loss: 0.0045
+  Val mIoU: 0.8054 (Best: 0.8498)
+ [Class IoU] C0: 0.8029 C1: 0.9295 | C2: 0.8517 | C3: 0.6375
+Epoch 162/400 | Train Loss: 27.7027
+ Avg Train Loss: 27.7027 | Seg Loss: 0.2770 | Recon Loss: 0.0047
+  Val mIoU: 0.8320 (Best: 0.8498)
+ [Class IoU] C0: 0.8226 C1: 0.9305 | C2: 0.8737 | C3: 0.7013
+Epoch 163/400 | Train Loss: 26.9712
+ Avg Train Loss: 26.9712 | Seg Loss: 0.2697 | Recon Loss: 0.0046
+  Val mIoU: 0.8150 (Best: 0.8498)
+ [Class IoU] C0: 0.8293 C1: 0.9320 | C2: 0.8619 | C3: 0.6368
+Epoch 164/400 | Train Loss: 28.2049
+ Avg Train Loss: 28.2049 | Seg Loss: 0.2820 | Recon Loss: 0.0047
+  Val mIoU: 0.8230 (Best: 0.8498)
+ [Class IoU] C0: 0.8169 C1: 0.9149 | C2: 0.8705 | C3: 0.6896
+Epoch 165/400 | Train Loss: 27.8462
+ Avg Train Loss: 27.8462 | Seg Loss: 0.2784 | Recon Loss: 0.0046
+  Val mIoU: 0.8195 (Best: 0.8498)
+ [Class IoU] C0: 0.8173 C1: 0.9257 | C2: 0.8666 | C3: 0.6686
+Epoch 166/400 | Train Loss: 28.2970
+ Avg Train Loss: 28.2970 | Seg Loss: 0.2829 | Recon Loss: 0.0047
+  Val mIoU: 0.8279 (Best: 0.8498)
+ [Class IoU] C0: 0.8194 C1: 0.9311 | C2: 0.8722 | C3: 0.6891
+Epoch 167/400 | Train Loss: 27.5377
+ Avg Train Loss: 27.5377 | Seg Loss: 0.2753 | Recon Loss: 0.0046
+  Val mIoU: 0.8154 (Best: 0.8498)
+ [Class IoU] C0: 0.8264 C1: 0.9293 | C2: 0.8624 | C3: 0.6432
+Epoch 168/400 | Train Loss: 27.4944
+ Avg Train Loss: 27.4944 | Seg Loss: 0.2749 | Recon Loss: 0.0047
+  Val mIoU: 0.8424 (Best: 0.8498)
+ [Class IoU] C0: 0.8352 C1: 0.9321 | C2: 0.8805 | C3: 0.7218
+Epoch 169/400 | Train Loss: 27.2785
+ Avg Train Loss: 27.2785 | Seg Loss: 0.2727 | Recon Loss: 0.0047
+  Val mIoU: 0.8436 (Best: 0.8498)
+ [Class IoU] C0: 0.8378 C1: 0.9323 | C2: 0.8787 | C3: 0.7256
+Epoch 170/400 | Train Loss: 27.3639
+ Avg Train Loss: 27.3639 | Seg Loss: 0.2736 | Recon Loss: 0.0046
+  Val mIoU: 0.8366 (Best: 0.8498)
+ [Class IoU] C0: 0.8351 C1: 0.9322 | C2: 0.8780 | C3: 0.7011
+Epoch 171/400 | Train Loss: 28.0443
+ Avg Train Loss: 28.0443 | Seg Loss: 0.2804 | Recon Loss: 0.0047
+  Val mIoU: 0.8420 (Best: 0.8498)
+ [Class IoU] C0: 0.8221 C1: 0.9283 | C2: 0.8785 | C3: 0.7393
+Epoch 172/400 | Train Loss: 27.1368
+ Avg Train Loss: 27.1368 | Seg Loss: 0.2713 | Recon Loss: 0.0044
+  Val mIoU: 0.8436 (Best: 0.8498)
+ [Class IoU] C0: 0.8174 C1: 0.9289 | C2: 0.8781 | C3: 0.7501
+Epoch 173/400 | Train Loss: 28.1246
+ Avg Train Loss: 28.1246 | Seg Loss: 0.2812 | Recon Loss: 0.0047
+  Val mIoU: 0.8323 (Best: 0.8498)
+ [Class IoU] C0: 0.8279 C1: 0.9291 | C2: 0.8769 | C3: 0.6951
+Epoch 174/400 | Train Loss: 28.0179
+ Avg Train Loss: 28.0179 | Seg Loss: 0.2801 | Recon Loss: 0.0047
+  Val mIoU: 0.8260 (Best: 0.8498)
+ [Class IoU] C0: 0.8206 C1: 0.9297 | C2: 0.8714 | C3: 0.6824
+Epoch 175/400 | Train Loss: 27.7634
+ Avg Train Loss: 27.7634 | Seg Loss: 0.2776 | Recon Loss: 0.0046
+  Val mIoU: 0.8357 (Best: 0.8498)
+ [Class IoU] C0: 0.8326 C1: 0.9312 | C2: 0.8760 | C3: 0.7030
+Epoch 176/400 | Train Loss: 27.0356
+ Avg Train Loss: 27.0356 | Seg Loss: 0.2703 | Recon Loss: 0.0047
+  Val mIoU: 0.8466 (Best: 0.8498)
+ [Class IoU] C0: 0.8300 C1: 0.9300 | C2: 0.8832 | C3: 0.7432
+Epoch 177/400 | Train Loss: 26.6933
+ Avg Train Loss: 26.6933 | Seg Loss: 0.2669 | Recon Loss: 0.0044
+  Val mIoU: 0.8502 (Best: 0.8498)
+ [Class IoU] C0: 0.8382 C1: 0.9316 | C2: 0.8835 | C3: 0.7474
+  --> New Best Model Saved!
+Epoch 178/400 | Train Loss: 27.3009
+ Avg Train Loss: 27.3009 | Seg Loss: 0.2730 | Recon Loss: 0.0045
+  Val mIoU: 0.8356 (Best: 0.8502)
+ [Class IoU] C0: 0.8300 C1: 0.9282 | C2: 0.8754 | C3: 0.7090
+Epoch 179/400 | Train Loss: 27.5306
+ Avg Train Loss: 27.5306 | Seg Loss: 0.2753 | Recon Loss: 0.0046
+  Val mIoU: 0.8173 (Best: 0.8502)
+ [Class IoU] C0: 0.8285 C1: 0.9311 | C2: 0.8591 | C3: 0.6504
+Epoch 180/400 | Train Loss: 27.0858
+ Avg Train Loss: 27.0858 | Seg Loss: 0.2708 | Recon Loss: 0.0047
+  Val mIoU: 0.8398 (Best: 0.8502)
+ [Class IoU] C0: 0.8294 C1: 0.9299 | C2: 0.8799 | C3: 0.7200
+  Saving visuals for Epoch 180...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0180_predictions.png
+Epoch 181/400 | Train Loss: 27.4771
+ Avg Train Loss: 27.4771 | Seg Loss: 0.2747 | Recon Loss: 0.0048
+  Val mIoU: 0.8238 (Best: 0.8502)
+ [Class IoU] C0: 0.8114 C1: 0.9220 | C2: 0.8700 | C3: 0.6919
+Epoch 182/400 | Train Loss: 26.8775
+ Avg Train Loss: 26.8775 | Seg Loss: 0.2687 | Recon Loss: 0.0046
+  Val mIoU: 0.8329 (Best: 0.8502)
+ [Class IoU] C0: 0.8138 C1: 0.9285 | C2: 0.8740 | C3: 0.7152
+Epoch 183/400 | Train Loss: 26.6081
+ Avg Train Loss: 26.6081 | Seg Loss: 0.2660 | Recon Loss: 0.0046
+  Val mIoU: 0.8426 (Best: 0.8502)
+ [Class IoU] C0: 0.8370 C1: 0.9333 | C2: 0.8806 | C3: 0.7193
+Epoch 184/400 | Train Loss: 26.9416
+ Avg Train Loss: 26.9416 | Seg Loss: 0.2694 | Recon Loss: 0.0046
+  Val mIoU: 0.8309 (Best: 0.8502)
+ [Class IoU] C0: 0.8121 C1: 0.9304 | C2: 0.8686 | C3: 0.7125
+Epoch 185/400 | Train Loss: 27.9581
+ Avg Train Loss: 27.9581 | Seg Loss: 0.2795 | Recon Loss: 0.0045
+  Val mIoU: 0.8225 (Best: 0.8502)
+ [Class IoU] C0: 0.8223 C1: 0.9308 | C2: 0.8670 | C3: 0.6699
+Epoch 186/400 | Train Loss: 27.1323
+ Avg Train Loss: 27.1323 | Seg Loss: 0.2713 | Recon Loss: 0.0045
+  Val mIoU: 0.8417 (Best: 0.8502)
+ [Class IoU] C0: 0.8353 C1: 0.9260 | C2: 0.8800 | C3: 0.7255
+Epoch 187/400 | Train Loss: 26.9724
+ Avg Train Loss: 26.9724 | Seg Loss: 0.2697 | Recon Loss: 0.0047
+  Val mIoU: 0.8337 (Best: 0.8502)
+ [Class IoU] C0: 0.8234 C1: 0.9289 | C2: 0.8761 | C3: 0.7063
+Epoch 188/400 | Train Loss: 27.3830
+ Avg Train Loss: 27.3830 | Seg Loss: 0.2738 | Recon Loss: 0.0046
+  Val mIoU: 0.8395 (Best: 0.8502)
+ [Class IoU] C0: 0.8357 C1: 0.9312 | C2: 0.8784 | C3: 0.7127
+Epoch 189/400 | Train Loss: 26.5293
+ Avg Train Loss: 26.5293 | Seg Loss: 0.2652 | Recon Loss: 0.0044
+  Val mIoU: 0.8339 (Best: 0.8502)
+ [Class IoU] C0: 0.8355 C1: 0.9318 | C2: 0.8756 | C3: 0.6928
+Epoch 190/400 | Train Loss: 27.6035
+ Avg Train Loss: 27.6035 | Seg Loss: 0.2760 | Recon Loss: 0.0046
+  Val mIoU: 0.8086 (Best: 0.8502)
+ [Class IoU] C0: 0.8114 C1: 0.9271 | C2: 0.8538 | C3: 0.6423
+Epoch 191/400 | Train Loss: 26.9987
+ Avg Train Loss: 26.9987 | Seg Loss: 0.2699 | Recon Loss: 0.0045
+  Val mIoU: 0.8364 (Best: 0.8502)
+ [Class IoU] C0: 0.8261 C1: 0.9216 | C2: 0.8784 | C3: 0.7194
+Epoch 192/400 | Train Loss: 26.8401
+ Avg Train Loss: 26.8401 | Seg Loss: 0.2684 | Recon Loss: 0.0046
+  Val mIoU: 0.8411 (Best: 0.8502)
+ [Class IoU] C0: 0.8351 C1: 0.9298 | C2: 0.8804 | C3: 0.7192
+Epoch 193/400 | Train Loss: 26.4816
+ Avg Train Loss: 26.4816 | Seg Loss: 0.2648 | Recon Loss: 0.0045
+  Val mIoU: 0.8365 (Best: 0.8502)
+ [Class IoU] C0: 0.8286 C1: 0.9299 | C2: 0.8783 | C3: 0.7092
+Epoch 194/400 | Train Loss: 26.9704
+ Avg Train Loss: 26.9704 | Seg Loss: 0.2697 | Recon Loss: 0.0046
+  Val mIoU: 0.8406 (Best: 0.8502)
+ [Class IoU] C0: 0.8294 C1: 0.9301 | C2: 0.8800 | C3: 0.7229
+Epoch 195/400 | Train Loss: 27.0058
+ Avg Train Loss: 27.0058 | Seg Loss: 0.2700 | Recon Loss: 0.0046
+  Val mIoU: 0.8218 (Best: 0.8502)
+ [Class IoU] C0: 0.8254 C1: 0.9278 | C2: 0.8700 | C3: 0.6641
+Epoch 196/400 | Train Loss: 26.8477
+ Avg Train Loss: 26.8477 | Seg Loss: 0.2684 | Recon Loss: 0.0047
+  Val mIoU: 0.8266 (Best: 0.8502)
+ [Class IoU] C0: 0.8332 C1: 0.9304 | C2: 0.8697 | C3: 0.6733
+Epoch 197/400 | Train Loss: 26.6476
+ Avg Train Loss: 26.6476 | Seg Loss: 0.2664 | Recon Loss: 0.0045
+  Val mIoU: 0.8350 (Best: 0.8502)
+ [Class IoU] C0: 0.8353 C1: 0.9310 | C2: 0.8757 | C3: 0.6980
+Epoch 198/400 | Train Loss: 26.7715
+ Avg Train Loss: 26.7715 | Seg Loss: 0.2677 | Recon Loss: 0.0046
+  Val mIoU: 0.8424 (Best: 0.8502)
+ [Class IoU] C0: 0.8353 C1: 0.9288 | C2: 0.8833 | C3: 0.7222
+Epoch 199/400 | Train Loss: 27.2353
+ Avg Train Loss: 27.2353 | Seg Loss: 0.2723 | Recon Loss: 0.0044
+  Val mIoU: 0.8220 (Best: 0.8502)
+ [Class IoU] C0: 0.8294 C1: 0.9297 | C2: 0.8679 | C3: 0.6610
+Epoch 200/400 | Train Loss: 27.2604
+ Avg Train Loss: 27.2604 | Seg Loss: 0.2726 | Recon Loss: 0.0047
+  Val mIoU: 0.8364 (Best: 0.8502)
+ [Class IoU] C0: 0.8211 C1: 0.9301 | C2: 0.8756 | C3: 0.7186
+  Saving visuals for Epoch 200...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0200_predictions.png
+Epoch 201/400 | Train Loss: 26.2041
+ Avg Train Loss: 26.2041 | Seg Loss: 0.2620 | Recon Loss: 0.0045
+  Val mIoU: 0.8503 (Best: 0.8502)
+ [Class IoU] C0: 0.8389 C1: 0.9305 | C2: 0.8866 | C3: 0.7452
+  --> New Best Model Saved!
+Epoch 202/400 | Train Loss: 27.2011
+ Avg Train Loss: 27.2011 | Seg Loss: 0.2720 | Recon Loss: 0.0047
+  Val mIoU: 0.8403 (Best: 0.8503)
+ [Class IoU] C0: 0.8343 C1: 0.9304 | C2: 0.8799 | C3: 0.7167
+Epoch 203/400 | Train Loss: 27.4487
+ Avg Train Loss: 27.4487 | Seg Loss: 0.2744 | Recon Loss: 0.0045
+  Val mIoU: 0.8190 (Best: 0.8503)
+ [Class IoU] C0: 0.8289 C1: 0.9287 | C2: 0.8634 | C3: 0.6549
+Epoch 204/400 | Train Loss: 26.7396
+ Avg Train Loss: 26.7396 | Seg Loss: 0.2673 | Recon Loss: 0.0047
+  Val mIoU: 0.8339 (Best: 0.8503)
+ [Class IoU] C0: 0.8372 C1: 0.9296 | C2: 0.8748 | C3: 0.6939
+Epoch 205/400 | Train Loss: 26.6107
+ Avg Train Loss: 26.6107 | Seg Loss: 0.2661 | Recon Loss: 0.0047
+  Val mIoU: 0.8274 (Best: 0.8503)
+ [Class IoU] C0: 0.8232 C1: 0.9035 | C2: 0.8780 | C3: 0.7049
+Epoch 206/400 | Train Loss: 27.6480
+ Avg Train Loss: 27.6480 | Seg Loss: 0.2764 | Recon Loss: 0.0045
+  Val mIoU: 0.8289 (Best: 0.8503)
+ [Class IoU] C0: 0.8337 C1: 0.9281 | C2: 0.8722 | C3: 0.6815
+Epoch 207/400 | Train Loss: 27.6674
+ Avg Train Loss: 27.6674 | Seg Loss: 0.2766 | Recon Loss: 0.0044
+  Val mIoU: 0.8404 (Best: 0.8503)
+ [Class IoU] C0: 0.8308 C1: 0.9306 | C2: 0.8809 | C3: 0.7192
+Epoch 208/400 | Train Loss: 27.2392
+ Avg Train Loss: 27.2392 | Seg Loss: 0.2723 | Recon Loss: 0.0047
+  Val mIoU: 0.8447 (Best: 0.8503)
+ [Class IoU] C0: 0.8286 C1: 0.9255 | C2: 0.8823 | C3: 0.7426
+Epoch 209/400 | Train Loss: 26.3856
+ Avg Train Loss: 26.3856 | Seg Loss: 0.2638 | Recon Loss: 0.0046
+  Val mIoU: 0.8394 (Best: 0.8503)
+ [Class IoU] C0: 0.8377 C1: 0.9293 | C2: 0.8800 | C3: 0.7108
+Epoch 210/400 | Train Loss: 26.7105
+ Avg Train Loss: 26.7105 | Seg Loss: 0.2671 | Recon Loss: 0.0045
+  Val mIoU: 0.8382 (Best: 0.8503)
+ [Class IoU] C0: 0.8392 C1: 0.9324 | C2: 0.8768 | C3: 0.7046
+Epoch 211/400 | Train Loss: 27.2853
+ Avg Train Loss: 27.2853 | Seg Loss: 0.2728 | Recon Loss: 0.0046
+  Val mIoU: 0.8370 (Best: 0.8503)
+ [Class IoU] C0: 0.8238 C1: 0.9305 | C2: 0.8778 | C3: 0.7158
+Epoch 212/400 | Train Loss: 26.0748
+ Avg Train Loss: 26.0748 | Seg Loss: 0.2607 | Recon Loss: 0.0045
+  Val mIoU: 0.8297 (Best: 0.8503)
+ [Class IoU] C0: 0.8257 C1: 0.9115 | C2: 0.8752 | C3: 0.7064
+Epoch 213/400 | Train Loss: 26.9297
+ Avg Train Loss: 26.9297 | Seg Loss: 0.2693 | Recon Loss: 0.0046
+  Val mIoU: 0.8165 (Best: 0.8503)
+ [Class IoU] C0: 0.8342 C1: 0.9320 | C2: 0.8581 | C3: 0.6420
+Epoch 214/400 | Train Loss: 26.8096
+ Avg Train Loss: 26.8096 | Seg Loss: 0.2681 | Recon Loss: 0.0044
+  Val mIoU: 0.8164 (Best: 0.8503)
+ [Class IoU] C0: 0.8244 C1: 0.9303 | C2: 0.8607 | C3: 0.6503
+Epoch 215/400 | Train Loss: 26.4627
+ Avg Train Loss: 26.4627 | Seg Loss: 0.2646 | Recon Loss: 0.0046
+  Val mIoU: 0.8469 (Best: 0.8503)
+ [Class IoU] C0: 0.8381 C1: 0.9319 | C2: 0.8832 | C3: 0.7343
+Epoch 216/400 | Train Loss: 26.9505
+ Avg Train Loss: 26.9505 | Seg Loss: 0.2695 | Recon Loss: 0.0046
+  Val mIoU: 0.8406 (Best: 0.8503)
+ [Class IoU] C0: 0.8338 C1: 0.9276 | C2: 0.8797 | C3: 0.7213
+Epoch 217/400 | Train Loss: 26.9085
+ Avg Train Loss: 26.9085 | Seg Loss: 0.2690 | Recon Loss: 0.0046
+  Val mIoU: 0.8437 (Best: 0.8503)
+ [Class IoU] C0: 0.8260 C1: 0.9318 | C2: 0.8812 | C3: 0.7360
+Epoch 218/400 | Train Loss: 27.3410
+ Avg Train Loss: 27.3410 | Seg Loss: 0.2734 | Recon Loss: 0.0045
+  Val mIoU: 0.8439 (Best: 0.8503)
+ [Class IoU] C0: 0.8252 C1: 0.9306 | C2: 0.8796 | C3: 0.7402
+Epoch 219/400 | Train Loss: 26.8501
+ Avg Train Loss: 26.8501 | Seg Loss: 0.2685 | Recon Loss: 0.0047
+  Val mIoU: 0.8360 (Best: 0.8503)
+ [Class IoU] C0: 0.8317 C1: 0.9313 | C2: 0.8757 | C3: 0.7054
+Epoch 220/400 | Train Loss: 27.0029
+ Avg Train Loss: 27.0029 | Seg Loss: 0.2700 | Recon Loss: 0.0047
+  Val mIoU: 0.8456 (Best: 0.8503)
+ [Class IoU] C0: 0.8334 C1: 0.9331 | C2: 0.8838 | C3: 0.7320
+  Saving visuals for Epoch 220...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0220_predictions.png
+Epoch 221/400 | Train Loss: 26.4335
+ Avg Train Loss: 26.4335 | Seg Loss: 0.2643 | Recon Loss: 0.0045
+  Val mIoU: 0.8284 (Best: 0.8503)
+ [Class IoU] C0: 0.8050 C1: 0.9293 | C2: 0.8678 | C3: 0.7116
+Epoch 222/400 | Train Loss: 26.6865
+ Avg Train Loss: 26.6865 | Seg Loss: 0.2668 | Recon Loss: 0.0047
+  Val mIoU: 0.8237 (Best: 0.8503)
+ [Class IoU] C0: 0.8258 C1: 0.9296 | C2: 0.8680 | C3: 0.6713
+Epoch 223/400 | Train Loss: 26.9226
+ Avg Train Loss: 26.9226 | Seg Loss: 0.2692 | Recon Loss: 0.0045
+  Val mIoU: 0.8442 (Best: 0.8503)
+ [Class IoU] C0: 0.8329 C1: 0.9314 | C2: 0.8826 | C3: 0.7298
+Epoch 224/400 | Train Loss: 26.6364
+ Avg Train Loss: 26.6364 | Seg Loss: 0.2663 | Recon Loss: 0.0046
+  Val mIoU: 0.8479 (Best: 0.8503)
+ [Class IoU] C0: 0.8402 C1: 0.9318 | C2: 0.8849 | C3: 0.7348
+Epoch 225/400 | Train Loss: 26.7782
+ Avg Train Loss: 26.7782 | Seg Loss: 0.2677 | Recon Loss: 0.0048
+  Val mIoU: 0.8441 (Best: 0.8503)
+ [Class IoU] C0: 0.8296 C1: 0.9222 | C2: 0.8832 | C3: 0.7412
+Epoch 226/400 | Train Loss: 26.5127
+ Avg Train Loss: 26.5127 | Seg Loss: 0.2651 | Recon Loss: 0.0046
+  Val mIoU: 0.8459 (Best: 0.8503)
+ [Class IoU] C0: 0.8351 C1: 0.9306 | C2: 0.8840 | C3: 0.7339
+Epoch 227/400 | Train Loss: 26.9780
+ Avg Train Loss: 26.9780 | Seg Loss: 0.2697 | Recon Loss: 0.0046
+  Val mIoU: 0.8410 (Best: 0.8503)
+ [Class IoU] C0: 0.8317 C1: 0.9300 | C2: 0.8800 | C3: 0.7224
+Epoch 228/400 | Train Loss: 26.2767
+ Avg Train Loss: 26.2767 | Seg Loss: 0.2627 | Recon Loss: 0.0047
+  Val mIoU: 0.8443 (Best: 0.8503)
+ [Class IoU] C0: 0.8291 C1: 0.9280 | C2: 0.8818 | C3: 0.7385
+Epoch 229/400 | Train Loss: 26.8254
+ Avg Train Loss: 26.8254 | Seg Loss: 0.2682 | Recon Loss: 0.0046
+  Val mIoU: 0.8431 (Best: 0.8503)
+ [Class IoU] C0: 0.8340 C1: 0.9307 | C2: 0.8824 | C3: 0.7252
+Epoch 230/400 | Train Loss: 26.2512
+ Avg Train Loss: 26.2512 | Seg Loss: 0.2625 | Recon Loss: 0.0045
+  Val mIoU: 0.8250 (Best: 0.8503)
+ [Class IoU] C0: 0.8183 C1: 0.9271 | C2: 0.8681 | C3: 0.6865
+Epoch 231/400 | Train Loss: 26.4826
+ Avg Train Loss: 26.4826 | Seg Loss: 0.2648 | Recon Loss: 0.0045
+  Val mIoU: 0.8450 (Best: 0.8503)
+ [Class IoU] C0: 0.8340 C1: 0.9293 | C2: 0.8830 | C3: 0.7338
+Epoch 232/400 | Train Loss: 27.2447
+ Avg Train Loss: 27.2447 | Seg Loss: 0.2724 | Recon Loss: 0.0047
+  Val mIoU: 0.8454 (Best: 0.8503)
+ [Class IoU] C0: 0.8348 C1: 0.9253 | C2: 0.8830 | C3: 0.7388
+Epoch 233/400 | Train Loss: 26.1571
+ Avg Train Loss: 26.1571 | Seg Loss: 0.2615 | Recon Loss: 0.0044
+  Val mIoU: 0.8158 (Best: 0.8503)
+ [Class IoU] C0: 0.8222 C1: 0.9272 | C2: 0.8613 | C3: 0.6523
+Epoch 234/400 | Train Loss: 26.5914
+ Avg Train Loss: 26.5914 | Seg Loss: 0.2659 | Recon Loss: 0.0045
+  Val mIoU: 0.8183 (Best: 0.8503)
+ [Class IoU] C0: 0.8254 C1: 0.9294 | C2: 0.8626 | C3: 0.6559
+Epoch 235/400 | Train Loss: 26.4573
+ Avg Train Loss: 26.4573 | Seg Loss: 0.2645 | Recon Loss: 0.0043
+  Val mIoU: 0.8420 (Best: 0.8503)
+ [Class IoU] C0: 0.8337 C1: 0.9262 | C2: 0.8821 | C3: 0.7259
+Epoch 236/400 | Train Loss: 25.9189
+ Avg Train Loss: 25.9189 | Seg Loss: 0.2591 | Recon Loss: 0.0044
+  Val mIoU: 0.8372 (Best: 0.8503)
+ [Class IoU] C0: 0.8222 C1: 0.9197 | C2: 0.8782 | C3: 0.7286
+Epoch 237/400 | Train Loss: 26.9443
+ Avg Train Loss: 26.9443 | Seg Loss: 0.2694 | Recon Loss: 0.0046
+  Val mIoU: 0.8425 (Best: 0.8503)
+ [Class IoU] C0: 0.8360 C1: 0.9315 | C2: 0.8820 | C3: 0.7203
+Epoch 238/400 | Train Loss: 26.4351
+ Avg Train Loss: 26.4351 | Seg Loss: 0.2643 | Recon Loss: 0.0045
+  Val mIoU: 0.8425 (Best: 0.8503)
+ [Class IoU] C0: 0.8385 C1: 0.9280 | C2: 0.8825 | C3: 0.7211
+Epoch 239/400 | Train Loss: 26.7711
+ Avg Train Loss: 26.7711 | Seg Loss: 0.2677 | Recon Loss: 0.0047
+  Val mIoU: 0.8200 (Best: 0.8503)
+ [Class IoU] C0: 0.8332 C1: 0.9296 | C2: 0.8638 | C3: 0.6532
+Epoch 240/400 | Train Loss: 26.5339
+ Avg Train Loss: 26.5339 | Seg Loss: 0.2653 | Recon Loss: 0.0044
+  Val mIoU: 0.8288 (Best: 0.8503)
+ [Class IoU] C0: 0.8309 C1: 0.9274 | C2: 0.8731 | C3: 0.6838
+  Saving visuals for Epoch 240...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0240_predictions.png
+Epoch 241/400 | Train Loss: 26.5891
+ Avg Train Loss: 26.5891 | Seg Loss: 0.2658 | Recon Loss: 0.0046
+  Val mIoU: 0.8303 (Best: 0.8503)
+ [Class IoU] C0: 0.8295 C1: 0.9300 | C2: 0.8724 | C3: 0.6893
+Epoch 242/400 | Train Loss: 26.8726
+ Avg Train Loss: 26.8726 | Seg Loss: 0.2687 | Recon Loss: 0.0045
+  Val mIoU: 0.8381 (Best: 0.8503)
+ [Class IoU] C0: 0.8373 C1: 0.9283 | C2: 0.8796 | C3: 0.7071
+Epoch 243/400 | Train Loss: 26.2923
+ Avg Train Loss: 26.2923 | Seg Loss: 0.2629 | Recon Loss: 0.0046
+  Val mIoU: 0.8393 (Best: 0.8503)
+ [Class IoU] C0: 0.8352 C1: 0.9302 | C2: 0.8797 | C3: 0.7121
+Epoch 244/400 | Train Loss: 26.6366
+ Avg Train Loss: 26.6366 | Seg Loss: 0.2663 | Recon Loss: 0.0045
+  Val mIoU: 0.8228 (Best: 0.8503)
+ [Class IoU] C0: 0.8220 C1: 0.9300 | C2: 0.8672 | C3: 0.6719
+Epoch 245/400 | Train Loss: 26.5283
+ Avg Train Loss: 26.5283 | Seg Loss: 0.2652 | Recon Loss: 0.0045
+  Val mIoU: 0.8329 (Best: 0.8503)
+ [Class IoU] C0: 0.8255 C1: 0.9257 | C2: 0.8775 | C3: 0.7027
+Epoch 246/400 | Train Loss: 27.3126
+ Avg Train Loss: 27.3126 | Seg Loss: 0.2731 | Recon Loss: 0.0045
+  Val mIoU: 0.8352 (Best: 0.8503)
+ [Class IoU] C0: 0.8219 C1: 0.9287 | C2: 0.8782 | C3: 0.7119
+Epoch 247/400 | Train Loss: 26.2010
+ Avg Train Loss: 26.2010 | Seg Loss: 0.2620 | Recon Loss: 0.0045
+  Val mIoU: 0.8352 (Best: 0.8503)
+ [Class IoU] C0: 0.8282 C1: 0.9281 | C2: 0.8785 | C3: 0.7061
+Epoch 248/400 | Train Loss: 26.8365
+ Avg Train Loss: 26.8365 | Seg Loss: 0.2683 | Recon Loss: 0.0046
+  Val mIoU: 0.8423 (Best: 0.8503)
+ [Class IoU] C0: 0.8323 C1: 0.9296 | C2: 0.8823 | C3: 0.7250
+Epoch 249/400 | Train Loss: 26.4559
+ Avg Train Loss: 26.4559 | Seg Loss: 0.2645 | Recon Loss: 0.0044
+  Val mIoU: 0.8385 (Best: 0.8503)
+ [Class IoU] C0: 0.8191 C1: 0.9238 | C2: 0.8800 | C3: 0.7311
+Epoch 250/400 | Train Loss: 26.2097
+ Avg Train Loss: 26.2097 | Seg Loss: 0.2621 | Recon Loss: 0.0044
+  Val mIoU: 0.8275 (Best: 0.8503)
+ [Class IoU] C0: 0.8223 C1: 0.9319 | C2: 0.8709 | C3: 0.6847
+Epoch 251/400 | Train Loss: 26.9193
+ Avg Train Loss: 26.9193 | Seg Loss: 0.2691 | Recon Loss: 0.0047
+  Val mIoU: 0.8419 (Best: 0.8503)
+ [Class IoU] C0: 0.8277 C1: 0.9320 | C2: 0.8809 | C3: 0.7270
+Epoch 252/400 | Train Loss: 26.6010
+ Avg Train Loss: 26.6010 | Seg Loss: 0.2660 | Recon Loss: 0.0046
+  Val mIoU: 0.8336 (Best: 0.8503)
+ [Class IoU] C0: 0.8174 C1: 0.9283 | C2: 0.8749 | C3: 0.7138
+Epoch 253/400 | Train Loss: 26.6595
+ Avg Train Loss: 26.6595 | Seg Loss: 0.2665 | Recon Loss: 0.0046
+  Val mIoU: 0.8369 (Best: 0.8503)
+ [Class IoU] C0: 0.8232 C1: 0.9297 | C2: 0.8773 | C3: 0.7173
+Epoch 254/400 | Train Loss: 26.4808
+ Avg Train Loss: 26.4808 | Seg Loss: 0.2648 | Recon Loss: 0.0044
+  Val mIoU: 0.8346 (Best: 0.8503)
+ [Class IoU] C0: 0.8249 C1: 0.9262 | C2: 0.8773 | C3: 0.7099
+Epoch 255/400 | Train Loss: 26.7561
+ Avg Train Loss: 26.7561 | Seg Loss: 0.2675 | Recon Loss: 0.0045
+  Val mIoU: 0.8383 (Best: 0.8503)
+ [Class IoU] C0: 0.8228 C1: 0.9295 | C2: 0.8788 | C3: 0.7220
+Epoch 256/400 | Train Loss: 26.9054
+ Avg Train Loss: 26.9054 | Seg Loss: 0.2690 | Recon Loss: 0.0045
+  Val mIoU: 0.8175 (Best: 0.8503)
+ [Class IoU] C0: 0.8307 C1: 0.9303 | C2: 0.8614 | C3: 0.6477
+Epoch 257/400 | Train Loss: 27.1030
+ Avg Train Loss: 27.1030 | Seg Loss: 0.2710 | Recon Loss: 0.0046
+  Val mIoU: 0.8379 (Best: 0.8503)
+ [Class IoU] C0: 0.8297 C1: 0.9270 | C2: 0.8805 | C3: 0.7143
+Epoch 258/400 | Train Loss: 26.5843
+ Avg Train Loss: 26.5843 | Seg Loss: 0.2658 | Recon Loss: 0.0046
+  Val mIoU: 0.8436 (Best: 0.8503)
+ [Class IoU] C0: 0.8286 C1: 0.9285 | C2: 0.8828 | C3: 0.7345
+Epoch 259/400 | Train Loss: 26.5379
+ Avg Train Loss: 26.5379 | Seg Loss: 0.2653 | Recon Loss: 0.0045
+  Val mIoU: 0.8335 (Best: 0.8503)
+ [Class IoU] C0: 0.8303 C1: 0.9248 | C2: 0.8776 | C3: 0.7013
+Epoch 260/400 | Train Loss: 26.6900
+ Avg Train Loss: 26.6900 | Seg Loss: 0.2669 | Recon Loss: 0.0046
+  Val mIoU: 0.8322 (Best: 0.8503)
+ [Class IoU] C0: 0.8234 C1: 0.9244 | C2: 0.8750 | C3: 0.7061
+  Saving visuals for Epoch 260...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0260_predictions.png
+Epoch 261/400 | Train Loss: 26.5860
+ Avg Train Loss: 26.5860 | Seg Loss: 0.2658 | Recon Loss: 0.0046
+  Val mIoU: 0.8370 (Best: 0.8503)
+ [Class IoU] C0: 0.8284 C1: 0.9274 | C2: 0.8792 | C3: 0.7131
+Epoch 262/400 | Train Loss: 26.2217
+ Avg Train Loss: 26.2217 | Seg Loss: 0.2622 | Recon Loss: 0.0045
+  Val mIoU: 0.8400 (Best: 0.8503)
+ [Class IoU] C0: 0.8260 C1: 0.9139 | C2: 0.8819 | C3: 0.7381
+Epoch 263/400 | Train Loss: 26.1474
+ Avg Train Loss: 26.1474 | Seg Loss: 0.2614 | Recon Loss: 0.0047
+  Val mIoU: 0.8343 (Best: 0.8503)
+ [Class IoU] C0: 0.8265 C1: 0.9299 | C2: 0.8756 | C3: 0.7053
+Epoch 264/400 | Train Loss: 27.2556
+ Avg Train Loss: 27.2556 | Seg Loss: 0.2725 | Recon Loss: 0.0046
+  Val mIoU: 0.8334 (Best: 0.8503)
+ [Class IoU] C0: 0.8279 C1: 0.9321 | C2: 0.8749 | C3: 0.6988
+Epoch 265/400 | Train Loss: 26.0369
+ Avg Train Loss: 26.0369 | Seg Loss: 0.2603 | Recon Loss: 0.0044
+  Val mIoU: 0.8277 (Best: 0.8503)
+ [Class IoU] C0: 0.8132 C1: 0.9310 | C2: 0.8686 | C3: 0.6981
+Epoch 266/400 | Train Loss: 26.2647
+ Avg Train Loss: 26.2647 | Seg Loss: 0.2626 | Recon Loss: 0.0045
+  Val mIoU: 0.8370 (Best: 0.8503)
+ [Class IoU] C0: 0.8338 C1: 0.9319 | C2: 0.8772 | C3: 0.7052
+Epoch 267/400 | Train Loss: 26.7108
+ Avg Train Loss: 26.7108 | Seg Loss: 0.2671 | Recon Loss: 0.0044
+  Val mIoU: 0.8373 (Best: 0.8503)
+ [Class IoU] C0: 0.8254 C1: 0.9257 | C2: 0.8786 | C3: 0.7195
+Epoch 268/400 | Train Loss: 26.1769
+ Avg Train Loss: 26.1769 | Seg Loss: 0.2617 | Recon Loss: 0.0045
+  Val mIoU: 0.8450 (Best: 0.8503)
+ [Class IoU] C0: 0.8319 C1: 0.9277 | C2: 0.8816 | C3: 0.7386
+Epoch 269/400 | Train Loss: 26.0069
+ Avg Train Loss: 26.0069 | Seg Loss: 0.2600 | Recon Loss: 0.0045
+  Val mIoU: 0.8269 (Best: 0.8503)
+ [Class IoU] C0: 0.8146 C1: 0.9270 | C2: 0.8714 | C3: 0.6947
+Epoch 270/400 | Train Loss: 26.7341
+ Avg Train Loss: 26.7341 | Seg Loss: 0.2673 | Recon Loss: 0.0045
+  Val mIoU: 0.8378 (Best: 0.8503)
+ [Class IoU] C0: 0.8300 C1: 0.9311 | C2: 0.8787 | C3: 0.7113
+Epoch 271/400 | Train Loss: 26.6729
+ Avg Train Loss: 26.6729 | Seg Loss: 0.2667 | Recon Loss: 0.0045
+  Val mIoU: 0.8318 (Best: 0.8503)
+ [Class IoU] C0: 0.8308 C1: 0.9316 | C2: 0.8754 | C3: 0.6893
+Epoch 272/400 | Train Loss: 26.3197
+ Avg Train Loss: 26.3197 | Seg Loss: 0.2632 | Recon Loss: 0.0047
+  Val mIoU: 0.8267 (Best: 0.8503)
+ [Class IoU] C0: 0.8304 C1: 0.9303 | C2: 0.8715 | C3: 0.6745
+Epoch 273/400 | Train Loss: 26.7905
+ Avg Train Loss: 26.7905 | Seg Loss: 0.2679 | Recon Loss: 0.0045
+  Val mIoU: 0.8247 (Best: 0.8503)
+ [Class IoU] C0: 0.8131 C1: 0.9290 | C2: 0.8695 | C3: 0.6872
+Epoch 274/400 | Train Loss: 25.8334
+ Avg Train Loss: 25.8334 | Seg Loss: 0.2583 | Recon Loss: 0.0044
+  Val mIoU: 0.8314 (Best: 0.8503)
+ [Class IoU] C0: 0.8302 C1: 0.9301 | C2: 0.8764 | C3: 0.6886
+Epoch 275/400 | Train Loss: 26.2873
+ Avg Train Loss: 26.2873 | Seg Loss: 0.2628 | Recon Loss: 0.0046
+  Val mIoU: 0.8224 (Best: 0.8503)
+ [Class IoU] C0: 0.8251 C1: 0.9280 | C2: 0.8696 | C3: 0.6671
+Epoch 276/400 | Train Loss: 26.7170
+ Avg Train Loss: 26.7170 | Seg Loss: 0.2671 | Recon Loss: 0.0047
+  Val mIoU: 0.8149 (Best: 0.8503)
+ [Class IoU] C0: 0.8237 C1: 0.9307 | C2: 0.8594 | C3: 0.6461
+Epoch 277/400 | Train Loss: 26.9209
+ Avg Train Loss: 26.9209 | Seg Loss: 0.2692 | Recon Loss: 0.0045
+  Val mIoU: 0.8393 (Best: 0.8503)
+ [Class IoU] C0: 0.8290 C1: 0.9320 | C2: 0.8794 | C3: 0.7168
+Epoch 278/400 | Train Loss: 26.2220
+ Avg Train Loss: 26.2220 | Seg Loss: 0.2622 | Recon Loss: 0.0045
+  Val mIoU: 0.8376 (Best: 0.8503)
+ [Class IoU] C0: 0.8269 C1: 0.9255 | C2: 0.8807 | C3: 0.7173
+Epoch 279/400 | Train Loss: 26.6333
+ Avg Train Loss: 26.6333 | Seg Loss: 0.2663 | Recon Loss: 0.0046
+  Val mIoU: 0.8160 (Best: 0.8503)
+ [Class IoU] C0: 0.8166 C1: 0.9300 | C2: 0.8591 | C3: 0.6584
+Epoch 280/400 | Train Loss: 26.5690
+ Avg Train Loss: 26.5690 | Seg Loss: 0.2656 | Recon Loss: 0.0046
+  Val mIoU: 0.8360 (Best: 0.8503)
+ [Class IoU] C0: 0.8308 C1: 0.9306 | C2: 0.8776 | C3: 0.7050
+  Saving visuals for Epoch 280...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0280_predictions.png
+Epoch 281/400 | Train Loss: 26.2907
+ Avg Train Loss: 26.2907 | Seg Loss: 0.2629 | Recon Loss: 0.0045
+  Val mIoU: 0.8375 (Best: 0.8503)
+ [Class IoU] C0: 0.8292 C1: 0.9192 | C2: 0.8803 | C3: 0.7214
+Epoch 282/400 | Train Loss: 26.2288
+ Avg Train Loss: 26.2288 | Seg Loss: 0.2622 | Recon Loss: 0.0045
+  Val mIoU: 0.8297 (Best: 0.8503)
+ [Class IoU] C0: 0.8301 C1: 0.9320 | C2: 0.8707 | C3: 0.6862
+Epoch 283/400 | Train Loss: 26.3281
+ Avg Train Loss: 26.3281 | Seg Loss: 0.2632 | Recon Loss: 0.0045
+  Val mIoU: 0.8279 (Best: 0.8503)
+ [Class IoU] C0: 0.8236 C1: 0.9283 | C2: 0.8736 | C3: 0.6860
+Epoch 284/400 | Train Loss: 26.3969
+ Avg Train Loss: 26.3969 | Seg Loss: 0.2639 | Recon Loss: 0.0044
+  Val mIoU: 0.8181 (Best: 0.8503)
+ [Class IoU] C0: 0.8270 C1: 0.9299 | C2: 0.8639 | C3: 0.6517
+Epoch 285/400 | Train Loss: 26.1816
+ Avg Train Loss: 26.1816 | Seg Loss: 0.2618 | Recon Loss: 0.0045
+  Val mIoU: 0.8238 (Best: 0.8503)
+ [Class IoU] C0: 0.8170 C1: 0.9185 | C2: 0.8712 | C3: 0.6886
+Epoch 286/400 | Train Loss: 26.7108
+ Avg Train Loss: 26.7108 | Seg Loss: 0.2671 | Recon Loss: 0.0046
+  Val mIoU: 0.8357 (Best: 0.8503)
+ [Class IoU] C0: 0.8257 C1: 0.9263 | C2: 0.8783 | C3: 0.7125
+Epoch 287/400 | Train Loss: 26.4748
+ Avg Train Loss: 26.4748 | Seg Loss: 0.2647 | Recon Loss: 0.0046
+  Val mIoU: 0.8376 (Best: 0.8503)
+ [Class IoU] C0: 0.8274 C1: 0.9270 | C2: 0.8791 | C3: 0.7170
+Epoch 288/400 | Train Loss: 26.6147
+ Avg Train Loss: 26.6147 | Seg Loss: 0.2661 | Recon Loss: 0.0045
+  Val mIoU: 0.8398 (Best: 0.8503)
+ [Class IoU] C0: 0.8200 C1: 0.9287 | C2: 0.8777 | C3: 0.7329
+Epoch 289/400 | Train Loss: 26.0808
+ Avg Train Loss: 26.0808 | Seg Loss: 0.2608 | Recon Loss: 0.0045
+  Val mIoU: 0.8416 (Best: 0.8503)
+ [Class IoU] C0: 0.8343 C1: 0.9299 | C2: 0.8836 | C3: 0.7185
+Epoch 290/400 | Train Loss: 26.4315
+ Avg Train Loss: 26.4315 | Seg Loss: 0.2643 | Recon Loss: 0.0044
+  Val mIoU: 0.8449 (Best: 0.8503)
+ [Class IoU] C0: 0.8328 C1: 0.9283 | C2: 0.8822 | C3: 0.7362
+Epoch 291/400 | Train Loss: 26.3191
+ Avg Train Loss: 26.3191 | Seg Loss: 0.2631 | Recon Loss: 0.0045
+  Val mIoU: 0.8307 (Best: 0.8503)
+ [Class IoU] C0: 0.8231 C1: 0.9308 | C2: 0.8733 | C3: 0.6958
+Epoch 292/400 | Train Loss: 26.4037
+ Avg Train Loss: 26.4037 | Seg Loss: 0.2640 | Recon Loss: 0.0044
+  Val mIoU: 0.8431 (Best: 0.8503)
+ [Class IoU] C0: 0.8302 C1: 0.9275 | C2: 0.8830 | C3: 0.7315
+Epoch 293/400 | Train Loss: 26.5986
+ Avg Train Loss: 26.5986 | Seg Loss: 0.2659 | Recon Loss: 0.0045
+  Val mIoU: 0.8340 (Best: 0.8503)
+ [Class IoU] C0: 0.8300 C1: 0.9290 | C2: 0.8766 | C3: 0.7003
+Epoch 294/400 | Train Loss: 26.5630
+ Avg Train Loss: 26.5630 | Seg Loss: 0.2656 | Recon Loss: 0.0045
+  Val mIoU: 0.8446 (Best: 0.8503)
+ [Class IoU] C0: 0.8264 C1: 0.9300 | C2: 0.8821 | C3: 0.7398
+Epoch 295/400 | Train Loss: 26.7182
+ Avg Train Loss: 26.7182 | Seg Loss: 0.2671 | Recon Loss: 0.0047
+  Val mIoU: 0.8237 (Best: 0.8503)
+ [Class IoU] C0: 0.8110 C1: 0.9294 | C2: 0.8685 | C3: 0.6861
+Epoch 296/400 | Train Loss: 26.2853
+ Avg Train Loss: 26.2853 | Seg Loss: 0.2628 | Recon Loss: 0.0045
+  Val mIoU: 0.8463 (Best: 0.8503)
+ [Class IoU] C0: 0.8325 C1: 0.9306 | C2: 0.8839 | C3: 0.7384
+Epoch 297/400 | Train Loss: 26.3111
+ Avg Train Loss: 26.3111 | Seg Loss: 0.2631 | Recon Loss: 0.0044
+  Val mIoU: 0.8375 (Best: 0.8503)
+ [Class IoU] C0: 0.8277 C1: 0.9300 | C2: 0.8788 | C3: 0.7137
+Epoch 298/400 | Train Loss: 26.9698
+ Avg Train Loss: 26.9698 | Seg Loss: 0.2697 | Recon Loss: 0.0045
+  Val mIoU: 0.8343 (Best: 0.8503)
+ [Class IoU] C0: 0.8312 C1: 0.9309 | C2: 0.8776 | C3: 0.6974
+Epoch 299/400 | Train Loss: 26.6984
+ Avg Train Loss: 26.6984 | Seg Loss: 0.2669 | Recon Loss: 0.0045
+  Val mIoU: 0.8427 (Best: 0.8503)
+ [Class IoU] C0: 0.8318 C1: 0.9315 | C2: 0.8827 | C3: 0.7249
+Epoch 300/400 | Train Loss: 26.4281
+ Avg Train Loss: 26.4281 | Seg Loss: 0.2642 | Recon Loss: 0.0045
+  Val mIoU: 0.8271 (Best: 0.8503)
+ [Class IoU] C0: 0.8263 C1: 0.9325 | C2: 0.8701 | C3: 0.6794
+  Saving visuals for Epoch 300...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0300_predictions.png
+Epoch 301/400 | Train Loss: 26.6654
+ Avg Train Loss: 26.6654 | Seg Loss: 0.2666 | Recon Loss: 0.0045
+  Val mIoU: 0.8390 (Best: 0.8503)
+ [Class IoU] C0: 0.8233 C1: 0.9279 | C2: 0.8806 | C3: 0.7242
+Epoch 302/400 | Train Loss: 26.7204
+ Avg Train Loss: 26.7204 | Seg Loss: 0.2672 | Recon Loss: 0.0046
+  Val mIoU: 0.8425 (Best: 0.8503)
+ [Class IoU] C0: 0.8329 C1: 0.9292 | C2: 0.8837 | C3: 0.7244
+Epoch 303/400 | Train Loss: 26.9081
+ Avg Train Loss: 26.9081 | Seg Loss: 0.2690 | Recon Loss: 0.0046
+  Val mIoU: 0.8406 (Best: 0.8503)
+ [Class IoU] C0: 0.8281 C1: 0.9296 | C2: 0.8817 | C3: 0.7232
+Epoch 304/400 | Train Loss: 26.2832
+ Avg Train Loss: 26.2832 | Seg Loss: 0.2628 | Recon Loss: 0.0045
+  Val mIoU: 0.8402 (Best: 0.8503)
+ [Class IoU] C0: 0.8301 C1: 0.9292 | C2: 0.8813 | C3: 0.7204
+Epoch 305/400 | Train Loss: 26.9528
+ Avg Train Loss: 26.9528 | Seg Loss: 0.2695 | Recon Loss: 0.0046
+  Val mIoU: 0.8386 (Best: 0.8503)
+ [Class IoU] C0: 0.8326 C1: 0.9297 | C2: 0.8798 | C3: 0.7123
+Epoch 306/400 | Train Loss: 26.3061
+ Avg Train Loss: 26.3061 | Seg Loss: 0.2630 | Recon Loss: 0.0046
+  Val mIoU: 0.8307 (Best: 0.8503)
+ [Class IoU] C0: 0.8219 C1: 0.9290 | C2: 0.8757 | C3: 0.6963
+Epoch 307/400 | Train Loss: 26.5695
+ Avg Train Loss: 26.5695 | Seg Loss: 0.2656 | Recon Loss: 0.0045
+  Val mIoU: 0.8425 (Best: 0.8503)
+ [Class IoU] C0: 0.8325 C1: 0.9314 | C2: 0.8824 | C3: 0.7236
+Epoch 308/400 | Train Loss: 26.4552
+ Avg Train Loss: 26.4552 | Seg Loss: 0.2645 | Recon Loss: 0.0045
+  Val mIoU: 0.8204 (Best: 0.8503)
+ [Class IoU] C0: 0.8177 C1: 0.9306 | C2: 0.8664 | C3: 0.6670
+Epoch 309/400 | Train Loss: 26.5390
+ Avg Train Loss: 26.5390 | Seg Loss: 0.2653 | Recon Loss: 0.0044
+  Val mIoU: 0.8275 (Best: 0.8503)
+ [Class IoU] C0: 0.8297 C1: 0.9258 | C2: 0.8717 | C3: 0.6827
+Epoch 310/400 | Train Loss: 26.4471
+ Avg Train Loss: 26.4471 | Seg Loss: 0.2644 | Recon Loss: 0.0044
+  Val mIoU: 0.8420 (Best: 0.8503)
+ [Class IoU] C0: 0.8289 C1: 0.9300 | C2: 0.8829 | C3: 0.7261
+Epoch 311/400 | Train Loss: 26.4453
+ Avg Train Loss: 26.4453 | Seg Loss: 0.2644 | Recon Loss: 0.0043
+  Val mIoU: 0.8376 (Best: 0.8503)
+ [Class IoU] C0: 0.8320 C1: 0.9307 | C2: 0.8792 | C3: 0.7084
+Epoch 312/400 | Train Loss: 26.3891
+ Avg Train Loss: 26.3891 | Seg Loss: 0.2638 | Recon Loss: 0.0045
+  Val mIoU: 0.8394 (Best: 0.8503)
+ [Class IoU] C0: 0.8356 C1: 0.9300 | C2: 0.8807 | C3: 0.7114
+Epoch 313/400 | Train Loss: 27.0938
+ Avg Train Loss: 27.0938 | Seg Loss: 0.2709 | Recon Loss: 0.0045
+  Val mIoU: 0.8435 (Best: 0.8503)
+ [Class IoU] C0: 0.8296 C1: 0.9306 | C2: 0.8833 | C3: 0.7306
+Epoch 314/400 | Train Loss: 26.8920
+ Avg Train Loss: 26.8920 | Seg Loss: 0.2689 | Recon Loss: 0.0046
+  Val mIoU: 0.8123 (Best: 0.8503)
+ [Class IoU] C0: 0.8259 C1: 0.9301 | C2: 0.8557 | C3: 0.6374
+Epoch 315/400 | Train Loss: 26.7809
+ Avg Train Loss: 26.7809 | Seg Loss: 0.2678 | Recon Loss: 0.0045
+  Val mIoU: 0.8431 (Best: 0.8503)
+ [Class IoU] C0: 0.8292 C1: 0.9319 | C2: 0.8806 | C3: 0.7307
+Epoch 316/400 | Train Loss: 26.4993
+ Avg Train Loss: 26.4993 | Seg Loss: 0.2649 | Recon Loss: 0.0046
+  Val mIoU: 0.8456 (Best: 0.8503)
+ [Class IoU] C0: 0.8376 C1: 0.9309 | C2: 0.8849 | C3: 0.7290
+Epoch 317/400 | Train Loss: 26.6450
+ Avg Train Loss: 26.6450 | Seg Loss: 0.2664 | Recon Loss: 0.0046
+  Val mIoU: 0.8469 (Best: 0.8503)
+ [Class IoU] C0: 0.8327 C1: 0.9281 | C2: 0.8845 | C3: 0.7422
+Epoch 318/400 | Train Loss: 26.3554
+ Avg Train Loss: 26.3554 | Seg Loss: 0.2635 | Recon Loss: 0.0045
+  Val mIoU: 0.8267 (Best: 0.8503)
+ [Class IoU] C0: 0.8170 C1: 0.9291 | C2: 0.8697 | C3: 0.6912
+Epoch 319/400 | Train Loss: 27.2523
+ Avg Train Loss: 27.2523 | Seg Loss: 0.2725 | Recon Loss: 0.0045
+  Val mIoU: 0.8332 (Best: 0.8503)
+ [Class IoU] C0: 0.8272 C1: 0.9271 | C2: 0.8776 | C3: 0.7010
+Epoch 320/400 | Train Loss: 26.6131
+ Avg Train Loss: 26.6131 | Seg Loss: 0.2661 | Recon Loss: 0.0046
+  Val mIoU: 0.8379 (Best: 0.8503)
+ [Class IoU] C0: 0.8311 C1: 0.9316 | C2: 0.8788 | C3: 0.7100
+  Saving visuals for Epoch 320...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0320_predictions.png
+Epoch 321/400 | Train Loss: 26.3030
+ Avg Train Loss: 26.3030 | Seg Loss: 0.2630 | Recon Loss: 0.0045
+  Val mIoU: 0.8359 (Best: 0.8503)
+ [Class IoU] C0: 0.8232 C1: 0.9309 | C2: 0.8768 | C3: 0.7128
+Epoch 322/400 | Train Loss: 27.0977
+ Avg Train Loss: 27.0977 | Seg Loss: 0.2709 | Recon Loss: 0.0044
+  Val mIoU: 0.8324 (Best: 0.8503)
+ [Class IoU] C0: 0.8311 C1: 0.9312 | C2: 0.8752 | C3: 0.6920
+Epoch 323/400 | Train Loss: 26.2752
+ Avg Train Loss: 26.2752 | Seg Loss: 0.2627 | Recon Loss: 0.0046
+  Val mIoU: 0.8384 (Best: 0.8503)
+ [Class IoU] C0: 0.8337 C1: 0.9318 | C2: 0.8805 | C3: 0.7077
+Epoch 324/400 | Train Loss: 26.4176
+ Avg Train Loss: 26.4176 | Seg Loss: 0.2641 | Recon Loss: 0.0044
+  Val mIoU: 0.8448 (Best: 0.8503)
+ [Class IoU] C0: 0.8316 C1: 0.9319 | C2: 0.8828 | C3: 0.7327
+Epoch 325/400 | Train Loss: 26.6835
+ Avg Train Loss: 26.6835 | Seg Loss: 0.2668 | Recon Loss: 0.0043
+  Val mIoU: 0.8377 (Best: 0.8503)
+ [Class IoU] C0: 0.8335 C1: 0.9288 | C2: 0.8790 | C3: 0.7096
+Epoch 326/400 | Train Loss: 26.5037
+ Avg Train Loss: 26.5037 | Seg Loss: 0.2650 | Recon Loss: 0.0046
+  Val mIoU: 0.8443 (Best: 0.8503)
+ [Class IoU] C0: 0.8249 C1: 0.9304 | C2: 0.8824 | C3: 0.7396
+Epoch 327/400 | Train Loss: 26.6939
+ Avg Train Loss: 26.6939 | Seg Loss: 0.2669 | Recon Loss: 0.0044
+  Val mIoU: 0.8092 (Best: 0.8503)
+ [Class IoU] C0: 0.8249 C1: 0.9305 | C2: 0.8573 | C3: 0.6243
+Epoch 328/400 | Train Loss: 26.4942
+ Avg Train Loss: 26.4942 | Seg Loss: 0.2649 | Recon Loss: 0.0044
+  Val mIoU: 0.8390 (Best: 0.8503)
+ [Class IoU] C0: 0.8255 C1: 0.9265 | C2: 0.8809 | C3: 0.7231
+Epoch 329/400 | Train Loss: 26.1760
+ Avg Train Loss: 26.1760 | Seg Loss: 0.2617 | Recon Loss: 0.0045
+  Val mIoU: 0.8276 (Best: 0.8503)
+ [Class IoU] C0: 0.8213 C1: 0.9297 | C2: 0.8706 | C3: 0.6887
+Epoch 330/400 | Train Loss: 26.2506
+ Avg Train Loss: 26.2506 | Seg Loss: 0.2625 | Recon Loss: 0.0044
+  Val mIoU: 0.8453 (Best: 0.8503)
+ [Class IoU] C0: 0.8331 C1: 0.9270 | C2: 0.8850 | C3: 0.7364
+Epoch 331/400 | Train Loss: 26.3865
+ Avg Train Loss: 26.3865 | Seg Loss: 0.2638 | Recon Loss: 0.0044
+  Val mIoU: 0.8227 (Best: 0.8503)
+ [Class IoU] C0: 0.8224 C1: 0.9201 | C2: 0.8689 | C3: 0.6794
+Epoch 332/400 | Train Loss: 25.9167
+ Avg Train Loss: 25.9167 | Seg Loss: 0.2591 | Recon Loss: 0.0045
+  Val mIoU: 0.8309 (Best: 0.8503)
+ [Class IoU] C0: 0.8263 C1: 0.9278 | C2: 0.8756 | C3: 0.6940
+Epoch 333/400 | Train Loss: 26.1026
+ Avg Train Loss: 26.1026 | Seg Loss: 0.2610 | Recon Loss: 0.0044
+  Val mIoU: 0.8398 (Best: 0.8503)
+ [Class IoU] C0: 0.8276 C1: 0.9315 | C2: 0.8818 | C3: 0.7182
+Epoch 334/400 | Train Loss: 26.5349
+ Avg Train Loss: 26.5349 | Seg Loss: 0.2653 | Recon Loss: 0.0045
+  Val mIoU: 0.8499 (Best: 0.8503)
+ [Class IoU] C0: 0.8405 C1: 0.9324 | C2: 0.8859 | C3: 0.7408
+Epoch 335/400 | Train Loss: 27.2703
+ Avg Train Loss: 27.2703 | Seg Loss: 0.2727 | Recon Loss: 0.0046
+  Val mIoU: 0.8339 (Best: 0.8503)
+ [Class IoU] C0: 0.8302 C1: 0.9294 | C2: 0.8762 | C3: 0.6996
+Epoch 336/400 | Train Loss: 26.6251
+ Avg Train Loss: 26.6251 | Seg Loss: 0.2662 | Recon Loss: 0.0044
+  Val mIoU: 0.8419 (Best: 0.8503)
+ [Class IoU] C0: 0.8312 C1: 0.9305 | C2: 0.8810 | C3: 0.7250
+Epoch 337/400 | Train Loss: 26.4716
+ Avg Train Loss: 26.4716 | Seg Loss: 0.2647 | Recon Loss: 0.0044
+  Val mIoU: 0.8431 (Best: 0.8503)
+ [Class IoU] C0: 0.8291 C1: 0.9301 | C2: 0.8820 | C3: 0.7310
+Epoch 338/400 | Train Loss: 26.2266
+ Avg Train Loss: 26.2266 | Seg Loss: 0.2622 | Recon Loss: 0.0046
+  Val mIoU: 0.8497 (Best: 0.8503)
+ [Class IoU] C0: 0.8417 C1: 0.9332 | C2: 0.8863 | C3: 0.7374
+Epoch 339/400 | Train Loss: 26.5639
+ Avg Train Loss: 26.5639 | Seg Loss: 0.2656 | Recon Loss: 0.0044
+  Val mIoU: 0.8377 (Best: 0.8503)
+ [Class IoU] C0: 0.8321 C1: 0.9307 | C2: 0.8781 | C3: 0.7100
+Epoch 340/400 | Train Loss: 26.3377
+ Avg Train Loss: 26.3377 | Seg Loss: 0.2633 | Recon Loss: 0.0046
+  Val mIoU: 0.8349 (Best: 0.8503)
+ [Class IoU] C0: 0.8072 C1: 0.9266 | C2: 0.8732 | C3: 0.7327
+  Saving visuals for Epoch 340...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0340_predictions.png
+Epoch 341/400 | Train Loss: 26.5916
+ Avg Train Loss: 26.5916 | Seg Loss: 0.2659 | Recon Loss: 0.0045
+  Val mIoU: 0.8383 (Best: 0.8503)
+ [Class IoU] C0: 0.8258 C1: 0.9303 | C2: 0.8794 | C3: 0.7176
+Epoch 342/400 | Train Loss: 26.8785
+ Avg Train Loss: 26.8785 | Seg Loss: 0.2687 | Recon Loss: 0.0047
+  Val mIoU: 0.8390 (Best: 0.8503)
+ [Class IoU] C0: 0.8319 C1: 0.9290 | C2: 0.8799 | C3: 0.7153
+Epoch 343/400 | Train Loss: 26.5961
+ Avg Train Loss: 26.5961 | Seg Loss: 0.2659 | Recon Loss: 0.0045
+  Val mIoU: 0.8394 (Best: 0.8503)
+ [Class IoU] C0: 0.8284 C1: 0.9308 | C2: 0.8815 | C3: 0.7171
+Epoch 344/400 | Train Loss: 26.7444
+ Avg Train Loss: 26.7444 | Seg Loss: 0.2674 | Recon Loss: 0.0046
+  Val mIoU: 0.8342 (Best: 0.8503)
+ [Class IoU] C0: 0.8311 C1: 0.9303 | C2: 0.8766 | C3: 0.6986
+Epoch 345/400 | Train Loss: 27.0894
+ Avg Train Loss: 27.0894 | Seg Loss: 0.2708 | Recon Loss: 0.0047
+  Val mIoU: 0.8320 (Best: 0.8503)
+ [Class IoU] C0: 0.8334 C1: 0.9320 | C2: 0.8737 | C3: 0.6889
+Epoch 346/400 | Train Loss: 26.2416
+ Avg Train Loss: 26.2416 | Seg Loss: 0.2624 | Recon Loss: 0.0046
+  Val mIoU: 0.8332 (Best: 0.8503)
+ [Class IoU] C0: 0.8274 C1: 0.9270 | C2: 0.8767 | C3: 0.7018
+Epoch 347/400 | Train Loss: 26.0779
+ Avg Train Loss: 26.0779 | Seg Loss: 0.2607 | Recon Loss: 0.0045
+  Val mIoU: 0.8266 (Best: 0.8503)
+ [Class IoU] C0: 0.8274 C1: 0.9296 | C2: 0.8696 | C3: 0.6800
+Epoch 348/400 | Train Loss: 26.0762
+ Avg Train Loss: 26.0762 | Seg Loss: 0.2607 | Recon Loss: 0.0046
+  Val mIoU: 0.8173 (Best: 0.8503)
+ [Class IoU] C0: 0.8134 C1: 0.9310 | C2: 0.8616 | C3: 0.6631
+Epoch 349/400 | Train Loss: 26.8927
+ Avg Train Loss: 26.8927 | Seg Loss: 0.2689 | Recon Loss: 0.0045
+  Val mIoU: 0.8449 (Best: 0.8503)
+ [Class IoU] C0: 0.8387 C1: 0.9311 | C2: 0.8817 | C3: 0.7282
+Epoch 350/400 | Train Loss: 26.7151
+ Avg Train Loss: 26.7151 | Seg Loss: 0.2671 | Recon Loss: 0.0046
+  Val mIoU: 0.8323 (Best: 0.8503)
+ [Class IoU] C0: 0.8244 C1: 0.9267 | C2: 0.8760 | C3: 0.7021
+Epoch 351/400 | Train Loss: 26.2625
+ Avg Train Loss: 26.2625 | Seg Loss: 0.2626 | Recon Loss: 0.0044
+  Val mIoU: 0.8389 (Best: 0.8503)
+ [Class IoU] C0: 0.8357 C1: 0.9283 | C2: 0.8802 | C3: 0.7112
+Epoch 352/400 | Train Loss: 26.3730
+ Avg Train Loss: 26.3730 | Seg Loss: 0.2637 | Recon Loss: 0.0048
+  Val mIoU: 0.8380 (Best: 0.8503)
+ [Class IoU] C0: 0.8266 C1: 0.9288 | C2: 0.8802 | C3: 0.7166
+Epoch 353/400 | Train Loss: 26.7701
+ Avg Train Loss: 26.7701 | Seg Loss: 0.2677 | Recon Loss: 0.0044
+  Val mIoU: 0.8263 (Best: 0.8503)
+ [Class IoU] C0: 0.8136 C1: 0.9290 | C2: 0.8679 | C3: 0.6949
+Epoch 354/400 | Train Loss: 26.1434
+ Avg Train Loss: 26.1434 | Seg Loss: 0.2614 | Recon Loss: 0.0045
+  Val mIoU: 0.8411 (Best: 0.8503)
+ [Class IoU] C0: 0.8194 C1: 0.9289 | C2: 0.8785 | C3: 0.7374
+Epoch 355/400 | Train Loss: 26.3058
+ Avg Train Loss: 26.3058 | Seg Loss: 0.2630 | Recon Loss: 0.0046
+  Val mIoU: 0.8416 (Best: 0.8503)
+ [Class IoU] C0: 0.8334 C1: 0.9292 | C2: 0.8808 | C3: 0.7232
+Epoch 356/400 | Train Loss: 26.4952
+ Avg Train Loss: 26.4952 | Seg Loss: 0.2649 | Recon Loss: 0.0045
+  Val mIoU: 0.8311 (Best: 0.8503)
+ [Class IoU] C0: 0.8243 C1: 0.9313 | C2: 0.8747 | C3: 0.6941
+Epoch 357/400 | Train Loss: 26.7705
+ Avg Train Loss: 26.7705 | Seg Loss: 0.2677 | Recon Loss: 0.0045
+  Val mIoU: 0.8431 (Best: 0.8503)
+ [Class IoU] C0: 0.8312 C1: 0.9294 | C2: 0.8828 | C3: 0.7291
+Epoch 358/400 | Train Loss: 26.6857
+ Avg Train Loss: 26.6857 | Seg Loss: 0.2668 | Recon Loss: 0.0046
+  Val mIoU: 0.8469 (Best: 0.8503)
+ [Class IoU] C0: 0.8267 C1: 0.9293 | C2: 0.8842 | C3: 0.7474
+Epoch 359/400 | Train Loss: 26.5213
+ Avg Train Loss: 26.5213 | Seg Loss: 0.2652 | Recon Loss: 0.0045
+  Val mIoU: 0.8381 (Best: 0.8503)
+ [Class IoU] C0: 0.8295 C1: 0.9293 | C2: 0.8784 | C3: 0.7153
+Epoch 360/400 | Train Loss: 26.8606
+ Avg Train Loss: 26.8606 | Seg Loss: 0.2686 | Recon Loss: 0.0046
+  Val mIoU: 0.8428 (Best: 0.8503)
+ [Class IoU] C0: 0.8335 C1: 0.9314 | C2: 0.8817 | C3: 0.7247
+  Saving visuals for Epoch 360...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0360_predictions.png
+Epoch 361/400 | Train Loss: 26.8514
+ Avg Train Loss: 26.8514 | Seg Loss: 0.2685 | Recon Loss: 0.0047
+  Val mIoU: 0.8320 (Best: 0.8503)
+ [Class IoU] C0: 0.8265 C1: 0.9268 | C2: 0.8753 | C3: 0.6994
+Epoch 362/400 | Train Loss: 26.3407
+ Avg Train Loss: 26.3407 | Seg Loss: 0.2634 | Recon Loss: 0.0046
+  Val mIoU: 0.8494 (Best: 0.8503)
+ [Class IoU] C0: 0.8370 C1: 0.9325 | C2: 0.8868 | C3: 0.7411
+Epoch 363/400 | Train Loss: 26.3540
+ Avg Train Loss: 26.3540 | Seg Loss: 0.2635 | Recon Loss: 0.0044
+  Val mIoU: 0.8358 (Best: 0.8503)
+ [Class IoU] C0: 0.8279 C1: 0.9172 | C2: 0.8804 | C3: 0.7176
+Epoch 364/400 | Train Loss: 26.7360
+ Avg Train Loss: 26.7360 | Seg Loss: 0.2673 | Recon Loss: 0.0045
+  Val mIoU: 0.8457 (Best: 0.8503)
+ [Class IoU] C0: 0.8294 C1: 0.9307 | C2: 0.8823 | C3: 0.7403
+Epoch 365/400 | Train Loss: 26.8283
+ Avg Train Loss: 26.8283 | Seg Loss: 0.2682 | Recon Loss: 0.0045
+  Val mIoU: 0.8343 (Best: 0.8503)
+ [Class IoU] C0: 0.8272 C1: 0.9294 | C2: 0.8772 | C3: 0.7035
+Epoch 366/400 | Train Loss: 26.5912
+ Avg Train Loss: 26.5912 | Seg Loss: 0.2659 | Recon Loss: 0.0044
+  Val mIoU: 0.8390 (Best: 0.8503)
+ [Class IoU] C0: 0.8242 C1: 0.9294 | C2: 0.8799 | C3: 0.7225
+Epoch 367/400 | Train Loss: 26.8160
+ Avg Train Loss: 26.8160 | Seg Loss: 0.2681 | Recon Loss: 0.0046
+  Val mIoU: 0.8391 (Best: 0.8503)
+ [Class IoU] C0: 0.8199 C1: 0.9252 | C2: 0.8803 | C3: 0.7308
+Epoch 368/400 | Train Loss: 26.3418
+ Avg Train Loss: 26.3418 | Seg Loss: 0.2634 | Recon Loss: 0.0044
+  Val mIoU: 0.8384 (Best: 0.8503)
+ [Class IoU] C0: 0.8166 C1: 0.9185 | C2: 0.8793 | C3: 0.7393
+Epoch 369/400 | Train Loss: 25.9796
+ Avg Train Loss: 25.9796 | Seg Loss: 0.2597 | Recon Loss: 0.0046
+  Val mIoU: 0.8317 (Best: 0.8503)
+ [Class IoU] C0: 0.8311 C1: 0.9288 | C2: 0.8756 | C3: 0.6911
+Epoch 370/400 | Train Loss: 26.6824
+ Avg Train Loss: 26.6824 | Seg Loss: 0.2668 | Recon Loss: 0.0045
+  Val mIoU: 0.8340 (Best: 0.8503)
+ [Class IoU] C0: 0.8225 C1: 0.9284 | C2: 0.8767 | C3: 0.7084
+Epoch 371/400 | Train Loss: 26.8164
+ Avg Train Loss: 26.8164 | Seg Loss: 0.2681 | Recon Loss: 0.0044
+  Val mIoU: 0.8333 (Best: 0.8503)
+ [Class IoU] C0: 0.8285 C1: 0.9286 | C2: 0.8772 | C3: 0.6987
+Epoch 372/400 | Train Loss: 27.1167
+ Avg Train Loss: 27.1167 | Seg Loss: 0.2711 | Recon Loss: 0.0045
+  Val mIoU: 0.8374 (Best: 0.8503)
+ [Class IoU] C0: 0.8217 C1: 0.9309 | C2: 0.8792 | C3: 0.7179
+Epoch 373/400 | Train Loss: 27.3889
+ Avg Train Loss: 27.3889 | Seg Loss: 0.2738 | Recon Loss: 0.0045
+  Val mIoU: 0.8439 (Best: 0.8503)
+ [Class IoU] C0: 0.8313 C1: 0.9213 | C2: 0.8843 | C3: 0.7390
+Epoch 374/400 | Train Loss: 26.0424
+ Avg Train Loss: 26.0424 | Seg Loss: 0.2604 | Recon Loss: 0.0045
+  Val mIoU: 0.8422 (Best: 0.8503)
+ [Class IoU] C0: 0.8348 C1: 0.9279 | C2: 0.8837 | C3: 0.7224
+Epoch 375/400 | Train Loss: 26.9270
+ Avg Train Loss: 26.9270 | Seg Loss: 0.2692 | Recon Loss: 0.0044
+  Val mIoU: 0.8391 (Best: 0.8503)
+ [Class IoU] C0: 0.8278 C1: 0.9285 | C2: 0.8797 | C3: 0.7206
+Epoch 376/400 | Train Loss: 25.9057
+ Avg Train Loss: 25.9057 | Seg Loss: 0.2590 | Recon Loss: 0.0045
+  Val mIoU: 0.8343 (Best: 0.8503)
+ [Class IoU] C0: 0.8296 C1: 0.9310 | C2: 0.8761 | C3: 0.7004
+Epoch 377/400 | Train Loss: 25.9670
+ Avg Train Loss: 25.9670 | Seg Loss: 0.2596 | Recon Loss: 0.0044
+  Val mIoU: 0.8403 (Best: 0.8503)
+ [Class IoU] C0: 0.8226 C1: 0.9300 | C2: 0.8809 | C3: 0.7277
+Epoch 378/400 | Train Loss: 25.9682
+ Avg Train Loss: 25.9682 | Seg Loss: 0.2596 | Recon Loss: 0.0044
+  Val mIoU: 0.8268 (Best: 0.8503)
+ [Class IoU] C0: 0.8314 C1: 0.9311 | C2: 0.8712 | C3: 0.6737
+Epoch 379/400 | Train Loss: 26.4280
+ Avg Train Loss: 26.4280 | Seg Loss: 0.2642 | Recon Loss: 0.0045
+  Val mIoU: 0.8412 (Best: 0.8503)
+ [Class IoU] C0: 0.8263 C1: 0.9310 | C2: 0.8813 | C3: 0.7261
+Epoch 380/400 | Train Loss: 26.2779
+ Avg Train Loss: 26.2779 | Seg Loss: 0.2627 | Recon Loss: 0.0047
+  Val mIoU: 0.8396 (Best: 0.8503)
+ [Class IoU] C0: 0.8268 C1: 0.9296 | C2: 0.8796 | C3: 0.7224
+  Saving visuals for Epoch 380...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0380_predictions.png
+Epoch 381/400 | Train Loss: 26.1746
+ Avg Train Loss: 26.1746 | Seg Loss: 0.2617 | Recon Loss: 0.0047
+  Val mIoU: 0.8342 (Best: 0.8503)
+ [Class IoU] C0: 0.8346 C1: 0.9317 | C2: 0.8759 | C3: 0.6944
+Epoch 382/400 | Train Loss: 25.9742
+ Avg Train Loss: 25.9742 | Seg Loss: 0.2597 | Recon Loss: 0.0046
+  Val mIoU: 0.8350 (Best: 0.8503)
+ [Class IoU] C0: 0.8344 C1: 0.9300 | C2: 0.8769 | C3: 0.6989
+Epoch 383/400 | Train Loss: 26.3135
+ Avg Train Loss: 26.3135 | Seg Loss: 0.2631 | Recon Loss: 0.0045
+  Val mIoU: 0.8321 (Best: 0.8503)
+ [Class IoU] C0: 0.8138 C1: 0.9235 | C2: 0.8755 | C3: 0.7157
+Epoch 384/400 | Train Loss: 26.1785
+ Avg Train Loss: 26.1785 | Seg Loss: 0.2617 | Recon Loss: 0.0045
+  Val mIoU: 0.8441 (Best: 0.8503)
+ [Class IoU] C0: 0.8318 C1: 0.9306 | C2: 0.8829 | C3: 0.7309
+Epoch 385/400 | Train Loss: 26.3905
+ Avg Train Loss: 26.3905 | Seg Loss: 0.2639 | Recon Loss: 0.0046
+  Val mIoU: 0.8251 (Best: 0.8503)
+ [Class IoU] C0: 0.8183 C1: 0.9309 | C2: 0.8693 | C3: 0.6820
+Epoch 386/400 | Train Loss: 26.3717
+ Avg Train Loss: 26.3717 | Seg Loss: 0.2637 | Recon Loss: 0.0044
+  Val mIoU: 0.8288 (Best: 0.8503)
+ [Class IoU] C0: 0.8279 C1: 0.9300 | C2: 0.8721 | C3: 0.6853
+Epoch 387/400 | Train Loss: 25.8745
+ Avg Train Loss: 25.8745 | Seg Loss: 0.2587 | Recon Loss: 0.0046
+  Val mIoU: 0.8387 (Best: 0.8503)
+ [Class IoU] C0: 0.8282 C1: 0.9307 | C2: 0.8805 | C3: 0.7155
+Epoch 388/400 | Train Loss: 26.3583
+ Avg Train Loss: 26.3583 | Seg Loss: 0.2635 | Recon Loss: 0.0045
+  Val mIoU: 0.8403 (Best: 0.8503)
+ [Class IoU] C0: 0.8312 C1: 0.9271 | C2: 0.8810 | C3: 0.7218
+Epoch 389/400 | Train Loss: 26.5709
+ Avg Train Loss: 26.5709 | Seg Loss: 0.2657 | Recon Loss: 0.0045
+  Val mIoU: 0.8326 (Best: 0.8503)
+ [Class IoU] C0: 0.8295 C1: 0.9307 | C2: 0.8741 | C3: 0.6960
+Epoch 390/400 | Train Loss: 26.4252
+ Avg Train Loss: 26.4252 | Seg Loss: 0.2642 | Recon Loss: 0.0047
+  Val mIoU: 0.8484 (Best: 0.8503)
+ [Class IoU] C0: 0.8408 C1: 0.9288 | C2: 0.8858 | C3: 0.7383
+Epoch 391/400 | Train Loss: 26.9974
+ Avg Train Loss: 26.9974 | Seg Loss: 0.2699 | Recon Loss: 0.0047
+  Val mIoU: 0.8352 (Best: 0.8503)
+ [Class IoU] C0: 0.8170 C1: 0.9269 | C2: 0.8766 | C3: 0.7203
+Epoch 392/400 | Train Loss: 26.2811
+ Avg Train Loss: 26.2811 | Seg Loss: 0.2628 | Recon Loss: 0.0045
+  Val mIoU: 0.8485 (Best: 0.8503)
+ [Class IoU] C0: 0.8397 C1: 0.9312 | C2: 0.8852 | C3: 0.7378
+Epoch 393/400 | Train Loss: 26.5794
+ Avg Train Loss: 26.5794 | Seg Loss: 0.2657 | Recon Loss: 0.0046
+  Val mIoU: 0.8469 (Best: 0.8503)
+ [Class IoU] C0: 0.8336 C1: 0.9325 | C2: 0.8842 | C3: 0.7373
+Epoch 394/400 | Train Loss: 26.2706
+ Avg Train Loss: 26.2706 | Seg Loss: 0.2627 | Recon Loss: 0.0045
+  Val mIoU: 0.8311 (Best: 0.8503)
+ [Class IoU] C0: 0.8192 C1: 0.9277 | C2: 0.8744 | C3: 0.7031
+Epoch 395/400 | Train Loss: 26.4264
+ Avg Train Loss: 26.4264 | Seg Loss: 0.2642 | Recon Loss: 0.0044
+  Val mIoU: 0.8438 (Best: 0.8503)
+ [Class IoU] C0: 0.8311 C1: 0.9305 | C2: 0.8840 | C3: 0.7296
+Epoch 396/400 | Train Loss: 26.2041
+ Avg Train Loss: 26.2041 | Seg Loss: 0.2620 | Recon Loss: 0.0045
+  Val mIoU: 0.8359 (Best: 0.8503)
+ [Class IoU] C0: 0.8211 C1: 0.9249 | C2: 0.8780 | C3: 0.7195
+Epoch 397/400 | Train Loss: 26.3690
+ Avg Train Loss: 26.3690 | Seg Loss: 0.2636 | Recon Loss: 0.0045
+  Val mIoU: 0.8360 (Best: 0.8503)
+ [Class IoU] C0: 0.8271 C1: 0.9306 | C2: 0.8776 | C3: 0.7085
+Epoch 398/400 | Train Loss: 27.0672
+ Avg Train Loss: 27.0672 | Seg Loss: 0.2706 | Recon Loss: 0.0044
+  Val mIoU: 0.8346 (Best: 0.8503)
+ [Class IoU] C0: 0.8212 C1: 0.9306 | C2: 0.8767 | C3: 0.7100
+Epoch 399/400 | Train Loss: 26.1326
+ Avg Train Loss: 26.1326 | Seg Loss: 0.2613 | Recon Loss: 0.0046
+  Val mIoU: 0.8410 (Best: 0.8503)
+ [Class IoU] C0: 0.8323 C1: 0.9313 | C2: 0.8811 | C3: 0.7192
+Epoch 400/400 | Train Loss: 26.5237
+ Avg Train Loss: 26.5237 | Seg Loss: 0.2652 | Recon Loss: 0.0044
+  Val mIoU: 0.8233 (Best: 0.8503)
+ [Class IoU] C0: 0.8198 C1: 0.9248 | C2: 0.8702 | C3: 0.6784
+  Saving visuals for Epoch 400...
+  Visuals saved to: /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Output_AG_vali/epoch_0400_predictions.png
+--- Training Finished ---
+Saving model weights...
+Best model saved /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/AG_val_best_2.pth
+Final model saved /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Trained_models/AG_val_final_2.pth
+Done.
+Job Finished.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 27269390: <AG_gpua_#> in cluster <dcc> Done
+
+Job <AG_gpua_#> was submitted from host <gbarlogin1> by user <s214776> in cluster <dcc> at Wed Dec  3 20:14:39 2025
+Job was executed on host(s) <8*n-62-13-16>, in queue <gpul40s>, as user <s214776> in cluster <dcc> at Wed Dec  3 20:15:04 2025
+</zhome/d2/4/167803> was used as the home directory.
+</zhome/d2/4/167803/Desktop/Deep_project/02456-final-project> was used as the working directory.
+Started at Wed Dec  3 20:15:04 2025
+Terminated at Thu Dec  4 02:01:31 2025
+Results reported at Thu Dec  4 02:01:31 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+### --- Job Name ---
+#BSUB -J AG_gpua_#
+
+### --- Log files ---
+#BSUB -o /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_job_%J.out
+#BSUB -e /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_%J.err
+
+### --- Resource Requests ---
+#BSUB -q gpul40s        # Request GPU queue
+#BSUB -gpu "num=1:mode=exclusive_process" # Request 1 GPU, all to myself
+#BSUB -n 8                    # Request 4 CPU cores
+#BSUB -R "rusage[mem=32GB]"   # Request 16GB memory
+#BSUB -W 20:00                # 4 hour runtime limit
+
+
+### --- Setup Environment ---
+echo "Loading CUDA module..."
+module load cuda/11.6         # Load CUDA module
+
+echo "Loading Conda..."
+
+source /zhome/d2/4/167803/miniforge3/bin/activate MBML
+echo "Environment 'MBML' activated."
+
+echo "Starting Python script..."
+python /zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/Model/AG_vali.py
+
+echo "Job Finished."
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   102123.00 sec.
+    Max Memory :                                 3703 MB
+    Average Memory :                             2629.84 MB
+    Total Requested Memory :                     262144.00 MB
+    Delta Memory :                               258441.00 MB
+    Max Swap :                                   -
+    Max Processes :                              20
+    Max Threads :                                94
+    Run time :                                   20792 sec.
+    Turnaround time :                            20812 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/d2/4/167803/Desktop/Deep_project/02456-final-project/logs/AG_err_27269390.err> for stderr output of this job.
+

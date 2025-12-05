@@ -22,7 +22,7 @@ from func.utill import save_predictions, plot_learning_curves
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {DEVICE}")
 
-CLASS_WEIGHTS = torch.tensor([1.0, 1.5, 1.0, 4.0]).to(DEVICE) 
+CLASS_WEIGHTS = torch.tensor([1.0, 1.0, 1.0, 3.0]).to(DEVICE) 
 print(f"Using Class Weights: {CLASS_WEIGHTS}")
 
 LATENT_DIM = 512
@@ -31,15 +31,13 @@ BATCH_SIZE = 3
 INPUT_SHAPE = (128, 128, 128) 
 NUM_CLASSES = 4 # Background + 3 segments
 LEARNING_RATE = 1e-4
-ACCUM_STEPS = 4 
-
 
 # Weights
 SEG_WEIGHT = 100.0 
 RECON_WEIGHT = 1.0
 
 OUTPUT_DIR = PROJECT_ROOT / "output_VAE_vali"
-CSV_PATH =  PROJECT_ROOT / "stats" / "training_log_vae.csv"
+CSV_PATH =  PROJECT_ROOT / "stats" / "training_log_vae_final.csv"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SAVE_PATH = PROJECT_ROOT / "Trained_models" / "VAE_val_best.pth"
 SAVE_PATH_FINAL = PROJECT_ROOT / "Trained_models" / "VAE_val_final.pth"
@@ -48,8 +46,9 @@ SAVE_PATH.parent.mkdir(parents=True, exist_ok=True)
 test_cols = [1,2, 33, 34]      
 val_cols = [27, 28, 29, 30]
 labeled_train_cols = [3,4,5,6,7,8 , 35,36,36,37,38]
-unlabeled_train_cols = list(range(9, 27))
+unlabeled_train_cols = list(range(9, 27)) + list(range(40, 44))
 
+40,41,42,43,44
 with open(CSV_PATH, mode='w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Epoch', 'Train_Loss', 'Val_Loss', 'Val_mIoU'])
@@ -69,7 +68,7 @@ if __name__ == "__main__":
             augment=True,
             is_labeled=True
         )
-        labeled_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+        labeled_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=0)
         
         # 2. Unlabeled Training Loader
         unlabeled_dataset = VolumetricPatchDataset(
@@ -77,7 +76,7 @@ if __name__ == "__main__":
             augment=False,
             is_labeled=False
         )
-        unlabeled_loader = DataLoader(unlabeled_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+        unlabeled_loader = DataLoader(unlabeled_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=0)
         
         # 3. Validation Loader (Labeled, No Augmentation)
         val_dataset = VolumetricPatchDataset(
@@ -85,7 +84,7 @@ if __name__ == "__main__":
             augment=False,
             is_labeled=True
         )
-        val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
+        val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=0)
         
         print(f"--- Loaders Ready ---")
         print(f"Train Batches: {len(labeled_loader)}")
@@ -229,7 +228,7 @@ if __name__ == "__main__":
         class_iou =[]
 
         for c in range(NUM_CLASSES):
-            if class_union[c] > c:
+            if class_union[c] > 0:
                 iou = class_inter[c]/class_union[c]
             else:
                 iou = 0.0
