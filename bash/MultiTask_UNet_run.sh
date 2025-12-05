@@ -16,7 +16,7 @@
 #BSUB -e OUTPUT_FILE%J.err
 
 source /zhome/84/4/186776/segmentation/bin/activate
-cd /zhome/84/4/186776/segmentation/02456-final-project/Model
+cd /zhome/84/4/186776/segmentation/2d_AE
 
 # Run train.py as a module
-python AG.py
+python /02456-final-project/Model/MultiTask_UNet_vali.py
